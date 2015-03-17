@@ -1,21 +1,14 @@
 <html lang="en">
 <head>
+  <title>Age of Fable</title> 
+  <meta name="description" content=""/>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>  
-  
-<meta http-equiv="Page-Enter" content="blendTrans(Duration=2)"> 
-<meta http-equiv="Site-Enter" content="blendTrans(Duration=2)"> 
-<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"> 
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
-<title>Age of Fable</title> 
-<meta name="description" content=""/>
-<link rel="stylesheet" href="stylesheet.css"> 
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<script language="JavaScript"> 
-window.defaultStatus = "Age of Fable" 
-</script> 
+  <meta name="viewport" content="width=500">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>    
+  <link rel="stylesheet" href="stylesheet.css?"> 
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"> 
 </head> 
-<body link="#8888ff" alink="#8888ff" vlink="#8888ff" text="ffffff" bgcolor="000000"> 
+<body> 
 <!-- Project Wonderful Ad Box Loader --> 
 <!-- Put this after the <body> tag at the top of your page --> 
 <script type="text/javascript"> 

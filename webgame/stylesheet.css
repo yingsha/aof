@@ -1,12 +1,53 @@
 body {
     font-family: Myriad, Helvetica, Arial, Geneva, SunSans-Regular, sans-serif;
-    font-size: 14pt;   
+    font-size: 10pt;   
+	background: #000;
+	color: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
+
 table {
     font-family: Myriad, Helvetica, Arial, Geneva, SunSans-Regular, sans-serif;
-    font-size: 14pt;   
+    font-size: 10pt;   
+}
+
+A:link {
+ color: #8888ff;
+ TEXT-DECORATION: underline;
+}
+A:visited {
+ COLOR: #8888ff;
+ TEXT-DECORATION: underline;
+}
+A:hover {
+ COLOR: #ff7f24;
+ text-decoration: underline;
+}
+A:active {
+ COLOR: #ff7f24;  
+ text-decoration: underline;
 }
 
 img {
    border:2px solid #888888;
 }
+
+.artclass {
+	max-width: 380px;
+}
+
+#h{
+    background: none repeat scroll 0 0 #062C65;
+    border-bottom: 2px solid #F59C24;
+    height: 120x;
+}
+#c1 {    background: none repeat scroll 0 0 #000000;    overflow:hidden;
+	padding: 10px;    
+    border-bottom: 2px solid #F59C24;
+}
+#c2 {    background: none repeat scroll 0 0 #000000;    float: left;    padding: 10px;    width: 240px;    overflow:hidden;
+    border-right: 2px solid #F59C24;
+}
+#c3 {    background: none repeat scroll 0 0 #202020;    float: left;   padding: 10px;     overflow:hidden;}
