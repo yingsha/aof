@@ -12,6 +12,7 @@ $carry = $_GET['carry'];
 $street = $_GET['street'];
 $square = $_GET['square'];
 $weapon = $_GET['weapon'];
+$world = $_GET['world'];
 $blessings = $_GET['blessings'];
 $name = $_GET['name'];
 $prof = $_GET['prof'];
@@ -19,6 +20,7 @@ $shells = $_GET['shells'];
 $maxsta = $_GET['maxsta'];
 $creda = $_GET['creda'];
 $rolls = $_GET['rolls'];
+
 
 //number and names of attributes 
 //if change attributes, need to do it here, create.php, form.txt 
@@ -31,18 +33,18 @@ $attributes=array("null","Stamina","Charisma","Duelling","Brawling","Seafaring",
 //rough description of what a particular score means 
 
 $word=array ( 
-'Stamina' => array ("near death","sickly","sickly","sickly","unhealthy","unhealthy","unhealthy","unremarkable","unremarkable","unremarkable","unremarkable","healthy","healthy","healthy","healthy","robust","robust","robust","unstoppable","unstoppable","unstoppable"), 
-'Charisma' => array ("null","repulsive","repulsive","hateful","hateful","hateful","annoying","annoying","annoying","innocuous","innocuous","innocuous","likeable","likeable","likeable","charming","charming","charming","mesmerising","mesmerising","mesmerising"), 
-'Duelling' => array ("null","clumsy","clumsy","clumsy","clumsy","slow","slow","slow","slow","average","average","average","average","agile","agile","agile","agile","dangerous","dangerous","deadly","deadly"), 
-'Brawling' => array ("null","puny","puny","puny","weak","weak","weak","unremarkable","unremarkable","unremarkable","unremarkable","strong","strong","strong","strong","strong","powerful","powerful","powerful","legendary","legendary"), 
-'Seafaring' => array ("null","gets seasick in the bath","gets seasick in the bath","landlubber","landlubber","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","old salt","old salt","old salt","old salt"), 
-'Magic' => array ("null","powerless","powerless","poor","poor","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","superb","superb","overwhelming","overwhelming"), 
-'Heroism' => array ("wicked","wicked","wicked","corrupt","corrupt","selfish","selfish","wavering","wavering","wavering","good-hearted","good-hearted","good-hearted","bold","bold","bold","bold","heroic","heroic","heroic","heroic"), 
-'Scouting' => array ("null","gets lost in the back yard", "gets lost in the back yard","terrible","terrible","poor","poor","mediocre","mediocre","fair","fair","good","good","good","great","great","great","superb","superb","legendary","legendary"), 
-'Roguery' => array ("null","terrible","terrible","poor","poor","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","superb","superb","legendary","legendary"), 
-'Luck' => array ("null","cursed","cursed","ill-starred","ill-starred","mediocre","mediocre","mediocre","fair","fair","fair","lucky","lucky","lucky","auspicious","auspicious","auspicious","charmed","charmed","blessed","blessed"), 
-'Healing' => array ("null","terrible","terrible","poor","poor","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","superb","superb","legendary","legendary"), 
-'Streetwise' => array ("null","babe in the woods","babe in the woods","clueless","clueless","foolish","foolish","unwise","unwise","fair","fair","alert","alert","alert","crafty","crafty","crafty","cunning as a fox","cunning as a fox","cunning as a shithouse rat","cunning as a shithouse rat"), 
+	'Stamina' => array ("near death","sickly","sickly","sickly","unhealthy","unhealthy","unhealthy","unremarkable","unremarkable","unremarkable","unremarkable","healthy","healthy","healthy","healthy","robust","robust","robust","unstoppable","unstoppable","unstoppable"), 
+	'Charisma' => array ("null","repulsive","repulsive","hateful","hateful","hateful","annoying","annoying","annoying","innocuous","innocuous","innocuous","likeable","likeable","likeable","charming","charming","charming","mesmerising","mesmerising","mesmerising"), 
+	'Duelling' => array ("null","clumsy","clumsy","clumsy","clumsy","slow","slow","slow","slow","average","average","average","average","agile","agile","agile","agile","dangerous","dangerous","deadly","deadly"), 
+	'Brawling' => array ("null","puny","puny","puny","weak","weak","weak","unremarkable","unremarkable","unremarkable","unremarkable","strong","strong","strong","strong","strong","powerful","powerful","powerful","legendary","legendary"), 
+	'Seafaring' => array ("null","gets seasick in the bath","gets seasick in the bath","landlubber","landlubber","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","old salt","old salt","old salt","old salt"), 
+	'Magic' => array ("null","powerless","powerless","poor","poor","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","superb","superb","overwhelming","overwhelming"), 
+	'Heroism' => array ("wicked","wicked","wicked","corrupt","corrupt","selfish","selfish","wavering","wavering","wavering","good-hearted","good-hearted","good-hearted","bold","bold","bold","bold","heroic","heroic","heroic","heroic"), 
+	'Scouting' => array ("null","gets lost in the back yard", "gets lost in the back yard","terrible","terrible","poor","poor","mediocre","mediocre","fair","fair","good","good","good","great","great","great","superb","superb","legendary","legendary"), 
+	'Roguery' => array ("null","terrible","terrible","poor","poor","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","superb","superb","legendary","legendary"), 
+	'Luck' => array ("null","cursed","cursed","ill-starred","ill-starred","mediocre","mediocre","mediocre","fair","fair","fair","lucky","lucky","lucky","auspicious","auspicious","auspicious","charmed","charmed","blessed","blessed"), 
+	'Healing' => array ("null","terrible","terrible","poor","poor","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","superb","superb","legendary","legendary"), 
+	'Streetwise' => array ("null","babe in the woods","babe in the woods","clueless","clueless","foolish","foolish","unwise","unwise","fair","fair","alert","alert","alert","crafty","crafty","crafty","cunning as a fox","cunning as a fox","cunning as a shithouse rat","cunning as a shithouse rat"), 
 ); 
 
 //number of classes: only used for special branching type 23 
@@ -61,62 +63,62 @@ $class=array ("clown","talking cat","wizard","scoundrel","bard","knight","nomad"
 // unpack $rolls to reveal character's stats 
 $stats=array(); 
 for ($loop=1;$loop<=$attnum;$loop++) { 
-$z=ord($rolls{$loop-1})-64; 
-if ($z>26) { 
-$z=$z-6; 
-} 
-$stats[$loop]=$z; 
+	$z=ord($rolls{$loop-1})-64; 
+	if ($z>26) { 
+	$z=$z-6; 
+	} 
+	$stats[$loop]=$z; 
 } 
 
 if (!isset($maxsta)) { 
-$maxsta=min(25,5+$stats[1]); 
-$illumcred=1; 
+	$maxsta=min(25,5+$stats[1]); 
+	$illumcred=1; 
 } 
 
 //special variable for 'street' and 'square' pictures: 
 // flips street1/2/3.jpg & square1/2/3/4. 
 
 if (!isset($street)) { 
-$street=rand(1,4); 
-$square=rand(1,3); 
+	$street=rand(1,4); 
+	$square=rand(1,3); 
 } 
 
 //unpack $carry to reveal $items array 
 
 if (!isset($carry)) { 
-$carry=1; 
+	$carry=1; 
 } 
 
 $items=array(); 
 $itemnames=array( 
-1=> array ("done specially below","item"), 
-2=> array ("goblin-tailored cloak","item"), 
-3=> array ("dwarven medallion","item"), 
-4=> array ("Owyth","frog"), 
-5=> array ("crown","item"), 
-6=> array ("black pearl","item"), 
-7=> array ("witch's bundle","item"), 
-8=> array ("box from the armoured hut","item"), 
-9=> array ("glass bottle","item"), 
-10=> array ("Imp","imp"), 
-11=> array ("fur (possibly magic)","item"), 
-12=> array ("magic fur","item"), 
-13=> array ("fur","item"), 
-14=> array ("Owyth","warrior"), 
-15=> array ("unicorn","unicorn"), 
-16=> array ("horse","horse"), 
-17=> array ("book","item"), 
-18=> array ("drum","item"), 
-19=> array ("r.o.p.h., but this isn't used","item"), 
-20=> array ("neckweasel","item"), 
-21=> array ("the Pearl of Wisdom","item"), 
-22=> array ("Piteous Mew","cat"), 
-23=> array ("raven","raven"), 
-24=> array ("Ugly Stick","item"), 
-25=> array ("key","item"), 
-26=> array ("guide to Dead Eye Street","item"), 
-27=> array ("red rose","item"), 
-28=> array ("Yasmina","princess"), 
+	1=> array ("done specially below","item"), 
+	2=> array ("goblin-tailored cloak","item"), 
+	3=> array ("dwarven medallion","item"), 
+	4=> array ("Owyth","frog"), 
+	5=> array ("crown","item"), 
+	6=> array ("black pearl","item"), 
+	7=> array ("witch's bundle","item"), 
+	8=> array ("box from the armoured hut","item"), 
+	9=> array ("glass bottle","item"), 
+	10=> array ("Imp","imp"), 
+	11=> array ("fur (possibly magic)","item"), 
+	12=> array ("magic fur","item"), 
+	13=> array ("fur","item"), 
+	14=> array ("Owyth","warrior"), 
+	15=> array ("unicorn","unicorn"), 
+	16=> array ("horse","horse"), 
+	17=> array ("book","item"), 
+	18=> array ("drum","item"), 
+	19=> array ("r.o.p.h., but this isn't used","item"), 
+	20=> array ("neckweasel","item"), 
+	21=> array ("the Pearl of Wisdom","item"), 
+	22=> array ("Piteous Mew","cat"), 
+	23=> array ("raven","raven"), 
+	24=> array ("Ugly Stick","item"), 
+	25=> array ("key","item"), 
+	26=> array ("guide to Dead Eye Street","item"), 
+	27=> array ("red rose","item"), 
+	28=> array ("Yasmina","princess"), 
 ); 
 
 $manyitems=28; 
@@ -124,11 +126,11 @@ $manyitems=28;
 
 $test=pow(2,$manyitems); 
 while ($carry>0) { 
-if ($carry>=$test) { 
-$carry=$carry-$test; 
-$items[log($test,2)+1]=1; 
-} 
-$test=$test/2; 
+	if ($carry>=$test) { 
+		$carry=$carry-$test; 
+		$items[log($test,2)+1]=1; 
+	} 
+	$test=$test/2; 
 } 
 
 //weapons 
@@ -136,73 +138,73 @@ $weapontypes=11;
 $weaponnames=array("null","club","quarterstaff","machete","dagger","sword","scimitar","spear","trident","axe","war-hammer","mace"); 
 
 if (!isset($weapon)) { 
-//trolls always have clubs. 
-if ($prof==14) { 
-$weapon=1; 
+	//trolls always have clubs. 
+	if ($prof==14) { 
+		$weapon=1; 
 
-//lizard-men always have spears. 
-} elseif ($prof==18) { 
-$weapon=7; 
+		//lizard-men always have spears. 
+	} elseif ($prof==18) { 
+		$weapon=7; 
 
-// dwarves don't have clubs or quarterstaffs because 
-// the story says you use the forge to make your weapon. 
-} elseif ($prof==9) { 
-$weapon=rand(3,$weapontypes); 
+		// dwarves don't have clubs or quarterstaffs because 
+		// the story says you use the forge to make your weapon. 
+	} elseif ($prof==9) { 
+		$weapon=rand(3,$weapontypes); 
 
-// fairies don't have clubs, axes, war-hammers or maces. 
-} elseif ($prof==8) { 
-$weapon=rand(2,8); 
+		// fairies don't have clubs, axes, war-hammers or maces. 
+	} elseif ($prof==8) { 
+		$weapon=rand(2,8); 
 
-// knights don't have clubs. 
-} elseif ($prof==5) { 
-$weapon=rand(2,$weapontypes); 
+		// knights don't have clubs. 
+	} elseif ($prof==5) { 
+		$weapon=rand(2,$weapontypes); 
 
-// courtesans have quarterstaffs, 
-// daggers, swords, scimitars or machetes. 
-} elseif ($prof==15) { 
-$weapon=rand(2,6); 
+		// courtesans have quarterstaffs, 
+		// daggers, swords, scimitars or machetes. 
+	} elseif ($prof==15) { 
+		$weapon=rand(2,6); 
 
-// aristocrats have daggers, swords, scimitars or spears. 
-} elseif ($prof==20) { 
-$weapon=rand(4,7); 
+	// aristocrats have daggers, swords, scimitars or spears. 
+	} elseif ($prof==20) { 
+		$weapon=rand(4,7); 
 
-} else { 
-$weapon=rand(1,$weapontypes); 
-} 
+	} else { 
+		$weapon=rand(1,$weapontypes); 
+	} 
 } 
 $itemnames[1][0]="your ".$weaponnames[$weapon]; 
 
 //unpack $world to reveal $keywords array 
 
 if (!isset($world)) { 
-$world=""; 
+	$world=""; 
 } 
 
 $keywords=array(); 
 $manywords=350; //how many keywords are in the game. 
 
 for ($loop=1;$loop<=$manywords;$loop++) { 
-if ($world{$loop-1}=="!") { 
-$keywords[$loop]=1; 
-} 
+	if ($world{$loop-1}=="!") { 
+		$keywords[$loop]=1; 
+	} 
 } 
 
 //unpack $blessings to reveal $bless array 
 
 if (!isset($blessings)) { 
-$blessings=""; 
-for ($loop=1;$loop<=($obless+$attnum);$loop++) { 
-$blessings=$blessings."1"; 
-} 
-if ($prof==8 OR $prof==13) { 
-$sbless=rand(1,$attnum+$obless); 
-$blessings[$sbless-1]="2"; 
-} 
+	$blessings=""; 
+	for ($loop=1;$loop<=($obless+$attnum);$loop++) { 
+		$blessings=$blessings."1"; 
+	} 
+	if ($prof==8 OR $prof==13) { 
+		$sbless=rand(1,$attnum+$obless); 
+		$blessings[$sbless-1]="2"; 
+	} 
 } 
 
 $bless=array(); 
 for ($loop=1;$loop<=($obless+$attnum);$loop++) { 
-$bless[$loop]=ord($blessings{$loop-1})-49; 
+	$bless[$loop]=ord($blessings{$loop-1})-49; 
 } 
 
 // meanings of keywords: 
@@ -845,13 +847,13 @@ $para=200;
 //starting shells 
 
 if (!isset($shells)) { 
-if ($prof==8 OR $prof==13) { 
-$shells=0; 
-} elseif ($prof==9) { 
-$shells=40; 
-} else { 
-$shells=20; 
-} 
+	if ($prof==8 OR $prof==13) { 
+		$shells=0; 
+	} elseif ($prof==9) { 
+		$shells=40; 
+	} else { 
+		$shells=20; 
+	} 
 } 
 
 //main paragraph array 
@@ -8962,857 +8964,855 @@ $art=array (
 
 //Three columns: text, picture, character stats. 
 
-print "<table width=\"100%\">"; 
-print "<tr>"; 
+//2nd column: picture 
+print "<div id=\"picture\">"; 
+{
+	if ($art[$para]=="") { 
+	print $startdiv."artwork copyright <a href=\"http://raue-see.de.vu\" target=\"_blank\">Azalea</a></div>"; 
+	print $startdiv."<img style=\"border:0px\" src=\"".$baseurl."images/misc/banner.jpg\"></div>";  // originally title.jpg
+	} elseif ($para=="Oops") { 
+	print $startdiv."artwork by unknown artist</div>"; 
+	print $startdiv."<img style=\"border:0px\" src=\"".$baseurl."images/misc/centaur.jpg\"></div>"; 
+	} else { 
+	print $startdiv."artwork "; 
+	$pagepub=$artists[$art[$para]][1]; 
+	if ($pagepub=="public") { 
+	print "by "; 
+	} elseif ($pagepub=="www.brutalrpg.com") { 
+	print "owned and licensed by David J. Stanley of <a href=\"http://www.brutalrpg.com\" target=\"_blank\">"; 
+	} else { 
+	print "copyright <a href=\"http://".$artists[$art[$para]][1]."\" target=\"_blank\">"; 
+	} 
+	$aname=$artists[$art[$para]][0]; 
+	print $aname; 
+	if ($pagepub<>"public") { 
+	print "</a>"; 
+	} 
+	print "</div>"; 
+	if ($art[$para]=="threeslugs") { 
+	print $startdiv."coloured by <a href=\"http://elfwood.lysator.liu.se/art/m/i/mishi/mishi.html\" target=\"_blank\">Michelle Angela Thuldanin</a></div>"; 
+	} elseif ($art[$para]=="gob") { 
+	print $startdiv."by <a href=\"http://www.steveargyle.com\" target=\"_blank\"><img src=\"".$baseurl."images/misc/steveargylebanner.jpg\"></a></div>"; 
+	} elseif ($aname=="Peter Seckler") { 
+	print $startdiv."available under a <a href=\"http://creativecommons.org/licenses/by/3.0/us\" target=\"_blank\">Creative Commons</a> license</div>"; 
+	} elseif ($aname=="Scott Harshbarger" OR $aname=="Zeldyn" OR $aname=="Gallegos") { 
+	print $startdiv."available under a <a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0\" target=\"_blank\">Creative Commons</a> license</div>"; 
+	} elseif ($aname=="Seth Poppy" OR $aname=="Storn A. Cook") { 
+	print $startdiv."available under a <a href=\"http://creativecommons.org/licenses/by-nc-sa/3.0\" target=\"_blank\">Creative Commons</a> license</div>"; 
+	} elseif ($aname=="Kris Jacque") { 
+	print $startdiv."available under a <a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0/us\" target=\"_blank\">Creative Commons</a> license</div>"; 
+	} elseif ($aname=="-AP-" OR $aname=="Justin Nichol") { 
+	print $startdiv."available under a <a href=\"http://creativecommons.org/licenses/by-sa/3.0\" target=\"_blank\">Creative Commons</a> license</div>"; 
+	} elseif ($aname=="Dominique Signoret</a> (slightly altered)" OR str_replace("Herbert Roe","XXX",$aname)<>$aname OR $aname=="Flaxton</a> (cropped and altered)") { 
+	print $startdiv."available under the <a href=\"http://commons.wikimedia.org/wiki/Commons:GNU_Free_Documentation_License\" target=\"_blank\">GNU Free Documentation License</a></div>"; 
+	} elseif ($aname=="Misha" OR $aname=="Joakim Persson</a> (slightly altered)" OR $aname=="-AP-</a> (cropped and altered)") { 
+	print $startdiv."Open license. See the item's <a href=\"http://".$artists[$art[$para]][1]."\" target=\"_blank\">source page</a> for details."; 
+	} elseif ($aname=="Age of Fable") { 
+	print $startdiv."created using the <a href=\"http://www.adgame-wonderland.de/type/bayeux.php\" target=\"_blank\">Historic Tale Construction Kit</a></div>"; 
+	} elseif ($aname=="BrutalRPG.com") { 
+	print $startdiv."original illustration by David K. Wong</div>"; 
+	} 
+	print $startdiv."<img src=\"".$baseurl."images/".$art[$para].".jpg\"></div>"; 
+	} 
+	print $startdiv."<b><a href=\"".$baseurl."credits.php\" onMouseover=\"window.status='author and artist details'; return true\" target=\"_blank\">credits</a> . "; 
+	print "<a href=\"".$baseurl."\" onMouseover=\"window.status='start again'; return true\">"; 
+	if ($over==1) { 
+	print "返回主菜单"; 
+	} else { 
+	print "离开游戏"; 
+	} 
+	print"</a> . <a href=\"http://www.apolitical.info/guestbook\" onMouseover=\"window.status='leave feedback, or read other people\'s'; return true\" target=\"_blank\">guestbook</a> . <a href=\"".$baseurl."index.php?mode=7\" onMouseover=\"window.status='stories and other resources'; return true\" target=\"_blank\">library</a> . <a href=\"http://www.apolitical.info/webgame/sourcecode\" onMouseover=\"window.status='view the source code for Age of Fable's'; return true\" target=\"_blank\">source code</a></b></div>"; 
+	print $line; 
 
-print "<td width=\"25%\">"; 
+	// Project Wonderful ad 
+
+	print $startdiv; 
+}
+print "</div>";
+
 
 //1st column: text. 
+print "<div id=\"text\">"; 
+{
+	do { 
 
-do { 
+	//you don't get the forest pool encounter 
+	//if your Charisma and Heroism are too different. 
+	//IF CHANGE ATTRIBUTES, NEED TO CHANGE THIS. 
+	if ($para=="Forestpool" AND abs($stats[2]-$stats[7])>9) { 
+	$para=301; 
+	} elseif ($para=="Foxwomanss") { 
+	// at 'Foxwomanss' your class becomes 'bird' 
+	// and you lose all your items and companions. 
+	$prof=$classes+1; 
+	$shells=0; 
+	$hmc=0; 
+	for ($z=1;$z<=$manyitems;$z++) { 
+	if ($itemnames[$z][1]<>"item" OR $itemnames[$z][0]=="neckweasel") { 
+	$hmc=$hmc+$items[$z]; 
+	} 
+	$items[$z]=0; 
+	} 
+	if ($hmc==0) { 
+	$z="The vixen looks"; 
+	} elseif ($hmc==1) { 
+	$z="Your companion looks"; 
+	} else { 
+	$z="Your companions look"; 
+	} 
+	$paras[$para][0]=$z.$paras[$para][0]; 
+	} 
 
-//you don't get the forest pool encounter 
-//if your Charisma and Heroism are too different. 
-//IF CHANGE ATTRIBUTES, NEED TO CHANGE THIS. 
-if ($para=="Forestpool" AND abs($stats[2]-$stats[7])>9) { 
-$para=301; 
-} elseif ($para=="Foxwomanss") { 
-// at 'Foxwomanss' your class becomes 'bird' 
-// and you lose all your items and companions. 
-$prof=$classes+1; 
-$shells=0; 
-$hmc=0; 
-for ($z=1;$z<=$manyitems;$z++) { 
-if ($itemnames[$z][1]<>"item" OR $itemnames[$z][0]=="neckweasel") { 
-$hmc=$hmc+$items[$z]; 
-} 
-$items[$z]=0; 
-} 
-if ($hmc==0) { 
-$z="The vixen looks"; 
-} elseif ($hmc==1) { 
-$z="Your companion looks"; 
-} else { 
-$z="Your companions look"; 
-} 
-$paras[$para][0]=$z.$paras[$para][0]; 
-} 
+	//print paragraph text 
+	$armed=$weaponnames[$weapon]; 
+	if ($items[19]==1) { 
+	$armed="Rod of Puerile Humour"; 
+	} 
 
-//print paragraph text 
-$armed=$weaponnames[$weapon]; 
-if ($items[19]==1) { 
-$armed="Rod of Puerile Humour"; 
-} 
+	if ($paras[$para][0]<>"no text") { 
+	print $line; 
+	$switch=0; 
+	if ($paras[$para][0]=="") { 
+	$currentpara="<b>ERROR</b><br><br>The game has tried to send you to a non-existent paragraph. This is because the programmer made a typing error. Please email news(at)apolitical(dot)info and say what your character was doing when this happened, and it'll be fixed."; 
+	} else { 
+	$currentpara=str_replace("WEAPONNAME",$armed,$paras[$para][0]); 
+	} 
+	print "<div>".$currentpara."</div>"; 
+	} 
 
-if ($paras[$para][0]<>"no text") { 
-print $line; 
-$switch=0; 
-if ($paras[$para][0]=="") { 
-$currentpara="<b>ERROR</b><br><br>The game has tried to send you to a non-existent paragraph. This is because the programmer made a typing error. Please email news(at)apolitical(dot)info and say what your character was doing when this happened, and it'll be fixed."; 
-} else { 
-$currentpara=str_replace("WEAPONNAME",$armed,$paras[$para][0]); 
-} 
-print "<div>".$currentpara."</div>"; 
-} 
+	$finished=1; 
+	$branch=$paras[$para][1]; 
 
-$finished=1; 
-$branch=$paras[$para][1]; 
+	//0:end 
+	if ($branch==0 OR $branch==25) { 
+	print $line; 
+	print "<img style=\"border:0px\" src=\"".$baseurl."images/misc/end.jpg\">"; 
+	$over=1; 
+	} 
 
-//0:end 
-if ($branch==0 OR $branch==25) { 
-print $line; 
-print "<img style=\"border:0px\" src=\"".$baseurl."images/misc/end.jpg\">"; 
-$over=1; 
-} 
+	//1: only 1 choice 
+	elseif ($branch==1) { 
+	if ($para=="Sewpre271") { 
+	$streetbs=1; 
+	} 
+	$para=$paras[$para][2]; 
+	$finished=0; 
+	} 
 
-//1: only 1 choice 
-elseif ($branch==1) { 
-if ($para=="Sewpre271") { 
-$streetbs=1; 
-} 
-$para=$paras[$para][2]; 
-$finished=0; 
-} 
+	//2: free choice 
+	elseif ($branch==2) { 
 
-//2: free choice 
-elseif ($branch==2) { 
+	//pack $stats into $rolls 
+	$rolls=""; 
+	for ($loop=1;$loop<=$attnum;$loop++) { 
+	$z=$stats[$loop]+64; 
+	if ($z>90) { 
+	$z=$z+6; 
+	} 
+	$rolls=$rolls.chr($z); 
+	} 
 
-//pack $stats into $rolls 
-$rolls=""; 
-for ($loop=1;$loop<=$attnum;$loop++) { 
-$z=$stats[$loop]+64; 
-if ($z>90) { 
-$z=$z+6; 
-} 
-$rolls=$rolls.chr($z); 
-} 
+	//pack $items into $carry 
+	$carry=0; 
+	for ($loop=1;$loop<=$manyitems;$loop++) { 
+	if ($items[$loop]==1) { 
+	$carry=$carry+pow(2,$loop-1); 
+	} 
+	} 
 
-//pack $items into $carry 
-$carry=0; 
-for ($loop=1;$loop<=$manyitems;$loop++) { 
-if ($items[$loop]==1) { 
-$carry=$carry+pow(2,$loop-1); 
-} 
-} 
+	//pack $keywords into $world 
+	$world=""; 
+	for ($loop=1;$loop<=$manywords;$loop++) { 
+	if ($keywords[$loop]==1) { 
+	$cword="!"; 
+	} else { 
+	$cword="."; 
+	} 
+	$world=$world.$cword; 
+	} 
 
-//pack $keywords into $world 
-$world=""; 
-for ($loop=1;$loop<=$manywords;$loop++) { 
-if ($keywords[$loop]==1) { 
-$cword="!"; 
-} else { 
-$cword="."; 
-} 
-$world=$world.$cword; 
-} 
+	//pack $bless into $blessings 
+	$blessings=""; 
+	for ($loop=1;$loop<=($obless+$attnum);$loop++) { 
+	$blessings=$blessings.chr($bless[$loop]+49); 
+	} 
 
-//pack $bless into $blessings 
-$blessings=""; 
-for ($loop=1;$loop<=($obless+$attnum);$loop++) { 
-$blessings=$blessings.chr($bless[$loop]+49); 
-} 
+	//change $street or $square if necessary and set up 
+	//to print the right one. 
+	//(ie if going to print street(x).jpg this time 
+	if ($art[$para]=="street1") { 
+	if ($streetsm==1) { 
+	$art[$para]="swordsman"; 
+	} elseif ($streetbs==1) { 
+	$art[$para]="backstreet"; 
+	} else { 
+	$street++; 
+	if ($street==5) { 
+	$street=1; 
+	} 
+	$art[$para]="street".$street; 
+	} 
+	} elseif ($art[$para]=="square1") { 
+	$square++; 
+	if ($square==4) { 
+	$square=1; 
+	} 
+	$art[$para]="square".$square; 
+	} 
+	print $line; 
+	print "<table align=\"center\" width=\"100%\">"; 
+	for ($loop=1;$loop<=$paras[$para][2];$loop++) { 
+	print "<tr><td>"; 
+	if ($items[15]==1 AND $creda==0) { 
+	$creda=1; 
+	$newun=1; 
+	} 
+	$fullink="a href=\"".$baseurl."game.php?para=".$paras[$para][2+($loop*2)]."&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\""; 
+	print "<".$fullink." onMouseover=\"window.status='continue to this section'; return true\">".$paras[$para][1+($loop*2)]."</a>"; 
+	print "</td>"; 
+	if ($paras[$para][1+($loop*2)]<>"") { 
+	print "<td>"; 
+	$fullink=str_replace("game.php","save.php",$fullink); 
+	print "<".$fullink." onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\" alt=\"save your game\"></a>"; 
+	print "</td>"; 
+	} 
+	print "</tr>"; 
+	} 
+	print "</table>"; 
+	} 
 
-//change $street or $square if necessary and set up 
-//to print the right one. 
-//(ie if going to print street(x).jpg this time 
-if ($art[$para]=="street1") { 
-if ($streetsm==1) { 
-$art[$para]="swordsman"; 
-} elseif ($streetbs==1) { 
-$art[$para]="backstreet"; 
-} else { 
-$street++; 
-if ($street==5) { 
-$street=1; 
-} 
-$art[$para]="street".$street; 
-} 
-} elseif ($art[$para]=="square1") { 
-$square++; 
-if ($square==4) { 
-$square=1; 
-} 
-$art[$para]="square".$square; 
-} 
-print $line; 
-print "<table align=\"center\" width=\"100%\">"; 
-for ($loop=1;$loop<=$paras[$para][2];$loop++) { 
-print "<tr><td>"; 
-if ($items[15]==1 AND $creda==0) { 
-$creda=1; 
-$newun=1; 
-} 
-$fullink="a href=\"".$baseurl."game.php?para=".$paras[$para][2+($loop*2)]."&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\""; 
-print "<".$fullink." onMouseover=\"window.status='continue to this section'; return true\">".$paras[$para][1+($loop*2)]."</a>"; 
-print "</td>"; 
-if ($paras[$para][1+($loop*2)]<>"") { 
-print "<td>"; 
-$fullink=str_replace("game.php","save.php",$fullink); 
-print "<".$fullink." onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\" alt=\"save your game\"></a>"; 
-print "</td>"; 
-} 
-print "</tr>"; 
-} 
-print "</table>"; 
-} 
+	//3: roll vs stats 
+	elseif ($branch==3) { 
 
-//3: roll vs stats 
-elseif ($branch==3) { 
-
-// $level=0; 
-// for ($loop=1;$loop<=$attnum;$loop++) { 
-// $level=$level+$stats[$loop]; 
-// } 
-// $level=max(1,1+floor(($level-130)/10)); 
-// put this back in if want to have levels again. 
-
-
-$which=0; 
-while ($which<=$attnum AND $attributes[$which]<>$paras[$para][2]) { 
-$which++; 
-} 
-if ($which>$attnum) { 
-print "<b>ERROR: NON-EXISTENT ATTRIBUTE<b><br><br>The game has tried to use a non-existent attribute. This is because the programmer made a typing error. Please email news(at)apolitical(dot)info and say what your character was doing when this happened, and it'll be fixed."; 
-print $line; 
-} else { 
-if ($switch==0) { 
-print $line; 
-} 
-$switch=1; 
-$difficulty=$paras[$para][3]; 
-
-// $difficulty+=(2*$level)-2; 
-// put this back in if want to have levels again. 
-
-print "<div><font color=\"red\">".$attributes[$which]." roll, difficulty ".$difficulty." - "; 
-$dice=rand(1,6)+rand(1,6)+$stats[$which]; 
-if ($dice>=$difficulty) { 
-//advancement roll 
-$adroll=rand(1,20); 
-if ($dice>=$difficulty+5 AND $adroll>$stats[$which]) { 
-if ($attributes[$which]<>"Stamina") { 
-$stats[$which]=$stats[$which]+1; 
-print "ADVANCED"; 
-} elseif ($adroll>$maxsta) { 
-$maxsta=$maxsta+1; 
-print "ADVANCED"; 
-} else { 
-print "made it"; 
-} 
-} else { 
-print "made it"; 
-} 
-$para=$paras[$para][4]; 
-} else { 
-if ($bless[$which]>0) { 
-$bless[$which]=$bless[$which]-1; 
-if ($prof<>9 OR rand(0,1)==1) { 
-print "use blessing"; 
-$para=$paras[$para][4]; 
-} else { 
-print "blessing failed"; 
-if ($paras[$para][2]=="Magic" AND $stats[1]>1 AND $para<>"Childno" AND $para<>"boilingseafigurea" AND $para<>"Uglys" AND $para<>"Tokescapeff" AND $para<> "Grossfvom1" AND $para<>"Grossfnovom" AND $para<>"chainexploren" AND $para<>"Pyrlooke" AND $para<>"Pyrlookh" AND $para<>"seacity6" AND $para<>"Clownyn" AND $para<>"Finalozywall2y1" AND $para<>"nearly269gu" AND $para<>"Amaheadaff1") { 
-$loss=min(rand(1,2),$stats[1]-1); 
-$stats[1]=$stats[1]-$loss; 
-print "</div><div>Lose ".$loss." Stamina"; 
-} 
-$para=$paras[$para][5]; 
-} 
-} else { 
-print "failed"; 
-if ($paras[$para][2]=="Magic" AND $stats[1]>1 AND $para<>"Childno" AND $para<>"boilingseafigurea" AND $para<>"Uglys" AND $para<>"Tokescapeff" AND $para<> "Grossfvom1" AND $para<>"Grossfnovom" AND $para<>"chainexploren" AND $para<>"Pyrlooke" AND $para<>"Pyrlookh" AND $para<>"seacity6" AND $para<>"Clownyn" AND $para<>"Finalozywall2y1" AND $para<>"nearly269gu" AND $para<>"Amaheadaff1") { 
-$loss=min(rand(1,2),$stats[1]-1); 
-$stats[1]=$stats[1]-$loss; 
-print "</div><div>Stamina - ".$loss; 
-} 
-$para=$paras[$para][5]; 
-} 
-} 
-print "</font></div>"; 
-} 
-$finished=0; 
-} 
-
-//4: random branching 
-elseif ($branch==4) { 
-$choice=rand(1,$paras[$para][2]); 
-$para=$paras[$para][$choice+2]; 
-$finished=0; 
-} 
-
-//5: item check 
-elseif ($branch==5) { 
-if ($items[$paras[$para][2]]==1) { 
-$para=$paras[$para][3]; 
-} else { 
-$para=$paras[$para][4]; 
-} 
-$finished=0; 
-} 
-
-//6: keyword check 
-elseif ($branch==6) { 
-if ($keywords[$paras[$para][2]]==1) { 
-$para=$paras[$para][3]; 
-} else { 
-$para=$paras[$para][4]; 
-} 
-$finished=0; 
-} 
-
-//7: gain or lose an item 
-elseif ($branch==7) { 
-$items[$paras[$para][2]]=$paras[$para][3]; 
-$para=$paras[$para][4]; 
-$finished=0; 
-} 
-
-//8: gain or lose a keyword 
-elseif ($branch==8) { 
-$keywords[$paras[$para][2]]=$paras[$para][3]; 
-$para=$paras[$para][4]; 
-$finished=0; 
-} 
-
-//9: change to attributes 
-elseif ($branch==9) { 
-$finished=0; 
-$which=0; 
-if ($para=="Weddingfspoor") { 
-$streetsm=1; 
-} 
-while ($which<=$attnum AND $attributes[$which]<>$paras[$para][2]) { 
-$which++; 
-} 
-if ($which>$attnum) { 
-print "<b>ERROR: NON-EXISTENT ATTRIBUTE<b><br><br>The game has tried to use a non-existent attribute. This is because the programmer made a typing error. Please email news(at)apolitical(dot)info and say what your character was doing when this happened, and it'll be fixed."; 
-print $line; 
-} else { 
-//you can't increase your Stamina over $maxsta 
-if ($paras[$para][2]=="Stamina" AND ($stats[$which]+$paras[$para][3])>$maxsta) { 
-$paras[$para][3]=$maxsta-$stats[$which]; 
-} 
-
-$stats[$which]=$stats[$which]+$paras[$para][3]; 
-
-//attributes that go under 1 are set to 1, 
-//except Stamina - you die if it goes under 1. 
-if ($stats[$which]<1) { 
-if ($attributes[$which]=="Stamina") { 
-print $line; 
-print "Alas, the damage was too much for you. You have died."; 
-print $line; 
-print "<img style=\"border:0px\" src=\"".$baseurl."images/misc/end.jpg\">"; 
-$over=1; 
-$finished=1; 
-} else { 
-$paras[$para][3]=$paras[$para][3]+1-$stats[$which]; 
-$stats[$which]=1; 
-} 
-} 
-if ($finished==0 AND $paras[$para][3]<>0) { 
-if ($switch==0) { 
-print $line; 
-} 
-$switch=1; 
-print "<div><font color=\"red\">"; 
-print $attributes[$which]." "; 
-if ($paras[$para][3]>0) { 
-print "+"; 
-} 
-print $paras[$para][3]; 
-print "</font></div>"; 
-} 
-} 
-$para=$paras[$para][4]; 
-if ($attributes[$which]=="Stamina" AND $stats[$which]<1) { 
-$para=0; 
-} 
-} 
-
-//10: gain or lose shells 
-elseif ($branch==10) { 
-$change=$paras[$para][2]; 
-if (($shells+$change)<0) { 
-$change=0-$shells; 
-} 
-$shells=$shells+$change; 
-if ($change<>0) { 
-if ($switch==0) { 
-print $line; 
-} 
-$switch=1; 
-print "<font color=\"red\">"; 
-if ($change>0) { 
-print "gain"; 
-} else { 
-print "lose"; 
-} 
-if (abs($change)<900) { 
-print " ".abs($change)." shell"; 
-if (abs($change)>1) { 
-print "s"; 
-} 
-} else { 
-print " a vast haul of booty"; 
-} 
-print "</font></div>"; 
-} 
-$para=$paras[$para][3]; 
-$finished=0; 
-} 
-
-//11: shells check 
-elseif ($branch==11) { 
-if ($shells>=$paras[$para][2]) { 
-$para=$paras[$para][3]; 
-} else { 
-$para=$paras[$para][4]; 
-} 
-$finished=0; 
-} 
-
-//12: multiple saves 
-elseif ($branch==12) { 
-$difficulty=$paras[$para][3]; 
-
-// $level=0; 
-// for ($loop=1;$loop<=$attnum;$loop++) { 
-// $level=$level+$stats[$loop]; 
-// } 
-// $level=max(1,1+floor(($level-130)/10)); 
-// $difficulty+=$paras[$para][3]+(2*$level)-2; 
-$made=0; 
-for ($loop=1;$loop<=$paras[$para][2];$loop++) { 
-$which=0; 
-while ($which<=$attnum AND $attributes[$which]<>$paras[$para][$loop+3]) { 
-$which++; 
-} 
-if ($which>$attnum) { 
-print "ERROR: NON-EXISTENT ATTRIBUTE"; 
-print $line; 
-} else { 
-if ($switch==0) { 
-print $line; 
-} 
-$switch=1; 
-print "<div><font color=\"red\">".$attributes[$which]." roll, difficulty ".$difficulty." - "; 
-$dice=rand(1,6)+rand(1,6)+$stats[$which]; 
-if ($dice>=$difficulty) { 
-//advancement roll 
-$adroll=rand(1,20); 
-if ($dice>=($difficulty+5) AND $adroll>$stats[$which]) { 
-if ($attributes[$which]<>"Stamina") { 
-$stats[$which]=$stats[$which]+1; 
-print "ADVANCED"; 
-} elseif ($adroll>$maxsta) { 
-$maxsta=$maxsta+1; 
-print "ADVANCED"; 
-} else { 
-print "made it"; 
-} 
-} else { 
-print "made it"; 
-} 
-$made++; 
-} else { 
-if ($bless[$which]>0) { 
-if ($prof<>9 OR rand(0,1)==1) { 
-print "use blessing"; 
-$bless[$which]=$bless[$which]-1; 
-$made++; 
-} else { 
-print "blessing failed"; 
-$bless[$which]=$bless[$which]-1; 
-
-if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") { 
-$loss=min(rand(1,2),$stats[1]-1); 
-$stats[1]=$stats[1]-$loss; 
-print "</div><div>Lose ".$loss." Stamina"; 
-} 
-} 
-} else { 
-print "failed"; 
-if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") { 
-$loss=min(rand(1,2),$stats[1]-1); 
-$stats[1]=$stats[1]-$loss; 
-print "</div><div>Lose ".$loss." Stamina"; 
-} 
-} 
-} 
-print "</font></div>"; 
-} 
-} 
-$para=$paras[$para][4+$made+$paras[$para][2]]; 
-$finished=0; 
-} 
-
-//13: 'click to continue' 
-elseif ($branch==13) { 
-$paras[$para][4]=$paras[$para][2]; 
-$paras[$para][0]="no text"; 
-$paras[$para][1]=2; 
-$paras[$para][2]=1; 
-$paras[$para][3]="Continue"; 
-$finished=0; 
-} 
-
-//14: gain a blessing 
-elseif ($branch==14) { 
-$finished=0; 
-$which=0; 
-if ($paras[$para][2]=="random") { 
-$which=rand(1,($obless+$attnum)); 
-} else { 
-while ($which<=($attnum+$obless) AND $attributes[$which]<>$paras[$para][2]) { 
-$which++; 
-} 
-} 
-if ($which>($attnum+$obless)) { 
-print "ERROR: NON-EXISTENT BLESSING"; 
-print $line; 
-} else { 
-$bless[$which]=$bless[$which]+1; 
-if ($switch==0) { 
-print $line; 
-} 
-$switch=1; 
-print "<div><font color=\"red\">gain ".$attributes[$which]." blessing</font></div>"; 
-} 
-$para=$paras[$para][3]; 
-} 
-
-//15: blessing check (non-attribute ones only) 
-elseif ($branch==15) { 
-$finished=0; 
-$which=$attnum; 
-while ($which<=($attnum+$obless) AND $attributes[$which]<>$paras[$para][2]) { 
-$which++; 
-} 
-if ($which>($attnum+$obless)) { 
-print "ERROR: NON-EXISTENT BLESSING"; 
-print $line; 
-} else { 
-if ($bless[$which]>0) { 
-$bless[$which]=$bless[$which]-1; 
-$para=$paras[$para][3]; 
-if ($switch==0) { 
-print $line; 
-} 
-$switch=1; 
-print "<div><font color=\"red\">use ".$attributes[$which]." blessing</font></div>"; 
-} else { 
-$para=$paras[$para][4]; 
-} 
-} 
-} 
+	// $level=0; 
+	// for ($loop=1;$loop<=$attnum;$loop++) { 
+	// $level=$level+$stats[$loop]; 
+	// } 
+	// $level=max(1,1+floor(($level-130)/10)); 
+	// put this back in if want to have levels again. 
 
 
-//16: branching based on profession 
-elseif ($branch==16) { 
-$finished=0; 
-if ($prof==$paras[$para][2]) { 
-$para=$paras[$para][3]; 
-} else { 
-$para=$paras[$para][4]; 
-} 
-} 
+	$which=0; 
+	while ($which<=$attnum AND $attributes[$which]<>$paras[$para][2]) { 
+	$which++; 
+	} 
+	if ($which>$attnum) { 
+	print "<b>ERROR: NON-EXISTENT ATTRIBUTE<b><br><br>The game has tried to use a non-existent attribute. This is because the programmer made a typing error. Please email news(at)apolitical(dot)info and say what your character was doing when this happened, and it'll be fixed."; 
+	print $line; 
+	} else { 
+	if ($switch==0) { 
+	print $line; 
+	} 
+	$switch=1; 
+	$difficulty=$paras[$para][3]; 
 
-//17: free choice, but some of the choices 
-// don't always activate: keywords or item/companions. 
-elseif ($branch==17) { 
-$finished=0; 
-$paras[$para][0]="no text"; 
-$paras[$para][1]=2; 
-$choices=$paras[$para][2]; 
-$paras[$para][2]=0; 
-for ($loop=1;$loop<=$choices;$loop++) { 
-$kword=$paras[$para][1+$loop*3]; 
-$met=0; 
-if ($kword==0) { 
-$met=1; 
-} elseif ($kword>1000) { 
-if ($keywords[$kword-1000]==0) { 
-$met=1; 
-} 
-} elseif ($kword>0) { 
-if ($keywords[$kword]==1) { 
-$met=1; 
-} 
-} elseif ($kword<0 AND $kword>-100) { 
-if ($items[0-$kword]==1) { 
-$met=1; 
-} 
-} else { 
-if ($items[(0-$kword)-100]==0) { 
-$met=1; 
-} 
-} 
-if ($met==1) { 
-$paras[$para][2]=$paras[$para][2]+1; 
-$paras[$para][$paras[$para][2]*2+1]=$paras[$para][$loop*3]; 
-$paras[$para][$paras[$para][2]*2+2]=$paras[$para][$loop*3+2]; 
-} 
-} 
-} 
+	// $difficulty+=(2*$level)-2; 
+	// put this back in if want to have levels again. 
 
-//18: lose all companions 
-// (currently only used when you turn into a frog) 
-// (special exception for cat & raven if turning into a frog) 
-elseif ($branch==18) { 
-$finished=0; 
-for ($loop=1;$loop<=$manyitems;$loop++) { 
-if ($itemnames[$loop][1]<>"item" AND ($para<>"69main" OR ($loop<>22 AND $loop<>23))) { 
-$items[$loop]=0; 
-} 
-} 
-$para=$paras[$para][2]; 
-} 
+	print "<div><font color=\"red\">".$attributes[$which]." roll, difficulty ".$difficulty." - "; 
+	$dice=rand(1,6)+rand(1,6)+$stats[$which]; 
+	if ($dice>=$difficulty) { 
+	//advancement roll 
+	$adroll=rand(1,20); 
+	if ($dice>=$difficulty+5 AND $adroll>$stats[$which]) { 
+	if ($attributes[$which]<>"Stamina") { 
+	$stats[$which]=$stats[$which]+1; 
+	print "ADVANCED"; 
+	} elseif ($adroll>$maxsta) { 
+	$maxsta=$maxsta+1; 
+	print "ADVANCED"; 
+	} else { 
+	print "made it"; 
+	} 
+	} else { 
+	print "made it"; 
+	} 
+	$para=$paras[$para][4]; 
+	} else { 
+	if ($bless[$which]>0) { 
+	$bless[$which]=$bless[$which]-1; 
+	if ($prof<>9 OR rand(0,1)==1) { 
+	print "use blessing"; 
+	$para=$paras[$para][4]; 
+	} else { 
+	print "blessing failed"; 
+	if ($paras[$para][2]=="Magic" AND $stats[1]>1 AND $para<>"Childno" AND $para<>"boilingseafigurea" AND $para<>"Uglys" AND $para<>"Tokescapeff" AND $para<> "Grossfvom1" AND $para<>"Grossfnovom" AND $para<>"chainexploren" AND $para<>"Pyrlooke" AND $para<>"Pyrlookh" AND $para<>"seacity6" AND $para<>"Clownyn" AND $para<>"Finalozywall2y1" AND $para<>"nearly269gu" AND $para<>"Amaheadaff1") { 
+	$loss=min(rand(1,2),$stats[1]-1); 
+	$stats[1]=$stats[1]-$loss; 
+	print "</div><div>Lose ".$loss." Stamina"; 
+	} 
+	$para=$paras[$para][5]; 
+	} 
+	} else { 
+	print "failed"; 
+	if ($paras[$para][2]=="Magic" AND $stats[1]>1 AND $para<>"Childno" AND $para<>"boilingseafigurea" AND $para<>"Uglys" AND $para<>"Tokescapeff" AND $para<> "Grossfvom1" AND $para<>"Grossfnovom" AND $para<>"chainexploren" AND $para<>"Pyrlooke" AND $para<>"Pyrlookh" AND $para<>"seacity6" AND $para<>"Clownyn" AND $para<>"Finalozywall2y1" AND $para<>"nearly269gu" AND $para<>"Amaheadaff1") { 
+	$loss=min(rand(1,2),$stats[1]-1); 
+	$stats[1]=$stats[1]-$loss; 
+	print "</div><div>Stamina - ".$loss; 
+	} 
+	$para=$paras[$para][5]; 
+	} 
+	} 
+	print "</font></div>"; 
+	} 
+	$finished=0; 
+	} 
 
-//19: 'haven't written this yet' message 
-elseif ($branch==19) { 
-$finished=0; 
-$para="Oops"; 
-} 
+	//4: random branching 
+	elseif ($branch==4) { 
+	$choice=rand(1,$paras[$para][2]); 
+	$para=$paras[$para][$choice+2]; 
+	$finished=0; 
+	} 
 
-//20: branching based on level 
-elseif ($branch==20) { 
-$level=0; 
-for ($loop=1;$loop<=$attnum;$loop++) { 
-$level=$level+$stats[$loop]; 
-} 
-$level=max(1,1+floor(($level-130)/10)); 
-if ($level>=$paras[$para][2]) { 
-$para=$paras[$para][3]; 
-} else { 
-$para=$paras[$para][4]; 
-} 
-$finished=0; 
-} 
+	//5: item check 
+	elseif ($branch==5) { 
+	if ($items[$paras[$para][2]]==1) { 
+	$para=$paras[$para][3]; 
+	} else { 
+	$para=$paras[$para][4]; 
+	} 
+	$finished=0; 
+	} 
 
-//21: special - change one attribute to = another 
-elseif ($branch==21) { 
-$finished=0; 
-$changeatt=0; 
-while ($changeatt<=$attnum AND $attributes[$changeatt]<>$paras[$para][2]) { 
-$changeatt++; 
-} 
-if ($changeatt>$attnum) { 
-print "ERROR: NON-EXISTENT ATTRIBUTE"; 
-$finished=1; 
-} 
-$targetatt=0; 
-while ($targetatt<=$attnum AND $attributes[$targetatt]<>$paras[$para][3]) { 
-$targetatt++; 
-} 
-if ($targetatt>$attnum) { 
-print "ERROR: NON-EXISTENT ATTRIBUTE"; 
-$finished=1; 
-} 
-$paras[$para][0]="no text"; 
-$paras[$para][1]=9; 
-$paras[$para][3]=$stats[$targetatt]-$stats[$changeatt]; 
-// slots 2 and 4 the same. 
-} 
+	//6: keyword check 
+	elseif ($branch==6) { 
+	if ($keywords[$paras[$para][2]]==1) { 
+	$para=$paras[$para][3]; 
+	} else { 
+	$para=$paras[$para][4]; 
+	} 
+	$finished=0; 
+	} 
 
-//22: special - check shells against random (1-slot 2) 
-elseif ($branch==22) { 
-$finished=0; 
-$paras[$para][0]="no text"; 
-$paras[$para][1]=11; 
-$shellcheck=rand(1,$paras[$para][2]); 
-$paras[$para][2]=$shellcheck; 
-// 3 and 4 stay as they are. 
-} 
+	//7: gain or lose an item 
+	elseif ($branch==7) { 
+	$items[$paras[$para][2]]=$paras[$para][3]; 
+	$para=$paras[$para][4]; 
+	$finished=0; 
+	} 
 
-//23: special - change profession 
-elseif ($branch==23) { 
-$finished=0; 
-do { 
-$newprof=rand(1,$classes); 
-} while ($prof==$newprof); 
-$prof=$newprof; 
-$para=$paras[$para][2]; 
-} 
+	//8: gain or lose a keyword 
+	elseif ($branch==8) { 
+	$keywords[$paras[$para][2]]=$paras[$para][3]; 
+	$para=$paras[$para][4]; 
+	$finished=0; 
+	} 
 
-//24: special - become a clown 
-elseif ($branch==24) { 
-$finished=0; 
-$prof=0; 
-$para=$paras[$para][2]; 
-} 
+	//9: change to attributes 
+	elseif ($branch==9) { 
+	$finished=0; 
+	$which=0; 
+	if ($para=="Weddingfspoor") { 
+	$streetsm=1; 
+	} 
+	while ($which<=$attnum AND $attributes[$which]<>$paras[$para][2]) { 
+	$which++; 
+	} 
+	if ($which>$attnum) { 
+	print "<b>ERROR: NON-EXISTENT ATTRIBUTE<b><br><br>The game has tried to use a non-existent attribute. This is because the programmer made a typing error. Please email news(at)apolitical(dot)info and say what your character was doing when this happened, and it'll be fixed."; 
+	print $line; 
+	} else { 
+	//you can't increase your Stamina over $maxsta 
+	if ($paras[$para][2]=="Stamina" AND ($stats[$which]+$paras[$para][3])>$maxsta) { 
+	$paras[$para][3]=$maxsta-$stats[$which]; 
+	} 
 
-//none of the above 
-else { 
-print "ERROR: NON-EXISTENT BRANCHING TYPE"; 
-} 
+	$stats[$which]=$stats[$which]+$paras[$para][3]; 
 
-} while ($finished==0); 
+	//attributes that go under 1 are set to 1, 
+	//except Stamina - you die if it goes under 1. 
+	if ($stats[$which]<1) { 
+	if ($attributes[$which]=="Stamina") { 
+	print $line; 
+	print "Alas, the damage was too much for you. You have died."; 
+	print $line; 
+	print "<img style=\"border:0px\" src=\"".$baseurl."images/misc/end.jpg\">"; 
+	$over=1; 
+	$finished=1; 
+	} else { 
+	$paras[$para][3]=$paras[$para][3]+1-$stats[$which]; 
+	$stats[$which]=1; 
+	} 
+	} 
+	if ($finished==0 AND $paras[$para][3]<>0) { 
+	if ($switch==0) { 
+	print $line; 
+	} 
+	$switch=1; 
+	print "<div><font color=\"red\">"; 
+	print $attributes[$which]." "; 
+	if ($paras[$para][3]>0) { 
+	print "+"; 
+	} 
+	print $paras[$para][3]; 
+	print "</font></div>"; 
+	} 
+	} 
+	$para=$paras[$para][4]; 
+	if ($attributes[$which]=="Stamina" AND $stats[$which]<1) { 
+	$para=0; 
+	} 
+	} 
 
-print $line; 
-// print $line; 
-// print "<div>"; 
-// @include $baseurl."update.txt"; 
-if ($illumcred==1) { 
-print $line; 
-print "Picture in the letter by <a href=\"http://dcrouzet.chez-alice.fr\" target=\"_blank\">Dominique Crouzet</a>"; 
-} 
-if ($newun==1) { 
-print $line; 
-print "Unicorn picture by <a href=\"http://wolvesrealmstudio.tripod.com/Home.html\" target=\"_blank\">Ashley Applegate</a>"; 
-} 
-print $line; 
-print "To save your game, click a <img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\"> above."; 
-print "</td>"; 
-print "<td width=\"50%\">"; 
+	//10: gain or lose shells 
+	elseif ($branch==10) { 
+	$change=$paras[$para][2]; 
+	if (($shells+$change)<0) { 
+	$change=0-$shells; 
+	} 
+	$shells=$shells+$change; 
+	if ($change<>0) { 
+	if ($switch==0) { 
+	print $line; 
+	} 
+	$switch=1; 
+	print "<font color=\"red\">"; 
+	if ($change>0) { 
+	print "gain"; 
+	} else { 
+	print "lose"; 
+	} 
+	if (abs($change)<900) { 
+	print " ".abs($change)." shell"; 
+	if (abs($change)>1) { 
+	print "s"; 
+	} 
+	} else { 
+	print " a vast haul of booty"; 
+	} 
+	print "</font></div>"; 
+	} 
+	$para=$paras[$para][3]; 
+	$finished=0; 
+	} 
 
-//2nd column: picture 
+	//11: shells check 
+	elseif ($branch==11) { 
+	if ($shells>=$paras[$para][2]) { 
+	$para=$paras[$para][3]; 
+	} else { 
+	$para=$paras[$para][4]; 
+	} 
+	$finished=0; 
+	} 
 
-if ($art[$para]=="") { 
-print $startdiv."artwork copyright <a href=\"http://raue-see.de.vu\" target=\"_blank\">Azalea</a></div>"; 
-print $startdiv."<img style=\"border:0px\" src=\"".$baseurl."images/misc/title.jpg\"></div>"; 
-} elseif ($para=="Oops") { 
-print $startdiv."artwork by unknown artist</div>"; 
-print $startdiv."<img style=\"border:0px\" src=\"".$baseurl."images/misc/centaur.jpg\"></div>"; 
-} else { 
-print $startdiv."artwork "; 
-$pagepub=$artists[$art[$para]][1]; 
-if ($pagepub=="public") { 
-print "by "; 
-} elseif ($pagepub=="www.brutalrpg.com") { 
-print "owned and licensed by David J. Stanley of <a href=\"http://www.brutalrpg.com\" target=\"_blank\">"; 
-} else { 
-print "copyright <a href=\"http://".$artists[$art[$para]][1]."\" target=\"_blank\">"; 
-} 
-$aname=$artists[$art[$para]][0]; 
-print $aname; 
-if ($pagepub<>"public") { 
-print "</a>"; 
-} 
-print "</div>"; 
-if ($art[$para]=="threeslugs") { 
-print $startdiv."coloured by <a href=\"http://elfwood.lysator.liu.se/art/m/i/mishi/mishi.html\" target=\"_blank\">Michelle Angela Thuldanin</a></div>"; 
-} elseif ($art[$para]=="gob") { 
-print $startdiv."by <a href=\"http://www.steveargyle.com\" target=\"_blank\"><img src=\"".$baseurl."images/misc/steveargylebanner.jpg\"></a></div>"; 
-} elseif ($aname=="Peter Seckler") { 
-print $startdiv."available under a <a href=\"http://creativecommons.org/licenses/by/3.0/us\" target=\"_blank\">Creative Commons</a> license</div>"; 
-} elseif ($aname=="Scott Harshbarger" OR $aname=="Zeldyn" OR $aname=="Gallegos") { 
-print $startdiv."available under a <a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0\" target=\"_blank\">Creative Commons</a> license</div>"; 
-} elseif ($aname=="Seth Poppy" OR $aname=="Storn A. Cook") { 
-print $startdiv."available under a <a href=\"http://creativecommons.org/licenses/by-nc-sa/3.0\" target=\"_blank\">Creative Commons</a> license</div>"; 
-} elseif ($aname=="Kris Jacque") { 
-print $startdiv."available under a <a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0/us\" target=\"_blank\">Creative Commons</a> license</div>"; 
-} elseif ($aname=="-AP-" OR $aname=="Justin Nichol") { 
-print $startdiv."available under a <a href=\"http://creativecommons.org/licenses/by-sa/3.0\" target=\"_blank\">Creative Commons</a> license</div>"; 
-} elseif ($aname=="Dominique Signoret</a> (slightly altered)" OR str_replace("Herbert Roe","XXX",$aname)<>$aname OR $aname=="Flaxton</a> (cropped and altered)") { 
-print $startdiv."available under the <a href=\"http://commons.wikimedia.org/wiki/Commons:GNU_Free_Documentation_License\" target=\"_blank\">GNU Free Documentation License</a></div>"; 
-} elseif ($aname=="Misha" OR $aname=="Joakim Persson</a> (slightly altered)" OR $aname=="-AP-</a> (cropped and altered)") { 
-print $startdiv."Open license. See the item's <a href=\"http://".$artists[$art[$para]][1]."\" target=\"_blank\">source page</a> for details."; 
-} elseif ($aname=="Age of Fable") { 
-print $startdiv."created using the <a href=\"http://www.adgame-wonderland.de/type/bayeux.php\" target=\"_blank\">Historic Tale Construction Kit</a></div>"; 
-} elseif ($aname=="BrutalRPG.com") { 
-print $startdiv."original illustration by David K. Wong</div>"; 
-} 
-print $startdiv."<img src=\"".$baseurl."images/".$art[$para].".jpg\"></div>"; 
-} 
-print $startdiv."<b><a href=\"".$baseurl."credits.php\" onMouseover=\"window.status='author and artist details'; return true\" target=\"_blank\">credits</a> . "; 
-print "<a href=\"http://www.apolitical.info/webgame\" onMouseover=\"window.status='start again'; return true\">"; 
-if ($over==1) { 
-print "main menu"; 
-} else { 
-print "quit"; 
-} 
-print"</a> . <a href=\"http://www.apolitical.info/guestbook\" onMouseover=\"window.status='leave feedback, or read other people\'s'; return true\" target=\"_blank\">guestbook</a> . <a href=\"".$baseurl."index.php?mode=7\" onMouseover=\"window.status='stories and other resources'; return true\" target=\"_blank\">library</a> . <a href=\"".$baseurl."sourcecode\" onMouseover=\"window.status='view the source code for Age of Fable's'; return true\" target=\"_blank\">source code</a></b></div>"; 
-print $line; 
+	//12: multiple saves 
+	elseif ($branch==12) { 
+	$difficulty=$paras[$para][3]; 
 
-// Project Wonderful ad 
+	// $level=0; 
+	// for ($loop=1;$loop<=$attnum;$loop++) { 
+	// $level=$level+$stats[$loop]; 
+	// } 
+	// $level=max(1,1+floor(($level-130)/10)); 
+	// $difficulty+=$paras[$para][3]+(2*$level)-2; 
+	$made=0; 
+	for ($loop=1;$loop<=$paras[$para][2];$loop++) { 
+	$which=0; 
+	while ($which<=$attnum AND $attributes[$which]<>$paras[$para][$loop+3]) { 
+	$which++; 
+	} 
+	if ($which>$attnum) { 
+	print "ERROR: NON-EXISTENT ATTRIBUTE"; 
+	print $line; 
+	} else { 
+	if ($switch==0) { 
+	print $line; 
+	} 
+	$switch=1; 
+	print "<div><font color=\"red\">".$attributes[$which]." roll, difficulty ".$difficulty." - "; 
+	$dice=rand(1,6)+rand(1,6)+$stats[$which]; 
+	if ($dice>=$difficulty) { 
+	//advancement roll 
+	$adroll=rand(1,20); 
+	if ($dice>=($difficulty+5) AND $adroll>$stats[$which]) { 
+	if ($attributes[$which]<>"Stamina") { 
+	$stats[$which]=$stats[$which]+1; 
+	print "ADVANCED"; 
+	} elseif ($adroll>$maxsta) { 
+	$maxsta=$maxsta+1; 
+	print "ADVANCED"; 
+	} else { 
+	print "made it"; 
+	} 
+	} else { 
+	print "made it"; 
+	} 
+	$made++; 
+	} else { 
+	if ($bless[$which]>0) { 
+	if ($prof<>9 OR rand(0,1)==1) { 
+	print "use blessing"; 
+	$bless[$which]=$bless[$which]-1; 
+	$made++; 
+	} else { 
+	print "blessing failed"; 
+	$bless[$which]=$bless[$which]-1; 
 
-print $startdiv; 
-?> 
-<!--the code for the 'Project Wonderful' ad is here in the original page.-->
-<?php 
+	if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") { 
+	$loss=min(rand(1,2),$stats[1]-1); 
+	$stats[1]=$stats[1]-$loss; 
+	print "</div><div>Lose ".$loss." Stamina"; 
+	} 
+	} 
+	} else { 
+	print "failed"; 
+	if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") { 
+	$loss=min(rand(1,2),$stats[1]-1); 
+	$stats[1]=$stats[1]-$loss; 
+	print "</div><div>Lose ".$loss." Stamina"; 
+	} 
+	} 
+	} 
+	print "</font></div>"; 
+	} 
+	} 
+	$para=$paras[$para][4+$made+$paras[$para][2]]; 
+	$finished=0; 
+	} 
+
+	//13: 'click to continue' 
+	elseif ($branch==13) { 
+	$paras[$para][4]=$paras[$para][2]; 
+	$paras[$para][0]="no text"; 
+	$paras[$para][1]=2; 
+	$paras[$para][2]=1; 
+	$paras[$para][3]="Continue"; 
+	$finished=0; 
+	} 
+
+	//14: gain a blessing 
+	elseif ($branch==14) { 
+	$finished=0; 
+	$which=0; 
+	if ($paras[$para][2]=="random") { 
+	$which=rand(1,($obless+$attnum)); 
+	} else { 
+	while ($which<=($attnum+$obless) AND $attributes[$which]<>$paras[$para][2]) { 
+	$which++; 
+	} 
+	} 
+	if ($which>($attnum+$obless)) { 
+	print "ERROR: NON-EXISTENT BLESSING"; 
+	print $line; 
+	} else { 
+	$bless[$which]=$bless[$which]+1; 
+	if ($switch==0) { 
+	print $line; 
+	} 
+	$switch=1; 
+	print "<div><font color=\"red\">gain ".$attributes[$which]." blessing</font></div>"; 
+	} 
+	$para=$paras[$para][3]; 
+	} 
+
+	//15: blessing check (non-attribute ones only) 
+	elseif ($branch==15) { 
+	$finished=0; 
+	$which=$attnum; 
+	while ($which<=($attnum+$obless) AND $attributes[$which]<>$paras[$para][2]) { 
+	$which++; 
+	} 
+	if ($which>($attnum+$obless)) { 
+	print "ERROR: NON-EXISTENT BLESSING"; 
+	print $line; 
+	} else { 
+	if ($bless[$which]>0) { 
+	$bless[$which]=$bless[$which]-1; 
+	$para=$paras[$para][3]; 
+	if ($switch==0) { 
+	print $line; 
+	} 
+	$switch=1; 
+	print "<div><font color=\"red\">use ".$attributes[$which]." blessing</font></div>"; 
+	} else { 
+	$para=$paras[$para][4]; 
+	} 
+	} 
+	} 
+
+
+	//16: branching based on profession 
+	elseif ($branch==16) { 
+	$finished=0; 
+	if ($prof==$paras[$para][2]) { 
+	$para=$paras[$para][3]; 
+	} else { 
+	$para=$paras[$para][4]; 
+	} 
+	} 
+
+	//17: free choice, but some of the choices 
+	// don't always activate: keywords or item/companions. 
+	elseif ($branch==17) { 
+	$finished=0; 
+	$paras[$para][0]="no text"; 
+	$paras[$para][1]=2; 
+	$choices=$paras[$para][2]; 
+	$paras[$para][2]=0; 
+	for ($loop=1;$loop<=$choices;$loop++) { 
+	$kword=$paras[$para][1+$loop*3]; 
+	$met=0; 
+	if ($kword==0) { 
+	$met=1; 
+	} elseif ($kword>1000) { 
+	if ($keywords[$kword-1000]==0) { 
+	$met=1; 
+	} 
+	} elseif ($kword>0) { 
+	if ($keywords[$kword]==1) { 
+	$met=1; 
+	} 
+	} elseif ($kword<0 AND $kword>-100) { 
+	if ($items[0-$kword]==1) { 
+	$met=1; 
+	} 
+	} else { 
+	if ($items[(0-$kword)-100]==0) { 
+	$met=1; 
+	} 
+	} 
+	if ($met==1) { 
+	$paras[$para][2]=$paras[$para][2]+1; 
+	$paras[$para][$paras[$para][2]*2+1]=$paras[$para][$loop*3]; 
+	$paras[$para][$paras[$para][2]*2+2]=$paras[$para][$loop*3+2]; 
+	} 
+	} 
+	} 
+
+	//18: lose all companions 
+	// (currently only used when you turn into a frog) 
+	// (special exception for cat & raven if turning into a frog) 
+	elseif ($branch==18) { 
+	$finished=0; 
+	for ($loop=1;$loop<=$manyitems;$loop++) { 
+	if ($itemnames[$loop][1]<>"item" AND ($para<>"69main" OR ($loop<>22 AND $loop<>23))) { 
+	$items[$loop]=0; 
+	} 
+	} 
+	$para=$paras[$para][2]; 
+	} 
+
+	//19: 'haven't written this yet' message 
+	elseif ($branch==19) { 
+	$finished=0; 
+	$para="Oops"; 
+	} 
+
+	//20: branching based on level 
+	elseif ($branch==20) { 
+	$level=0; 
+	for ($loop=1;$loop<=$attnum;$loop++) { 
+	$level=$level+$stats[$loop]; 
+	} 
+	$level=max(1,1+floor(($level-130)/10)); 
+	if ($level>=$paras[$para][2]) { 
+	$para=$paras[$para][3]; 
+	} else { 
+	$para=$paras[$para][4]; 
+	} 
+	$finished=0; 
+	} 
+
+	//21: special - change one attribute to = another 
+	elseif ($branch==21) { 
+	$finished=0; 
+	$changeatt=0; 
+	while ($changeatt<=$attnum AND $attributes[$changeatt]<>$paras[$para][2]) { 
+	$changeatt++; 
+	} 
+	if ($changeatt>$attnum) { 
+	print "ERROR: NON-EXISTENT ATTRIBUTE"; 
+	$finished=1; 
+	} 
+	$targetatt=0; 
+	while ($targetatt<=$attnum AND $attributes[$targetatt]<>$paras[$para][3]) { 
+	$targetatt++; 
+	} 
+	if ($targetatt>$attnum) { 
+	print "ERROR: NON-EXISTENT ATTRIBUTE"; 
+	$finished=1; 
+	} 
+	$paras[$para][0]="no text"; 
+	$paras[$para][1]=9; 
+	$paras[$para][3]=$stats[$targetatt]-$stats[$changeatt]; 
+	// slots 2 and 4 the same. 
+	} 
+
+	//22: special - check shells against random (1-slot 2) 
+	elseif ($branch==22) { 
+	$finished=0; 
+	$paras[$para][0]="no text"; 
+	$paras[$para][1]=11; 
+	$shellcheck=rand(1,$paras[$para][2]); 
+	$paras[$para][2]=$shellcheck; 
+	// 3 and 4 stay as they are. 
+	} 
+
+	//23: special - change profession 
+	elseif ($branch==23) { 
+	$finished=0; 
+	do { 
+	$newprof=rand(1,$classes); 
+	} while ($prof==$newprof); 
+	$prof=$newprof; 
+	$para=$paras[$para][2]; 
+	} 
+
+	//24: special - become a clown 
+	elseif ($branch==24) { 
+	$finished=0; 
+	$prof=0; 
+	$para=$paras[$para][2]; 
+	} 
+
+	//none of the above 
+	else { 
+	print "ERROR: NON-EXISTENT BRANCHING TYPE"; 
+	} 
+
+	} while ($finished==0); 
+
+	print $line; 
+	// print $line; 
+	// print "<div>"; 
+	// @include $baseurl."update.txt"; 
+	if ($illumcred==1) { 
+	print $line; 
+	print "Picture in the letter by <a href=\"http://dcrouzet.chez-alice.fr\" target=\"_blank\">Dominique Crouzet</a>"; 
+	} 
+	if ($newun==1) { 
+	print $line; 
+	print "Unicorn picture by <a href=\"http://wolvesrealmstudio.tripod.com/Home.html\" target=\"_blank\">Ashley Applegate</a>"; 
+	} 
+	print $line; 
+	print "To save your game, click a <img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\"> above."; 
+}
+print "</div>";
+
 
 //3rd column: stats 
+print "<div id=\"stat\">"; 
+{
 
-print "</td>"; 
-print "<td width=\"25%\">"; 
+	//print character (stats, items and shells - keywords aren't displayed) 
+	print "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td>"; 
+	print $startdiv."<img src=\"".$baseurl."images/misc/thumb_".$class[$prof].".jpg\"></div>"; 
+	print "</td></tr><tr><td>"; 
+	print $startdiv."<i>".str_replace("^"," ",$name)."</i></div>"; 
+	print $startdiv.$class[$prof]."</div>"; 
+	print "</td></tr></table>"; 
+	print $line; 
 
-//print character (stats, items and shells - keywords aren't displayed) 
-print "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td>"; 
-print $startdiv."<img src=\"".$baseurl."images/misc/thumb_".$class[$prof].".jpg\"></div>"; 
-print "</td></tr><tr><td>"; 
-print $startdiv."<i>".str_replace("^"," ",$name)."</i></div>"; 
-print $startdiv.$class[$prof]."</div>"; 
-print "</td></tr></table>"; 
-print $line; 
+	// $level=0; 
+	// put back if want to have levels again 
 
-// $level=0; 
-// put back if want to have levels again 
+	print "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\">"; 
+	for ($loop=1;$loop<=$attnum;$loop++) { 
 
-print "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\">"; 
-for ($loop=1;$loop<=$attnum;$loop++) { 
+	// $level=$level+$stats[$loop]; 
+	// put back if want to have levels again 
 
-// $level=$level+$stats[$loop]; 
-// put back if want to have levels again 
+	print "<tr><td>"; 
+	print $attributes[$loop].":</td><td align=\"right\">"; 
+	if ($over==1 AND $branch<>25) { 
+	print "--"; 
+	} else { 
+	print $stats[$loop]; 
+	} 
+	if ($loop==1) { 
+	print "/"; 
+	if ($over==1 AND $branch<>25) { 
+	print "--"; 
+	} else { 
+	print $maxsta; 
+	} 
+	} 
+	if ($over<>1) { 
+	print " (</td><td>"; 
+	$rating=$stats[$loop]; 
+	if ($attributes[$loop]=="Stamina" or $attributes[$loop]=="Heroism") { 
+	$rating=max($rating-5,0); 
+	} 
+	print $word[$attributes[$loop]][min(20,$rating)]; 
+	print ")</td></tr>"; 
+	$rolls=$rolls.chr($stats[$loop]+64); 
+	} 
+	} 
+	print "</table>"; 
+	print $line; 
 
-print "<tr><td>"; 
-print $attributes[$loop].":</td><td align=\"right\">"; 
-if ($over==1 AND $branch<>25) { 
-print "--"; 
-} else { 
-print $stats[$loop]; 
-} 
-if ($loop==1) { 
-print "/"; 
-if ($over==1 AND $branch<>25) { 
-print "--"; 
-} else { 
-print $maxsta; 
-} 
-} 
-if ($over<>1) { 
-print " (</td><td>"; 
-$rating=$stats[$loop]; 
-if ($attributes[$loop]=="Stamina" or $attributes[$loop]=="Heroism") { 
-$rating=max($rating-5,0); 
-} 
-print $word[$attributes[$loop]][min(20,$rating)]; 
-print ")</td></tr>"; 
-$rolls=$rolls.chr($stats[$loop]+64); 
-} 
-} 
-print "</table>"; 
-print $line; 
+	// $level=max(1,1+floor(($level-130)/10)); 
+	// print "<div>Level:".$level." "; 
+	// put this back if want to have levels again 
 
-// $level=max(1,1+floor(($level-130)/10)); 
-// print "<div>Level:".$level." "; 
-// put this back if want to have levels again 
+	print "Cowrie Shells:"; 
+	if ($shells<1000) { 
+	print $shells; 
+	} else { 
+	print " a vast haul."; 
+	// this is for if become a pirate captain. 
+	} 
+	print "</div>"; 
+	print $line; 
+	$flag=0; 
+	for ($loop=1;$loop<=($obless+$attnum);$loop++) { 
+	if ($bless[$loop]>0) { 
+	if ($flag==0) { 
+	print "<div>Blessings:</div>"; 
+	$flag=1; 
+	} 
+	print "<div>".$attributes[$loop]." (".$bless[$loop].")</div>"; 
+	} 
+	} 
+	if ($flag==0) { 
+	print "<div>You have no blessings.</div>"; 
+	} 
+	print $line; 
 
-print "Cowrie Shells:"; 
-if ($shells<1000) { 
-print $shells; 
-} else { 
-print " a vast haul."; 
-// this is for if become a pirate captain. 
-} 
-print "</div>"; 
-print $line; 
-$flag=0; 
-for ($loop=1;$loop<=($obless+$attnum);$loop++) { 
-if ($bless[$loop]>0) { 
-if ($flag==0) { 
-print "<div>Blessings:</div>"; 
-$flag=1; 
-} 
-print "<div>".$attributes[$loop]." (".$bless[$loop].")</div>"; 
-} 
-} 
-if ($flag==0) { 
-print "<div>You have no blessings.</div>"; 
-} 
-print $line; 
+	if ($items[19]==1) { 
+	$itemnames[1][0]="Rod of Puerile Humour"; 
+	} 
 
-if ($items[19]==1) { 
-$itemnames[1][0]="Rod of Puerile Humour"; 
-} 
+	$flag=0; 
+	for ($loop=1;$loop<=$manyitems;$loop++) { 
+	if ($itemnames[$loop][1]=="item" and $loop<>19 and $items[$loop]==1) { 
+	if ($flag==0) { 
+	print "<div>Items:</div>"; 
+	$flag=1; 
+	} 
+	print "<div>".$itemnames[$loop][0]."</div>"; 
+	} 
+	} 
+	if ($flag==0) { 
+	print "<div>You have no items.</div>"; 
+	} 
+	print $line; 
+	$flag=0; 
+	for ($loop=1;$loop<=$manyitems;$loop++) { 
+	if ($itemnames[$loop][1]<>"item") { 
+	if ($items[$loop]==1) { 
+	$flag++; 
+	if ($flag==1) { 
+	print "<table><tr>"; 
+	} 
+	print "<td><div align=\"center\"><img src=\"".$baseurl."images/misc/icon_".$itemnames[$loop][1].".jpg\"></div><div align=\"center\">".$itemnames[$loop][0]."</div></td>"; 
+	if (($flag%2)==0) { 
+	print "</tr><tr>"; 
+	} 
+	} 
+	} 
+	} 
+	if ($flag==0) { 
+	print "<div>You have no companions.</div>"; 
+	} else { 
+	print "</tr></table>"; 
+	} 
+}
+print"</div>"; 
 
-$flag=0; 
-for ($loop=1;$loop<=$manyitems;$loop++) { 
-if ($itemnames[$loop][1]=="item" and $loop<>19 and $items[$loop]==1) { 
-if ($flag==0) { 
-print "<div>Items:</div>"; 
-$flag=1; 
-} 
-print "<div>".$itemnames[$loop][0]."</div>"; 
-} 
-} 
-if ($flag==0) { 
-print "<div>You have no items.</div>"; 
-} 
-print $line; 
-$flag=0; 
-for ($loop=1;$loop<=$manyitems;$loop++) { 
-if ($itemnames[$loop][1]<>"item") { 
-if ($items[$loop]==1) { 
-$flag++; 
-if ($flag==1) { 
-print "<table><tr>"; 
-} 
-print "<td><div align=\"center\"><img src=\"".$baseurl."images/misc/icon_".$itemnames[$loop][1].".jpg\"></div><div align=\"center\">".$itemnames[$loop][0]."</div></td>"; 
-if (($flag%2)==0) { 
-print "</tr><tr>"; 
-} 
-} 
-} 
-} 
-if ($flag==0) { 
-print "<div>You have no companions.</div>"; 
-} else { 
-print "</tr></table>"; 
-} 
 
-print"</td>"; 
-print "</tr>"; 
-print "</table>"; 
+
 @include $baseurl."footer.txt"; 
 ?>

@@ -30,7 +30,6 @@ $Healing = $_GET['Healing'];
 $Streetwise = $_GET['Streetwise'];
 
 if (!isset($mode)) { 
-print "!isset(mode)";
 $mode=0; 
 } 
 
