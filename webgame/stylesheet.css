@@ -44,14 +44,26 @@ img {
 }
 
 .actionBox {
-  width:  300px;
+  width:  270px;
   float: left;
   border: 1px solid #ccc;
   padding: 10px;
   margin: 8px;
   border-radius: 1em;
-  background: #333;
+  background: #55F;
   color: #F00;
+}
+.actionBox A:link {
+ color: #FFFFFF;
+ TEXT-DECORATION: underline;
+    font-family: Geneva, SunSans-Regular, sans-serif;
+    font-size: 20pt;    
+}
+.actionBox A:visited {
+ COLOR: #FFFFFF;
+ TEXT-DECORATION: underline;
+    font-family: Geneva, SunSans-Regular, sans-serif;
+    font-size: 20pt;    
 }
 
 #h{

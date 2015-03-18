@@ -55,7 +55,30 @@ $name=str_replace(chr(92),chr(0),$name);
 
 
 //classes 
-$class=array ("clown","talking cat","wizard","scoundrel","bard","knight","nomad","pirate","fairy","dwarf","barbarian","assassin","witch","faun","troll","courtesan","fortune-teller","amazon","lizard-man","explorer","aristocrat","bird"); 
+$class=array (
+	array ("clown","小丑clown"),
+	array ("talking-cat","人语猫talking cat"),
+	array ("wizard","魔法师wizard"),
+	array ("scoundrel","恶棍scoundrel"),
+	array ("bard","吟游诗人bard"),
+	array ("knight","骑士knight"),
+	array ("nomad","游牧民nomad"),
+	array ("pirate","海盗pirate"),
+	array ("fairy","仙子fairy"),
+	array ("dwarf","矮人dwarf"),
+	array ("barbarian","野蛮人barbarian"),
+	array ("assassin","刺客assassin"),
+	array ("witch","女巫witch"),
+	array ("faun","弗恩faun"),
+	array ("troll","巨魔troll"),
+	array ("courtesan","高级妓女courtesan"),
+	array ("fortune-teller","占卜师fortune-teller"),
+	array ("amazon","亚马逊女战士amazon"),
+	array ("lizard-man","蜥蜴人lizard-man"),
+	array ("explorer","探索者explorer"),
+	array ("aristocrat","贵族aristocrat"),
+	array ("bird","鸟bird")
+);
 // 'clown' and 'bird' are special cases: 
 // you can only be turned into them, 
 // you can't choose to start as one. 
@@ -4956,7 +4979,7 @@ $paras=array (
 200=> array ("no text",4,3,"200main","Snow","200wreck"), 
 '200wreck'=> array ("<img style=\"border:0px\" src=\"".$baseurl."images/misc/illuminatedy.jpg\" align=\"left\" alt=\"Y\">our boat is wrecked en route to the great city of Karrakara, and it seems that only you survive.",1,211), 
 '200main'=> array ("<img src=\"".$baseurl."images/misc/illuminatedo.jpg\" align=\"left\" alt=\"O\">n a clear morning, before even the seagulls have woken up, you make your way to the jetty to set out for the great city of Karrakara. Your ship, really a coracle with ideas above its station, slips into the water. You look at your small pile of cowrie shells, the islands' most common currency. You wonder whether you should return some to the sea god Numen Mari, to ensure a safe journey.",8,171,1,"200a"), 
-'200a'=> array ("no text",2,2,"Do so",201,"Decide not to",202), 
+'200a'=> array ("no text",2,2,"照办 Do so",201,"不这样做 Decide not to",202), 
 201=> array ("You wait until you can no longer see the bottom, and thus are in the domain of the sea god. You drop five shells over the side. Each one seems more reluctant than the last to leave your hand. You are unsure whether your offering has any effect, but you do reach Karrakara without incident.",10,-5,203), 
 202=> array ("no text",3,"Seafaring",13,"202s","202f"), 
 '202s'=> array ("no text",3,"Seafaring",15,"202ss","202sf"), 
@@ -6600,7 +6623,7 @@ $paras=array (
 'chainexploress'=> array ("She's clearly under some kind of unwholesome influence. You're not sure that you can do anything for her.",2,2,"Leave","chainexploress1","Try and help her","chainexploresshelp"), 
 'chainexploress1'=> array ("Sadly, you return to your craft and leave the island.",1,"Islandhub"), 
 'chainexploresshelp'=> array ("no text",9,"Heroism",1,"chainexamine"), 
-'chainexplorefs'=> array ("You're unsure what to make of her tale.",2,3,"Offer to keep watch","chainexplorehelp","Leave","chainexploren"), 
+'chainexplorefs'=> array ("You're unsure what to make of her tale.",2,3,"Offer to keep watch","chainexplorehelp","Leave","chainexploren"),
 'chainexploreff'=> array ("Her tale moves you deeply. You offer to keep watch for her.",1,"chainexplorehelp1"), 
 'chainexplorehelp'=> array ("no text",9,"Heroism",2,"chainexplorehelp1"), 
 'chainexplorehelp1'=> array ("She thanks you, but refuses to let you take watch alone. She describes the awful forms that her fellow exiles have taken. You seem to see the horrors she describes in front of you. Finally, you do indeed see one such monster. She screams a warcry, and you raise your WEAPONNAME.",13,"chainexplorehelp2"), 
@@ -9102,25 +9125,26 @@ print "<div id=\"c1\" class=\"div_text\">";
 			} 
 			print $line; 
 			
-			print "<table align=\"center\" width=\"100%\">"; 
+			//print "<table align=\"center\" width=\"100%\">"; 
 			for ($loop=1;$loop<=$paras[$para][2];$loop++) { 
-			print "<tr><td>"; 
-			if ($items[15]==1 AND $creda==0) { 
-			$creda=1; 
-			$newun=1; 
+				print "<div class=\"actionBox\">";
+				//print "<td>"; 
+				if ($items[15]==1 AND $creda==0) { 
+					$creda=1; 
+					$newun=1; 
+				} 
+				$fullink="a href=\"".$baseurl."game.php?para=".$paras[$para][2+($loop*2)]."&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\""; 
+				print "<".$fullink." onMouseover=\"window.status='continue to this section'; return true\">".$paras[$para][1+($loop*2)]."</a>"; 
+				//print "</td>"; 
+				if ($paras[$para][1+($loop*2)]<>"") { 
+					//print "<td>"; 
+					$fullink=str_replace("game.php","save.php",$fullink); 
+					print "<".$fullink."  class=\"hidden\" onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\" alt=\"save your game\"></a>"; 
+					//print "</td>"; 
+				} 
+				print "</div>"; 
 			} 
-			$fullink="a href=\"".$baseurl."game.php?para=".$paras[$para][2+($loop*2)]."&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\""; 
-			print "<div align=\"center\" class=\"actionBox\"><".$fullink." onMouseover=\"window.status='continue to this section'; return true\">".$paras[$para][1+($loop*2)]."</a></div>"; 
-			print "</td>"; 
-			if ($paras[$para][1+($loop*2)]<>"") { 
-			print "<td>"; 
-			$fullink=str_replace("game.php","save.php",$fullink); 
-			print "<".$fullink."  class=\"hidden\" onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\" alt=\"save your game\"></a>"; 
-			print "</td>"; 
-			} 
-			print "</tr>"; 
-			} 
-			print "</table>"; 
+			//print "</table>"; 
 		} 
 
 		//3: roll vs stats 
@@ -9136,66 +9160,70 @@ print "<div id=\"c1\" class=\"div_text\">";
 
 			$which=0; 
 			while ($which<=$attnum AND $attributes[$which]<>$paras[$para][2]) { 
-			$which++; 
+				$which++; 
 			} 
 			if ($which>$attnum) { 
-			print "<b>ERROR: NON-EXISTENT ATTRIBUTE<b><br><br>The game has tried to use a non-existent attribute. This is because the programmer made a typing error. Please email news(at)apolitical(dot)info and say what your character was doing when this happened, and it'll be fixed."; 
-			print $line; 
+				print "<b>ERROR: NON-EXISTENT ATTRIBUTE<b><br><br>The game has tried to use a non-existent attribute. This is because the programmer made a typing error. Please email news(at)apolitical(dot)info and say what your character was doing when this happened, and it'll be fixed."; 
+				print $line; 
 			} else { 
-			if ($switch==0) { 
-			print $line; 
-			} 
-			$switch=1; 
-			$difficulty=$paras[$para][3]; 
+				if ($switch==0) { 
+				print $line; 
+				} 
+				$switch=1; 
+				$difficulty=$paras[$para][3]; 
 
-			// $difficulty+=(2*$level)-2; 
-			// put this back in if want to have levels again. 
+				// $difficulty+=(2*$level)-2; 
+				// put this back in if want to have levels again. 
 
-			print "<div><font color=\"red\">".$attributes[$which]." roll, difficulty ".$difficulty." - "; 
-			$dice=rand(1,6)+rand(1,6)+$stats[$which]; 
-			if ($dice>=$difficulty) { 
-			//advancement roll 
-			$adroll=rand(1,20); 
-			if ($dice>=$difficulty+5 AND $adroll>$stats[$which]) { 
-			if ($attributes[$which]<>"Stamina") { 
-			$stats[$which]=$stats[$which]+1; 
-			print "ADVANCED"; 
-			} elseif ($adroll>$maxsta) { 
-			$maxsta=$maxsta+1; 
-			print "ADVANCED"; 
-			} else { 
-			print "made it"; 
-			} 
-			} else { 
-			print "made it"; 
-			} 
-			$para=$paras[$para][4]; 
-			} else { 
-			if ($bless[$which]>0) { 
-			$bless[$which]=$bless[$which]-1; 
-			if ($prof<>9 OR rand(0,1)==1) { 
-			print "use blessing"; 
-			$para=$paras[$para][4]; 
-			} else { 
-			print "blessing failed"; 
-			if ($paras[$para][2]=="Magic" AND $stats[1]>1 AND $para<>"Childno" AND $para<>"boilingseafigurea" AND $para<>"Uglys" AND $para<>"Tokescapeff" AND $para<> "Grossfvom1" AND $para<>"Grossfnovom" AND $para<>"chainexploren" AND $para<>"Pyrlooke" AND $para<>"Pyrlookh" AND $para<>"seacity6" AND $para<>"Clownyn" AND $para<>"Finalozywall2y1" AND $para<>"nearly269gu" AND $para<>"Amaheadaff1") { 
-			$loss=min(rand(1,2),$stats[1]-1); 
-			$stats[1]=$stats[1]-$loss; 
-			print "</div><div>Lose ".$loss." Stamina"; 
-			} 
-			$para=$paras[$para][5]; 
-			} 
-			} else { 
-			print "failed"; 
-			if ($paras[$para][2]=="Magic" AND $stats[1]>1 AND $para<>"Childno" AND $para<>"boilingseafigurea" AND $para<>"Uglys" AND $para<>"Tokescapeff" AND $para<> "Grossfvom1" AND $para<>"Grossfnovom" AND $para<>"chainexploren" AND $para<>"Pyrlooke" AND $para<>"Pyrlookh" AND $para<>"seacity6" AND $para<>"Clownyn" AND $para<>"Finalozywall2y1" AND $para<>"nearly269gu" AND $para<>"Amaheadaff1") { 
-			$loss=min(rand(1,2),$stats[1]-1); 
-			$stats[1]=$stats[1]-$loss; 
-			print "</div><div>Stamina - ".$loss; 
-			} 
-			$para=$paras[$para][5]; 
-			} 
-			} 
-			print "</font></div>"; 
+				print "<div>";
+				$dice=rand(1,6)+rand(1,6)+$stats[$which]; 
+				if ($dice>=$difficulty) { 
+					print "<font color=\"green\">";
+					print $attributes[$which]." roll, difficulty ".$difficulty." - "; 
+					//advancement roll 
+					$adroll=rand(1,20); 
+					if ($dice>=$difficulty+5 AND $adroll>$stats[$which]) { 
+						if ($attributes[$which]<>"Stamina") { 
+						$stats[$which]=$stats[$which]+1; 
+						print "ADVANCED"; 
+						} elseif ($adroll>$maxsta) { 
+						$maxsta=$maxsta+1; 
+						print "ADVANCED"; 
+						} else { 
+						print "成功(made it)"; 
+						} 
+					} else { 
+						print "成功(made it)"; 
+					} 
+					$para=$paras[$para][4]; 
+				} else { 
+					print "<font color=\"red\">";
+					print $attributes[$which]." roll, difficulty ".$difficulty." - "; 
+					if ($bless[$which]>0) { 
+						$bless[$which]=$bless[$which]-1; 
+						if ($prof<>9 OR rand(0,1)==1) { 
+							print "使用祝福 use blessing"; 
+							$para=$paras[$para][4]; 
+						} else { 
+							print "祝福失败 blessing failed"; 
+							if ($paras[$para][2]=="Magic" AND $stats[1]>1 AND $para<>"Childno" AND $para<>"boilingseafigurea" AND $para<>"Uglys" AND $para<>"Tokescapeff" AND $para<> "Grossfvom1" AND $para<>"Grossfnovom" AND $para<>"chainexploren" AND $para<>"Pyrlooke" AND $para<>"Pyrlookh" AND $para<>"seacity6" AND $para<>"Clownyn" AND $para<>"Finalozywall2y1" AND $para<>"nearly269gu" AND $para<>"Amaheadaff1") { 
+								$loss=min(rand(1,2),$stats[1]-1); 
+								$stats[1]=$stats[1]-$loss; 
+								print "</div><div>Lose ".$loss." Stamina"; 
+							} 
+							$para=$paras[$para][5]; 
+						} 
+					} else { 
+						print "失败(failed)"; 
+						if ($paras[$para][2]=="Magic" AND $stats[1]>1 AND $para<>"Childno" AND $para<>"boilingseafigurea" AND $para<>"Uglys" AND $para<>"Tokescapeff" AND $para<> "Grossfvom1" AND $para<>"Grossfnovom" AND $para<>"chainexploren" AND $para<>"Pyrlooke" AND $para<>"Pyrlookh" AND $para<>"seacity6" AND $para<>"Clownyn" AND $para<>"Finalozywall2y1" AND $para<>"nearly269gu" AND $para<>"Amaheadaff1") { 
+							$loss=min(rand(1,2),$stats[1]-1); 
+							$stats[1]=$stats[1]-$loss; 
+							print "</div><div>Stamina - ".$loss; 
+						} 
+						$para=$paras[$para][5]; 
+					} 
+				} 
+				print "</font></div>"; 
 			} 
 			$finished=0; 
 		} 
@@ -9351,64 +9379,69 @@ print "<div id=\"c1\" class=\"div_text\">";
 			// $difficulty+=$paras[$para][3]+(2*$level)-2; 
 			$made=0; 
 			for ($loop=1;$loop<=$paras[$para][2];$loop++) { 
-			$which=0; 
-			while ($which<=$attnum AND $attributes[$which]<>$paras[$para][$loop+3]) { 
-			$which++; 
-			} 
-			if ($which>$attnum) { 
-			print "ERROR: NON-EXISTENT ATTRIBUTE"; 
-			print $line; 
-			} else { 
-			if ($switch==0) { 
-			print $line; 
-			} 
-			$switch=1; 
-			print "<div><font color=\"red\">".$attributes[$which]." roll, difficulty ".$difficulty." - "; 
-			$dice=rand(1,6)+rand(1,6)+$stats[$which]; 
-			if ($dice>=$difficulty) { 
-			//advancement roll 
-			$adroll=rand(1,20); 
-			if ($dice>=($difficulty+5) AND $adroll>$stats[$which]) { 
-			if ($attributes[$which]<>"Stamina") { 
-			$stats[$which]=$stats[$which]+1; 
-			print "ADVANCED"; 
-			} elseif ($adroll>$maxsta) { 
-			$maxsta=$maxsta+1; 
-			print "ADVANCED"; 
-			} else { 
-			print "made it"; 
-			} 
-			} else { 
-			print "made it"; 
-			} 
-			$made++; 
-			} else { 
-			if ($bless[$which]>0) { 
-			if ($prof<>9 OR rand(0,1)==1) { 
-			print "use blessing"; 
-			$bless[$which]=$bless[$which]-1; 
-			$made++; 
-			} else { 
-			print "blessing failed"; 
-			$bless[$which]=$bless[$which]-1; 
+				$which=0; 
+				while ($which<=$attnum AND $attributes[$which]<>$paras[$para][$loop+3]) { 
+					$which++; 
+				} 
+				if ($which>$attnum) { 
+					print "ERROR: NON-EXISTENT ATTRIBUTE"; 
+					print $line; 
+				} else { 
+					if ($switch==0) { 
+						print $line; 
+					} 
+					
+					$switch=1; 
+					print "<div>"; 
+					$dice=rand(1,6)+rand(1,6)+$stats[$which]; 
+					if ($dice>=$difficulty) { 
+						print "<font color=\"green\">";
+						print $attributes[$which]." roll, difficulty ".$difficulty." - "; 
+						//advancement roll 
+						$adroll=rand(1,20); 
+						if ($dice>=($difficulty+5) AND $adroll>$stats[$which]) { 
+						if ($attributes[$which]<>"Stamina") { 
+						$stats[$which]=$stats[$which]+1; 
+						print "ADVANCED"; 
+						} elseif ($adroll>$maxsta) { 
+						$maxsta=$maxsta+1; 
+						print "ADVANCED"; 
+						} else { 
+						print "成功(made it)"; 
+						} 
+						} else { 
+						print "成功(made it)"; 
+						} 
+						$made++; 
+					} else { 
+						print "<font color=\"red\">";
+						print $attributes[$which]." roll, difficulty ".$difficulty." - "; 
+						if ($bless[$which]>0) { 
+						if ($prof<>9 OR rand(0,1)==1) { 
+						print "use blessing"; 
+						$bless[$which]=$bless[$which]-1; 
+						$made++; 
+						} else { 
+						print "blessing failed"; 
+						$bless[$which]=$bless[$which]-1; 
 
-			if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") { 
-			$loss=min(rand(1,2),$stats[1]-1); 
-			$stats[1]=$stats[1]-$loss; 
-			print "</div><div>Lose ".$loss." Stamina"; 
-			} 
-			} 
-			} else { 
-			print "failed"; 
-			if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") { 
-			$loss=min(rand(1,2),$stats[1]-1); 
-			$stats[1]=$stats[1]-$loss; 
-			print "</div><div>Lose ".$loss." Stamina"; 
-			} 
-			} 
-			} 
-			print "</font></div>"; 
-			} 
+						if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") { 
+						$loss=min(rand(1,2),$stats[1]-1); 
+						$stats[1]=$stats[1]-$loss; 
+						print "</div><div>Lose ".$loss." Stamina"; 
+						} 
+						} 
+						} else { 
+						print "失败(failed)"; 
+						if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") { 
+						$loss=min(rand(1,2),$stats[1]-1); 
+						$stats[1]=$stats[1]-$loss; 
+						print "</div><div>Lose ".$loss." Stamina"; 
+						} 
+						} 
+					} 
+					print "</font></div>"; 
+				} 
 			} 
 			$para=$paras[$para][4+$made+$paras[$para][2]]; 
 			$finished=0; 
@@ -9420,7 +9453,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 			$paras[$para][0]="no text"; 
 			$paras[$para][1]=2; 
 			$paras[$para][2]=1; 
-			$paras[$para][3]="Continue"; 
+			$paras[$para][3]="继续/Continue"; 
 			$finished=0; 
 		} 
 
@@ -9640,10 +9673,10 @@ print "<div id=\"c2\" class=\"div_stat\">";
 
 	//print character (stats, items and shells - keywords aren't displayed) 
 	print "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td>"; 
-	print $startdiv."<img src=\"".$baseurl."images/misc/thumb_".$class[$prof].".jpg\"></div>"; 
+	print $startdiv."<img src=\"".$baseurl."images/misc/thumb_".$class[$prof][0].".jpg\"></div>"; 
 	print "</td></tr><tr><td>"; 
 	print $startdiv."<i>".str_replace("_"," ",$name)."</i></div>"; 
-	print $startdiv.$class[$prof]."</div>"; 
+	print $startdiv.$class[$prof][1]."</div>"; 
 	print "</td></tr></table>"; 
 	print $line; 
 
@@ -9729,28 +9762,29 @@ print "<div id=\"c2\" class=\"div_stat\">";
 	} 
 	} 
 	if ($flag==0) { 
-	print "<div>You have no items.</div>"; 
+	print "<div>你身上什么都没有。You have no items.</div>"; 
 	} 
+	
 	print $line; 
 	$flag=0; 
 	for ($loop=1;$loop<=$manyitems;$loop++) { 
-	if ($itemnames[$loop][1]<>"item") { 
-	if ($items[$loop]==1) { 
-	$flag++; 
-	if ($flag==1) { 
-	print "<table><tr>"; 
-	} 
-	print "<td><div align=\"center\"><img src=\"".$baseurl."images/misc/icon_".$itemnames[$loop][1].".jpg\"></div><div align=\"center\">".$itemnames[$loop][0]."</div></td>"; 
-	if (($flag%2)==0) { 
-	print "</tr><tr>"; 
-	} 
-	} 
-	} 
+		if ($itemnames[$loop][1]<>"item") { 
+			if ($items[$loop]==1) { 
+				$flag++; 
+				if ($flag==1) { 
+					print "<table><tr>"; 
+				} 
+				print "<td><div align=\"center\"><img src=\"".$baseurl."images/misc/icon_".$itemnames[$loop][1].".jpg\"></div><div align=\"center\">".$itemnames[$loop][0]."</div></td>"; 
+				if (($flag%2)==0) { 
+					print "</tr><tr>"; 
+				} 
+			} 
+		} 
 	} 
 	if ($flag==0) { 
-	print "<div>You have no companions.</div>"; 
+		print "<div>你没有任何同伴。You have no companions.</div>"; 
 	} else { 
-	print "</tr></table>"; 
+		print "</tr></table>"; 
 	} 
 }
 print "</div>";
