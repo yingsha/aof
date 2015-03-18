@@ -94,9 +94,13 @@ $attributes=array("null","Stamina","Charisma","Duelling","Brawling","Seafaring",
 $stats=array(); 
 
 
+?>
 
-print $startdiv."<img src=\"".$baseurl."images/misc/banner.jpg\"></div>"; 
+<div id="h">
+<div align="center"><img src="images/misc/banner.jpg"/></div>
+</div>
 
+<?php 
 print $line; 
 print $startdiv; 
 print "</div>"; 
@@ -114,16 +118,16 @@ print "<td width=\"50%\">";
 if ($mode==0) { 
 	// main menu
 	
-	print $link."index.php?mode=2&method=1\" onMouseover=\"window.status='randomly generated character'; return true\">Random character</a></div>"; 
+	print $link."index.php?mode=2&method=1\" onMouseover=\"window.status='randomly generated character'; return true\">随机生成角色来开始游戏 Random character</a></div>"; 
 	print $line; 
-	print $link."index.php?mode=5\" onMouseover=\"window.status='choose from a list of characters'; return true\">Pre-generated character</a></div>"; 
+	print $link."index.php?mode=5\" onMouseover=\"window.status='choose from a list of characters'; return true\">选择预设的22个角色之一来开始游戏 Pre-generated character</a></div>"; 
 	print $line; 
-	print $startdiv."Create a custom character, using"; 
-	print $link."index.php?mode=4&method=2\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">links</a> or <a href=\"".$baseurl."index.php?mode=4&method=1\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">drop-down menus</a></div>"; 
+	print $startdiv."自定义角色生成 Create a custom character, using"; 
+	print $link."index.php?mode=4&method=2\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">点击调属性 links</a> or <a href=\"".$baseurl."index.php?mode=4&method=1\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">下拉框调属性 drop-down menus</a></div>"; 
 	print $line; 
 	print $link."index.php?mode=6\" onMouseover=\"window.status='link to us'; return true\">Link to Age of Fable</a></div>"; 
 	print $line; 
-	print $link."index.php?mode=1\" onMouseover=\"window.status='FAQ'; return true\">Frequently Asked Questions</a></div>"; 
+	print $link."index.php?mode=1\" onMouseover=\"window.status='FAQ'; return true\">常见问题 Frequently Asked Questions</a></div>"; 
 	print $line; 
 	print $link."credits.php\" onMouseover=\"window.status='artist and author details'; return true\">Credits</a></div>"; 
 	print $line; 
@@ -450,16 +454,17 @@ if ($mode==0) {
 		print $startdiv."Enter the character's name in the text box above and click the 'enter' button, or</div>"; 
 		print $link."index.php?mode=2&method=6&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='leave the character\'s name as it is'; return true\">leave the name as it is</a></div>"; 
 	} else { 
-		print $link."game.php?rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='start playing'; return true\">start playing with this character</a></div>"; 
+		print $link."game.php?rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='start playing'; return true\">使用这名角色开始游戏 start playing with this character</a></div>"; 
 		print $line; 
-		print $startdiv."Edit this character, using"; 
+		print $startdiv."编辑角色属性 Edit this character, using"; 
 		print $link."index.php?mode=4&method=2&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">links</a> or <a href=\"".$baseurl."index.php?mode=4&method=1&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">drop-down menus</a></div>"; 
 		print $startdiv."or <a href=\"".$baseurl."index.php?mode=2&method=5&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='make a small, random change to this character'; return true\">randomly change</a> their scores</div>"; 
 		print $line; 
-		print $startdiv."重新起名 - <a href=\"".$baseurl."index.php?mode=2&method=4&prof=".$prof."&rolls=".$rolls."\" onMouseover=\"window.status='random new name for this character'; return true\">randomly</a> or <a href=\"".$baseurl."index.php?mode=2&method=2&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='enter a name of your choice for this character'; return true\">your choice</a></div>"; 
+		print $startdiv."起名 - <a href=\"".$baseurl."index.php?mode=2&method=4&prof=".$prof."&rolls=".$rolls."\" onMouseover=\"window.status='random new name for this character'; return true\">随机起名 randomly</a> or <a href=\"".$baseurl."index.php?mode=2&method=2&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='enter a name of your choice for this character'; return true\">手工输入 your choice</a></div>"; 
 		print $line; 
 		print $startdiv."New character - <a href=\"".$baseurl."index.php?mode=2&method=1\" onMouseover=\"window.status='randomly generate a new character'; return true\">random</a> or <a href=\"".$baseurl."index.php?mode=5\" onMouseover=\"window.status='choose from a list of characters'; return true\">pre-generated</a>.</div>"; 
 		print $line; 
+		print "<hr/>";
 		print $startdiv."The following links all open in a new window:</div>"; 
 		print $line; 
 		print $link."index.php?mode=6\" onMouseover=\"window.status='link to us'; return true\" target=\"_blank\">Link to Age of Fable</a></div>"; 
@@ -486,7 +491,6 @@ if ($mode==0) {
 } elseif ($mode==5) { 
 	// Pre-generated character
 	if (!isset($order)) { 
-		print "!isset(order)";
 		$classdone=array(); 
 		for ($click=1;$click<=$classes;$click++) { 
 			do { 
@@ -498,8 +502,7 @@ if ($mode==0) {
 	} 
 
 	if (!isset($orderplace)) { 
-	print "!isset(orderplace)";
-	$orderplace=1; 
+		$orderplace=1; 
 	} 
 	
 	print $line; 
@@ -539,10 +542,10 @@ if ($mode==0) {
 	if ($orderplace>$classes) { 
 		$orderplace=$orderplace-$classes; 
 	} 
-	print $startdiv."Click a picture to choose that character, or</div>"; 
-	print $startdiv."<a href=\"".$baseurl."index.php?mode=5&order=".$order."&orderplace=".$orderplace."\" onMouseover=\"window.status='see more characters'; return true\">see more characters</a></div>"; 
+	print $startdiv."点选一个角色 Click a picture to choose that character, or</div>"; 
+	print $startdiv."<a href=\"".$baseurl."index.php?mode=5&order=".$order."&orderplace=".$orderplace."\" onMouseover=\"window.status='see more characters'; return true\">刷新更多角色以供选择 see more characters</a></div>"; 
 	print $line; 
-	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main menu</a></div>"; 
+	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">返回主菜单 back to the main menu</a></div>"; 
 
 } elseif ($mode==6) { 
 	// Link to Age of Fable
@@ -677,7 +680,6 @@ if ($mode==0) {
 	// decide on $prof (class), except for when first arrive with 
 	// a rolled character, in the rare event of ties. 
 	if (!isset($prof)) { 
-		print "!isset(prof)";
 		$score=array(); 
 		$lowest=100000; 
 		for ($cloop=1;$cloop<=$classes;$cloop++) { 

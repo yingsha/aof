@@ -1,6 +1,6 @@
 body {
     font-family: Myriad, Helvetica, Arial, Geneva, SunSans-Regular, sans-serif;
-    font-size: 12pt;   
+    font-size: 14pt;   
 	background: #000;
 	color: #ffffff;
 	padding: 0px;
@@ -10,7 +10,7 @@ body {
 
 table {
     font-family: Myriad, Helvetica, Arial, Geneva, SunSans-Regular, sans-serif;
-    font-size: 12pt;   
+    font-size: 14pt;   
 }
 
 A:link {
@@ -34,12 +34,17 @@ img {
    border:2px solid #888888;
 }
 
+.hidden {
+  display: none;
+  /*visibility: hidden;*/
+}
+
 .artclass {
-	max-width: 380px;
+	max-width: 360px;
 }
 
 .actionBox {
-  width:  200px;
+  width:  300px;
   float: left;
   border: 1px solid #ccc;
   padding: 10px;
@@ -56,9 +61,13 @@ img {
 }
 #c1 {    background: none repeat scroll 0 0 #000000;    overflow:hidden;
 	padding: 10px;    
+	padding-bottom: 20px;
     border-bottom: 2px solid #F59C24;
 }
 #c2 {    background: none repeat scroll 0 0 #000000;    float: left;    padding: 10px;    width: 240px;    overflow:hidden;
     border-right: 2px solid #F59C24;
+	padding-top: 20px;
 }
-#c3 {    background: none repeat scroll 0 0 #202020;    float: left;   padding: 10px;     overflow:hidden;}
+#c3 {    background: none repeat scroll 0 0 #202020;    float: left;   padding: 10px;   width: 380px;     overflow:hidden;
+	padding-top: 20px;
+}

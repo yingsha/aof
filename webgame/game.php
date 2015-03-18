@@ -8963,7 +8963,7 @@ $art=array (
 ); 
 ?>
 
-<div id="h">
+<div id="h" class="hidden">
 <div align="center"><img src="images/misc/banner.jpg"/></div>
 </div>
 
@@ -9115,7 +9115,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 			if ($paras[$para][1+($loop*2)]<>"") { 
 			print "<td>"; 
 			$fullink=str_replace("game.php","save.php",$fullink); 
-			print "<".$fullink."  onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\" alt=\"save your game\"></a>"; 
+			print "<".$fullink."  class=\"hidden\" onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\" alt=\"save your game\"></a>"; 
 			print "</td>"; 
 			} 
 			print "</tr>"; 
@@ -9616,7 +9616,6 @@ print "<div id=\"c1\" class=\"div_text\">";
 
 	} while ($finished==0); 
 
-	print $line; 
 	// print $line; 
 	// print "<div>"; 
 	// @include $baseurl."update.txt"; 
@@ -9628,8 +9627,8 @@ print "<div id=\"c1\" class=\"div_text\">";
 		print $line; 
 		print "Unicorn picture by <a href=\"http://wolvesrealmstudio.tripod.com/Home.html\" target=\"_blank\">Ashley Applegate</a>"; 
 	} 
-	print $line; 
-	print "To save your game, click a <img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\"> above."; 
+//	print $line; 
+//	print "To save your game, click a <img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\"> above."; 
 }
 print "</div>";
 
@@ -9762,11 +9761,11 @@ print "<div id=\"c3\" class=\"div_picture\">";
 	print $para." - ".$art[$para]."<br/>";
 	
 	if ($art[$para]=="") { 
-		print $startdiv."artwork copyright <a href=\"http://raue-see.de.vu\" target=\"_blank\">Azalea</a></div>"; 
-		print $startdiv."<img class=\"artclass\" style=\"border:0px\" src=\"".$baseurl."images/misc/banner.jpg\"></div>";  // originally title.jpg
+		print $startdiv."artwork copyright <br/> <a href=\"http://raue-see.de.vu\" target=\"_blank\">Azalea</a></div>"; 
+		print $startdiv."<img class=\"artclass\" src=\"".$baseurl."images/misc/banner.jpg\"></div>";  // originally title.jpg
 	} elseif ($para=="Oops") { 
 		print $startdiv."artwork by unknown artist</div>"; 
-		print $startdiv."<img class=\"artclass\" style=\"border:0px\" src=\"".$baseurl."images/misc/centaur.jpg\"></div>"; 
+		print $startdiv."<img class=\"artclass\" src=\"".$baseurl."images/misc/centaur.jpg\"></div>"; 
 	} else { 
 		print $startdiv."artwork "; 
 		$pagepub=$artists[$art[$para]][1]; 
@@ -9816,7 +9815,7 @@ print "<div id=\"c3\" class=\"div_picture\">";
 	} else { 
 		print "离开游戏"; 
 	} 
-	print"</a> . <a href=\"http://www.apolitical.info/guestbook\" onMouseover=\"window.status='leave feedback, or read other people\'s'; return true\" target=\"_blank\">guestbook</a> . <a href=\"".$baseurl."index.php?mode=7\" onMouseover=\"window.status='stories and other resources'; return true\" target=\"_blank\">library</a> . <a href=\"http://www.apolitical.info/webgame/sourcecode\" onMouseover=\"window.status='view the source code for Age of Fable's'; return true\" target=\"_blank\">source code</a></b></div>"; 
+	print"</a> <br/> <a href=\"http://www.apolitical.info/guestbook\" onMouseover=\"window.status='leave feedback, or read other people\'s'; return true\" target=\"_blank\">guestbook</a> . <a href=\"".$baseurl."index.php?mode=7\" onMouseover=\"window.status='stories and other resources'; return true\" target=\"_blank\">library</a> . <a href=\"http://www.apolitical.info/webgame/sourcecode\" onMouseover=\"window.status='view the source code for Age of Fable's'; return true\" target=\"_blank\">source code</a></b></div>"; 
 	print $line; 
 }
 print "</div>";
