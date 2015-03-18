@@ -1,6 +1,6 @@
 body {
     font-family: Myriad, Helvetica, Arial, Geneva, SunSans-Regular, sans-serif;
-    font-size: 10pt;   
+    font-size: 12pt;   
 	background: #000;
 	color: #ffffff;
 	padding: 0px;
@@ -10,7 +10,7 @@ body {
 
 table {
     font-family: Myriad, Helvetica, Arial, Geneva, SunSans-Regular, sans-serif;
-    font-size: 10pt;   
+    font-size: 12pt;   
 }
 
 A:link {
@@ -36,6 +36,17 @@ img {
 
 .artclass {
 	max-width: 380px;
+}
+
+.actionBox {
+  width:  200px;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 1em;
+  background: #333;
+  color: #F00;
 }
 
 #h{

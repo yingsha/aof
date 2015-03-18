@@ -184,7 +184,7 @@ $keywords=array();
 $manywords=350; //how many keywords are in the game. 
 
 for ($loop=1;$loop<=$manywords;$loop++) { 
-	if ($world{$loop-1}=="!") { 
+	if ($world{$loop-1}=="_") { // it was "!" 
 		$keywords[$loop]=1; 
 	} 
 } 
@@ -9065,7 +9065,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 			$world=""; 
 			for ($loop=1;$loop<=$manywords;$loop++) { 
 			if ($keywords[$loop]==1) { 
-			$cword="!"; 
+			$cword="_"; // it was "!" 
 			} else { 
 			$cword="."; 
 			} 
@@ -9110,12 +9110,12 @@ print "<div id=\"c1\" class=\"div_text\">";
 			$newun=1; 
 			} 
 			$fullink="a href=\"".$baseurl."game.php?para=".$paras[$para][2+($loop*2)]."&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\""; 
-			print "<".$fullink." onMouseover=\"window.status='continue to this section'; return true\">".$paras[$para][1+($loop*2)]."</a>"; 
+			print "<div align=\"center\" class=\"actionBox\"><".$fullink." onMouseover=\"window.status='continue to this section'; return true\">".$paras[$para][1+($loop*2)]."</a></div>"; 
 			print "</td>"; 
 			if ($paras[$para][1+($loop*2)]<>"") { 
 			print "<td>"; 
 			$fullink=str_replace("game.php","save.php",$fullink); 
-			print "<".$fullink." onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\" alt=\"save your game\"></a>"; 
+			print "<".$fullink."  onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\" alt=\"save your game\"></a>"; 
 			print "</td>"; 
 			} 
 			print "</tr>"; 
@@ -9643,7 +9643,7 @@ print "<div id=\"c2\" class=\"div_stat\">";
 	print "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td>"; 
 	print $startdiv."<img src=\"".$baseurl."images/misc/thumb_".$class[$prof].".jpg\"></div>"; 
 	print "</td></tr><tr><td>"; 
-	print $startdiv."<i>".str_replace("^"," ",$name)."</i></div>"; 
+	print $startdiv."<i>".str_replace("_"," ",$name)."</i></div>"; 
 	print $startdiv.$class[$prof]."</div>"; 
 	print "</td></tr></table>"; 
 	print $line; 

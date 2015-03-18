@@ -411,13 +411,13 @@ if ($mode==0) {
 		$name=str_replace(chr(92),chr(0),$name); 
 	} 
 
-	// replace spaces with ^s 
-	$name=str_replace(" ","^",$name); 
+	// replace spaces with ^s (fix: use _ instead of ^ for compatiablity in wechat mobile and web) 
+	$name=str_replace(" ","_",$name); 
 
 	//print character, and create $rolls string 
 	print "<table align=\"center\"><tr><td>"; 
 	print $startdiv."<img src=\"".$baseurl."images/misc/thumb_".$class[$prof][0].".jpg\"></div>"; 
-	print $startdiv."<i>".str_replace("^"," ",$name)."</i></div>"; 
+	print $startdiv."<i>".str_replace("_"," ",$name)."</i></div>"; 
 	print $startdiv.$class[$prof][0]."</div>"; 
 	print "</td><td>"; 
 	$rolls=""; 
