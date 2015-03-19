@@ -1,4 +1,4 @@
- <?php 
+  <?php 
 //$baseurl="http://www.apolitical.info/webgame/";
 $baseurl="http://play.1kapp.com/webgame/";
 @include $baseurl."header.txt"; 
@@ -20,8 +20,11 @@ $shells = $_GET['shells'];
 $maxsta = $_GET['maxsta'];
 $creda = $_GET['creda'];
 $rolls = $_GET['rolls'];
-
-
+$step = $_GET['step'];
+if (!isset($step)) { 
+	$step = 1;
+}
+	
 //number and names of attributes 
 //if change attributes, need to do it here, create.php, form.txt 
 
@@ -71,7 +74,7 @@ $class=array (
 	array ("witch","女巫witch"),
 	array ("faun","弗恩faun"),
 	array ("troll","巨魔troll"),
-	array ("courtesan","高级妓女courtesan"),
+	array ("courtesan","交际花courtesan"),
 	array ("fortune-teller","占卜师fortune-teller"),
 	array ("amazon","亚马逊女战士amazon"),
 	array ("lizard-man","蜥蜴人lizard-man"),
@@ -8984,13 +8987,11 @@ $art=array (
 
 'Revof'=> 'bearman', 
 ); 
-?>
 
-<div id="h" class="hidden">
-<div align="center"><img src="images/misc/banner.jpg"/></div>
-</div>
-
-<?php 
+print "<div id=\"h\">";
+//print "<div align=\"center\"><img src=\"images/misc/banner.jpg\"/></div>";
+print "冒险阶段：".$step;
+print "</div>";
 
 print "<div id=\"c\" class=\"div_content\">"; 
 //Three columns: text, picture, character stats. 
@@ -8998,6 +8999,7 @@ print "<div id=\"c\" class=\"div_content\">";
 //1st column: text. 
 print "<div id=\"c1\" class=\"div_text\">"; 
 {
+	$iscontinue=0;
 	do { 
 
 		//you don't get the forest pool encounter 
@@ -9133,7 +9135,13 @@ print "<div id=\"c1\" class=\"div_text\">";
 					$creda=1; 
 					$newun=1; 
 				} 
-				$fullink="a href=\"".$baseurl."game.php?para=".$paras[$para][2+($loop*2)]."&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\""; 
+				
+				$newstep = $step+1;
+				/*if ($iscontinue == 1) {
+					// skip step+1
+					$newstep = $step;
+				}*/			
+				$fullink="a href=\"".$baseurl."game.php?step=".($newstep)."&para=".$paras[$para][2+($loop*2)]."&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\""; 
 				print "<".$fullink." onMouseover=\"window.status='continue to this section'; return true\">".$paras[$para][1+($loop*2)]."</a>"; 
 				//print "</td>"; 
 				if ($paras[$para][1+($loop*2)]<>"") { 
@@ -9454,6 +9462,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 			$paras[$para][1]=2; 
 			$paras[$para][2]=1; 
 			$paras[$para][3]="继续/Continue"; 
+			$iscontinue=1;
 			$finished=0; 
 		} 
 

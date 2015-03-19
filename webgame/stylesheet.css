@@ -56,13 +56,13 @@ img {
 .actionBox A:link {
  color: #FFFFFF;
  TEXT-DECORATION: underline;
-    font-family: Geneva, SunSans-Regular, sans-serif;
+    font-family: Arial, Geneva, SunSans-Regular, sans-serif;
     font-size: 20pt;    
 }
 .actionBox A:visited {
  COLOR: #FFFFFF;
  TEXT-DECORATION: underline;
-    font-family: Geneva, SunSans-Regular, sans-serif;
+    font-family: Arial, Geneva, SunSans-Regular, sans-serif;
     font-size: 20pt;    
 }
 
