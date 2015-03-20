@@ -7,6 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>    
   <link rel="stylesheet" href="stylesheet.css?"> 
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"> 
+  <!-- Standard iPhone -->
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon.jpg" />
+  <!-- Retina iPhone -->
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon.jpg" />
+  <!-- Standard iPad -->
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon.jpg" />
+  <!-- Retina iPad -->
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon.jpg" /> 
 </head> 
 <body> 
 <!-- Project Wonderful Ad Box Loader --> 
