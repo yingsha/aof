@@ -43,6 +43,17 @@ img {
 	max-width: 360px;
 }
 
+.saveBox {
+  clear: both;
+  font-size: 10pt;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 1em;
+  background: #155115;
+  color: #FFF;
+}
+
 .actionBox {
   width:  270px;
   float: left;

@@ -9147,7 +9147,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 				if ($paras[$para][1+($loop*2)]<>"") { 
 					//print "<td>"; 
 					$fullink=str_replace("game.php","save.php",$fullink); 
-					print "<".$fullink."  class=\"hidden\" onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\" alt=\"save your game\"></a>"; 
+					print "<".$fullink."  onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\" alt=\"save your game\"></a>"; 
 					//print "</td>"; 
 				} 
 				print "</div>"; 
