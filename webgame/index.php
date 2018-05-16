@@ -1,11 +1,15 @@
 <?php 
+//error_reporting( E_ALL &~ E_NOTICE );
+error_reporting( E_ALL ^ E_NOTICE );
+
 //$baseurl="http://www.apolitical.info/webgame/";
-$baseurl="http://play.1kapp.com/webgame/";
-@include $baseurl."header.txt"; 
+$baseurl="http://localhost/aof/";
+include($baseurl."header.txt"); 
 $line="<div>&nbsp</div>"; 
 $startdiv="<div align=\"center\">"; 
 $link=$startdiv."<a href=\"".$baseurl; 
 
+/*
 $mode = $_GET['mode'];
 $method = $_GET['method'];
 $branch = $_GET['branch'];
@@ -15,7 +19,6 @@ $prof = $_GET['prof'];
 $type = $_GET['type'];
 $rolls = $_GET['rolls'];
 $name = $_GET['name'];
-
 $Stamina = $_GET['Stamina'];
 $Charisma = $_GET['Charisma'];
 $Duelling = $_GET['Duelling'];
@@ -28,6 +31,29 @@ $Roguery = $_GET['Roguery'];
 $Luck = $_GET['Luck'];
 $Healing = $_GET['Healing'];
 $Streetwise = $_GET['Streetwise'];
+*/
+
+$mode = filter_input(INPUT_GET, 'mode', FILTER_SANITIZE_STRING);
+$method = filter_input(INPUT_GET, 'method', FILTER_SANITIZE_STRING);
+$branch = filter_input(INPUT_GET, 'branch', FILTER_SANITIZE_STRING);
+$orderplace = filter_input(INPUT_GET, 'orderplace', FILTER_SANITIZE_STRING);
+$order = filter_input(INPUT_GET, 'order', FILTER_SANITIZE_STRING);
+$prof = filter_input(INPUT_GET, 'prof', FILTER_SANITIZE_STRING);
+$type = filter_input(INPUT_GET, 'type', FILTER_SANITIZE_STRING);
+$rolls = filter_input(INPUT_GET, 'rolls', FILTER_SANITIZE_STRING);
+$name = filter_input(INPUT_GET, 'name', FILTER_SANITIZE_STRING);
+$Stamina = filter_input(INPUT_GET, 'Stamina', FILTER_SANITIZE_STRING);
+$Charisma = filter_input(INPUT_GET, 'Charisma', FILTER_SANITIZE_STRING);
+$Duelling = filter_input(INPUT_GET, 'Duelling', FILTER_SANITIZE_STRING);
+$Brawling = filter_input(INPUT_GET, 'Brawling', FILTER_SANITIZE_STRING);
+$Seafaring = filter_input(INPUT_GET, 'Seafaring', FILTER_SANITIZE_STRING);
+$Magic = filter_input(INPUT_GET, 'Magic', FILTER_SANITIZE_STRING);
+$Heroism = filter_input(INPUT_GET, 'Heroism', FILTER_SANITIZE_STRING);
+$Scouting = filter_input(INPUT_GET, 'Scouting', FILTER_SANITIZE_STRING);
+$Roguery = filter_input(INPUT_GET, 'Roguery', FILTER_SANITIZE_STRING);
+$Luck = filter_input(INPUT_GET, 'Luck', FILTER_SANITIZE_STRING);
+$Healing = filter_input(INPUT_GET, 'Healing', FILTER_SANITIZE_STRING);
+$Streetwise = filter_input(INPUT_GET, 'Streetwise', FILTER_SANITIZE_STRING);
 
 if (!isset($mode)) { 
 $mode=0; 
@@ -62,8 +88,6 @@ $class=array (
 18=> array ("lizard-man",19,1,19,19,1,19,19,19,1,1,1,1,"Bright Skin Young Jewel",4), 
 19=> array ("explorer",19,15,1,1,19,1,14,19,1,14,15,1,"Temperance Jobsworth",4), 
 20=> array ("aristocrat",1,10,20,1,20,20,1,10,2,20,10,5,"Euphemia",5), 
-
-
 ); 
 
 // used to have priest: 
@@ -151,7 +175,7 @@ if ($mode==0) {
 	// Frequently Asked Questions
 	print $startdiv."<iframe src=\"faq.html\" height=450 frameborder=0></IFRAME></div>"; 
 	print $line; 
-	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main page</a></div>"; 
+	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main page (返回主页)</a></div>"; 
 } elseif ($mode==2) { 
 	//$method (for generating stats): 
 	//1=generate randomly 
@@ -486,7 +510,7 @@ if ($mode==0) {
 	// Links
 	print $startdiv."<iframe src=\"links.html\" height=450 frameborder=0></IFRAME></div>"; 
 	print $line; 
-	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main page</a></div>"; 
+	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main page (返回主页)</a></div>"; 
 
 } elseif ($mode==5) { 
 	// Pre-generated character
@@ -564,7 +588,7 @@ if ($mode==0) {
 	print $startdiv."If you want a banner of a different size or shape, please feel free to email:</div>"; 
 	print $startdiv."news (at) apolitical (dot) info.</div>"; 
 	print $line; 
-	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main menu</a></div>"; 
+	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main page (返回主页)</a></div>"; 
 
 } elseif ($mode==7) { 
 	// Library (branch 1: Stories, branch 2: Games)
@@ -778,17 +802,17 @@ if ($mode==0) {
 		print "</table>"; 
 	} 
 	print $line; 
-	print "<div align=\"center\">The total attributes for this character are ".$total."</div>"; 
+	print "<div align=\"center\">The total attributes for this character are (该角色属性值总和为) ".$total."</div>"; 
 	print $line; 
 	print "<div align=\"center\">"; 
 	if ($total<>$attnum*10+10) { 
-		print "Total attributes need to be ".($attnum*10+10); 
+		print "Total attributes need to be (属性值总和必须等于) ".($attnum*10+10); 
 	} else { 
 		print "<a href=\"".$baseurl."index.php?mode=2&method=6&prof=".$prof."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='continue, with the character as is'; return true\">Accept this character</a>"; 
 	} 
 	print "</div>"; 
 	print $line; 
-	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main page</a></div>"; 
+	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main page (返回主页)</a></div>"; 
 }
  
 print $line; 
