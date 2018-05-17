@@ -70,41 +70,39 @@ $word=array (
 	'Streetwise' => array ("null","babe in the woods","babe in the woods","clueless","clueless","foolish","foolish","unwise","unwise","fair","fair","alert","alert","alert","crafty","crafty","crafty","cunning as a fox","cunning as a fox","cunning as a shithouse rat","cunning as a shithouse rat"),
 );
 
-//number of classes: only used for special branching type 23
-$classes=20;
-
 //name: get rid of the '\'s that it puts in front of apostrophes
 $name=str_replace(chr(92),chr(0),$name);
 
+//number of classes: only used for special branching type 23
+$classes=21;
 
 //classes
-$class=array (
-	array ("clown","小丑clown"),
-	array ("talking-cat","人语猫talking cat"),
-	array ("wizard","魔法师wizard"),
-	array ("scoundrel","恶棍scoundrel"),
-	array ("bard","吟游诗人bard"),
-	array ("knight","骑士knight"),
-	array ("nomad","游牧民nomad"),
-	array ("pirate","海盗pirate"),
-	array ("fairy","仙子fairy"),
-	array ("dwarf","矮人dwarf"),
-	array ("barbarian","野蛮人barbarian"),
-	array ("assassin","刺客assassin"),
-	array ("witch","女巫witch"),
-	array ("faun","弗恩faun"),
-	array ("troll","巨魔troll"),
-	array ("courtesan","交际花courtesan"),
-	array ("fortune-teller","占卜师fortune-teller"),
-	array ("amazon","亚马逊女战士amazon"),
-	array ("lizard-man","蜥蜴人lizard-man"),
-	array ("explorer","探索者explorer"),
-	array ("aristocrat","贵族aristocrat"),
-	array ("bird","鸟bird")
-);
 // 'clown' and 'bird' are special cases:
 // you can only be turned into them,
 // you can't choose to start as one.
+$classname=array (
+	1=> array ("talking-cat","人语猫talking cat"),
+	2=> array ("wizard","魔法师wizard"),
+	3=> array ("scoundrel","恶棍scoundrel"),
+	4=> 	array ("bard","吟游诗人bard"),
+	5=> 	array ("knight","骑士knight"),
+	6=> 	array ("nomad","游牧民nomad"),
+	7=> 	array ("pirate","海盗pirate"),
+	8=> 	array ("fairy","仙子fairy"),
+	9=> 	array ("dwarf","矮人dwarf"),
+	10=> 	array ("barbarian","野蛮人barbarian"),
+	11=> 	array ("assassin","刺客assassin"),
+	12=> 	array ("witch","女巫witch"),
+	13=> 	array ("faun","弗恩faun"),
+	14=> 	array ("troll","巨魔troll"),
+	15=> 	array ("courtesan","交际花courtesan"),
+	16=> 	array ("fortune-teller","占卜师fortune-teller"),
+	17=> 	array ("amazon","亚马逊女战士amazon"),
+	18=> 	array ("lizard-man","蜥蜴人lizard-man"),
+	19=> 	array ("explorer","探索者explorer"),
+	20=> 	array ("aristocrat","贵族aristocrat"),
+	21=> array ("doraemon","机器猫doraemon"),
+);
 
 // unpack $rolls to reveal character's stats
 $stats=array();
@@ -8543,6 +8541,11 @@ $art=array (
 
 'Preacher2'=> 'spider',
 
+	// custom images
+	'Revo2'=> 'y-street-preacher',
+	'Sweatlodge0'=> 'y-sweatlodge',
+	'hair1'=> 'y-hairwitch',
+
 'Karrasick4'=> 'sick',
 'Karraquitbinge3'=> 'devil',
 
@@ -9215,7 +9218,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 				$d2 = rand(1,6);
 				$dice=(($stats[$which]+$d1)+$d2);
 				if ($dice>=$difficulty) {
-					print "<font color=\"grey\">";					
+					print "<font color=\"grey\">";
 					print $attributes[$which]." roll 骰子掷出".$dice."点(".$d1."+".$d2."+属性".$stats[$which]."), 难度系数(difficulty) = ".$difficulty." - ";
 					print "</font>";
 					print "<font color=\"green\">";
@@ -9728,10 +9731,10 @@ print "<div id=\"c2\" class=\"div_stat\">";
 
 	//print character (stats, items and shells - keywords aren't displayed)
 	print "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td>";
-	print $startdiv."<img src=\"".$baseurl."images/misc/thumb_".$class[$prof][0].".jpg\"></div>";
+	print $startdiv."<img src=\"".$baseurl."images/misc/thumb_".$classname[$prof][0].".jpg\"></div>";
 	print "</td></tr><tr><td>";
 	print $startdiv."<i>".str_replace("_"," ",$name)."</i></div>";
-	print $startdiv.$class[$prof][1]."</div>";
+	print $startdiv.$classname[$prof][1]."</div>";
 	print "</td></tr></table>";
 	print $line;
 
@@ -9850,20 +9853,23 @@ print "<div id=\"c3\" class=\"div_picture\">";
 	print $para." - ".$art[$para]."<br/>";
 
 	if ($art[$para]=="") {
-		print $startdiv."artwork copyright <br/> <a href=\"http://raue-see.de.vu\" target=\"_blank\">Azalea</a></div>";
+		print $startdiv."美术版权/artwork copyright <br/> <a href=\"http://raue-see.de.vu\" target=\"_blank\">Azalea</a></div>";
 		print $startdiv."<img class=\"artclass\" src=\"".$baseurl."images/misc/banner.jpg\"></div>";  // originally title.jpg
 	} elseif ($para=="Oops") {
-		print $startdiv."artwork by unknown artist</div>";
+		print $startdiv."由未知的艺术家创作 artwork by unknown artist</div>";
 		print $startdiv."<img class=\"artclass\" src=\"".$baseurl."images/misc/centaur.jpg\"></div>";
 	} else {
-		print $startdiv."artwork ";
 		$pagepub=$artists[$art[$para]][1];
 		if ($pagepub=="public") {
-			print "by ";
+			print $startdiv."创作者是 artwork by ";
 		} elseif ($pagepub=="www.brutalrpg.com") {
-			print "owned and licensed by David J. Stanley of <a href=\"http://www.brutalrpg.com\" target=\"_blank\">";
+			print $startdiv."artwork owned and licensed by David J. Stanley of <a href=\"http://www.brutalrpg.com\" target=\"_blank\">";
 		} else {
-			print "copyright <a href=\"http://".$artists[$art[$para]][1]."\" target=\"_blank\">";
+			if ($artists[$art[$para]][1] <> '') {
+				print $startdiv."美术版权/artwork copyright <a href=\"http://".$artists[$art[$para]][1]."\" target=\"_blank\">";
+			} else {
+				print $startdiv."图片来源不详（可能有侵权风险，请联系网站管理员）";
+			}
 		}
 		$aname=$artists[$art[$para]][0];
 		print $aname;
@@ -9897,7 +9903,7 @@ print "<div id=\"c3\" class=\"div_picture\">";
 
 		print $startdiv."<img class=\"artclass\" src=\"".$baseurl."images/".$art[$para].".jpg\"></div>";
 	}
-	print $startdiv."<b><a href=\"".$baseurl."credits.php\" onMouseover=\"window.status='author and artist details'; return true\" target=\"_blank\">credits</a> . ";
+	print $startdiv."<b><a href=\"".$baseurl."credits.php\" onMouseover=\"window.status='author and artist details'; return true\" target=\"_blank\">制作名单（credits）</a> . ";
 	print "<a href=\"".$baseurl."\" onMouseover=\"window.status='start again'; return true\">";
 	if ($over==1) {
 		print "返回主菜单";
