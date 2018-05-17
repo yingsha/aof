@@ -173,7 +173,7 @@ if ($mode==0) {
 
 	print $link."index.php?mode=2&method=1\" onMouseover=\"window.status='randomly generated character'; return true\">随机生成角色来开始游戏 Random character</a></div>";
 	print $line;
-	print $link."index.php?mode=5\" onMouseover=\"window.status='choose from a list of characters'; return true\">选择预设的22个角色之一来开始游戏 Pre-generated character</a></div>";
+	print $link."index.php?mode=5\" onMouseover=\"window.status='choose from a list of characters'; return true\">选择预设的21个角色之一来开始游戏 Pre-generated character</a></div>";
 	print $line;
 	print $startdiv."自定义角色生成 Create a custom character, using";
 	print $link."index.php?mode=4&method=2\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">点击调属性 links</a> or <a href=\"".$baseurl."index.php?mode=4&method=1\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">下拉框调属性 drop-down menus</a></div>";
@@ -564,8 +564,8 @@ if ($mode==0) {
 	print $line;
 	print "<table align=\"center\">";
 	$flag=0;
-	$x=5;
-	$y=5;
+	$x=4;
+	$y=4;
 	for ($click=$orderplace;$click<=$orderplace+($x*$y)-1;$click++) {
 		$bclick=$click;
 		if ($bclick>$classes) {

@@ -8544,7 +8544,6 @@ $art=array (
 	// custom images
 	'Revo2'=> 'y-street-preacher',
 	'Sweatlodge0'=> 'y-sweatlodge',
-	'hair1'=> 'y-hairwitch',
 
 'Karrasick4'=> 'sick',
 'Karraquitbinge3'=> 'devil',
