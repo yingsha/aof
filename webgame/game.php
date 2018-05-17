@@ -9192,7 +9192,6 @@ print "<div id=\"c1\" class=\"div_text\">";
 			// $level=max(1,1+floor(($level-130)/10));
 			// put this back in if want to have levels again.
 
-
 			$which=0;
 			while ($which<=$attnum AND $attributes[$which]<>$paras[$para][2]) {
 				$which++;
@@ -9202,7 +9201,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 				print $line;
 			} else {
 				if ($switch==0) {
-				print $line;
+					print $line;
 				}
 				$switch=1;
 				$difficulty=$paras[$para][3];
@@ -9216,12 +9215,14 @@ print "<div id=\"c1\" class=\"div_text\">";
 				$d2 = rand(1,6);
 				$dice=(($stats[$which]+$d1)+$d2);
 				if ($dice>=$difficulty) {
+					print "<font color=\"grey\">";					
+					print $attributes[$which]." roll 骰子掷出".$dice."点(".$d1."+".$d2."+属性".$stats[$which]."), 难度系数(difficulty) = ".$difficulty." - ";
+					print "</font>";
 					print "<font color=\"green\">";
-					print $attributes[$which]." roll 掷骰子（".$d1."+".$d2."+属性".$stats[$which]." = ".$dice."）, 难度系数(difficulty) = ".$difficulty." - ";
 					//advancement roll
 					$adroll=rand(1,20);
 					if ($dice>=($difficulty+5) AND $adroll>$stats[$which]) {
-						print " 掷骰>=难度+5，并且掷20面骰(".$adroll.">".$attributes[$which]."值(".$stats[$which].") - ";
+						print " 掷骰>=难度+5，二十面骰掷出".$adroll." > ".$attributes[$which]."值(".$stats[$which].") - ";
 						if ($attributes[$which]<>"Stamina") {
 							// Stamina以外的属性升级
 							print "<font color=\"gold\">ADVANCED</font>（属性值++）。";
@@ -9238,8 +9239,10 @@ print "<div id=\"c1\" class=\"div_text\">";
 					}
 					$para=$paras[$para][4];
 				} else {
+					print "<font color=\"grey\">";
+					print $attributes[$which]." roll 骰子掷出".$dice."点(".$d1."+".$d2."+属性".$stats[$which]."), 难度系数(difficulty) = ".$difficulty." - ";
+					print "</font>";
 					print "<font color=\"red\">";
-					print $attributes[$which]." roll 掷骰子（".$d1."+".$d2."+属性".$stats[$which]." = ".$dice."）, 难度系数(difficulty) = ".$difficulty." - ";
 					if ($bless[$which]>0) {
 						$bless[$which]=$bless[$which]-1;
 						if ($prof<>9 OR rand(0,1)==1) {
@@ -9336,7 +9339,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 			if ($stats[$which]<1) {
 			if ($attributes[$which]=="Stamina") {
 			print $line;
-			print "Alas, the damage was too much for you. You have died.";
+			print "最后，你死于伤势过重。(Alas, the damage was too much for you. You have died.)";
 			print $line;
 			print "<img style=\"border:0px\" src=\"".$baseurl."images/misc/end.jpg\">";
 			$over=1;
@@ -9439,12 +9442,14 @@ print "<div id=\"c1\" class=\"div_text\">";
 					$d2 = rand(1,6);
 					$dice=(($stats[$which]+$d1)+$d2);
 					if ($dice>=$difficulty) {
+						print "<font color=\"grey\">";
+						print $attributes[$which]." roll 骰子掷出".$dice."点(".$d1."+".$d2."+属性".$stats[$which]."), 难度系数(difficulty) = ".$difficulty." - ";
+						print "</font>";
 						print "<font color=\"green\">";
-						print $attributes[$which]." roll 掷骰子（".$d1."+".$d2."+属性".$stats[$which]." = ".$dice."）, 难度系数(difficulty) = ".$difficulty." - ";
 						//advancement roll
 						$adroll=rand(1,20);
 						if ($dice>=($difficulty+5) AND $adroll>$stats[$which]) {
-							print " 掷骰>=难度+5，并且掷20面骰(".$adroll.">".$attributes[$which]."值(".$stats[$which].") - ";
+							print " 掷骰>=难度+5，二十面骰掷出".$adroll." > ".$attributes[$which]."值(".$stats[$which].") - ";
 							if ($attributes[$which]<>"Stamina") {
 								// Stamina以外的属性升级
 								print "<font color=\"gold\">ADVANCED</font>（属性值++）。";
@@ -9461,16 +9466,18 @@ print "<div id=\"c1\" class=\"div_text\">";
 						}
 						$made++;
 					} else {
+						print "<font color=\"grey\">";
+						print $attributes[$which]." roll 骰子掷出".$dice."点(".$d1."+".$d2."+属性".$stats[$which]."), 难度系数(difficulty) = ".$difficulty." - ";
+						print "</font>";
 						print "<font color=\"red\">";
-						print $attributes[$which]." roll, difficulty ".$difficulty." - ";
 						if ($bless[$which]>0) {
-						if ($prof<>9 OR rand(0,1)==1) {
-						print "use blessing";
-						$bless[$which]=$bless[$which]-1;
-						$made++;
-						} else {
-						print "blessing failed";
-						$bless[$which]=$bless[$which]-1;
+							if ($prof<>9 OR rand(0,1)==1) {
+								print "使用祝福 use blessing";
+								$bless[$which]=$bless[$which]-1;
+								$made++;
+							} else {
+								print "祝福失败 blessing failed";
+								$bless[$which]=$bless[$which]-1;
 
 						if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") {
 						$loss=min(rand(1,2),$stats[1]-1);
