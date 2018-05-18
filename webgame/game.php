@@ -999,7 +999,47 @@ if (!isset($shells)) {
 
 $switch=0;
 
-//main array
+//languages
+// 0 - English
+// 1 - Chinese
+// 2 - Chinese (English) 汉英对照
+$lang = 2;
+
+function getLocStr($fulltext, $lang) {
+
+	//main array
+	$localizationPrefix = "Loc_";
+	$localization=array(
+		'Loc_DoSo'=> array ("Do so", "照办"),
+		'Loc_Riskit'=> array ("Risk it", "冒险一试"),
+		'Loc_AdmitIt'=> array ("Admit it", "承认"),
+		'Loc_DenyIt'=> array ("Deny it", "否认"),
+		'Loc_GoYourself'=> array ("Go yourself", "自己走"),
+		'Loc_Continue'=> array ("Continue", "继续"),
+		'Loc_Flee'=> array ("Flee", "逃跑"),
+		'Loc_Companion'=> array ("Companion", "同伴"),
+		/*
+		Attack them
+		Bribe them
+		Challenge him
+		Dig an escape tunnel
+		Overpower a guard
+		Wait for your trial
+		Try and defend yourself
+		*/
+	);
+
+	// localization
+	if (substr( $fulltext, 0, 4 ) == $localizationPrefix) {
+		if ($lang==2) {
+			// 汉英对照
+			$fulltext=$localization[$fulltext][1]." (".$localization[$fulltext][0].")";
+		} else {
+			$fulltext=$localization[$fulltext][$lang];
+		}
+	}
+	return $fulltext;
+}
 
 $paras=array (
 
@@ -1179,7 +1219,7 @@ $paras=array (
 84=> array ("You don't have to wait long before a forest elf wanders by the pond. You call her over.",2,2,"Try and trick her",97,"Tell her the truth",90),
 85=> array ("You hop through the forest. You find your mind wandering from looking for help to looking for water. After some time, you see a swamp and head towards it. A troll steps from behind a tree. He moves towards you.",16,14,"85troll","85not"),
 '85not'=> array ("no text",16,9,"85dwarf","85main"),
-'85main'=> array ("no text",2,2,"See what he wants",123,"Flee",96),
+'85main'=> array ("no text",2,2,"See what he wants",123,"Loc_Flee",96),
 '85troll'=> array ("You tell him that you're really a troll. He tells you that he can help you, and carries you back to his cave.",13,130),
 '85dwarf'=> array ("no text",3,"Streetwise",13,"85main","85die"),
 '85die'=> array ("At the sight of your hereditary enemy, you lose all control. You croak a tiny battle-cry, and hop valiantly into battle with the enormous troll. The outcome is sadly predictable.",0),
@@ -1219,7 +1259,7 @@ $paras=array (
 105=> array ("You aren't going to risk your life to save someone who might already be dead. You retreat from the clearing. The slugs are either unaware of you or choose to ignore you.",9,"Heroism",-2,122),
 106=> array ("The slugs are either unaware of you, or ignore you. However the warrior stirs says in a sleepy voice 'what're you doing?'",3,"Charisma",10,109,108),
 107=> array ("However they are either unaware of you, or ignore you. You decide to try something else.",2,4,"Attack the slugs",101,"See if you can wake her",102,"Try and cast a spell",104,"Leave her to her fate",105),
-108=> array ("The warrior mutters 'get back Slimey' to the Slug which you now see she was using as a fairly disgusting pillow. She stands up with sword drawn and asks you what you want. Despite her fine sword and armour she has a peasant's accent. You explain that you thought she was under attack. She shakes her head as if she's heard that one before, and moves to attack you.",2,2,"Flee",118,"Attack her",117),
+108=> array ("The warrior mutters 'get back Slimey' to the Slug which you now see she was using as a fairly disgusting pillow. She stands up with sword drawn and asks you what you want. Despite her fine sword and armour she has a peasant's accent. You explain that you thought she was under attack. She shakes her head as if she's heard that one before, and moves to attack you.",2,2,"Loc_Flee",118,"Attack her",117),
 109=> array ("The warrior mutters 'get back Slimey' to the Slug which you now see she was using as a fairly disgusting pillow. She stands up with sword drawn and asks you what you want. Despite her fine sword and armour she has a peasant's accent. The three Slugs also seem to be watching you. You explain that you thought she was under attack. While she makes no move to attack you, she remains on guard and obviously doesn't believe you.",2,2,"Apologise and retreat",116,"Attack her",117),
 110=> array ("no text",3,"Magic",25,112,113),
 111=> array ("The magic is beyond your abilities.",1,114),
@@ -1236,7 +1276,7 @@ $paras=array (
 '118b'=> array ("It's raised a large red welt, but doesn't seem to have done any other damage.",8,47,1,299),
 119=> array ("Her fighting technique shows far less evidence of training than you would have expected from her obviously expensive equipment. You are able to get the better of her. You notice that the Slugs do not take any role in the fight. Presumably their role is to warn her. You make as if to deliver a killing blow, then say 'I told you I was trying to help you', and run out of the clearing before she can recover. When you stop to catch your breath, you reflect that you'll be less likely to try and help someone next time.",9,"Heroism",-1,299),
 120=> array ("You meet the warrior's attack. Her fighting technique seems slow and clumsy. Yet when you seperate you realise that she has cut you several times and you haven't made a mark.",9,"Stamina",-3,121),
-121=> array ("no text",2,2,"Continue fighting",117,"Flee",118),
+121=> array ("no text",2,2,"Continue fighting",117,"Loc_Flee",118),
 122=> array ("no text",13,301),
 
 //123-131 : overflow from 'being a frog' encounter 69-98
@@ -1294,7 +1334,7 @@ $paras=array (
 'Karraowythcar'=> array ("The porter of your flophouse idly mentions that some men were asking after you a while back. You ask for a description. To your horror you recognise them - senior retainers of your family. You realise they've tracked you to Karrakara, and must intend to erase the shame of your quarrel with them, by killing you.",1,"Karraowythcch"),
 'Karraowythcp'=> array ("The porter of your flophouse idly mentions that some people were asking after you a while back. You ask for a description. To your horror you recognise them - crew of the Sobbing Molly, a ship you served on years ago, until you stabbed one in a drunken fight and had to leave. They must have tracked you to Karrakara, intending revenge.",1,"Karraowythcch"),
 'Karraowythcch'=> array ("no text",8,304,1,"Karraowythcch1"),
-'Karraowythcch1'=> array ("no text",2,3,"Flee","Karrac1","Seek help","Karrac2","Try and find them before they find you","Karrac3"),
+'Karraowythcch1'=> array ("no text",2,3,"Loc_Flee","Karrac1","Seek help","Karrac2","Try and find them before they find you","Karrac3"),
 'Karraowythmain'=> array ("no text",5,14,"Karraowythy","Karraowythn"),
 'Karraowythy'=> array ("no text",4,5,"Karraowyth1","Karraowyth1","Karraowyth1","Karraowyth1","Karraowythy1"),
 'Karraowythy1'=> array ("Owyth's room is empty, but for a note.",7,14,0,"Karraowythy2"),
@@ -1348,7 +1388,7 @@ $paras=array (
 'Karracdrums'=> array ("You look up, and Prince Dimitri stands in your room.<br><br>You tell him your troubles. He sounds angry, but he says that he swore to help you, and he will.<br><br>'But my debt to you is now paid.' he says. He raises his hand in a formal farewell, the skin of the drum splits apart, and he's gone. You lie down on the bed, quite exhausted. For a while there, you felt as if death had its hand on you.",13,"Karraowythmain"),
 'Karrac2f'=> array ("You ask everyone you know for help. But who will stand in the path of vengeance to help a fringe-dweller like you?",1,"Karrac2f1"),
 'Karrac2f1'=> array ("no text",3,"Heroism",25,"Karrac2fs","Karrac2ff"),
-'Karrac2fs'=> array ("no text",2,2,"Flee","Karrac1","Try and find them before they find you","Karrac3"),
+'Karrac2fs'=> array ("no text",2,2,"Loc_Flee","Karrac1","Try and find them before they find you","Karrac3"),
 'Karrac2ff'=> array ("Faced with death, or a fate worse than death, you accept the only help on offer - that of your WEAPONNAME - and end your life.",0),
 'Karracnl'=> array ("You remember the Well of New Life you found in the forest. Could it truly give you a new life?",8,286,1,"Leavekarraland"),
 'Karracargov'=> array ("You decide to trade on your family connections and seek help from the government. You gamble that the family won't have told anyone about the disgrace of your quarrel with them.",1,"Karracgov1"),
@@ -1972,7 +2012,7 @@ $paras=array (
 'Janoothleavedeathhorse2'=> array ("no text",8,104,1,"Janoothleavedeathhorse3"),
 'Janoothleavedeathhorse3'=> array ("The road takes you through a small, dark wood.",8,107,1,"Deathhorse"),
 'Janoothwait'=> array ("no text",11,1,"Janoothwait1","Janoothstay"),
-'Janoothwait1'=> array ("You realise that, in a small village like this, you'll be expected to share your shells if anyone has a need for it. You consider the idea of burying it somewhere, and claiming your shell-purse was empty.",2,2,"Do so","Janoothbury","Risk it","Janoothrisk"),
+'Janoothwait1'=> array ("You realise that, in a small village like this, you'll be expected to share your shells if anyone has a need for it. You consider the idea of burying it somewhere, and claiming your shell-purse was empty.",2,2,"Loc_DoSo","Janoothbury","Loc_Riskit","Janoothrisk"),
 'Janoothrisk'=> array ("no text",9,"Heroism",1,"Janoothrisk1"),
 'Janoothrisk1'=> array ("no text",12,2,16,"Luck","Luck","Janoothriskff","Janoothriskfs","Janoothstay"),
 'Janoothriskff'=> array ("A few weeks after you arrive the village learns that one of their number has gotten into 'some trouble' in the city, and needs to pay 'some men'.",10,-10,"Janoothstay"),
@@ -1983,11 +2023,11 @@ $paras=array (
 'Janoothburyright'=> array ("On the way back, you reflect on your theoretical belief in law and the solid traditions of the peasantry.",9,"Heroism",-2,"Janoothburyroll"),
 'Janoothburycentre'=> array ("no text",9,"Heroism",-1,"Janoothburyroll"),
 'Janoothburyroll'=> array ("no text",3,"Roguery",14,"Janoothstay","Janoothburyf"),
-'Janoothburyf'=> array ("All is well for a few weeks. But then one of the villagers, an old man called Derna, comes to see you. He tells you that they've found a buried stash of shells in the wasteland. He asks you whether it's yours.",2,2,"Admit it","Janoothadmit","Deny it","Janoothdeny"),
+'Janoothburyf'=> array ("All is well for a few weeks. But then one of the villagers, an old man called Derna, comes to see you. He tells you that they've found a buried stash of shells in the wasteland. He asks you whether it's yours.",2,2,"Loc_AdmitIt","Janoothadmit","Loc_DenyIt","Janoothdeny"),
 'Janoothadmit'=> array ("The villagers gather in the patch of dirt that serves as a square. Derna repeats what you told him. He gives you your shells back with unmistakable contempt, and tells you to leave and never return.",1,"Janoothexile"),
 'Janoothdeny'=> array ("no text",3,"Charisma",19,"Janoothdenys","Janoothdenyf"),
 'Janoothdenys'=> array ("Derna pats your shoulder and says that he never really doubted you. He says the shells will go into the common treasury.",10,-1000,"Janoothstay"),
-'Janoothdenyf'=> array ("Derna leaves, but the matter doesn't end there. A few days later he calls a meeting of the whole village. There, he formally accuses you of refusing to share your shells. If you admit it, you'll be expelled at least. If you deny it, it will be resolved by armed single combat. Since Derna is an old man, one of the younger men would fight you in his place.",2,2,"Admit it","Janoothdenyfadmit","Challenge him","Janoothdenyfchallenge"),
+'Janoothdenyf'=> array ("Derna leaves, but the matter doesn't end there. A few days later he calls a meeting of the whole village. There, he formally accuses you of refusing to share your shells. If you admit it, you'll be expelled at least. If you deny it, it will be resolved by armed single combat. Since Derna is an old man, one of the younger men would fight you in his place.",2,2,"Loc_AdmitIt","Janoothdenyfadmit","Challenge him","Janoothdenyfchallenge"),
 'Janoothdenyfadmit'=> array ("You admit that the shells are yours. After a short discussion the villagers decide to punish you by keeping the shells, and making you leave the village.",10,-1000,"Janoothexile"),
 'Janoothdenyfchallenge'=> array ("Again you deny that the shells are yours. As you expected, everyone agrees that the only way to resolve the matter is a trial by combat. Derna's eldest daughter volunteers to fight for him. Without delay the villagers clear a wide space for you.",13,"Janoothdenyfchallenge1"),
 'Janoothdenyfchallenge1'=> array ("no text",6,40,"Janoothdenyfchallengerun","Janoothdenyfchallenge2"),
@@ -2005,7 +2045,7 @@ $paras=array (
 'Janoothstay'=> array ("You stay with the villagers for several months. You take to their slow, natural life much more easily than you thought you would.",9,"Heroism",-1,"Janoothstay1"),
 'Janoothstay1'=> array ("no text",9,"Streetwise",-2,"Janoothstay1a"),
 'Janoothstay1a'=> array ("no text",9,"Scouting",3,"Janoothstay2"),
-'Janoothstay2'=> array ("Eventually someone tells you that Janooth should arrive in a couple of weeks. People begin to pitch tents on the field he passes over. You ask one of the old people about the various rules relating to what you can wish for, which everyone seems to know but never talk about. You've already asked why no-one wishes for eternal youth or to find ten thousand cowrie shells, but everyone acted like you were joking. It seems that you could wait, and wish for Owyth to be transformed. Or someone could take him out and he could wish himself. You're about to say you'll go yourself, but you are struck with a sudden fear. What if you fall asleep at the crucial moment, or somehow don't wish properly?",2,2,"Let someone take Owyth out","Janoothstay3","Go yourself","Janoothstay4"),
+'Janoothstay2'=> array ("Eventually someone tells you that Janooth should arrive in a couple of weeks. People begin to pitch tents on the field he passes over. You ask one of the old people about the various rules relating to what you can wish for, which everyone seems to know but never talk about. You've already asked why no-one wishes for eternal youth or to find ten thousand cowrie shells, but everyone acted like you were joking. It seems that you could wait, and wish for Owyth to be transformed. Or someone could take him out and he could wish himself. You're about to say you'll go yourself, but you are struck with a sudden fear. What if you fall asleep at the crucial moment, or somehow don't wish properly?",2,2,"Let someone take Owyth out","Janoothstay3","Loc_GoYourself","Janoothstay4"),
 'Janoothstay3'=> array ("You tell Owyth that it'd be better for someone who's more familiar with Janooth to take care of it, and he agrees. You leave the village.",1,"Janoothleave2"),
 'Janoothstay4'=> array ("no text",7,4,0,"Janoothstay4a"),
 'Janoothstay4a'=> array ("You make camp with the villagers who are awaiting the arrival of Janooth. They are mostly, you notice, the young and the sick. The atmosphere is excited but with an undercurrent of fear, halfway between a festival and the eve of a battle. As the time draws nearer, some people start drinking a broth made from a plant which ensures you stay awake and alert, but at the cost of making you fearful. You have some just in case. On the day before Janooth arrives, everyone beats drums and chants for hours on end. This and the broth drive you to a pitch of fear. You're sure you're going to make a mistake somehow. The chanting and drumming become fevered during the final hours. At last someone points to the sky. Janooth has arrived. Impossibly large, he fills the sky. For a minute you are struck dumb. But as the shadow passes over you, he bends his head down and seems to be looking straight at you, and you make your wish.",13,"Janoothstay4b"),
@@ -2405,7 +2445,7 @@ $paras=array (
 'Dabatemps'=> array ("In an out of-the-way street you're surprised to see a temple to Daba, the god of the Amazons.",2,2,"Enter","Dabatempy","Pass by","Dabatempn"),
 'Dabatempn'=> array ("no text",9,"Heroism",-2,"Streetgodsleave2"),
 'Dabatempy'=> array ("no text",6,145,"Dabatempyy","Dabatempyn"),
-'Dabatempyy'=> array ("You consider asking the priestess about the cryer's story of the worship of Averna taking over the land of the Amazons.",2,2,"Do so","Dabatempyyy","Decline","Dabatempyn"),
+'Dabatempyy'=> array ("You consider asking the priestess about the cryer's story of the worship of Averna taking over the land of the Amazons.",2,2,"Loc_DoSo","Dabatempyyy","Decline","Dabatempyn"),
 'Dabatempyyy'=> array ("She confirms the cryer's story. She tells you that they desperately need someone to investigate the new temple.",1,"Dabatempynss1"),
 'Dabatempyn'=> array ("The stern-faced priestess asks you to confess your sins. You feel compelled to obey.",12,2,18,"Heroism","Heroism","Dabatempynff","Dabatempynfs","Dabatempynss"),
 'Dabatempynff'=> array ("The priestess tells you that Daba forgives all sins. But her grim demeanour gives you no confidence. You slink out of the temple feeling guiltier than when you came in.",9,"Luck",-4,"Deadeyeruns"),
@@ -2494,7 +2534,7 @@ $paras=array (
 'Deadeyerunf2'=> array ("You vow never to return.",1,"Deadeyeruns"),
 'Deadeyega4'=> array ("You find yourself at the far end of the street, in front of a huge, dark building. Like the current of a river, the street seems to have carried you here. There are less people around, and they look more desperate.",8,287,1,"Deadeyega4a"),
 'Deadeyega4a'=> array ("no text",5,10,"Deadeyefimp","Deadeyefmain"),
-'Deadeyefimp'=> array ("The imp becomes quite hysterical. It begs you not to enter the building. It says you should leave this place and never return.",2,2,"Do so","Deadeyefimp1","Enter","Deadeyefimpn"),
+'Deadeyefimp'=> array ("The imp becomes quite hysterical. It begs you not to enter the building. It says you should leave this place and never return.",2,2,"Loc_DoSo","Deadeyefimp1","Enter","Deadeyefimpn"),
 'Deadeyefimp1'=> array ("no text",8,259,1,"Deadeyefimp2"),
 'Deadeyefimp2'=> array ("You feel that the imp might be right. Like one wading upriver, you turn around and leave Dead Eye Street forever.",8,251,0,"Streetgodsleave2"),
 'Deadeyefimpn'=> array ("no text",9,"Heroism",3,"Deadeyefimpn1"),
@@ -2502,7 +2542,7 @@ $paras=array (
 'Deadeyefmain'=> array ("The doormen in most places on this street have a sneering, superior attitude. But the one here treats you with open hate, snarling and trying to shove you inside.",2,2,"Challenge the doorman","Deadeyefmainc","Enter the hall","Deadeyefmaine"),
 'Deadeyefmainc'=> array ("no text",12,3,20,"Streetwise","Charisma","Brawling","Deadeyefmaincf","Deadeyefmaincf","Deadeyefmaincs","Deadeyefmaincs"),
 'Deadeyefmaincs'=> array ("He instantly crumples, cringing so convincingly that you almost feel sorry for him.",9,"Heroism",2,"Deadeyefmaine"),
-'Deadeyefmaincf'=> array ("He reacts with outrage to your protests. He draws a knife and tells you to get inside the hall now.",2,3,"Do so","Deadeyefmaincfn","Fight him","Deadeyefmaincfny","Run","Deadeyefmaincfnyr"),
+'Deadeyefmaincf'=> array ("He reacts with outrage to your protests. He draws a knife and tells you to get inside the hall now.",2,3,"Loc_Doso","Deadeyefmaincfn","Fight him","Deadeyefmaincfny","Run","Deadeyefmaincfnyr"),
 'Deadeyefmaincfnyr'=> array ("You turn and run. You hear him howl with rage - then the hiss of his knife flying through the air.",3,"Luck",20,"Deadeyefmaincfnyrs","Deadeyefmaincfnyrf"),
 'Deadeyefmaincfnyrs'=> array ("It hisses by you, close enough to feel like a lover blowing in your ear.",1,"Deadeyefmaincfnyrs1"),
 'Deadeyefmaincfnyrs1'=> array ("You run until you can taste blood in your mouth, leaving the street of gamblers behind you forever. When you stop running, you start trembling like grass in the wind as you think of how close you came to death.",9,"Heroism",-1,"Deadeyefmaincfnyrs2"),
@@ -2671,7 +2711,7 @@ $paras=array (
 'Revengefrog1'=> array ("no text",8,217,1,"Revengefrog2"),
 'Revengefrog2'=> array ("An angry-looking creature, half-human and half-frog, stomps along the road. It stops and stares at you. You ask the creature what it wants.<br><br>'I'm actually a wood elf.' it says.<br><br>'Some bastard tricked me and I turned into a frog. A passing dryad tried to change me back, but the change only went half-way.'",6,215,"Revengefrogch","Revengefrogs"),
 'Revengefrogch'=> array ("'I'm sorry - for a minute you looked like them.' You stare at the dirt and mumble, wondering why the wood elf doesn't recognise you.",2,3,"Admit the truth","Revengefrogy","Say nothing","Revengefrogn","Try and help the frog","Revengefrogh"),
-'Revengefrogs'=> array ("'And you', it concludes, 'are that bastard!'",17,4,"Attack her",0,"Revengefroga","Deny it",0,"Revengefrogd","Try and help the frog",0,"Revengefrogh2","Cast a spell to get rid of her",1255,"Revengefrogm"),
+'Revengefrogs'=> array ("'And you', it concludes, 'are that bastard!'",17,4,"Attack her",0,"Revengefroga","Loc_DenyIt",0,"Revengefrogd","Try and help the frog",0,"Revengefrogh2","Cast a spell to get rid of her",1255,"Revengefrogm"),
 'Revengefrogy'=> array ("You tell the elf that it was you.",12,3,17,"Charisma","Heroism","Brawling","Revengefrogyf","Revengefrogyf","Revengefrogys","Revengefrogys"),
 'Revengefrogyf'=> array ("The creature howls with rage, and slashes at you with its dagger.",3,"Duelling",14,"Revengefrogas","Revengefrogyff"),
 'Revengefrogyff'=> array ("Its dagger pokes your flesh again and again, like a sewing needle through cloth.",9,"Stamina",-6,"Revengefrogd2fa"),
@@ -2702,7 +2742,7 @@ $paras=array (
 'Revengefroga'=> array ("You leap forward to defend your honour, such as it is.",3,"Duelling",14,"Revengefrogas","Revengefrogaf"),
 'Revengefrogas'=> array ("The poor creature is no match for you, and you soon have it at your mercy.<br><br>'Get out of here' you tell it guiltily. It runs off, its face a study in humiliation.",1,"Revengefroghj2"),
 'Revengefrogaf'=> array ("The creature's absurd flesh is weak, but its spirit is more than willing. In a frenzy, it hits you with the pommel of its dagger until you can't stand.",9,"Stamina",-4,"Revengefrogaf1"),
-'Revengefrogaf1'=> array ("'Now admit your crime!' it cries.",2,2,"Do so","Revengefrogconf","Deny it","Revengefrogde2"),
+'Revengefrogaf1'=> array ("'Now admit your crime!' it cries.",2,2,"Loc_DoSo","Revengefrogconf","Loc_DenyIt","Revengefrogde2"),
 'Revengefrogconf'=> array ("no text",3,"Heroism",15,"Revengefrogd2fs","Revengefrogd2ff"),
 'Revengefrogde2'=> array ("no text",3,"Charisma",17,"Revengefrogds","Revengefrogd2f"),
 'Revengefrogd2f'=> array ("'Damn your lies, you weasel!' the frog sneers.",1,"Revengefrogd2fa"),
@@ -3442,7 +3482,7 @@ $paras=array (
 'Findroad2a'=> array ("no text",13,"Janooth"),
 'Findroad2b'=> array ("no text",2,2,"Head back to Karrakara","nearly269","Head inland","Inland"),
 
-'Deathhorse'=> array ("The trees are full of singing birds. Your thoughts start to drift. Without warning, you turn a corner and find yourself faced by a vile creature, with the appearance of the partly-flayed corpse of a horse. 'Give me shells' it hisses.",2,4,"Give the creature shells","Deathhorseg","Fight it","Deathhorsec","Flee","Deathhorser"),
+'Deathhorse'=> array ("The trees are full of singing birds. Your thoughts start to drift. Without warning, you turn a corner and find yourself faced by a vile creature, with the appearance of the partly-flayed corpse of a horse. 'Give me shells' it hisses.",2,4,"Give the creature shells","Deathhorseg","Fight it","Deathhorsec","Loc_Flee","Deathhorser"),
 'Deathhorser'=> array ("no text",5,15,"Deathhorseru","Deathhorser0"),
 'Deathhorseru'=> array ("Your mount leaps away, almost before you pull on the reins. You gallop away.",1,"Deathhorseend"),
 'Deathhorserr'=> array ("You leap off the path, into the trees and away before the creature can react. You carefully circle round, and when you reach the path again you bolt off as fast as you can.",1,"Deathhorseend"),
@@ -3484,14 +3524,14 @@ $paras=array (
 
 'Inland'=> array ("no text",11,4,"Inlandmain","Inlandpoor"),
 'Inlandpoor'=> array ("no text",6,196,"Inlandmain","Inlandpoor1"),
-'Inlandpoor1'=> array ("You wonder whether you should stop at a village and try and find work, or at least poach some food.",2,2,"Do so","Inlandstop","Keep going","Inlandmain"),
+'Inlandpoor1'=> array ("You wonder whether you should stop at a village and try and find work, or at least poach some food.",2,2,"Loc_DoSo","Inlandstop","Keep going","Inlandmain"),
 'Inlandstop'=> array ("no text",3,"Scouting",20,"Inlandstops","Inlandstopf"),
 'Inlandstops'=> array ("You find work as a forester, looking for the rare sheep-tree. The work is difficult and frustrating. Often you find a tree, but the sheep's coat has already fully grown and the sheep has blown away in the wind. However they pay and feed you well.",10,8,"Inlandstops0"),
 'Inlandstops0'=> array ("no text",8,196,1,"Inlandstops1"),
 'Inlandstops1'=> array ("no text",9,"Stamina",3,"Inlandstops2"),
 'Inlandstops2'=> array ("no text",3,"Roguery",22,"Inlandstops2s","Inlandstops2a"),
 'Inlandstops2s'=> array ("Like any farmer, your employer loses a lot of stock to sheeplifters. You win his trust, and a bonus, when you tell him a few ideas to keep them away.",10,4,"Inlandstops2a"),
-'Inlandstops2a'=> array ("The farmer suggests you stay and work for a while, at least until it gets warmer.",2,2,"Do so","Inlandstopsy","Travel on","Inlandmain"),
+'Inlandstops2a'=> array ("The farmer suggests you stay and work for a while, at least until it gets warmer.",2,2,"Loc_DoSo","Inlandstopsy","Travel on","Inlandmain"),
 'Inlandstopsy'=> array ("no text",10,4,"Inlandstopsy0"),
 'Inlandstopsy0'=> array ("no text",9,"Stamina",2,"Inlandstopsy1"),
 'Inlandstopsy1'=> array ("no text",12,2,18,"Luck","Luck","Inlandstopsyff","Inlandstopsyfs","Inlandstopsyss"),
@@ -3845,7 +3885,7 @@ $paras=array (
 'Arrestedtunnels'=> array ("no text",8,177,1,"Arrestedwait"),
 'Arrestedtunnelf'=> array ("no text",8,178,1,"Arrestedwait"),
 'Arrestedout'=> array ("no text",6,138,"Arrestedoutnara",271),
-'Arrestedoutnara'=> array ("You consider whether to pursue your vengeance against the priests of Nara.",2,2,"Do so","Arrestedoutnaray","Give up","Arrestedoutnaran"),
+'Arrestedoutnara'=> array ("You consider whether to pursue your vengeance against the priests of Nara.",2,2,"Loc_DoSo","Arrestedoutnaray","Give up","Arrestedoutnaran"),
 'Arrestedoutnaray'=> array ("no text",9,"Heroism",1,"Arrestedoutnaray1"),
 'Arrestedoutnaray1'=> array ("no text",8,199,0,"Leavekarraland"),
 'Arrestedoutnaran'=> array ("no text",9,"Heroism",-1,"Arrestedoutnaran1"),
@@ -4082,7 +4122,7 @@ $paras=array (
 'Pyrdecipherfff'=> array ("You feel something, like sneering laughter in your head, and drop to the tunnel floor like a sack of flour. When you get to your feet the letters have been erased. But you can sense their hateful form everywhere you look, as if your eyes had been branded.",3,"Luck",-4,"Pyrdecipherc"),
 'Pyrroom'=> array ("You walk through the room - or perhaps you should say the tunnel, for as you walk along you see no end to it. Both walls are lined with statues. You recognise many of them as statues of the gods.",1,"Pyrroom1"),
 'Pyrroom1'=> array ("You seem to hear whispering. You stop. Two statues draw your eye. One is of a man with the head of an elephant. The other is of a great spider, with the head of a elvish woman. ",2,3,"Examine the elephant-headed statue","Pyrroome","Examine the spider-goddess statue","Pyrrooms","Walk on","Pyrnext5"),
-'Pyrrooms'=> array ("A thought, which you're sure isn't your own, tells you to make an offering to the goddess.",2,3,"Do so","Pyrrooms1","Examine the other statue instead","Pyrroome","Walk on","Pyrnext5"),
+'Pyrrooms'=> array ("A thought, which you're sure isn't your own, tells you to make an offering to the goddess.",2,3,"Loc_DoSo","Pyrrooms1","Examine the other statue instead","Pyrroome","Walk on","Pyrnext5"),
 'Pyrrooms1'=> array ("You search through your pack for a fitting offering.",5,19,"Pyrroomsy","Pyrroomsn"),
 'Pyrroomsy'=> array ("On impulse, you lay the Rod of Puerile Humour at the statue's feet. 'ROFL!' a voice from the statue startles you.",1,"Pyrroomsy1"),
 'Pyrroomsy1'=> array ("'LOL! ROFLMAO!' Four pairs of legs crash together, applauding you. You realise it's no statue of a goddess, but the goddess herself.",7,19,0,"Pyrgods"),
@@ -4101,11 +4141,11 @@ $paras=array (
 'Pyrroomes'=> array ("You stand before the statue for some time. At last, it raises its hand in a sign of blessing. You realise that this isn't a statue of a god, but the god himself.",1,"Pyrgods"),
 'Pyrgods'=> array ("no text",13,"Pyrgods1"),
 'Pyrgods1'=> array ("The two gods, as you now realise them to be, introduce themselves. The spider-headed woman is Lolz, goddess of the Dork Elves. The elephant-headed man is Yag-kosha, god of a race of kindly jungle folk. 'By the way, don't bother looking for the pun in my name, there isn't one' he counsels you.",1,"Pyrgods2"),
-'Pyrgods2'=> array ("They tell you that they, and all the other gods in the chamber, have been captured by the acolytes of Nara. One by one they're burnt.<br><br>'For', Yag-kosha tells you, 'Nara must be ever intoxicated with smoke, lest he turn on his followers in a rage and destroy them all.'<br><br>You ask the god what can be done.<br><br>'The only sure way to destroy Nara', he tells you, 'is a spell. You must cut out my heart, and present it to him in his chamber, where he sits entranced in lotus-dreams of evil.'",2,2,"Do so","Pyrgodsh1","Try and think of something else","Pyrgodsn"),
+'Pyrgods2'=> array ("They tell you that they, and all the other gods in the chamber, have been captured by the acolytes of Nara. One by one they're burnt.<br><br>'For', Yag-kosha tells you, 'Nara must be ever intoxicated with smoke, lest he turn on his followers in a rage and destroy them all.'<br><br>You ask the god what can be done.<br><br>'The only sure way to destroy Nara', he tells you, 'is a spell. You must cut out my heart, and present it to him in his chamber, where he sits entranced in lotus-dreams of evil.'",2,2,"Loc_DoSo","Pyrgodsh1","Try and think of something else","Pyrgodsn"),
 'Pyrgodsn'=> array ("no text",12,2,17,"Roguery","Magic","Pyrgodsnff","Pyrgodsnfs","Pyrgodsnss"),
 'Pyrgodsnff'=> array ("You can't think of anything other than facing Nara yourself.",9,"Luck",-2,"Pyrgodsnff1"),
-'Pyrgodsnff1'=> array ("no text",2,2,"Do so","Pyrgodss","Cut out Yag-kosha's heart","Pyrgodsh"),
-'Pyrgodsnfs'=> array ("You can't think of any plan other than facing Nara yourself. But it occurs to you that you could simply leave.",2,3,"Do so","Pyrgodsl","Face Nara yourself","Pyrgodss","Cut out Yag-kosha's heart","Pyrgodsh"),
+'Pyrgodsnff1'=> array ("no text",2,2,"Loc_DoSo","Pyrgodss","Cut out Yag-kosha's heart","Pyrgodsh"),
+'Pyrgodsnfs'=> array ("You can't think of any plan other than facing Nara yourself. But it occurs to you that you could simply leave.",2,3,"Loc_DoSo","Pyrgodsl","Face Nara yourself","Pyrgodss","Cut out Yag-kosha's heart","Pyrgodsh"),
 'Pyrgodsnss'=> array ("'You know', you say, 'You might be over-thinking this. How many gods are here?'<br><br>'A few thousand' Yag-kosha replies.<br><br>'Do you think a few thousand of you could beat Nara in a fight?'<br><br>The two gods mumble and look at the floor. You hear a few thousand embarrassed coughs.",1,"Pyrgodsnss1"),
 'Pyrgodsnss1'=> array ("Winged cats, living trees, beautiful women clad in coral and night, all fly, run, slide or scuttle past you and into the darkness, howling for vengeance. Soon the air is split by the dying roar of Nara, ragged and desperate. And split indeed; the roof of the temple opens to the sky. The temple, the god, and you know not what secrets crumble into ruin.",8,294,1,"Pyrgodsnss2"),
 'Pyrgodsnss2'=> array ("The gods fly to freedom. Some bless you as they leave - but most don't.",14,"random","Pyrgodsh5"),
@@ -4493,7 +4533,7 @@ $paras=array (
 // the above 2 differ only in their picture.
 'Clownyn'=> array ("no text",3,"Magic",18,"Clownyny","Clownynn"),
 'Clownyny'=> array ("They smile horribly, and swear eternal friendship with you.",1,"Clownyy1"),
-'Clownynn'=> array ("They start shuffling towards you, slowly and silently.",2,3,"Flee","Clownynn1","Fight","Clownynn2","Wait and see what they do","Clownynn3"),
+'Clownynn'=> array ("They start shuffling towards you, slowly and silently.",2,3,"Loc_Flee","Clownynn1","Fight","Clownynn2","Wait and see what they do","Clownynn3"),
 'Clownynn1'=> array ("no text",5,15,"Clownride","Clownynn1a"),
 'Clownynn1a'=> array ("no text",5,16,"Clownride","Clownyyn1b"),
 'Clownyyn1b'=> array ("You run, but the mounted clowns catch you easily.",1,"Clownmore"),
@@ -4621,7 +4661,7 @@ $paras=array (
 'Inlandl3'=> array ("no text",8,135,1,"Inland2d"),
 'Inlandgo1'=> array ("no text",5,11,"Inlandfur","Inlandgo2"),
 'Inlandgo2'=> array ("no text",5,12,"Inlandfur","Inlandnofur"),
-'Inlandfur'=> array ("You wonder whether to use the fur you bought in Karrakara.",2,2,"Do so","Inlandfur2","Continue on without it","Inlandnofur"),
+'Inlandfur'=> array ("You wonder whether to use the fur you bought in Karrakara.",2,2,"Loc_DoSo","Inlandfur2","Continue on without it","Inlandnofur"),
 'Inlandfur2'=> array ("no text",5,12,"Inlandgoodfur","Inlandfur3"),
 'Inlandfur3'=> array ("no text",7,11,0,"Inlandfur4"),
 'Inlandfur4'=> array ("no text",3,"Streetwise",20,"Inlandfurs","Inlandfurf"),
@@ -4904,7 +4944,7 @@ $paras=array (
 'Weigh2'=> array ("They take you to their temple, which they call a barracks, and feed you a basic meal while they tell you all about the many, many people their chief god Nara Lion-Father has it in for. The god is apparently particularly upset about the ludicrous theological errors of the numerous false worshippers of Nara. You realise the incredible power of smiling and nodding when the priest congratulates you on your obvious spiritual insight.",9,"Stamina",3,"Weigh3"),
 'Weigh3'=> array ("no text",9,"Charisma",1,"Weigh4"),
 'Weigh4'=> array ("no text",11,1,"Weigh5","Weigh10"),
-'Weigh5'=> array ("He asks if you'd like to donate a single shell.",2,2,"Do so","Weigh6","Refuse","Weigh10"),
+'Weigh5'=> array ("He asks if you'd like to donate a single shell.",2,2,"Loc_DoSo","Weigh6","Refuse","Weigh10"),
 'Weigh6'=> array ("no text",10,-1,"Weigh7"),
 'Weigh7'=> array ("no text",4,2,"Weigh8","Weigh9"),
 'Weigh8'=> array ("The priest blesses you in Nara's name.",14,"Duelling","Weigh10"),
@@ -5000,7 +5040,7 @@ $paras=array (
 200=> array ("no text",4,3,"200main","Snow","200wreck"),
 '200wreck'=> array ("<img style=\"border:0px\" src=\"".$baseurl."images/misc/illuminatedy.jpg\" align=\"left\" alt=\"Y\">our boat is wrecked en route to the great city of Karrakara, and it seems that only you survive.",1,211),
 '200main'=> array ("<img src=\"".$baseurl."images/misc/illuminatedo.jpg\" align=\"left\" alt=\"O\">n a clear morning, before even the seagulls have woken up, you make your way to the jetty to set out for the great city of Karrakara. Your ship, really a coracle with ideas above its station, slips into the water. You look at your small pile of cowrie shells, the islands' most common currency. You wonder whether you should return some to the sea god Numen Mari, to ensure a safe journey.",8,171,1,"200a"),
-'200a'=> array ("no text",2,2,"照办 Do so",201,"不这样做 Decide not to",202),
+'200a'=> array ("no text",2,2,"Loc_DoSo",201,"不这样做 Decide not to",202),
 201=> array ("You wait until you can no longer see the bottom, and thus are in the domain of the sea god. You drop five shells over the side. Each one seems more reluctant than the last to leave your hand. You are unsure whether your offering has any effect, but you do reach Karrakara without incident.",10,-5,203),
 202=> array ("no text",3,"Seafaring",13,"202s","202f"),
 '202s'=> array ("no text",3,"Seafaring",15,"202ss","202sf"),
@@ -5283,7 +5323,7 @@ $paras=array (
 // if add another option to this, also need to add it
 // to '345choose' (when first go to Serene Dreams)
 '273b'=> array ("no text",3,"Heroism",10,"273c","273a"),
-'273c'=> array ("You remember Phoedocia, the shopkeeper that buys and sells courage. You consider trying to get some money that way.",2,4,"Do so","273d","Put the shop out of your mind","273no"),
+'273c'=> array ("You remember Phoedocia, the shopkeeper that buys and sells courage. You consider trying to get some money that way.",2,4,"Loc_DoSo","273d","Put the shop out of your mind","273no"),
 '273d'=> array ("no text",6,309,"273dmain","273dd"),
 '273dd'=> array ("no text",4,2,"273ddd","273dmain"),
 '273ddd'=> array ("no text",8,310,1,"Amastay0a"),
@@ -5455,7 +5495,7 @@ $paras=array (
 'Prebearprincess1'=> array ("no text",6,223,301,"Prebearprincess2"),
 'Prebearprincess2'=> array ("no text",6,314,301,"Bearprincess"),
 'Bearprincess'=> array ("A white bear, carrying a richly-dressed and sad-looking girl, blocks your path.",8,314,1,"Bearprincess1"),
-'Bearprincess1'=> array ("no text",17,4,"Greet her",1316,"Bearprincess2","Attack the bear",0,"Bearprincess3","Flee",0,"Bearprincess4","Cast a spell to see what you should do",1315,"Bearprincess5"),
+'Bearprincess1'=> array ("no text",17,4,"Greet her",1316,"Bearprincess2","Attack the bear",0,"Bearprincess3","Loc_Flee",0,"Bearprincess4","Cast a spell to see what you should do",1315,"Bearprincess5"),
 'Bearprincess2'=> array ("no text",8,316,1,"Bearprincess2a"),
 'Bearprincess2a'=> array ("no text",5,22,"Bearprincess2acat","Bearprincess2ar"),
 'Bearprincess2acat'=> array ("The girl mumbles a reply and then ignores you. But after an awkward silence, Piteous Mew leaps onto the bear, into the girl's lap. As she coos and strokes the cat, the bear speaks.",1,"Bearprincesstalk"),
@@ -5646,7 +5686,7 @@ $paras=array (
 'Uglys'=> array ("no text",16,13,"Uglystick","Uglys1"),
 'Uglys1'=> array ("no text",3,"Magic",17,"Uglystick","Uglystickn"),
 'Uglystick'=> array ("You realise that you've wandered into an Ugly Forest. This is an area where the Ugly Tree grows, the magic tree whose wood turns hideous any living thing it touches.",1,"Uglysticknf"),
-'Uglysticknf'=> array ("You wonder whether you should risk looking for a fallen branch. An Ugly Stick can be a powerful weapon against the right opponent.",2,2,"Do so","Uglysticknfy","Walk on","Uglystickn"),
+'Uglysticknf'=> array ("You wonder whether you should risk looking for a fallen branch. An Ugly Stick can be a powerful weapon against the right opponent.",2,2,"Loc_DoSo","Uglysticknfy","Walk on","Uglystickn"),
 'Uglysticknfy'=> array ("no text",16,13,"Uglysticknude","Uglysticknfy1"),
 'Uglysticknfy1'=> array ("no text",16,18,"Uglysticknude","Uglysticknfy2"),
 'Uglysticknfy2'=> array ("Carefully covering your hands with your clothes, you find a fallen branch. ",3,"Luck",20,"Uglysticknfys","Uglysticknfyf"),
@@ -5838,7 +5878,7 @@ $paras=array (
 'Forestkqueeng'=> array ("She laughs and asks what the goblins have promised you. Without thinking you say 'a new cloak'. You realise how pathetic it sounds.",1,"Forestkqueend"),
 'Forestkqueend'=> array ("no text",3,"Duelling",21,"Forestkqueengs","Forestkqueengf"),
 'Forestkqueengs'=> array ("She tells you that she'll give you twenty shells, just to walk away.",2,2,"Accept","Forestkqdeal","Refuse","Forestkqfights"),
-'Forestkqueengf'=> array ("She tells you can have one chance to walk away.",2,2,"Do so","Forestkqwalk","Refuse","Forestkqdefy"),
+'Forestkqueengf'=> array ("She tells you can have one chance to walk away.",2,2,"Loc_DoSo","Forestkqwalk","Refuse","Forestkqdefy"),
 'Forestkqdefy'=> array ("no text",3,"Charisma",21,"Forestkqueengs","Forestkqfightm"),
 'Forestkqwalk'=> array ("You lower your WEAPONNAME and silently turn and walk away.",9,"Heroism",-2,"Forestkqf2"),
 'Forestkqfights' => array ("Your chest tightens as you raise your WEAPONNAME.",9,"Heroism",2,"Forestkqfights1"),
@@ -5955,7 +5995,7 @@ $paras=array (
 308=> array ("Night falls more quickly than you expected. You see a light which seems to be reasonably close by.",2,2,"Investigate",1,"Leave it",8),
 
 //309-341: Karrakara start overflow.
-309=> array ("You wonder whether you should look for Billy Two-Shits to see if he can get you a job.",2,4,"Do so",310,"Continue looking on your own",274,"Beg",149,"Steal",292),
+309=> array ("You wonder whether you should look for Billy Two-Shits to see if he can get you a job.",2,4,"Loc_DoSo",310,"Continue looking on your own",274,"Beg",149,"Steal",292),
 310=> array ("no text",4,2,"310a",312),
 '310a'=> array ("no text",3,"Streetwise",13,311,312),
 311=> array ("You track him down.",11,1,282,293),
@@ -6009,7 +6049,7 @@ $paras=array (
 345=> array ("Serene Dreams is crowded, noisy and dirty, a place of much laughter and little joy. You look at the stage, watching the absent-eyed young elf woman who sits on a swing, with a sinking feeling about what the work might involve. The owner reads your expression. He tells you it's 'nothing like that'; the work is fighting, for money. Not to the death, only until one fighter gives up. And you get paid even if you don't win. He tells you to come back tonight.",8,266,1,"345a"),
 '345a'=> array ("no text",3,"Streetwise",18,"345s","345choose"),
 '345s'=> array ("no text",8,92,1,"345choose"),
-'345choose'=> array ("no text",17,8,"Do so",0,346,"Look elsewhere for work",0,274,"Beg",0,149,"Steal",0,292,"Sell the horse",-16,"Karrahorse","Sell the unicorn",-15,"Karraunicorn","Return to the Hair Witch",195,"Hairret","Leave the city and travel inland",0,"Leavekarraland","Visit Dead Eye Street",251,"Deadeyeback"),
+'345choose'=> array ("no text",17,8,"Loc_DoSo",0,346,"Look elsewhere for work",0,274,"Beg",0,149,"Steal",0,292,"Sell the horse",-16,"Karrahorse","Sell the unicorn",-15,"Karraunicorn","Return to the Hair Witch",195,"Hairret","Leave the city and travel inland",0,"Leavekarraland","Visit Dead Eye Street",251,"Deadeyeback"),
 346=> array ("no text",8,24,1,347),
 347=> array ("You return as the sun is setting. Serene Dreams is still packed. The atmosphere is different, though no more welcoming. There is no shouting, indeed there is hardly any talking. The owner recognises you and silently tilts his head, indicating for you to follow. You notice many of the customers get up at the same time.",1,348),
 348=> array ("The owner gives you a suit of clothes, and tells you to leave your WEAPONNAME and backpack and wait here. You change into the clothes, which seem to be designed to make you look ridiculous. You hear the owner orating to an audience who respond as if on cue with roars and cheers. One of the sad-eyed waitresses comes and tells you 'it's time'.",13,349),
@@ -6268,7 +6308,7 @@ $paras=array (
 'Gladiatorslavepnfs'=> array ("Sunk in misery, you struggle to find a reason to disagree.",1,"Gladiatorslaveprethere"),
 'Gladiatorslavepnss'=> array ("no text",6,224,"Gladiatorslavewp","Gladiatorslavepnss1"),
 'Gladiatorslavepnss1'=> array ("no text",4,2,"Gladiatorslavewp","Gladiatorslaveelf2"),
-'Gladiatorslaveinf'=> array ("You consider telling the guards that you're an informant for the government of Karrakara.",2,2,"Do so","Gladiatorslaveinf1","Keep quiet","Gladiatorslaveef1"),
+'Gladiatorslaveinf'=> array ("You consider telling the guards that you're an informant for the government of Karrakara.",2,2,"Loc_DoSo","Gladiatorslaveinf1","Keep quiet","Gladiatorslaveef1"),
 'Gladiatorslaveinf1'=> array ("The guard laughs, but still gets the captain.",17,3,"Demand your release",224,"Gladiatorslaveinf2","Demand that you and the elf be released",1224,"Gladiatorslaveinf2","Demand that all the prisoners be released",0,"Gladiatorslaveinf3"),
 'Gladiatorslaveinf2'=> array ("no text",3,"Streetwise",10,"Gladiatorslaveinf2s","Gladiatorslaveinf2f"),
 'Gladiatorslaveinf2f'=> array ("Whether the captain would've released you will never be known. Your fellow prisoners are outraged by your loudly declared intention to save yourself and leave them to die. The last thing you feel is the blades stabbing into your back.",0),
@@ -6529,7 +6569,7 @@ $paras=array (
 391=> array ("You run yourself ragged trying to find a buyer, without success. You are half-aware that your haste is born of fear.",9,"Stamina",-1,392),
 392=> array ("no text",6,19,393,395),
 393=> array ("no text",6,20,395,394),
-394=> array ("You wonder whether you should try and track down Billy Two-Shits and see if he can help you.",2,3,"Do so",396,"Throw the bundle away",385,"Change your mind and deliver it",377,"Keep it",408),
+394=> array ("You wonder whether you should try and track down Billy Two-Shits and see if he can help you.",2,3,"Loc_DoSo",396,"Throw the bundle away",385,"Change your mind and deliver it",377,"Keep it",408),
 395=> array ("With no-one to take it off your hands, your only options are-",2,3,"Keep it",408,"Throw it away",385,"Change your mind and deliver it",377),
 396=> array ("no text",3,"Charisma",19,397,398),
 397=> array ("He is obviously frightened of the bundle, and covers it with anger. However, he eventually offers you two shells for it.",2,3,"Accept",399,"Keep it",408,"Change your mind and deliver it",377),
@@ -6550,7 +6590,7 @@ $paras=array (
 
 //420- : checking on boat in swamp
 420=> array ("no text",8,46,1,"420a"),
-'420a'=> array ("It occurs to you that perhaps you should check on your boat in the swamp.",2,3,"Do so",423,"Leave it for now",421,"Give it up for lost","Giveupboat"),
+'420a'=> array ("It occurs to you that perhaps you should check on your boat in the swamp.",2,3,"Loc_DoSo",423,"Leave it for now",421,"Give it up for lost","Giveupboat"),
 'Giveupboat'=> array ("You decide that it was a false economy to leave the boat in the swamp; someone or something has doubtless stolen or destroyed it.",8,1,0,"Giveupboat2"),
 'Giveupboat2'=> array ("no text",8,31,0,"Giveupboat3"),
 'Giveupboat3'=> array ("no text",8,32,0,271),
@@ -6676,7 +6716,7 @@ $paras=array (
 'offering'=> array ("no text",6,171,"Islandhub","offeringa"),
 'offeringa'=> array ("no text",11,2,"offeringb","Islandhub"),
 'offeringb'=> array ("no text",8,171,1,"offeringc"),
-'offeringc'=> array ("Suddenly it occurs to you that you haven't offered any of your shells to the sea god Numen Mari to ensure a safe journey.",2,2,"Do so","offeringy","Decline","offeringn"),
+'offeringc'=> array ("Suddenly it occurs to you that you haven't offered any of your shells to the sea god Numen Mari to ensure a safe journey.",2,2,"Loc_DoSo","offeringy","Decline","offeringn"),
 'offeringy'=> array ("You reluctantly return some shells to the dark water.",10,-5,"Islandhub"),
 'offeringn'=> array ("no text",6,170,"offeringnc","offeringno"),
 'offeringno'=> array ("no text",12,2,15,"Seafaring","Heroism","offering4","offering3","Islandhub"),
@@ -6730,7 +6770,7 @@ $paras=array (
 'boilingseaupmain0'=> array ("no text",5,21,"boilingseaupmaina","boilingseaupmain1"),
 'boilingseaupmaina'=> array ("You look at the object that the woman gave you. Before you can work out what it is it shatters, with a sound like music heard in a dream. You find yourself holding a pile of shells.",10,10,"boilingseaswallow6"),
 'boilingseaupmain1'=> array ("no text",7,21,1,"boilingseaupmain1a"),
-'boilingseaupmain1a'=> array ("You look at the object that the woman gave you. It's a glass ball, with a liquid inside that's strangely fascinating to look upon. You realise that you've found the fabled Pearl of Wisdom. It's said that this precious object may be easily broken, and any who do so will find it full of the very stuff of knowledge, which they may drink.",2,2,"Do so","boilingseaswallow","Keep it and sail on","Islandhub"),
+'boilingseaupmain1a'=> array ("You look at the object that the woman gave you. It's a glass ball, with a liquid inside that's strangely fascinating to look upon. You realise that you've found the fabled Pearl of Wisdom. It's said that this precious object may be easily broken, and any who do so will find it full of the very stuff of knowledge, which they may drink.",2,2,"Loc_DoSo","boilingseaswallow","Keep it and sail on","Islandhub"),
 'boilingseaswallow'=> array ("It shatters with a sound like music heard in a dream, and you drink the liquid inside.",7,21,0,"boilingseaswallow1"),
 'boilingseaswallow1'=> array ("no text",9,"Streetwise",2,"boilingseaswallow2"),
 'boilingseaswallow2'=> array ("no text",9,"Magic",2,"boilingseaswallow3"),
@@ -7056,7 +7096,7 @@ $paras=array (
 'Finalhorsenfs'=> array ("The creature's fangs and hooves draw your blood many times.",9,"Stamina",-6,"Finalhorsenfs1"),
 'Finalhorsenfs1'=> array ("But at last you kill it - if a creature apparently dead can be killed. Its body is hollow, and shrivels to nothing. With the creature gone, it's as if a great weight has lifted from the place. Bloody, but relived to be alive, you settle back to sleep.",1,"Finalwy"),
 'Finalhorsens'=> array ("The creature seems surprised at you fighting back. It threatens you with its lipless fangs and sharp hooves.",1,"Finalhorsenfs1"),
-'Finalwy'=> array ("Near dawn, you consider resting a while longer instead of setting out straight away.",2,2,"Do so","Finalyy","Set out","Finalyn"),
+'Finalwy'=> array ("Near dawn, you consider resting a while longer instead of setting out straight away.",2,2,"Loc_DoSo","Finalyy","Set out","Finalyn"),
 'Finalyy'=> array ("no text",9,"Stamina",3,"Finalyy1"),
 'Finalyy1'=> array ("After a short rest you continue your journey.",1,"Finali"),
 'Finalyn'=> array ("You notice that morning dew has collected on something strung between the two pyramids, like the web of a grotesquely large spider. You backtrack around the pyramids and into the desert.",1,"Finalnext"),
@@ -7079,7 +7119,7 @@ $paras=array (
 'Finalleftb'=> array ("no text",6,274,"Finalleftby","Finalleftbn"),
 'Finalleftby'=> array ("You see a group of creatures who, as far as you can tell, are identical to the brightly-clad, chalk-faced clowns you met back on the island of Karrakara.",1,"Finalleftbchoice"),
 'Finalleftbn'=> array ("You see a group of hideous creatures. Their faces are as white as chalk, whiter than a fish's belly, while their clothes are all colours of the rainbow, and all brighter than a pimp's smile.",1,"Finalleftbchoice"),
-'Finalleftbchoice'=> array ("'Here we are now' they cry.<br><br>'Entertain us!'",2,2,"Do so","Finalleftbe","Flee","Finalleftbf"),
+'Finalleftbchoice'=> array ("'Here we are now' they cry.<br><br>'Entertain us!'",2,2,"Loc_DoSo","Finalleftbe","Loc_Flee","Finalleftbf"),
 'Finalleftbe'=> array ("no text",16,15,"Finalleftbeco","Finalleftbe1"),
 'Finalleftbe1'=> array ("no text",16,4,"Finalleftbeco","Finalleftbe2"),
 'Finalleftbe2'=> array ("no text",16,19,"Finalleftbeex","Finalleftbe3"),
@@ -7139,7 +7179,7 @@ $paras=array (
 'Finalozynan4f1'=> array ("no text",9,"Stamina",-2,"Finalozynfc"),
 'Finalozysco'=> array ("no text",3,"Heroism",14,"Finalozynan4","Finalozyscof"),
 'Finalozyscof'=> array ("You try the techniques of seduction that have worked so well for you on bored aristocrats and 'artists models'. But strangely your words seem to enrage her. Telling her how pretty she looks when she's angry seems to make it worse. Desperately, you use your most successful line:<br><br>'Do you come here often? Or do you wait till you get home?'<br><br>But even this fails to melt her heart. When you apologise and explain that you didn't realise she was a lesbian, she roars her intention to beat you to death.",1,"Finalozynfight"),
-'Finalozynfight'=> array ("She sets aside her spear, apparently assuming that you will fight unarmed.",2,3,"Do so","Finalozynfight1","Use your weapon","Finalozynfight2","Use magic","Finalozynfight3"),
+'Finalozynfight'=> array ("She sets aside her spear, apparently assuming that you will fight unarmed.",2,3,"Loc_DoSo","Finalozynfight1","Use your weapon","Finalozynfight2","Use magic","Finalozynfight3"),
 'Finalozynfight1'=> array ("no text",12,3,20,"Duelling","Brawling","Heroism","Finalozynfight1fff","Finalozynfight1ffs","Finalozynfight1fss","Finalozynfight1sss"),
 'Finalozynfight1fff'=> array ("Both skill and courage fail you as the fierce Amazon beats you. You run into the desert. Only a few seconds later her spear guts you, and you bleed your last.",0),
 'Finalozynfight1ffs'=> array ("no text",9,"Stamina",-7,"Finalozynfight1sss"),
@@ -7358,9 +7398,9 @@ $paras=array (
 'Amastayo'=> array ("no text",9,"Streetwise",2,"Amastayo1"),
 'Amastayo1'=> array ("no text",5,7,"Amastaybu","Amastayo2"),
 'Amastayo2'=> array ("no text",5,17,"Amastaybo","Amastayof"),
-'Amastaybu'=> array ("She's very excited by the witches' bundle, and is happy to trade.",2,2,"Do so","Amastaybu1","Refuse","Amastayoff"),
+'Amastaybu'=> array ("She's very excited by the witches' bundle, and is happy to trade.",2,2,"Loc_DoSo","Amastaybu1","Refuse","Amastayoff"),
 'Amastaybu1'=> array ("no text",7,7,0,"Amastayy0"),
-'Amastaybo'=> array ("She's very excited by the book, and is happy to trade.",2,2,"Do so","Amastaybo1","Refuse","Amastayoff"),
+'Amastaybo'=> array ("She's very excited by the book, and is happy to trade.",2,2,"Loc_DoSo","Amastaybo1","Refuse","Amastayoff"),
 'Amastaybo1'=> array ("no text",7,17,0,"Amastayy0"),
 'Amastayof'=> array ("She's not interested in anything you have to offer.",9,"Luck",-1,"Amastayof1"),
 'Amastayof1'=> array ("no text",3,"Charisma",17,"Amastayofs","Amastayoff"),
@@ -7486,7 +7526,7 @@ $paras=array (
 'Amatempnon1'=> array ("You notice two groups of Amazons arguing with each other, apparently on the verge of violence. But you walk close behind an Amazon lady, as if you were her servant, and so avoid notice.",1,"Amatempgo"),
 'Amatempapp'=> array ("Two groups of Amazons block the street. They're shouting at each other, seemingly on the verge of violence. Suddenly one turns to you, and asks 'what do you think sister?'",6,56,"Amatempappreb","Amatempapp1"),
 'Amatempapp1'=> array ("no text",6,57,"Amatempappgov","Amatempappneu"),
-'Amatempappreb'=> array ("What you think is that, while the common folk come to blows over metaphysics, the rulers hoard their wealth.",2,2,"Say so","Amatempappreb1","Flee","Amatempappflee"),
+'Amatempappreb'=> array ("What you think is that, while the common folk come to blows over metaphysics, the rulers hoard their wealth.",2,2,"Say so","Amatempappreb1","Loc_Flee","Amatempappflee"),
 'Amatempappreb1'=> array ("no text",9,"Heroism",3,"Amatempappreb2"),
 // if, later, add a way to get back to Karrakara from here,
 // this could be a potential way to gain the trust of the
@@ -7507,7 +7547,7 @@ $paras=array (
 'Amatempappreb1f'=> array ("no text",16,20,"Amatempappreb1fduel","Amatempappreb1f1"),
 'Amatempappreb1f1'=> array ("no text",16,17,"Amatempappreb1fduel","Amatempappreb1f2"),
 'Amatempappreb1f2'=> array ("no text",12,2,15,"Heroism","Charisma","Amatempatt2govff","Amatempatt2govff1","Amatempclown"),
-'Amatempappreb1fduel'=> array ("The crowd mutters angrily. At last one Amazon steps forward, and challenges you to unarmed combat.",2,2,"Accept","Amatempappreb1fduel1","Flee","Amatempappreb1fdueln"),
+'Amatempappreb1fduel'=> array ("The crowd mutters angrily. At last one Amazon steps forward, and challenges you to unarmed combat.",2,2,"Accept","Amatempappreb1fduel1","Loc_Flee","Amatempappreb1fdueln"),
 'Amatempappreb1fduel1'=> array ("no text",9,"Heroism",2,"Amatempappreb1fduel2"),
 'Amatempappreb1fduel2'=> array ("no text",12,2,23,"Luck","Brawling","Amaduelff","Amaduelfs","Amaduelss"),
 'Amaduelff'=> array ("She's far stronger than you. You endure a severe beating while the other Amazons cheer.",9,"Stamina",-6,"Amatempbeat1"),
@@ -7515,11 +7555,11 @@ $paras=array (
 'Amaduelfs1'=> array ("At last the crowd decides honour has been satisfied, and you go on your way.",1,"Amatempgo"),
 'Amaduelss'=> array ("You're much stronger than your challenger. After a few minutes she yields, and you go on your way.",1,"Amatempgo"),
 'Amatempappreb1fdueln'=> array ("no text",12,2,20,"Charisma","Roguery","Amatempatt1ff","Amatempappflee1f","Amatempappflee1s"),
-'Amatempappgov'=> array ("What you think is that this city must have a weak ruler, to have such rabble waylaying travellers in its sacred places.",2,2,"Say so","Amatempappgov1","Flee","Amatempappflee"),
+'Amatempappgov'=> array ("What you think is that this city must have a weak ruler, to have such rabble waylaying travellers in its sacred places.",2,2,"Say so","Amatempappgov1","Loc_Flee","Amatempappflee"),
 'Amatempappgov1'=> array ("no text",9,"Heroism",3,"Amatempappgov2"),
 'Amatempappgov2'=> array ("no text",9,"Streetwise",-2,"Amatempappgov3"),
 'Amatempappgov3'=> array ("no text",6,58,"Amatempappreb1s","Amatempappreb1f"),
-'Amatempappneu'=> array ("What you think is that any opinion you give will get you into trouble.",2,2,"Respond with polite nothings","Amatempappneu1","Flee","Amatempappflee"),
+'Amatempappneu'=> array ("What you think is that any opinion you give will get you into trouble.",2,2,"Respond with polite nothings","Amatempappneu1","Loc_Flee","Amatempappflee"),
 'Amatempappneu1'=> array ("no text",16,16,"Amatempappneuft","Amatempappneu2"),
 'Amatempappneu2'=> array ("no text",16,15,"Amatempappneuco","Amatempappneu3"),
 'Amatempappneu3'=> array ("no text",16,20,"Amatempappneuas","Amatempappneu1f"),
@@ -7533,7 +7573,7 @@ $paras=array (
 'Amatempappflee1'=> array ("no text",12,3,18,"Streetwise","Roguery","Heroism","Amatempappflee1f","Amatempappflee1f","Amatempappflee1s","Amatempappflee1s"),
 'Amatempappflee1f'=> array ("The crowd is ready for your craven retreat.",9,"Luck",-2,"Amatempatt2govff1"),
 'Amatempappflee1s'=> array ("You open your mouth as if to respond. Then, when the crowd relaxes, you turn and run. They're taken by surprise, and you soon leave them behind.",9,"Luck",2,"Amatempgo"),
-'Amatempatt'=> array ("Two groups of Amazons block the street. They're shouting at each other, seemingly on the verge of violence. Suddenly one points to you.<br><br>'You see? You see?' she shouts, as if you were evidence of a great crime.",2,3,"Ignore her","Amatempatt1","Talk to her","Amatempatt2","Flee","Amatempatt3"),
+'Amatempatt'=> array ("Two groups of Amazons block the street. They're shouting at each other, seemingly on the verge of violence. Suddenly one points to you.<br><br>'You see? You see?' she shouts, as if you were evidence of a great crime.",2,3,"Ignore her","Amatempatt1","Talk to her","Amatempatt2","Loc_Flee","Amatempatt3"),
 'Amatempatt1'=> array ("You keep walking, as if you hadn't heard.",12,2,20,"Charisma","Luck","Amatempatt1ff","Amatempatt1fs","Amatempatt1ss"),
 'Amatempatt1ff'=> array ("The crowd is enraged by your attitude. There are too many for you to defend yourself, as they hang you from the nearest tree.",0),
 'Amatempatt1fs'=> array ("Many in the crowd are intimidated by your calm disdain. But a few bolder souls shove you as you walk by. Instinctively, you push back.",9,"Streetwise",-3,"Amatempatt3a"),
@@ -7631,13 +7671,13 @@ $paras=array (
 'Amatemptemp2c'=> array ("no text",12,2,20,"Roguery","Roguery","Amatemptemp2cff","Amatemptemp2cfs","Amatemptemp2css"),
 'Amatemptemp2cff'=> array ("A passing Amazon sees you, and raises a hue and cry. You have no time to explain your suspicions of sorcerous blasphemy, before a mob hangs you from the nearest tree.",0),
 'Amatemptemp2cfs'=> array ("A priest emerges from the darkness. He demands to know what you're doing.",1,"Amatemptemp2cfs1"),
-'Amatemptemp2cfs1'=> array ("no text",2,3,"Attack him","Amatemptemp2cfsa","Try to bluff your way out","Amatemptemp2cfsb","Flee","Amatemptemp2cfsc"),
+'Amatemptemp2cfs1'=> array ("no text",2,3,"Attack him","Amatemptemp2cfsa","Try to bluff your way out","Amatemptemp2cfsb","Loc_Flee","Amatemptemp2cfsc"),
 // this is same choices as Amaheadbackfs, but it's easier.
 'Amatemptemp2cfsa'=> array ("He begins chanting. The chant has strange tones in it, like other voices, which repel you and yet demand your attention.",3,"Magic",20,"Amaheadbackfsas","Amaheadb2ffyaf"),
 'Amatemptemp2cfsb'=> array ("no text",6,318,"Amatemptemp2cfsby","Amatemptemp2cfsbn"),
 'Amatemptemp2cfsby'=> array ("The priest recognises you as the one who argued against Daba and for Averna, and so accepts that you were moved by admiration for the horrible tokens. He leads you into the temple proper. It's filled with Amazons and their men, of all stations in life, and all with the same blank, hateful faces. They seem to you like dolls, all made by the same unskilled or indifferent maker.",1,"Amaheadb2ffy0"),
 'Amatemptemp2cfsbn'=> array ("no text",3,"Streetwise",15,"Amatemptemp2cfsbns","Amaheadbackfscf"),
-'Amatemptemp2cfsbns'=> array ("You soon see that the priest isn't buying your pretended devotion to whatever god truly prevails here.",2,2,"Attack him","Amatemptemp2cfsa","Flee","Amatemptemp2cfsc"),
+'Amatemptemp2cfsbns'=> array ("You soon see that the priest isn't buying your pretended devotion to whatever god truly prevails here.",2,2,"Attack him","Amatemptemp2cfsa","Loc_Flee","Amatemptemp2cfsc"),
 'Amatemptemp2cfsc'=> array ("no text",12,2,15,"Duelling","Brawling","Amaheadbackfscf","Amaheadbackfscs","Amaheadbackfscs"),
 'Amatemptemp2css'=> array ("You take the foul trophy, unnoticed by priest or passer-by.",1,"Amatemptemp2css1"),
 'Amatemptemp2css1'=> array ("no text",2,2,"Try to work out what it's for","Amaheada","Destroy it","Amaheadb"),
@@ -7652,7 +7692,7 @@ $paras=array (
 'Amaheadwhatf1'=> array ("no text",3,"Roguery",20,"Amaheadbacks","Amaheadbackf"),
 'Amaheadbacks'=> array ("You put the head back and, with a feeling of relief combined with shame, decide to visit the temple of Daba.",9,"Luck",2,"Amaheadb3"),
 'Amaheadbackf'=> array ("no text",3,"Luck",20,"Amaheadbackfs","Amaheadbackff"),
-'Amaheadbackfs'=> array ("You find a priest waiting for you.",2,3,"Attack him","Amaheadbackfsa","Try to bluff your way out","Amaheadbackfsb","Flee","Amaheadbackfsc"),
+'Amaheadbackfs'=> array ("You find a priest waiting for you.",2,3,"Attack him","Amaheadbackfsa","Try to bluff your way out","Amaheadbackfsb","Loc_Flee","Amaheadbackfsc"),
 // this should be harder than other encounters with priest,
 // because here you stole the head ie he's hostile to you.
 'Amaheadbackfsa'=> array ("The priest begins chanting. The chant has strange tones in it, like other voices, which repel you and yet demand your attention.",3,"Magic",25,"Amaheadbackfsas","Amaheadb2ffyaf"),
@@ -7885,7 +7925,7 @@ $paras=array (
 'Atnosbashs'=> array ("You bruise your shoulder barging the door, but eventually it gives way with a rusty shriek.",9,"Stamina",-2,"Atnosok"),
 'Atnosbashf'=> array ("You bruise your shoulder barging the door. The rusted metal shrieks, but refuses to move.",9,"Stamina",-2,"Atnosbashf1"),
 'Atnosbashf1'=> array ("no text",13,"Atnoslocka"),
-'Atnoslocka'=> array ("It occurs to you that the Colossos may have another 'back entrance' - but you get the feeling that it could be dangerous to enter it without protection. Instead, you consider trying to climb in through its ear.",2,2,"Do so","Atnoslockf","Decide it's too dangerous","Atnoslockb"),
+'Atnoslocka'=> array ("It occurs to you that the Colossos may have another 'back entrance' - but you get the feeling that it could be dangerous to enter it without protection. Instead, you consider trying to climb in through its ear.",2,2,"Loc_DoSo","Atnoslockf","Decide it's too dangerous","Atnoslockb"),
 'Atnoslockb'=> array ("no text",9,"Heroism",-1,"Atnoslockb1"),
 'Atnoslockb1'=> array ("no text",8,170,0,"Atnoslockb2"),
 'Atnoslockb2'=> array ("no text",8,180,1,"Atnoslockb3"),
@@ -8164,9 +8204,9 @@ $paras=array (
 'Ztemplesf2'=> array ("no text",3,"Duelling",23,"Ztemplefkss","Ztempleff"),
 'Ztemplem'=> array ("no text",3,"Magic",14,"Ztemplems","Ztemplemf"),
 'Ztemplems'=> array ("no text",4,2,"Ztemplemc","Ztemplems"),
-'Ztemplemc'=> array ("The spell tells you that if you yell and charge, most of them will flee in terror.",2,3,"Do so","Ztemplemc1","Sneak up instead","Ztemples","Run away","Ztempler"),
+'Ztemplemc'=> array ("The spell tells you that if you yell and charge, most of them will flee in terror.",2,3,"Loc_DoSo","Ztemplemc1","Sneak up instead","Ztemples","Run away","Ztempler"),
 'Ztemplemc1'=> array ("You charge, waving your WEAPONNAME and yelling blood-curdling threats.",1,"Ztempleafss"),
-'Ztemplems'=> array ("The spell shows you a path to the ruin, where you can sneak from tree to tree and not be seen.",2,3,"Do so","Ztempless","Charge in instead","Ztemplea","Run away","Ztempler"),
+'Ztemplems'=> array ("The spell shows you a path to the ruin, where you can sneak from tree to tree and not be seen.",2,3,"Loc_DoSo","Ztempless","Charge in instead","Ztemplea","Run away","Ztempler"),
 'Ztemplemf'=> array ("The spell does nothing but drain your energy.",2,3,"Charge in","Ztemplea","Sneak up","Ztemples","Run away","Ztempler"),
 'Ztempler'=> array ("You turn and run. Zareth doesn't pursue you. You hear nothing but the crunch of your feet on the snow.",12,2,18,"Luck","Magic","Ztemplerff","Ztemplerfs","Ztemplerss"),
 'Ztemplerff'=> array ("In the manner of dreams, you somehow know that Zareth is pursuing you. You run as fast as you can through the quiet forest. The certainty that Zareth is upon you gets stronger. At once you see his face in front of you. You scream - and with that, you find yourself back in Zareth's room.",3,"Charisma",22,"Zarethn3fs","Zarethn3ff"),
@@ -8260,7 +8300,7 @@ $paras=array (
 'Smallplanetshells2'=> array ("The creature eats several of your shells. It offers you a drink of fizzy acid, but you decline.",10,-3,"Smallplanetnothing"),
 'Smallplanetnothing'=> array ("You thank the creature, and leave it to its book.",1,"Spaceplanetleave"),
 'Smallplanetrefuse'=> array ("The creature wrinkles its tentacles in a skeptical manner, but doesn't challenge you.",9,"Heroism",-2,"Spaceplanetleave"),
-'Spaceplanetleave'=> array ("Armed with your new knowledge, you consider whether to return to the world straight away.",2,2,"Do so","Spaceland","Keep exploring the celestial realm","Spacehub2"),
+'Spaceplanetleave'=> array ("Armed with your new knowledge, you consider whether to return to the world straight away.",2,2,"Loc_DoSo","Spaceland","Keep exploring the celestial realm","Spacehub2"),
 
 'Spaceland'=> array ("You touch the jewels in the manner the creature told you, to tell the hut to return to the world. It turns out to be a bit harder than it seemed in theory; the hut starts heading downwards, but it seems to want to go in its own direction. You fear that you'll land in the sea, or a desert years' journey away from the lands you know. In a panic, you begin touching the jewels at random.",13,"Spaceland2"),
 'Spaceland2'=> array ("no text",3,"Luck",16,"Spacelandgood","Leaveshipfloat2"),
@@ -8279,7 +8319,7 @@ $paras=array (
 
 'Leaveship'=> array ("no text",6,45,"Spacehub2","Leaveship2"),
 'Leaveship2'=> array ("no text",8,45,1,"Leaveship3"),
-'Leaveship3'=> array ("You float through an unending ocean of night. You begin to think that you'll drift here until you starve to death. You think that perhaps you could leave the hut, and try to 'swim' back to the ground.",2,2,"Do so","Leaveship4","Stay and wait","Spacehub2"),
+'Leaveship3'=> array ("You float through an unending ocean of night. You begin to think that you'll drift here until you starve to death. You think that perhaps you could leave the hut, and try to 'swim' back to the ground.",2,2,"Loc_DoSo","Leaveship4","Stay and wait","Spacehub2"),
 'Leaveship4'=> array ("You climb out of the open window and float free. You look down and see the whole world.",8,155,1,"Leaveship4b"),
 'Leaveship4b'=> array ("no text",6,154,"Leaveship4bi","Leaveship4bii"),
 'Leaveship4bi'=> array ("You can see no difference between the real world, and the one conjured by Anhotep under the sea. You wonder whether Anhotep's world had any people, and if such people would know they were illusions. It occurs to you that, if not, you would be hard pressed to prove that you were real and not an illusion.",9,"Heroism",-2,"Leaveship4a"),
@@ -9171,12 +9211,12 @@ print "<div id=\"c1\" class=\"div_text\">";
 					$newstep = $step;
 				}*/
 				$fullink="a href=\"".$baseurl."game.php?step=".($newstep)."&para=".$paras[$para][2+($loop*2)]."&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\"";
-				print "<".$fullink." onMouseover=\"window.status='continue to this section'; return true\">".$paras[$para][1+($loop*2)]."</a>";
+				print "<".$fullink." onMouseover=\"window.status='continue to this section'; return true\">".getLocStr($fulltext=$paras[$para][1+($loop*2)], $lang)."</a>";
 				//print "</td>";
 				if ($paras[$para][1+($loop*2)]<>"") {
 					//print "<td>";
 					$fullink=str_replace("game.php","save.php",$fullink);
-					print "<".$fullink."  onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\" alt=\"save your game\"></a>";
+					print "&nbsp;&nbsp;<".$fullink."  onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\" alt=\"save your game\"></a>";
 					//print "</td>";
 				}
 				print "</div>";
@@ -9509,7 +9549,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 			$paras[$para][0]="no text";
 			$paras[$para][1]=2;
 			$paras[$para][2]=1;
-			$paras[$para][3]="继续/Continue";
+			$paras[$para][3]="Loc_Continue";
 			$iscontinue=1;
 			$finished=0;
 		}
@@ -9829,7 +9869,7 @@ print "<div id=\"c2\" class=\"div_stat\">";
 			if ($items[$loop]==1) {
 				$flag++;
 				if ($flag==1) {
-					print "<table><tr>";
+					print "<div>".getLocStr("Loc_Companion", $lang)."：</div><table><tr>";
 				}
 				print "<td><div align=\"center\"><img src=\"".$baseurl."images/misc/icon_".$itemnames[$loop][1].".jpg\"></div><div align=\"center\">".$itemnames[$loop][0]."</div></td>";
 				if (($flag%2)==0) {

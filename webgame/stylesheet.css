@@ -1,37 +1,37 @@
 body {
-    font-family: Myriad, Helvetica, Arial, Geneva, SunSans-Regular, sans-serif;
-    font-size: 14pt;   
-	background: #000;
-	color: #ffffff;
-	padding: 0px;
-	margin: 0px;
-	-webkit-font-smoothing: subpixel-antialiased;
+  font-family: Myriad, Helvetica, Arial, Geneva, SunSans-Regular, sans-serif;
+  font-size: 12pt;
+  background: #000;
+  color: #ffffff;
+  padding: 0pt;
+  margin: 0pt;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 table {
-    font-family: Myriad, Helvetica, Arial, Geneva, SunSans-Regular, sans-serif;
-    font-size: 14pt;   
+  font-family: Myriad, Helvetica, Arial, Geneva, SunSans-Regular, sans-serif;
+  font-size: 12pt;
 }
 
 A:link {
- color: #8888ff;
- TEXT-DECORATION: underline;
+  color: #8888ff;
+  TEXT-DECORATION: underline;
 }
 A:visited {
- COLOR: #8888ff;
- TEXT-DECORATION: underline;
+  COLOR: #8888ff;
+  TEXT-DECORATION: underline;
 }
 A:hover {
- COLOR: #ff7f24;
- text-decoration: underline;
+  COLOR: #ff7f24;
+  text-decoration: underline;
 }
 A:active {
- COLOR: #ff7f24;  
- text-decoration: underline;
+  COLOR: #ff7f24;
+  text-decoration: underline;
 }
 
 img {
-   border:2px solid #888888;
+  border:2pt solid #888888;
 }
 
 .hidden {
@@ -40,57 +40,54 @@ img {
 }
 
 .artclass {
-	max-width: 360px;
+  max-width: 360px;
 }
 
 .saveBox {
   clear: both;
   font-size: 10pt;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 8px;
+  border: 1pt solid #ccc;
+  padding: 10pt;
+  margin: 8pt;
   border-radius: 1em;
   background: #155115;
   color: #FFF;
 }
 
 .actionBox {
-  width:  270px;
+  width:  200pt;
   float: left;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 8px;
+  text-align: center;
+  border: 1pt solid #ccc;
+  padding: 5pt;
+  margin: 8pt;
   border-radius: 1em;
   background: #55F;
   color: #F00;
 }
-.actionBox A:link {
- color: #FFFFFF;
- TEXT-DECORATION: underline;
-    font-family: Arial, Geneva, SunSans-Regular, sans-serif;
-    font-size: 20pt;    
-}
-.actionBox A:visited {
- COLOR: #FFFFFF;
- TEXT-DECORATION: underline;
-    font-family: Arial, Geneva, SunSans-Regular, sans-serif;
-    font-size: 20pt;    
+.actionBox A {
+  color: #FFFFFF;
+  TEXT-DECORATION: underline;
+  font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+  font-size: 14pt;
 }
 
 #h{
-    background: none repeat scroll 0 0 #062C65;
-    border-bottom: 2px solid #F59C24;
-    height: 120x;
+  background: none repeat scroll 0 0 #062C65;
+  padding: 10pt;
+  border-bottom: 2pt solid #F59C24;
 }
-#c1 {    background: none repeat scroll 0 0 #000000;    overflow:hidden;
-	padding: 10px;    
-	padding-bottom: 20px;
-    border-bottom: 2px solid #F59C24;
+#c1 {
+  background: none repeat scroll 0 0 #000000;    overflow:hidden;
+  padding: 10pt;
+  border-bottom: 2pt solid #F59C24;
 }
-#c2 {    background: none repeat scroll 0 0 #000000;    float: left;    padding: 10px;    width: 240px;    overflow:hidden;
-    border-right: 2px solid #F59C24;
-	padding-top: 20px;
+#c2 {
+  background: none repeat scroll 0 0 #000000;    float: left;     width: 240px;    overflow:hidden;
+  padding: 8pt;
+  border-right: 2pt solid #F59C24;
 }
-#c3 {    background: none repeat scroll 0 0 #202020;    float: left;   padding: 10px;   width: 380px;     overflow:hidden;
-	padding-top: 20px;
+#c3 {
+  background: none repeat scroll 0 0 #202020;    float: left;     width: 380px;    overflow:hidden;
+  padding: 8pt;
 }
