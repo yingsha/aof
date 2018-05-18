@@ -851,5 +851,6 @@ if ($mode==0) {
 print $line;
 print "</td>";
 print "</table>";
-@include $baseurl."footer.txt";
+
+include($baseurl."footer.txt");
 ?>

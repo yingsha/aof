@@ -9916,5 +9916,5 @@ print "</div>";
 
 print "</div>";
 
-@include $baseurl."footer.txt";
+include($baseurl."footer.txt");
 ?>

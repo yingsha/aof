@@ -1,10 +1,20 @@
- <?php
+<?php
+//error_reporting( E_ALL &~ E_NOTICE );
+error_reporting( E_ALL ^ E_NOTICE );
+
 //$baseurl="http://www.apolitical.info/webgame/";
 $baseurl="http://localhost/aof/";
-@include $baseurl."header.txt";
+include($baseurl."header.txt");
+
+
+$site = filter_input(INPUT_GET, 'site', FILTER_SANITIZE_STRING);
+$a = filter_input(INPUT_GET, 'a', FILTER_SANITIZE_STRING);
+$h = filter_input(INPUT_GET, 'h', FILTER_SANITIZE_STRING);
+$p = filter_input(INPUT_GET, 'p', FILTER_SANITIZE_STRING);
+
 
 $line="<div>&nbsp</div>";
-$site=$baseurl."/images/";
+$site=$baseurl."images/";
 $startdiv="<div align=\"center\">";
 
 print $startdiv."<img style=\"border-color:#888888\" src=\"".$site.$p.".jpg\"></div>";
@@ -39,7 +49,7 @@ print "</div>";
 print $line;
 print $startdiv."As seen in the free online RPG <a href=\"http://www.apolitical.info/webgame\" onMouseover=\"window.status='play Age of Fable'; return true\">Age of Fable</a></div>";
 print $line;
-print $startdiv."See all the artwork from Age of Fable on the <a href=\"http://www.apolitical.info/webgame/credits.php\" onMouseover=\"window.status='author and artist credits'; return true\">credits page</a></div>";
+print $startdiv."See all the artwork from Age of Fable on the <a href=\"".$baseurl."credits.php\" onMouseover=\"window.status='author and artist credits'; return true\">credits page</a></div>";
 print $line;
 print $startdiv."This image ";
 if ($a=="Peter Seckler") {
@@ -94,5 +104,5 @@ print $startdiv;
 <?php
 
 
-@include "http://www.apolitical.info/webgame/footer.txt";
+include($baseurl."footer.txt");
 ?>
