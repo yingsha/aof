@@ -3,7 +3,7 @@
 error_reporting( E_ALL ^ E_NOTICE );
 
 //$baseurl="http://www.apolitical.info/webgame/";
-$baseurl="http://localhost/aof/";
+$baseurl="";
 include($baseurl."header.txt");
 
 $line="<div>&nbsp</div>";
