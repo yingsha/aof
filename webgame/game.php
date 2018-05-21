@@ -153,17 +153,23 @@ $itemnames=array(
 	16=> array ("马(horse)","horse"),
 	17=> array ("书(book)","item"),
 	18=> array ("鼓(drum)","item"),
-	19=> array ("r.o.p.h., but this isn't used","item"),  // $itemnames[1][0]="幼稚的玩笑之杆 (Rod of Puerile Humour)";
+	19=> array ("r.o.p.h. （幼稚的玩笑之杆/Rod of Puerile Humour）, but this isn't used","item"),  // $itemnames[1][0]="幼稚的玩笑之杆 (Rod of Puerile Humour)";
 	20=> array ("neckweasel","item"),
-	21=> array ("the Pearl of Wisdom","item"),
+	21=> array ("智慧珍珠（the Pearl of Wisdom）","item"),
 	22=> array ("惹人怜爱的小猫(Piteous Mew)","cat"),
 	23=> array ("渡鸦(raven)","raven"),
-	24=> array ("Ugly Stick","item"),
+	24=> array ("丑怪棒（Ugly Stick）","item"),
 	25=> array ("钥匙(key)","item"),
 	26=> array ("guide to Dead Eye Street","item"),
 	27=> array ("红玫瑰(red rose)","item"),
 	28=> array ("茉莉花公主(Yasmina)","princess"),
 );
+
+//languages
+// 0 - English
+// 1 - Chinese
+// 2 - Chinese (English) 汉英对照
+$lang = 2;
 
 $manyitems=28;
 //how many items are in the game.
@@ -179,7 +185,7 @@ while ($carry>0) {
 
 //weapons
 $weapontypes=11;
-$weaponnames=array("null","木棒(club)","铁头木棒quarterstaff","弯刀machete","匕首dagger","剑sword","半月弯刀scimitar","长矛spear","三叉戟trident","axe","战锤war-hammer","狼牙棒mace");
+$weaponnames=array("null","club","quarterstaff","machete","dagger","sword","scimitar","spear","trident","axe","war-hammer","mace");
 
 if (!isset($weapon)) {
 	//trolls always have clubs.
@@ -216,7 +222,7 @@ if (!isset($weapon)) {
 		$weapon=rand(1,$weapontypes);
 	}
 }
-$itemnames[1][0]="your ".getLocStr($weaponnames[$weapon], $lang);
+$itemnames[1][0]="你的 ".getLocStr($weaponnames[$weapon], $lang);
 
 //unpack $world to reveal $keywords array
 
@@ -999,18 +1005,13 @@ if (!isset($shells)) {
 
 $switch=0;
 
-//languages
-// 0 - English
-// 1 - Chinese
-// 2 - Chinese (English) 汉英对照
-$lang = 2;
-
 function getLocStr($fulltext, $lang) {
 
 	//main array
 	$localizationPrefix = "Loc_";
 	$localization=array(
 		'Loc_DoSo'=> array ("Do so", "照办"),
+		'Loc_DecideNotTo'=> array ("Decide not to", "不这样做"),
 		'Loc_Riskit'=> array ("Risk it", "冒险一试"),
 		'Loc_AdmitIt'=> array ("Admit it", "承认"),
 		'Loc_DenyIt'=> array ("Deny it", "否认"),
@@ -1040,7 +1041,27 @@ function getLocStr($fulltext, $lang) {
 		'terrible'=> array ("terrible", "很糟"),
 		'clumsy'=> array ("clumsy", "笨拙"),
 		'slow'=> array ("slow", "迟钝"),
+
 		'axe'=> array ("axe", "斧头"),
+		'quarterstaff'=> array ("quarterstaff", "铁头木棒"),
+		'dagger'=> array ("dagger", "匕首"),
+		'spear'=> array ("spear", "长矛"),
+		'machete'=> array ("machete", "弯刀"),
+		'scimitar'=> array ("scimitar", "半月弯刀"),
+		'club'=> array ("club", "木棒"),
+		'sword'=> array ("sword", "剑"),
+		'spear'=> array ("spear", "长矛"),
+		'trident'=> array ("trident", "三叉戟"),
+		'war-hammer'=> array ("war-hammer", "战锤"),
+		'mace'=> array ("mace", "狼牙棒"),
+		'Loc_RodOfPuerileHumour'=> array("Rod of Puerile Humour)", "幼稚的玩笑之杆"),
+		'Loc_OopsErrorMsg'=> array(
+				"Suddenly, the god of unfinished things appears.<br><br><b>'SORRY!'</b> he says.<br><br>'You've reached a section that hasn't been written yet. Age of Fable is unfinished and under construction, and because it's free I can't give it as much time as I'd like to. However it's updated pretty frequently, so please check back later, or go back and choose another option. For now, I'm sending you back to Karrakara.'",
+				"哎哟喂"),
+
+
+
+
 		/*
 		Spare it
 		Kill it
@@ -1062,7 +1083,7 @@ function getLocStr($fulltext, $lang) {
 	);
 
 	// localization
-	if (substr( $fulltext, 0, 4 ) == $localizationPrefix or array_key_exists($fulltext, $localization)) {
+	if (substr( $fulltext, 0, 4 ) == $localizationPrefix OR array_key_exists($fulltext, $localization)) {
 		if ($lang==2) {
 			// 汉英对照
 			$fulltext=$localization[$fulltext][1]." (".$localization[$fulltext][0].")";
@@ -1075,7 +1096,7 @@ function getLocStr($fulltext, $lang) {
 
 $paras=array (
 
-'Oops'=> array ("Suddenly, the god of unfinished things appears.<br><br><b>'SORRY!'</b> he says.<br><br>'You've reached a section that hasn't been written yet. Age of Fable is unfinished and under construction, and because it's free I can't give it as much time as I'd like to. However it's updated pretty frequently, so please check back later, or go back and choose another option. For now, I'm sending you back to Karrakara.'",13,271),
+'Oops'=> array ("Loc_OopsErrorMsg",13,271),
 
 // Cstart: courtesan start
 'Cstart'=> array ("<img style=\"border:0px\" src=\"".$baseurl."images/misc/illuminatedy.jpg\" align=\"left\" alt=\"Y\">ou've spent years climbing up from the gutter, only to find yourself unable to bear your Lord any longer.",4,3,"Snowaltc","200altc","200wreckaltc"),
@@ -3057,6 +3078,7 @@ $paras=array (
 'Karraseller2a'=> array ("no text",5,6,"Karraseller2b","Karraseller3"),
 'Karraseller2b'=> array ("no text",5,3,"Karraseller2c","Karraseller3"),
 'Karraseller2c'=> array ("no text",5,5,"Karraseller4","Karraseller3"),
+// Karraseller3 missing option #6
 'Karraseller3'=> array ("You may look at",17,6,"a black pearl",-106,"Sellerpearl","a finely-wrought medallion",-103,"Sellermedallion","a crown",-105,"Sellercrown","a staff covered in engravings",-119,"Sellerstaff","or pass by",0,"Selleron"),
 'Karraseller4'=> array ("no text",11,20,"Karraseller4a","Karraseller4done"),
 'Karraseller4a'=> array ("no text",5,19,"Karraseller4done","Karraseller3"),
@@ -3216,6 +3238,7 @@ $paras=array (
 // add helmet as option to buy as well (helmet first).
 
 'Fur'=> array ("no text",8,66,1,"Fur1"),
+// Fur1 missing option #3
 'Fur1'=> array ("You see a young man who is trying to sell a large fur. He catches your eye and begins a spiel about it. When you don't slow down, he suddenly adds that it has magic powers.",2,3,"Loc_KeepGoing","Furno","Listen to what he has to say","Fur2"),
 'Fur2'=> array ("He hesitates for an instant, then tells you that the fur comes from a sphinx. He says it has the mystic ability to shelter you from any weather, be it sun, cold or storm. He tells you that this accounts for its high price of five shells.",6,124,"Furchoice","Furpp"),
 'Furpp'=> array ("A passing peasant says to you 'they do say that if you believed everything you heard in the markets, you'd end up with no money and a sore arse!', and laughs uproariously. The young man glares at her.",8,124,1,"Furchoice"),
@@ -5072,7 +5095,7 @@ $paras=array (
 200=> array ("no text",4,3,"200main","Snow","200wreck"),
 '200wreck'=> array ("<img style=\"border:0px\" src=\"".$baseurl."images/misc/illuminatedy.jpg\" align=\"left\" alt=\"Y\">our boat is wrecked en route to the great city of Karrakara, and it seems that only you survive.",1,211),
 '200main'=> array ("<img src=\"".$baseurl."images/misc/illuminatedo.jpg\" align=\"left\" alt=\"O\">n a clear morning, before even the seagulls have woken up, you make your way to the jetty to set out for the great city of Karrakara. Your ship, really a coracle with ideas above its station, slips into the water. You look at your small pile of cowrie shells, the islands' most common currency. You wonder whether you should return some to the sea god Numen Mari, to ensure a safe journey.",8,171,1,"200a"),
-'200a'=> array ("no text",2,2,"Loc_DoSo",201,"不这样做 Decide not to",202),
+'200a'=> array ("no text",2,2,"Loc_DoSo",201,"Loc_DecideNotTo",202),
 201=> array ("You wait until you can no longer see the bottom, and thus are in the domain of the sea god. You drop five shells over the side. Each one seems more reluctant than the last to leave your hand. You are unsure whether your offering has any effect, but you do reach Karrakara without incident.",10,-5,203),
 202=> array ("no text",3,"Seafaring",13,"202s","202f"),
 '202s'=> array ("no text",3,"Seafaring",15,"202ss","202sf"),
@@ -5091,15 +5114,12 @@ $paras=array (
 210=> array ("no text",13,211),
 
 // Snow - other main start to adventure
-'Snow'=> array ("<img style=\"border:0px\" src=\"".$baseurl."images/misc/illuminatedy.jpg\" align=\"left\" alt=\"Y\">ou realise you can't spend another freezing winter day in this town. You resolve to set out for the great city of Karrakara.<br><br><br><br><br>",1,"Snowchoice_c"),
+'Snow'=> array ("<img style=\"border:0px\" src=\"".$baseurl."images/misc/illuminatedy.jpg\" align=\"left\" alt=\"Y\">ou realise you can't spend another freezing winter day in this town. You resolve to set out for the great city of Karrakara.<br><br><br><br><br>",1,"Snowchoice"),
 'Snowaltc'=> array ("ou realise you can't spend another freezing winter day in this town. You resolve to set out for the great city of Karrakara.",1,"Snowchoice"),
 'Snowalt'=> array ("You realise you can't spend another freezing winter day in this town. You resolve to set out for the great city of Karrakara.",1,"Snowchoice"),
-'Snowchoice'=> array ("no text",2,2,"Hire a guide","Snowguide","Travel by yourself","Snowself"),
-'Snowchoice_c'=> array ("no text",2,2,"雇佣一名向导","Snowguide_c","独自旅行","Snowself_c"),
+'Snowchoice'=> array ("no text",2,2,"雇佣一名向导Hire a guide","Snowguide","独自旅行Travel by yourself","Snowself"),
 'Snowguide'=> array ("no text",6,327,"Snowguidefail","Snowguidea"),
-'Snowguide_c'=> array ("no text",6,327,"Snowguidefail_c","Snowguidea_c"),
 'Snowguidea'=> array ("no text",8,327,1,"Snowguide0"),
-'Snowguidea_c'=> array ("no text",8,327,1,"Snowguide0"),
 'Snowguide0'=> array ("no text",12,2,16,"Streetwise","Charisma","Snowguide7","Snowguide5","Snowguide3"),
 'Snowguide3'=> array ("no text",11,3,"Snowguide3a","Snowguidefail"),
 'Snowguide3a'=> array ("no text",10,-3,"Snowguideend"),
@@ -5108,8 +5128,7 @@ $paras=array (
 'Snowguide7'=> array ("no text",11,7,"Snowguide7a","Snowguidefail"),
 'Snowguide7a'=> array ("no text",10,-7,"Snowguideend"),
 'Snowguideend'=> array ("You pay the guide, a fierce-looking goblin, too many of your already small pile of cowrie shells.",1,"nearly269gu"),
-'Snowguidefail'=> array ("All the guides want more shells than you have. At last you make a bargain with a farmer, that you will help shear the sheep-trees in return for a lift to Karrakara.",1,"Snowguidefail1"),
-'Snowguidefail_c'=> array ("向导们开价太高，你可没有这么多贝壳。最后你和一名农夫达成了交易，你会帮助shear the sheep-trees换取农夫带你去往Karrakara。",1,"Snowguidefail1"),
+'Snowguidefail'=> array ("向导们开价太高，你可没有这么多贝壳。最后你和一名农夫达成了交易，你会帮助shear the sheep-trees换取农夫带你去往Karrakara。 All the guides want more shells than you have. At last you make a bargain with a farmer, that you will help shear the sheep-trees in return for a lift to Karrakara.",1,"Snowguidefail1"),
 'Snowguidefail1'=> array ("The work is incredibly hard. Even in the bitter cold you're soon panting like a thirsty dog.",9,"Stamina",-3,"Snowguidefail2"),
 'Snowguidefail2'=> array ("no text",3,"Stamina",20,"Snowguidefail2s","Snowguidefail2f"),
 'Snowguidefail2f'=> array ("At last you finish. You sleep in the farmer's cart as she drives to the great city. The cold, the rough ride, and the uncertainty of your future combine to plague you with nightmares.",9,"Luck",-2,"Snowguidefail2f1"),
@@ -5131,9 +5150,7 @@ $paras=array (
 // at the end. The only difference is that '269gu'
 // is assigned the picture 'guide'.
 'Snowself'=> array ("no text",9,"Heroism",2,"Snowself0"),
-'Snowself_c'=> array ("no text",16,"Heroism",5,"Snowself0_c"),
-'Snowself0'=> array ("You trudge through the deep snow.",6,328,"Snowself1","Snowself0a"),
-'Snowself0_c'=> array ("你在很深的雪里跋涉。",6,328,"Snowself1","Snowself0a"),
+'Snowself0'=> array ("你在很深的雪里跋涉。You trudge through the deep snow.",6,328,"Snowself1","Snowself0a"),
 'Snowself0a'=> array ("no text",3,"Luck",20,"Snowself1","Robbed0"),
 'Robbed0'=> array ("no text",8,328,1,"Robbed"),
 'Robbed'=> array ("Alas, you meet a group of robbers. They're little more than boys, but their arrows look as sharp as anyone else's. They demand ten shells.",11,10,"Robbedrich","Robbedpoor"),
@@ -9132,19 +9149,20 @@ print "<div id=\"c1\" class=\"div_text\">";
 		//print paragraph text
 		$armed=$weaponnames[$weapon];
 		if ($items[19]==1) {
-			$armed="Rod of Puerile Humour";
+			$armed=getLocStr("Loc_RodOfPuerileHumour", $lang);
 		}
 
 		$armed=getLocStr($armed, $lang);
+		$text2display=$paras[$para][0];
 
-		if ($paras[$para][0]<>"no text") {
+		if ($text2display<>"no text") {
 			print $line;
 			$switch=0;
-			if ($paras[$para][0]=="") {
+			if ($text2display=="") {
 				//$currentpara="<b>ERROR</b><br><br>The game has tried to send you to a non-existent paragraph. This is because the programmer made a typing error. Please email news(at)apolitical(dot)info and say what your character was doing when this happened, and it'll be fixed.";
 				$currentpara="<b>ERROR 出错</b><br><br>游戏尝试发送一段不存在的文字(para=".$para.")。这是因为程序员造成了拼写错误。请发邮件给 news(at)apolitical(dot)info 或 yingsha(at)qq(dot)com 描述问题发生时你的角色正在做什么，以便问题得到修复。";
 			} else {
-				$currentpara=str_replace("WEAPONNAME",$armed,$paras[$para][0]);
+				$currentpara=str_replace("WEAPONNAME",$armed,getLocStr($text2display, $lang));
 			}
 			print "<div>".$currentpara."</div>";
 		}
@@ -9232,7 +9250,6 @@ print "<div id=\"c1\" class=\"div_text\">";
 
 			//print "<table align=\"center\" width=\"100%\">";
 			for ($loop=1;$loop<=$paras[$para][2];$loop++) {
-				print "<div class=\"actionBox\">";
 				//print "<td>";
 				if ($items[15]==1 AND $creda==0) {
 					$creda=1;
@@ -9244,16 +9261,25 @@ print "<div id=\"c1\" class=\"div_text\">";
 					// skip step+1
 					$newstep = $step;
 				}*/
-				$fullink="a href=\"".$baseurl."game.php?step=".($newstep)."&para=".$paras[$para][2+($loop*2)]."&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\"";
-				print "<".$fullink." onMouseover=\"window.status='continue to this section'; return true\">".getLocStr($fulltext=$paras[$para][1+($loop*2)], $lang)."</a>";
+				$fullink="<a href=\"".$baseurl."game.php?step=".($newstep);
+				if (isset($paras[$para][1+($loop*2)]) AND isset($paras[$para][2+($loop*2)])) {
+					$fullink=$fullink."&para=".$paras[$para][2+($loop*2)]."&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\"";
+					print $fullink." onMouseover=\"window.status='continue to this section'; return true\">";
+					print "<div class=\"actionBox\">".getLocStr($fulltext=$paras[$para][1+($loop*2)], $lang);
+				} else {
+					$fullink=$fullink."&para=Oops&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\"";
+					print $fullink." onMouseover=\"window.status='continue to this section'; return true\">";
+					print "<div class=\"actionBox\"><font color='yellow'>Oops <br/>漏写了 ".$para. "的 #".$loop." 选项吧？</font>";
+				}
+				print "</div>";
+				print "</a>";
 				//print "</td>";
 				if ($paras[$para][1+($loop*2)]<>"") {
 					//print "<td>";
 					$fullink=str_replace("game.php","save.php",$fullink);
-					print "&nbsp;&nbsp;<".$fullink."  onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\"></a>";
+					print $fullink."  onMouseover=\"window.status='save your game'; return true\" target=\"_blank\"><img style=\"border:0px\" src=\"".$baseurl."images/misc/savegame.jpg\"></a>";
 					//print "</td>";
 				}
-				print "</div>";
 			}
 			//print "</table>";
 		}
@@ -9879,14 +9905,14 @@ print "<div id=\"c2\" class=\"div_stat\">";
 	print $line;
 
 	if ($items[19]==1) {
-		$itemnames[1][0]="幼稚的玩笑之杆 (Rod of Puerile Humour)";
+		$itemnames[1][0]=getLocStr("Loc_RodOfPuerileHumour", $lang);
 	}
 
 	$flag=0;
 	for ($loop=1;$loop<=$manyitems;$loop++) {
 	if ($itemnames[$loop][1]=="item" and $loop<>19 and $items[$loop]==1) {
 	if ($flag==0) {
-	print "<div>Items:</div>";
+	print "<div>身上道具/Items:</div>";
 	$flag=1;
 	}
 	print "<div>".$itemnames[$loop][0]."</div>";
@@ -9977,7 +10003,7 @@ print "<div id=\"c3\" class=\"div_picture\">";
 		print $startdiv."<img class=\"artclass\" src=\"".$baseurl."images/".$art[$para].".jpg\"></div>";
 	}
 	print $startdiv."<b><a href=\"".$baseurl."credits.php\" onMouseover=\"window.status='author and artist details'; return true\" target=\"_blank\">制作名单（credits）</a> . ";
-	print "<a href=\"".$baseurl."\" onMouseover=\"window.status='start again'; return true\">";
+	print "<a href=\"".$baseurl."index.php\" onMouseover=\"window.status='start again'; return true\">";
 	if ($over==1) {
 		print "返回主菜单";
 	} else {

@@ -63,7 +63,10 @@ img {
   margin: 8pt;
   border-radius: 1em;
   background: #55F;
-  color: #F00;
+  color: #FFFFFF;
+  TEXT-DECORATION: underline;
+  font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+  font-size: 14pt;
 }
 .actionBox A {
   color: #FFFFFF;
