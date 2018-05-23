@@ -868,7 +868,7 @@ for ($loop=1;$loop<=($obless+$attnum);$loop++) {
 // 338 -
 
 // starting para
-
+// 根据职业选择剧情起点
 if (!isset($para)) {
 	if ($prof==8) {
 	$para="Fstart";
@@ -881,13 +881,13 @@ if (!isset($para)) {
 	} elseif (rand(0,1)==0 AND $prof==7) {
 	$para="Pstart";
 	} elseif ($prof==11) {
-	$para="Astart";
+	$para="Astart"; // assassin
 	} elseif ($prof==14) {
 	$para="Tstart";
 	} elseif ($prof==15) {
 	$para="Cstart";
 	} elseif ($prof==16) {
-	$para="Ftstart";
+	$para="Ftstart"; // fortune teller
 	} elseif ($prof==1) {
 	$para="Catstart";
 	} elseif ($prof==20) {
@@ -9214,11 +9214,14 @@ print "<div id=\"c1\" class=\"div_text\">";
 		$armed=getLocStr($armed, $lang);
 		$text2display=$paras[$para][0];
 
+		$finished=1;
+		$branch=$paras[$para][1];
+
 		if ($text2display=="no text") {
 			print $line;
 			$switch=0;
 			$currentpara=str_replace("WEAPONNAME",$armed,getLocStr($text2display, $lang));
-			print "<div>".$currentpara."</div>";
+			print "<div><font color='grey'>".$currentpara." branch=".$branch.", para=".$para."</font></div>";
 		} else {
 			print $line;
 			$switch=0;
@@ -9230,9 +9233,6 @@ print "<div id=\"c1\" class=\"div_text\">";
 			}
 			print "<div>".$currentpara."</div>";
 		}
-
-		$finished=1;
-		$branch=$paras[$para][1];
 
 		//0:end
 		if ($branch==0 OR $branch==25) {
