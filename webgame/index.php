@@ -61,7 +61,7 @@ $Streetwise = filter_input(INPUT_GET, 'Streetwise', FILTER_SANITIZE_STRING);
 // 2 - Chinese (English) 汉英对照
 $lang = filter_input(INPUT_GET, 'lang', FILTER_SANITIZE_STRING);
 if (!isset($lang)) {
-$lang = 2;
+$lang = 0;
 }
 
 if (!isset($mode)) {
