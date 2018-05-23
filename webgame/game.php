@@ -65,10 +65,10 @@ $attributes=array("null","Stamina","Charisma","Duelling","Brawling","Seafaring",
 //rough description of what a particular score means
 
 $word=array (
-	'Stamina' => array ("濒死 near death","虚弱 sickly","虚弱 sickly","虚弱 sickly","不健康 unhealthy","不健康 unhealthy","不健康 unhealthy","寻常 unremarkable","寻常 unremarkable","寻常 unremarkable","寻常 unremarkable","健康 healthy","健康 healthy","健康 healthy","健康 healthy","健壮 robust","健壮 robust","健壮 robust","无人能敌 unstoppable","无人能敌 unstoppable","无人能敌 unstoppable"),
-	'Charisma' => array ("null","可憎 repulsive","可憎 repulsive","可恶 hateful","可恶 hateful","可恶 hateful","讨厌 annoying","讨厌 annoying","讨厌 annoying","寻常 innocuous","寻常 innocuous","寻常 innocuous","讨人喜欢 likeable","讨人喜欢 likeable","讨人喜欢 likeable","迷人 charming","迷人 charming","迷人 charming","有魅力 mesmerising","有魅力 mesmerising","有魅力 mesmerising"),
+	'Stamina' => array ("near death","sickly","sickly","sickly","unhealthy","unhealthy","unhealthy","unremarkable","unremarkable","unremarkable","unremarkable","healthy","healthy","healthy","healthy","robust","robust","robust","unstoppable","unstoppable","unstoppable"),
+	'Charisma' => array ("null","repulsive","repulsive","hateful","hateful","hateful","annoying","annoying","annoying","innocuous","innocuous","innocuous","likeable","likeable","likeable","charming","charming","charming","mesmerising","mesmerising","mesmerising"),
 	'Duelling' => array ("null","clumsy","clumsy","clumsy","clumsy","slow","slow","slow","slow","average","average","average","average","agile","agile","agile","agile","dangerous","dangerous","deadly","deadly"),
-	'Brawling' => array ("null","孱弱 puny","孱弱 puny","孱弱 puny","weak","weak","weak","unremarkable","unremarkable","unremarkable","unremarkable","强壮 strong","强壮 strong","strong","strong","strong","powerful","powerful","powerful","legendary","legendary"),
+	'Brawling' => array ("null","puny","puny","puny","weak","weak","weak","unremarkable","unremarkable","unremarkable","unremarkable","强壮 strong","强壮 strong","strong","strong","strong","powerful","powerful","powerful","legendary","legendary"),
 	'Seafaring' => array ("null","gets seasick in the bath","gets seasick in the bath","landlubber","landlubber","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","old salt","old salt","old salt","old salt"),
 	'Magic' => array ("null","powerless","powerless","poor","poor","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","superb","superb","overwhelming","overwhelming"),
 	'Heroism' => array ("wicked","wicked","wicked","corrupt","corrupt","selfish","selfish","wavering","wavering","wavering","good-hearted","good-hearted","good-hearted","bold","bold","bold","bold","heroic","heroic","heroic","heroic"),
@@ -225,7 +225,7 @@ if (!isset($weapon)) {
 		$weapon=rand(1,$weapontypes);
 	}
 }
-$itemnames[1][0]="你的 ".getLocStr($weaponnames[$weapon], $lang);
+$itemnames[1][0]=getLocStr("Loc_Your", $lang)." ".getLocStr($weaponnames[$weapon], $lang);
 
 //unpack $world to reveal $keywords array
 
@@ -1013,11 +1013,61 @@ function getLocStr($fulltext, $lang) {
 	//main array
 	$localizationPrefix = "Loc_";
 	$localization=array(
+		"no text"=> array ("...", "……"),
 		'Loc_Credits'=> array ("Credits", "制作名单"),
 		'Loc_LeaveGame'=> array ("Leave game", "离开游戏 "),
 		'Loc_ReturnToMainMenu'=> array ("Return to main-menu", "返回主菜单"),
+		'Loc_MadeIt'=> array ("made it", "成功"),
+		'Loc_Failed'=> array ("failed", "失败"),
 		'Loc_Lose'=> array ("Lose", "失去"),
 		'Loc_Gain'=> array ("Gain", "获得"),
+		'Loc_Your'=> array ("Your", "你的"),
+		'Loc_Blessings'=> array ("Blessings:", "祝福："),
+		'Loc_Items'=> array ("Items:", "道具："),
+		'Loc_CowrieShells'=> array ("Cowrie Shells:", "货贝数量："),
+		'Loc_GainBlessing'=> array ("Gain *** blessing", "获得***祝福"),
+		'Loc_UseBlessing'=> array ("use blessing", "祝福生效"),
+		'Loc_BlessingFailed'=> array ("blessing failed", "祝福失败"),
+		'Loc_YouHaveNoBlessings'=> array ("You have no blessings.", "你身上没有祝福效果。"),
+		// $word
+			"near death"=> array ("near death","濒死"),
+			"sickly"=> array ("sickly","虚弱"),
+			"unhealthy"=> array ("unhealthy","不健康"),
+			"unremarkable"=> array ("unremarkable","寻常"),
+			"healthy"=> array ("healthy","健康"),
+			"robust"=> array ("robust","健壮"),
+			"unstoppable"=> array ("unstoppable","无人能敌"),
+			"repulsive"=> array ("repulsive","可憎"),
+			"hateful"=> array ("hateful","可恶"),
+			"annoying"=> array ("annoying","讨厌"),
+			"innocuous"=> array ("innocuous","寻常"),
+			"likeable"=> array ("likeable","讨人喜欢"),
+			"charming"=> array ("charming","迷人"),
+			"mesmerising"=> array ("mesmerising","有魅力"),
+			"puny"=> array ("puny","孱弱"),
+			// classname
+			"talking-cat"=> array ("talking-cat","人语"),
+			"wizard"=> array ("wizard","魔法师"),
+			"scoundrel"=> array ("scoundrel","恶棍"),
+			"bard"=> 	array ("bard","吟游诗人"),
+			"knight"=> 	array ("knight","骑士"),
+			"nomad"=> 	array ("nomad","游牧民"),
+			"pirate"=> 	array ("pirate","海盗"),
+			"fairy"=> 	array ("fairy","仙子"),
+			"dwarf"=> 	array ("dwarf","矮人"),
+			"barbarian"=> 	array ("barbarian","野蛮人"),
+			"assassin"=> 	array ("assassin","刺客"),
+			"witch"=> 	array ("witch","女巫"),
+			"faun"=> 	array ("faun","弗恩"),
+			"troll"=> 	array ("troll","巨魔"),
+			"courtesan"=> 	array ("courtesan","交际花"),
+			"fortune-teller"=> 	array ("fortune-teller","占卜师"),
+			"amazon"=> 	array ("amazon","亚马逊女战士"),
+			"lizard-man"=> 	array ("lizard-man","蜥蜴人"),
+			"explorer"=> 	array ("explorer","探索者"),
+			"aristocrat"=> 	array ("aristocrat","贵族"),
+			"doraemon"=> array ("doraemon","机器猫"),
+		//
 		'Loc_DoSo'=> array ("Do so", "照办"),
 		'Loc_DecideNotTo'=> array ("Decide not to", "不这样做"),
 		'Loc_Riskit'=> array ("Risk it", "冒险一试"),
@@ -1026,7 +1076,8 @@ function getLocStr($fulltext, $lang) {
 		'Loc_GoYourself'=> array ("Go yourself", "自己走"),
 		'Loc_Continue'=> array ("Continue", "继续"),
 		'Loc_Flee'=> array ("Flee", "逃跑"),
-		'Loc_Companion'=> array ("Companion", "同伴"),
+		'Loc_Companion'=> array ("Companion:", "同伴："),
+		'Loc_NoCompanion'=> array ("You have no companions.", "你没有任何同伴。"),
 		'Loc_Explore'=> array ("Explore", "探索"),
 		'Loc_SailOn'=> array ("Sail on", "继续航行"),
 		'Loc_Leave'=> array ("Leave", "离开"),
@@ -9163,7 +9214,12 @@ print "<div id=\"c1\" class=\"div_text\">";
 		$armed=getLocStr($armed, $lang);
 		$text2display=$paras[$para][0];
 
-		if ($text2display<>"no text") {
+		if ($text2display=="no text") {
+			print $line;
+			$switch=0;
+			$currentpara=str_replace("WEAPONNAME",$armed,getLocStr($text2display, $lang));
+			print "<div>".$currentpara."</div>";
+		} else {
 			print $line;
 			$switch=0;
 			if ($text2display=="") {
@@ -9342,24 +9398,25 @@ print "<div id=\"c1\" class=\"div_text\">";
 							print "<font color=\"gold\">ADVANCED</font>（adroll(".$adroll.") > maxsta(".$maxsta.")";
 							$maxsta=$maxsta+1;
 						} else {
-							print "成功(made it)";
+							print getLocStr("Loc_MadeIt", $lang);
 						}
 					} else {
-						print "成功(made it)";
+						print getLocStr("Loc_MadeIt", $lang);
 					}
 					$para=$paras[$para][4];
 				} else {
 					print "<font color=\"grey\">";
 					print $attributes[$which]." roll 骰子掷出".$dice."点(".$d1."+".$d2."+属性".$stats[$which]."), 难度系数(difficulty) = ".$difficulty." - ";
 					print "</font>";
-					print "<font color=\"red\">";
 					if ($bless[$which]>0) {
 						$bless[$which]=$bless[$which]-1;
 						if ($prof<>9 OR rand(0,1)==1) {
-							print "使用祝福 use blessing";
+							print "<font color=\"green\">";
+							print getLocStr("Loc_UseBlessing", $lang);
 							$para=$paras[$para][4];
 						} else {
-							print "祝福失败 blessing failed";
+							print "<font color=\"red\">";
+							print getLocStr("Loc_BlessingFailed", $lang);
 							if ($paras[$para][2]=="Magic" AND $stats[1]>1 AND $para<>"Childno" AND $para<>"boilingseafigurea" AND $para<>"Uglys" AND $para<>"Tokescapeff" AND $para<> "Grossfvom1" AND $para<>"Grossfnovom" AND $para<>"chainexploren" AND $para<>"Pyrlooke" AND $para<>"Pyrlookh" AND $para<>"seacity6" AND $para<>"Clownyn" AND $para<>"Finalozywall2y1" AND $para<>"nearly269gu" AND $para<>"Amaheadaff1") {
 								$loss=min(rand(1,2),$stats[1]-1);
 								$stats[1]=$stats[1]-$loss;
@@ -9368,7 +9425,8 @@ print "<div id=\"c1\" class=\"div_text\">";
 							$para=$paras[$para][5];
 						}
 					} else {
-						print "失败(failed)";
+						print "<font color=\"red\">";
+						print getLocStr("Loc_Failed", $lang);
 						if ($paras[$para][2]=="Magic" AND $stats[1]>1 AND $para<>"Childno" AND $para<>"boilingseafigurea" AND $para<>"Uglys" AND $para<>"Tokescapeff" AND $para<> "Grossfvom1" AND $para<>"Grossfnovom" AND $para<>"chainexploren" AND $para<>"Pyrlooke" AND $para<>"Pyrlookh" AND $para<>"seacity6" AND $para<>"Clownyn" AND $para<>"Finalozywall2y1" AND $para<>"nearly269gu" AND $para<>"Amaheadaff1") {
 							$loss=min(rand(1,2),$stats[1]-1);
 							$stats[1]=$stats[1]-$loss;
@@ -9491,10 +9549,11 @@ print "<div id=\"c1\" class=\"div_text\">";
 						print $line;
 					}
 				$switch=1;
-				print "<font color=\"red\">";
 				if ($change>0) {
+					print "<font color=\"green\">";
 					print getLocStr("Loc_Gain", $lang);
 				} else {
+					print "<font color=\"red\">";
 					print getLocStr("Loc_Lose", $lang);
 				}
 				if (abs($change)<900) {
@@ -9569,39 +9628,41 @@ print "<div id=\"c1\" class=\"div_text\">";
 								print "<font color=\"gold\">ADVANCED</font>（adroll(".$adroll.") > maxsta(".$maxsta.")";
 								$maxsta=$maxsta+1;
 							} else {
-								print "成功(made it)";
+								print getLocStr("Loc_MadeIt", $lang);
 							}
 						} else {
-							print "成功(made it)";
+							print getLocStr("Loc_MadeIt", $lang);
 						}
 						$made++;
 					} else {
 						print "<font color=\"grey\">";
 						print $attributes[$which]." roll 骰子掷出".$dice."点(".$d1."+".$d2."+属性".$stats[$which]."), 难度系数(difficulty) = ".$difficulty." - ";
 						print "</font>";
-						print "<font color=\"red\">";
 						if ($bless[$which]>0) {
 							if ($prof<>9 OR rand(0,1)==1) {
-								print "使用祝福 use blessing";
+								print "<font color=\"green\">";
+								print getLocStr("Loc_UseBlessing", $lang);
 								$bless[$which]=$bless[$which]-1;
 								$made++;
 							} else {
-								print "祝福失败 blessing failed";
+								print "<font color=\"red\">";
+								print getLocStr("Loc_BlessingFailed", $lang);
 								$bless[$which]=$bless[$which]-1;
 
-						if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") {
-						$loss=min(rand(1,2),$stats[1]-1);
-						$stats[1]=$stats[1]-$loss;
-						print "</div><div>Lose ".$loss." Stamina";
-						}
-						}
+								if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") {
+									$loss=min(rand(1,2),$stats[1]-1);
+									$stats[1]=$stats[1]-$loss;
+									print "</div><div>Lose ".$loss." Stamina";
+								}
+							}
 						} else {
-						print "失败(failed)";
-						if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") {
-						$loss=min(rand(1,2),$stats[1]-1);
-						$stats[1]=$stats[1]-$loss;
-						print "</div><div>Lose ".$loss." Stamina";
-						}
+							print "<font color=\"red\">";
+							print getLocStr("Loc_Failed", $lang);
+							if ($paras[$para][$loop+3]=="Magic" AND $stats[1]>1 AND $para<>"Deathhorseend0" AND $para<>"Impshell2" AND $para<>"boilingseawork1" AND $para<>"boilingseafigureb" AND $para<>"Atnosokk" AND $para<>"Karraunicorn2a" AND $para<>"chainexplore1" AND $para<>"Pyrsneak" AND $para<>"Pyrtalk" AND $para<>"Vilenoiseatt1" AND $para<>"Dancersk2" AND $para<>"Gladiator1y1" AND $para<>"Pyrgodsn" AND $para<>"Readerrun" AND $para<>"Revengefroghmm" AND $para<>"Revengefroghmw" AND $para<>"Revengefroghm2" AND $para<>"e20b" AND $para<>"Forestpooll" AND $para<>"Finalbottlen" AND $para<>"Finalleftroll" AND $para<>"Bearprincesstalkc") {
+								$loss=min(rand(1,2),$stats[1]-1);
+								$stats[1]=$stats[1]-$loss;
+								print "</div><div>Lose ".$loss." Stamina";
+							}
 						}
 					}
 					print "</font></div>";
@@ -9642,7 +9703,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 			print $line;
 			}
 			$switch=1;
-			print "<div><font color=\"red\">gain ".$attributes[$which]." blessing</font></div>";
+			print "<div><font color=\"green\">".getLocStr("Loc_Gain", $lang)." ".$attributes[$which]." blessing</font></div>";
 			}
 			$para=$paras[$para][3];
 		}
@@ -9841,7 +9902,7 @@ print "<div id=\"c2\" class=\"div_stat\">";
 	print $startdiv."<img src=\"".$baseurl."images/misc/thumb_".$classname[$prof][0].".jpg\"></div>";
 	print "</td></tr><tr><td>";
 	print $startdiv."<i>".str_replace("_"," ",$name)."</i></div>";
-	print $startdiv.$classname[$prof][1]."</div>";
+	print $startdiv.getLocStr($classname[$prof][0], $lang)."</div>";
 	print "</td></tr></table>";
 	print $line;
 
@@ -9857,27 +9918,26 @@ print "<div id=\"c2\" class=\"div_stat\">";
 	print "<tr><td>";
 	print $attributes[$loop].":</td><td align=\"right\">";
 	if ($over==1 AND $branch<>25) {
-	print "--";
+		print "--";
 	} else {
-	print $stats[$loop];
+		print $stats[$loop];
 	}
 	if ($loop==1) {
-	print "/";
-	if ($over==1 AND $branch<>25) {
-	print "--";
-	} else {
-	print $maxsta;
-	}
+		print "/";
+		if ($over==1 AND $branch<>25) {
+			print "--";
+		} else {
+			print $maxsta;
+		}
 	}
 	if ($over<>1) {
-	print " (</td><td>";
-	$rating=$stats[$loop];
-	if ($attributes[$loop]=="Stamina" or $attributes[$loop]=="Heroism") {
-	$rating=max($rating-5,0);
-	}
-	print getLocStr($word[$attributes[$loop]][min(20,$rating)], $lang);
-	print ")</td></tr>";
-	$rolls=$rolls.chr($stats[$loop]+64);
+		print " </td><td>";
+		$rating=$stats[$loop];
+		if ($attributes[$loop]=="Stamina" or $attributes[$loop]=="Heroism") {
+				$rating=max($rating-5,0);
+		}
+		print "&nbsp;(".getLocStr($word[$attributes[$loop]][min(20,$rating)], $lang).")</td></tr>";
+		$rolls=$rolls.chr($stats[$loop]+64);
 	}
 	}
 	print "</table>";
@@ -9887,11 +9947,11 @@ print "<div id=\"c2\" class=\"div_stat\">";
 	// print "<div>Level:".$level." ";
 	// put this back if want to have levels again
 
-	print "<div>货贝数量(Cowrie Shells):";
+	print "<div>".getLocStr("Loc_CowrieShells", $lang);
 	if ($shells<1000) {
 		print $shells;
 	} else {
-		print " 一大堆(a vast haul).";
+		print " 非常多(a vast haul).";
 	// this is for if become a pirate captain.
 	}
 	print "</div>";
@@ -9901,14 +9961,14 @@ print "<div id=\"c2\" class=\"div_stat\">";
 	for ($loop=1;$loop<=($obless+$attnum);$loop++) {
 	if ($bless[$loop]>0) {
 	if ($flag==0) {
-	print "<div>祝福(Blessings):</div>";
+	print "<div>".getLocStr("Loc_Blessings", $lang)."</div>";
 	$flag=1;
 	}
 	print "<div>".$attributes[$loop]." (".$bless[$loop].")</div>";
 	}
 	}
 	if ($flag==0) {
-	print "<div>你身上没有祝福效果(You have no blessings).</div>";
+	print "<div>".getLocStr("Loc_YouHaveNoBlessings", $lang)."</div>";
 	}
 	print $line;
 
@@ -9920,7 +9980,7 @@ print "<div id=\"c2\" class=\"div_stat\">";
 	for ($loop=1;$loop<=$manyitems;$loop++) {
 	if ($itemnames[$loop][1]=="item" and $loop<>19 and $items[$loop]==1) {
 	if ($flag==0) {
-	print "<div>身上道具/Items:</div>";
+	print "<div>".getLocStr("Loc_Items", $lang)."</div>";
 	$flag=1;
 	}
 	print "<div>".$itemnames[$loop][0]."</div>";
@@ -9937,7 +9997,7 @@ print "<div id=\"c2\" class=\"div_stat\">";
 			if ($items[$loop]==1) {
 				$flag++;
 				if ($flag==1) {
-					print "<div>".getLocStr("Loc_Companion", $lang)."：</div><table><tr>";
+					print "<div>".getLocStr("Loc_Companion", $lang)."</div><table><tr>";
 				}
 				print "<td><div align=\"center\"><img src=\"".$baseurl."images/misc/icon_".$itemnames[$loop][1].".jpg\"></div><div align=\"center\">".$itemnames[$loop][0]."</div></td>";
 				if (($flag%2)==0) {
@@ -9947,7 +10007,7 @@ print "<div id=\"c2\" class=\"div_stat\">";
 		}
 	}
 	if ($flag==0) {
-		print "<div>你没有任何同伴。You have no companions.</div>";
+		print "<div>".getLocStr("Loc_NoCompanion", $lang)."</div>";
 	} else {
 		print "</tr></table>";
 	}
