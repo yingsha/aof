@@ -41,6 +41,15 @@ $creda = filter_input(INPUT_GET, 'creda', FILTER_SANITIZE_STRING);
 $rolls = filter_input(INPUT_GET, 'rolls', FILTER_SANITIZE_STRING);
 $step = filter_input(INPUT_GET, 'step', FILTER_SANITIZE_STRING);
 
+//languages
+// 0 - English
+// 1 - Chinese
+// 2 - Chinese (English) 汉英对照
+$lang = filter_input(INPUT_GET, 'lang', FILTER_SANITIZE_STRING);
+if (!isset($lang)) {
+$lang = 2;
+}
+
 if (!isset($step)) {
 	$step = 1;
 }
@@ -164,12 +173,6 @@ $itemnames=array(
 	27=> array ("红玫瑰(red rose)","item"),
 	28=> array ("茉莉花公主(Yasmina)","princess"),
 );
-
-//languages
-// 0 - English
-// 1 - Chinese
-// 2 - Chinese (English) 汉英对照
-$lang = 2;
 
 $manyitems=28;
 //how many items are in the game.
@@ -1010,6 +1013,11 @@ function getLocStr($fulltext, $lang) {
 	//main array
 	$localizationPrefix = "Loc_";
 	$localization=array(
+		'Loc_Credits'=> array ("Credits", "制作名单"),
+		'Loc_LeaveGame'=> array ("Leave game", "离开游戏 "),
+		'Loc_ReturnToMainMenu'=> array ("Return to main-menu", "返回主菜单"),
+		'Loc_Lose'=> array ("Lose", "失去"),
+		'Loc_Gain'=> array ("Gain", "获得"),
 		'Loc_DoSo'=> array ("Do so", "照办"),
 		'Loc_DecideNotTo'=> array ("Decide not to", "不这样做"),
 		'Loc_Riskit'=> array ("Risk it", "冒险一试"),
@@ -9261,7 +9269,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 					// skip step+1
 					$newstep = $step;
 				}*/
-				$fullink="<a href=\"".$baseurl."game.php?step=".($newstep);
+				$fullink="<a href=\"".$baseurl."game.php?lang=".$lang."&step=".($newstep);
 				if (isset($paras[$para][1+($loop*2)]) AND isset($paras[$para][2+($loop*2)])) {
 					$fullink=$fullink."&para=".$paras[$para][2+($loop*2)]."&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\"";
 					print $fullink." onMouseover=\"window.status='continue to this section'; return true\">";
@@ -9475,29 +9483,29 @@ print "<div id=\"c1\" class=\"div_text\">";
 		elseif ($branch==10) {
 			$change=$paras[$para][2];
 			if (($shells+$change)<0) {
-			$change=0-$shells;
+				$change=0-$shells;
 			}
 			$shells=$shells+$change;
 			if ($change<>0) {
-			if ($switch==0) {
-			print $line;
-			}
-			$switch=1;
-			print "<font color=\"red\">";
-			if ($change>0) {
-			print "获得(gain)";
-			} else {
-			print "失去(lose)";
-			}
-			if (abs($change)<900) {
-			print " ".abs($change)." shell";
-			if (abs($change)>1) {
-			print "s";
-			}
-			} else {
-			print " a vast haul of booty";
-			}
-			print "</font>"; //</div>";
+				if ($switch==0) {
+						print $line;
+					}
+				$switch=1;
+				print "<font color=\"red\">";
+				if ($change>0) {
+					print getLocStr("Loc_Gain", $lang);
+				} else {
+					print getLocStr("Loc_Lose", $lang);
+				}
+				if (abs($change)<900) {
+					print " ".abs($change)." shell";
+					if (abs($change)>1) {
+						print "s";
+					}
+				} else {
+					print " a vast haul of booty";
+				}
+				print "</font>"; //</div>";
 			}
 			$para=$paras[$para][3];
 			$finished=0;
@@ -10002,14 +10010,14 @@ print "<div id=\"c3\" class=\"div_picture\">";
 
 		print $startdiv."<img class=\"artclass\" src=\"".$baseurl."images/".$art[$para].".jpg\"></div>";
 	}
-	print $startdiv."<b><a href=\"".$baseurl."credits.php\" onMouseover=\"window.status='author and artist details'; return true\" target=\"_blank\">制作名单（credits）</a> . ";
-	print "<a href=\"".$baseurl."index.php\" onMouseover=\"window.status='start again'; return true\">";
+	print $startdiv."<b><a href=\"".$baseurl."credits.php\" onMouseover=\"window.status='author and artist details'; return true\" target=\"_blank\">".getLocStr("Loc_Credits", $lang)."</a> . ";
+	print "<a href=\"".$baseurl."index.php?lang=".$lang."\" onMouseover=\"window.status='start again'; return true\">";
 	if ($over==1) {
-		print "返回主菜单";
+		print getLocStr("Loc_ReturnToMainMenu", $lang);
 	} else {
-		print "离开游戏";
+		print getLocStr("Loc_LeaveGame", $lang);
 	}
-	print"</a> <br/> <a href=\"http://www.apolitical.info/guestbook\" onMouseover=\"window.status='leave feedback, or read other people\'s'; return true\" target=\"_blank\">guestbook</a> . <a href=\"".$baseurl."index.php?mode=7\" onMouseover=\"window.status='stories and other resources'; return true\" target=\"_blank\">library</a> . <a href=\"http://www.apolitical.info/webgame/sourcecode\" onMouseover=\"window.status='view the source code for Age of Fable's'; return true\" target=\"_blank\">source code</a></b></div>";
+	print"</a> <br/> <a href=\"http://www.apolitical.info/guestbook\" onMouseover=\"window.status='leave feedback, or read other people\'s'; return true\" target=\"_blank\">guestbook</a> . <a href=\"".$baseurl."index.php?mode=7&lang=".$lang."\" onMouseover=\"window.status='stories and other resources'; return true\" target=\"_blank\">library</a> . <a href=\"http://www.apolitical.info/webgame/sourcecode\" onMouseover=\"window.status='view the source code for Age of Fable's'; return true\" target=\"_blank\">source code</a></b></div>";
 	print $line;
 }
 print "</div>";

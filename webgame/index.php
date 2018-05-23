@@ -55,6 +55,15 @@ $Luck = filter_input(INPUT_GET, 'Luck', FILTER_SANITIZE_STRING);
 $Healing = filter_input(INPUT_GET, 'Healing', FILTER_SANITIZE_STRING);
 $Streetwise = filter_input(INPUT_GET, 'Streetwise', FILTER_SANITIZE_STRING);
 
+//languages
+// 0 - English
+// 1 - Chinese
+// 2 - Chinese (English) 汉英对照
+$lang = filter_input(INPUT_GET, 'lang', FILTER_SANITIZE_STRING);
+if (!isset($lang)) {
+$lang = 2;
+}
+
 if (!isset($mode)) {
 $mode=0;
 }
@@ -146,6 +155,34 @@ $attributes=array("null","Stamina","Charisma","Duelling","Brawling","Seafaring",
 // current character
 $stats=array();
 
+function getLocStr($fulltext, $lang) {
+
+	//main array
+	$localizationPrefix = "Loc_";
+	$localization=array(
+		'Loc_RandomCharacter'=> array ("Random character", "随机生成角色来开始游戏"),
+		'Loc_PreGenChar'=> array ("Pre-generated character", "选择预设的21个角色之一来开始游戏"),
+		'Loc_StartPlayingWithThisCharacter'=> array ("Start playing with this character", "使用这名角色开始游戏"),
+		'Loc_CreateCustomCharUsing'=> array ("Create a custom character, using", "自定义角色生成"),
+		'Loc_EditCustomCharUsing'=> array ("Edit this character, using", "编辑角色属性"),
+		'Loc_UsingLinks'=> array ("links", "点击调属性"),
+		'Loc_UsingDropDownMenus'=> array ("drop-down menus", "下拉框调属性"),
+		'Loc_FAQ'=> array ("Frequently Asked Questions", "常见问题"),
+		'Loc_BackToMainPage'=> array ("back to the main page", "返回主页"),
+	);
+
+	// localization
+	if (substr( $fulltext, 0, 4 ) == $localizationPrefix OR array_key_exists($fulltext, $localization)) {
+		if ($lang==2) {
+			// 汉英对照
+			$fulltext=$localization[$fulltext][1]." (".$localization[$fulltext][0].")";
+		} else {
+			$fulltext=$localization[$fulltext][$lang];
+		}
+	}
+	return $fulltext;
+}
+
 
 ?>
 
@@ -171,18 +208,23 @@ print "<td width=\"50%\">";
 if ($mode==0) {
 	// main menu
 
-	print $link."index.php?mode=2&method=1\" onMouseover=\"window.status='randomly generated character'; return true\">随机生成角色来开始游戏 Random character</a></div>";
+	print $link."index.php?lang=0\">[English]</a>";
+	print "&nbsp;<a href=\"".$baseurl."index.php?lang=1\">[中文Chinese]</a>";
+	print "&nbsp;<a href=\"".$baseurl."index.php?lang=2\">[中英对照]</a></div>";
 	print $line;
-	print $link."index.php?mode=5\" onMouseover=\"window.status='choose from a list of characters'; return true\">选择预设的21个角色之一来开始游戏 Pre-generated character</a></div>";
 	print $line;
-	print $startdiv."自定义角色生成 Create a custom character, using";
-	print $link."index.php?mode=4&method=2\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">点击调属性 links</a> or <a href=\"".$baseurl."index.php?mode=4&method=1\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">下拉框调属性 drop-down menus</a></div>";
+	print $link."index.php?mode=2&method=1&lang=".$lang."\" onMouseover=\"window.status='randomly generated character'; return true\">".getLocStr("Loc_RandomCharacter", $lang)."</a></div>";
 	print $line;
-	print $link."index.php?mode=6\" onMouseover=\"window.status='link to us'; return true\">Link to Age of Fable</a></div>";
+	print $link."index.php?mode=5&lang=".$lang."\" onMouseover=\"window.status='choose from a list of characters'; return true\">".getLocStr("Loc_PreGenChar", $lang)."</a></div>";
 	print $line;
-	print $link."index.php?mode=1\" onMouseover=\"window.status='FAQ'; return true\">常见问题 Frequently Asked Questions</a></div>";
+	print $startdiv.getLocStr("Loc_CreateCustomCharUsing", $lang);
+	print $link."index.php?mode=4&method=2&lang=".$lang."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">".getLocStr("Loc_UsingLinks", $lang)."</a> or <a href=\"".$baseurl."index.php?mode=4&method=1&lang=".$lang."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">".getLocStr("Loc_UsingDropDownMenus", $lang)."</a></div>";
 	print $line;
-	print $link."credits.php\" onMouseover=\"window.status='artist and author details'; return true\">Credits</a></div>";
+	print $link."index.php?mode=6&lang=".$lang."\" onMouseover=\"window.status='link to us'; return true\">Link to Age of Fable</a></div>";
+	print $line;
+	print $link."index.php?mode=1&lang=".$lang."\" onMouseover=\"window.status='FAQ'; return true\">".getLocStr("Loc_FAQ", $lang)."</a></div>";
+	print $line;
+	print $link."credits.php?lang=".$lang."\" onMouseover=\"window.status='artist and author details'; return true\">Credits</a></div>";
 	print $line;
 	// print $startdiv."Age of Fable is unfinished</div>";
 	// print $startdiv."and under construction.</div>";
@@ -193,10 +235,10 @@ if ($mode==0) {
 	print $startdiv."<a href=\"http://www.apolitical.info/guestbook\" onMouseover=\"window.status='leave feedback, or read other people\'s'; return true\" target=\"_blank\">Guestbook</a></div>";
 	print $startdiv."(opens in a new window)";
 	print $line;
-	print $link."index.php?mode=3\" onMouseover=\"window.status='a small list of similar sites'; return true\">Links</a></div>";
+	print $link."index.php?mode=3&lang=".$lang."\" onMouseover=\"window.status='a small list of similar sites'; return true\">Links</a></div>";
 	print $line;
 	print $startdiv."Library";
-	print $link."index.php?mode=7&branch=1\" onMouseover=\"window.status='stories'; return true\">Stories</a> . <a href=\"".$baseurl."index.php?mode=7&branch=2\" onMouseover=\"window.status='other resources'; return true\">Games</a></div>";
+	print $link."index.php?mode=7&branch=1&lang=".$lang."\" onMouseover=\"window.status='stories'; return true\">Stories</a> . <a href=\"".$baseurl."index.php?mode=7&branch=2&lang=".$lang."\" onMouseover=\"window.status='other resources'; return true\">Games</a></div>";
 	print $line;
 	print "<a href=\"http://www.apolitical.info/webgame/sourcecode.php\" onMouseover=\"window.status='source-code for Age of Fable'; return true\" target=\"_blank\">Source Code</a></div>";
 	print $startdiv."(opens in a new window)";
@@ -204,7 +246,7 @@ if ($mode==0) {
 	// Frequently Asked Questions
 	print $startdiv."<iframe src=\"faq.html\" height=450 frameborder=0></IFRAME></div>";
 	print $line;
-	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main page (返回主页)</a></div>";
+	print $link."index.php?mode=0&lang=".$lang."\" onMouseover=\"window.status='back to the starting page'; return true\">".getLocStr("Loc_BackToMainPage", $lang)."</a></div>";
 } elseif ($mode==2) {
 	//$method (for generating stats):
 	//1=generate randomly
@@ -508,32 +550,31 @@ if ($mode==0) {
 		print "</form>";
 		print "</div>";
 		print $startdiv."Enter the character's name in the text box above and click the 'enter' button, or</div>";
-		print $link."index.php?mode=2&method=6&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='leave the character\'s name as it is'; return true\">leave the name as it is</a></div>";
+		print $link."index.php?mode=2&method=6&lang=".$lang."&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='leave the character\'s name as it is'; return true\">leave the name as it is</a></div>";
 	} else {
-		print $link."game.php?rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='start playing'; return true\">使用这名角色开始游戏 start playing with this character</a></div>";
+		print $link."game.php?lang=".$lang."&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='start playing'; return true\">".getLocStr("Loc_StartPlayingWithThisCharacter", $lang)."</a></div>";
 		print $line;
-		print $startdiv."编辑角色属性 Edit this character, using";
-		print $link."index.php?mode=4&method=2&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">links</a> or <a href=\"".$baseurl."index.php?mode=4&method=1&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">drop-down menus</a></div>";
-		print $startdiv."或者 <a href=\"".$baseurl."index.php?mode=2&method=5&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='make a small, random change to this character'; return true\">随机修改</a> their scores</div>";
+		print $startdiv.getLocStr("Loc_EditCustomCharUsing", $lang);
+		print $link."index.php?mode=4&method=2&lang=".$lang."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">".getLocStr("Loc_UsingLinks", $lang)."</a> or <a href=\"".$baseurl."index.php?mode=4&method=1&lang=".$lang."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">".getLocStr("Loc_UsingDropDownMenus", $lang)."</a> or <a href=\"".$baseurl."index.php?mode=2&method=5&lang=".$lang."&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='make a small, random change to this character'; return true\">随机修改 their scores</a></div>";
 		print $line;
-		print $startdiv."起名 - <a href=\"".$baseurl."index.php?mode=2&method=4&prof=".$prof."&rolls=".$rolls."\" onMouseover=\"window.status='random new name for this character'; return true\">随机起名 randomly</a> or <a href=\"".$baseurl."index.php?mode=2&method=2&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='enter a name of your choice for this character'; return true\">手工输入 your choice</a></div>";
+		print $startdiv."起名 - <a href=\"".$baseurl."index.php?mode=2&method=4&lang=".$lang."&prof=".$prof."&rolls=".$rolls."\" onMouseover=\"window.status='random new name for this character'; return true\">随机起名 randomly</a> or <a href=\"".$baseurl."index.php?mode=2&method=2&lang=".$lang."&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='enter a name of your choice for this character'; return true\">手工输入 your choice</a></div>";
 		print $line;
-		print $startdiv."New character - <a href=\"".$baseurl."index.php?mode=2&method=1\" onMouseover=\"window.status='randomly generate a new character'; return true\">random</a> or <a href=\"".$baseurl."index.php?mode=5\" onMouseover=\"window.status='choose from a list of characters'; return true\">pre-generated</a>.</div>";
+		print $startdiv."New character - <a href=\"".$baseurl."index.php?mode=2&method=1&lang=".$lang."\" onMouseover=\"window.status='randomly generate a new character'; return true\">random</a> or <a href=\"".$baseurl."index.php?mode=5&lang=".$lang."\" onMouseover=\"window.status='choose from a list of characters'; return true\">pre-generated</a>.</div>";
 		print $line;
 		print "<hr/>";
 		print $startdiv."The following links all open in a new window:</div>";
 		print $line;
-		print $link."index.php?mode=6\" onMouseover=\"window.status='link to us'; return true\" target=\"_blank\">Link to Age of Fable</a></div>";
+		print $link."index.php?mode=6&lang=".$lang."\" onMouseover=\"window.status='link to us'; return true\" target=\"_blank\">Link to Age of Fable</a></div>";
 		print $line;
-		print $link."index.php?mode=1\" onMouseover=\"window.status='FAQ'; return true\" target=\"_blank\">Frequently Asked Questions</a></div>";
+		print $link."index.php?mode=1&lang=".$lang."\" onMouseover=\"window.status='FAQ'; return true\" target=\"_blank\">".getLocStr("Loc_FAQ", $lang)."</a></div>";
 		print $line;
 		print $link."credits.php\" target=\"_blank\" onMouseover=\"window.status='author and artist details'; return true\">Credits</a></div>";
 		print $line;
 		print $startdiv."<a href=\"http://www.apolitical.info/guestbook\" onMouseover=\"window.status='leave feedback, or read other people\'s'; return true\" target=\"_blank\">Guestbook</a></div>";
 		print $line;
-		print $link."index.php?mode=3\" onMouseover=\"window.status='a small list of similar sites'; return true\" target=\"_blank\">Links</a></div>";
+		print $link."index.php?mode=3&lang=".$lang."\" onMouseover=\"window.status='a small list of similar sites'; return true\" target=\"_blank\">Links</a></div>";
 		print $line;
-		print $startdiv."Library: <a href=\"".$baseurl."index.php?mode=7&branch=1\" onMouseover=\"window.status='stories'; return true\" target=\"_blank\">Stories</a> . <a href=\"".$baseurl."index.php?mode=7&branch=2\" onMouseover=\"window.status='other resources'; return true\" target=\"_blank\">Games</a></div>";
+		print $startdiv."Library: <a href=\"".$baseurl."index.php?mode=7&branch=1&lang=".$lang."\" onMouseover=\"window.status='stories'; return true\" target=\"_blank\">Stories</a> . <a href=\"".$baseurl."index.php?mode=7&branch=2&lang=".$lang."\" onMouseover=\"window.status='other resources'; return true\" target=\"_blank\">Games</a></div>";
 		print $line;
 		print "<a href=\"http://www.apolitical.info/webgame/sourcecode.php\" onMouseover=\"window.status='source-code for Age of Fable'; return true\" target=\"_blank\">Source Code</a></div>";
 	}
@@ -542,7 +583,7 @@ if ($mode==0) {
 	// Links
 	print $startdiv."<iframe src=\"links.html\" height=450 frameborder=0></IFRAME></div>";
 	print $line;
-	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main page (返回主页)</a></div>";
+	print $link."index.php?mode=0&lang=".$lang."\" onMouseover=\"window.status='back to the starting page'; return true\">".getLocStr("Loc_BackToMainPage", $lang)."</a></div>";
 
 } elseif ($mode==5) {
 	// Pre-generated character
@@ -576,7 +617,7 @@ if ($mode==0) {
 			print "<tr>";
 		}
 		print "<td>";
-		print $startdiv."<a href=\"".$baseurl."index.php?mode=2&method=3&prof=".$loop."&name=".$class[$loop][$attnum+1]."\" onMouseover=\"window.status='choose ".$class[$loop][$attnum+1]."'; return true\"><img style=\"border-color: #8888FF\" src=\"".$baseurl."images/misc/thumb_".$class[$loop][0].".jpg\" alt=\"".$class[$loop][$attnum+1].", a";
+		print $startdiv."<a href=\"".$baseurl."index.php?mode=2&method=3&lang=".$lang."&prof=".$loop."&name=".$class[$loop][$attnum+1]."\" onMouseover=\"window.status='choose ".$class[$loop][$attnum+1]."'; return true\"><img style=\"border-color: #8888FF\" src=\"".$baseurl."images/misc/thumb_".$class[$loop][0].".jpg\" alt=\"".$class[$loop][$attnum+1].", a";
 		$z=substr($class[$loop][0],0,1);
 		if ($z=="a" or $z=="e") {
 			print "n";
@@ -599,10 +640,10 @@ if ($mode==0) {
 		$orderplace=$orderplace-$classes;
 	}
 	print $startdiv."点选一个角色 Click a picture to choose that character, or</div>";
-	//print $startdiv."<a href=\"".$baseurl."index.php?mode=5&order=".$order."&orderplace=".$orderplace."\" onMouseover=\"window.status='see more characters'; return true\">刷新更多角色以供选择 see more characters</a></div>";
-	print $startdiv."<a href=\"".$baseurl."index.php?mode=5\" onMouseover=\"window.status='see more characters'; return true\">刷新更多角色以供选择 see more characters</a></div>";
+	//print $startdiv."<a href=\"".$baseurl."index.php?mode=5&lang=".$lang."&order=".$order."&orderplace=".$orderplace."\" onMouseover=\"window.status='see more characters'; return true\">刷新更多角色以供选择 see more characters</a></div>";
+	print $startdiv."<a href=\"".$baseurl."index.php?mode=5&lang=".$lang."\" onMouseover=\"window.status='see more characters'; return true\">刷新更多角色以供选择 see more characters</a></div>";
 	print $line;
-	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">返回主菜单 back to the main menu</a></div>";
+	print $link."index.php?mode=0&lang=".$lang."\" onMouseover=\"window.status='back to the starting page'; return true\">".getLocStr("Loc_BackToMainPage", $lang)."</a></div>";
 
 } elseif ($mode==6) {
 	// Link to Age of Fable
@@ -621,7 +662,7 @@ if ($mode==0) {
 	print $startdiv."If you want a banner of a different size or shape, please feel free to email:</div>";
 	print $startdiv."news (at) apolitical (dot) info.</div>";
 	print $line;
-	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main page (返回主页)</a></div>";
+	print $link."index.php?mode=0&lang=".$lang."\" onMouseover=\"window.status='back to the starting page'; return true\">".getLocStr("Loc_BackToMainPage", $lang)."</a></div>";
 
 } elseif ($mode==7) {
 	// Library (branch 1: Stories, branch 2: Games)
@@ -688,12 +729,12 @@ if ($mode==0) {
 		print $line;
 	}
 	print "</ul>";
-	print "<div><a href=\"".$baseurl."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main menu</a> . ";
+	print "<div><a href=\"".$baseurl."index.php?mode=0&lang=".$lang."\" onMouseover=\"window.status='back to the starting page'; return true\">".getLocStr("Loc_BackToMainPage", $lang)."</a> . ";
 	$otherbranch="stories";
 	if ($branch==1) {
 		$otherbranch="games";
 	}
-	print "<a href=\"".$baseurl."index.php?mode=7&branch=".(3-$branch)."\" onMouseover=\"window.status='".$otherbranch."'; return true\">".$otherbranch."</a></div>";
+	print "<a href=\"".$baseurl."index.php?mode=7&lang=".$lang."&branch=".(3-$branch)."\" onMouseover=\"window.status='".$otherbranch."'; return true\">".$otherbranch."</a></div>";
 
 } elseif ($mode==4) {
 	// Create a custom character, using
@@ -816,7 +857,7 @@ if ($mode==0) {
 				} else {
 					$newroll=$rolls;
 					$newroll[$loop-1]=chr($thisone+64);
-					print "><a href=\"".$baseurl."index.php?mode=4&method=2&rolls=".$newroll."&name=".$name."\" onMouseover=\"window.status='change ".$attributes[$loop]." to ".$thisone."'; return true\">";
+					print "><a href=\"".$baseurl."index.php?mode=4&method=2&lang=".$lang."&rolls=".$newroll."&name=".$name."\" onMouseover=\"window.status='change ".$attributes[$loop]." to ".$thisone."'; return true\">";
 				}
 				print $thisone;
 				if ($thisone==$stats[$loop]) {
@@ -841,11 +882,11 @@ if ($mode==0) {
 	if ($total<>$attnum*10+10) {
 		print "Total attributes need to be (属性值总和必须等于) ".($attnum*10+10);
 	} else {
-		print "<a href=\"".$baseurl."index.php?mode=2&method=6&prof=".$prof."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='continue, with the character as is'; return true\">Accept this character</a>";
+		print "<a href=\"".$baseurl."index.php?mode=2&method=6&lang=".$lang."&prof=".$prof."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='continue, with the character as is'; return true\">Accept this character</a>";
 	}
 	print "</div>";
 	print $line;
-	print $link."index.php?mode=0\" onMouseover=\"window.status='back to the starting page'; return true\">back to the main page (返回主页)</a></div>";
+	print $link."index.php?mode=0&lang=".$lang."\" onMouseover=\"window.status='back to the starting page'; return true\">".getLocStr("Loc_BackToMainPage", $lang)."</a></div>";
 }
 
 print $line;
