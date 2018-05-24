@@ -76,7 +76,7 @@ $word=array (
 	'Roguery' => array ("null","terrible","terrible","poor","poor","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","superb","superb","legendary","legendary"),
 	'Luck' => array ("null","cursed","cursed","ill-starred","ill-starred","mediocre","mediocre","mediocre","fair","fair","fair","lucky","lucky","lucky","auspicious","auspicious","auspicious","charmed","charmed","blessed","blessed"),
 	'Healing' => array ("null","terrible","terrible","poor","poor","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","superb","superb","legendary","legendary"),
-	'Streetwise' => array ("null","babe in the woods","babe in the woods","clueless","clueless","foolish","foolish","unwise","unwise","fair","fair","alert","alert","alert","crafty","crafty","crafty","cunning as a fox","cunning as a fox","cunning as a shithouse rat","cunning as a shithouse rat"),
+	'Streetwise' => array ("null","babe in the woods","babe in the woods","clueless","clueless","foolish","foolish","unwise","unwise","fair","fair","alert","alert","alert","crafty","crafty","crafty","cunning1","cunning1","cunning2","cunning2"),
 );
 
 //name: get rid of the '\'s that it puts in front of apostrophes
@@ -1029,45 +1029,69 @@ function getLocStr($fulltext, $lang) {
 		'Loc_UseBlessing'=> array ("use blessing", "祝福生效"),
 		'Loc_BlessingFailed'=> array ("blessing failed", "祝福失败"),
 		'Loc_YouHaveNoBlessings'=> array ("You have no blessings.", "你身上没有祝福效果。"),
+		'Loc_YouHaveDied'=> array ("Alas, the damage was too much for you. You have died.", "最后，你死于伤势过重。"),
 		// $word
-			"near death"=> array ("near death","濒死"),
-			"sickly"=> array ("sickly","虚弱"),
-			"unhealthy"=> array ("unhealthy","不健康"),
-			"unremarkable"=> array ("unremarkable","寻常"),
-			"healthy"=> array ("healthy","健康"),
-			"robust"=> array ("robust","健壮"),
-			"unstoppable"=> array ("unstoppable","无人能敌"),
-			"repulsive"=> array ("repulsive","可憎"),
-			"hateful"=> array ("hateful","可恶"),
-			"annoying"=> array ("annoying","讨厌"),
-			"innocuous"=> array ("innocuous","寻常"),
-			"likeable"=> array ("likeable","讨人喜欢"),
-			"charming"=> array ("charming","迷人"),
-			"mesmerising"=> array ("mesmerising","有魅力"),
-			"puny"=> array ("puny","孱弱"),
-			// classname
-			"talking-cat"=> array ("talking-cat","人语"),
-			"wizard"=> array ("wizard","魔法师"),
-			"scoundrel"=> array ("scoundrel","恶棍"),
-			"bard"=> 	array ("bard","吟游诗人"),
-			"knight"=> 	array ("knight","骑士"),
-			"nomad"=> 	array ("nomad","游牧民"),
-			"pirate"=> 	array ("pirate","海盗"),
-			"fairy"=> 	array ("fairy","仙子"),
-			"dwarf"=> 	array ("dwarf","矮人"),
-			"barbarian"=> 	array ("barbarian","野蛮人"),
-			"assassin"=> 	array ("assassin","刺客"),
-			"witch"=> 	array ("witch","女巫"),
-			"faun"=> 	array ("faun","弗恩"),
-			"troll"=> 	array ("troll","巨魔"),
-			"courtesan"=> 	array ("courtesan","交际花"),
-			"fortune-teller"=> 	array ("fortune-teller","占卜师"),
-			"amazon"=> 	array ("amazon","亚马逊女战士"),
-			"lizard-man"=> 	array ("lizard-man","蜥蜴人"),
-			"explorer"=> 	array ("explorer","探索者"),
-			"aristocrat"=> 	array ("aristocrat","贵族"),
-			"doraemon"=> array ("doraemon","机器猫"),
+		"near death"=> array ("near death","濒死"),
+		"sickly"=> array ("sickly","虚弱"),
+		"unhealthy"=> array ("unhealthy","不健康"),
+		"unremarkable"=> array ("unremarkable","寻常"),
+		"healthy"=> array ("healthy","健康"),
+		"robust"=> array ("robust","健壮"),
+		"unstoppable"=> array ("unstoppable","无人能敌"),
+		"repulsive"=> array ("repulsive","可憎"),
+		"hateful"=> array ("hateful","可恶"),
+		"annoying"=> array ("annoying","讨厌"),
+		"innocuous"=> array ("innocuous","寻常"),
+		"likeable"=> array ("likeable","讨人喜欢"),
+		"charming"=> array ("charming","迷人"),
+		"mesmerising"=> array ("mesmerising","有魅力"),
+		"puny"=> array ("puny","孱弱"),
+		"good"=> array ("good","不错"),
+		"fair"=> array ("fair","还行"),
+		"mediocre"=> array ("mediocre", "平庸"),
+		"great"=> array ("great","很好"),
+		"superb"=> array ("superb","非常好"),
+		"legendary"=> array ("legendary","传奇般"),
+		"average"=> array ("average","普通"),
+		"strong"=> array ("strong","强壮"),
+		"clueless"=> array ("clueless","鲁莽"),
+		"unwise"=> array ("unwise","不明智"),
+		"poor"=> array ("poor","糟糕"),
+		"agile"=> array ("agile","敏捷"),
+		"blessed"=> array ("blessed","有如神助"),
+		"deadly"=> array ("deadly","十分致命"),
+		"overwhelming"=> array ("overwhelming","异常强大"),
+		"foolish"=> array ("foolish","愚蠢"),
+		"alert"=> array ("alert","警惕"),
+		"cunning1"=> array("cunning as a fox","如狐狸般狡猾"),
+		"cunning2"=> array ("cunning as a shithouse rat","极度狡猾"),
+		// class
+		"talking-cat"=> array ("talking-cat","人语"),
+		"wizard"=> array ("wizard","魔法师"),
+		"scoundrel"=> array ("scoundrel","恶棍"),
+		"bard"=> 	array ("bard","吟游诗人"),
+		"knight"=> 	array ("knight","骑士"),
+		"nomad"=> 	array ("nomad","游牧民"),
+		"pirate"=> 	array ("pirate","海盗"),
+		"fairy"=> 	array ("fairy","仙子"),
+		"dwarf"=> 	array ("dwarf","矮人"),
+		"barbarian"=> 	array ("barbarian","野蛮人"),
+		"assassin"=> 	array ("assassin","刺客"),
+		"witch"=> 	array ("witch","女巫"),
+		"faun"=> 	array ("faun","弗恩"),
+		"troll"=> 	array ("troll","巨魔"),
+		"courtesan"=> 	array ("courtesan","交际花"),
+		"fortune-teller"=> 	array ("fortune-teller","占卜师"),
+		"amazon"=> 	array ("amazon","亚马逊女战士"),
+		"lizard-man"=> 	array ("lizard-man","蜥蜴人"),
+		"explorer"=> 	array ("explorer","探索者"),
+		"aristocrat"=> 	array ("aristocrat","贵族"),
+		"doraemon"=> array ("doraemon","机器猫"),
+		"clown"=> array ("clown","小丑"),
+		"bird"=> array ("bird","鸟"),
 		//
+		'Loc_ArtworkCopyright'=> array ("Artwork copyright", "美术版权"),
+		'Loc_ArtworkBy'=> array ("Artwork by ", "创作者是 "),
 		'Loc_DoSo'=> array ("Do so", "照办"),
 		'Loc_DecideNotTo'=> array ("Decide not to", "不这样做"),
 		'Loc_Riskit'=> array ("Risk it", "冒险一试"),
@@ -9507,7 +9531,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 			if ($stats[$which]<1) {
 			if ($attributes[$which]=="Stamina") {
 			print $line;
-			print "最后，你死于伤势过重。(Alas, the damage was too much for you. You have died.)";
+			print getLocStr("Loc_YouHaveDied", $lang);
 			print $line;
 			print "<img style=\"border:0px\" src=\"".$baseurl."images/misc/end.jpg\">";
 			$over=1;
@@ -10020,7 +10044,7 @@ print "<div id=\"c3\" class=\"div_picture\">";
 	print $para." - ".$art[$para]."<br/>";
 
 	if ($art[$para]=="") {
-		print $startdiv."美术版权/artwork copyright <br/> <a href=\"http://raue-see.de.vu\" target=\"_blank\">Azalea</a></div>";
+		print $startdiv.getLocStr("Loc_ArtworkCopyright", $lang)."<br/> <a href=\"http://raue-see.de.vu\" target=\"_blank\">Azalea</a></div>";
 		print $startdiv."<img class=\"artclass\" src=\"".$baseurl."images/misc/banner.jpg\"></div>";  // originally title.jpg
 	} elseif ($para=="Oops") {
 		print $startdiv."由未知的艺术家创作 artwork by unknown artist</div>";
@@ -10028,12 +10052,12 @@ print "<div id=\"c3\" class=\"div_picture\">";
 	} else {
 		$pagepub=$artists[$art[$para]][1];
 		if ($pagepub=="public") {
-			print $startdiv."创作者是 artwork by ";
+			print $startdiv.getLocStr("Loc_ArtworkBy", $lang);
 		} elseif ($pagepub=="www.brutalrpg.com") {
 			print $startdiv."artwork owned and licensed by David J. Stanley of <a href=\"http://www.brutalrpg.com\" target=\"_blank\">";
 		} else {
 			if ($artists[$art[$para]][1] <> '') {
-				print $startdiv."美术版权/artwork copyright <a href=\"http://".$artists[$art[$para]][1]."\" target=\"_blank\">";
+				print $startdiv.getLocStr("Loc_ArtworkCopyright", $lang)." <a href=\"http://".$artists[$art[$para]][1]."\" target=\"_blank\">";
 			} else {
 				print $startdiv."图片来源不详（可能有侵权风险，请联系网站管理员）";
 			}

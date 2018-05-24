@@ -100,32 +100,32 @@ $class=array (
 21=> array ("doraemon",20,20,20,20,20,20,20,20,20,20,20,20,"机器猫(Doraemon)",4),
 );
 
-//classes name
+//classes
 // 'clown' and 'bird' are special cases:
 // you can only be turned into them,
 // you can't choose to start as one.
 $classname=array (
-1=> array ("talking-cat","人语猫talking cat"),
-2=> array ("wizard","魔法师wizard"),
-3=> array ("scoundrel","恶棍scoundrel"),
-4=> 	array ("bard","吟游诗人bard"),
-5=> 	array ("knight","骑士knight"),
-6=> 	array ("nomad","游牧民nomad"),
-7=> 	array ("pirate","海盗pirate"),
-8=> 	array ("fairy","仙子fairy"),
-9=> 	array ("dwarf","矮人dwarf"),
-10=> 	array ("barbarian","野蛮人barbarian"),
-11=> 	array ("assassin","刺客assassin"),
-12=> 	array ("witch","女巫witch"),
-13=> 	array ("faun","弗恩faun"),
-14=> 	array ("troll","巨魔troll"),
-15=> 	array ("courtesan","交际花courtesan"),
-16=> 	array ("fortune-teller","占卜师fortune-teller"),
-17=> 	array ("amazon","亚马逊女战士amazon"),
-18=> 	array ("lizard-man","蜥蜴人lizard-man"),
-19=> 	array ("explorer","探索者explorer"),
-20=> 	array ("aristocrat","贵族aristocrat"),
-21=> array ("doaemon","机器猫doraemon"),
+	1=> array ("talking-cat","人语猫talking cat"),
+	2=> array ("wizard","魔法师wizard"),
+	3=> array ("scoundrel","恶棍scoundrel"),
+	4=> 	array ("bard","吟游诗人bard"),
+	5=> 	array ("knight","骑士knight"),
+	6=> 	array ("nomad","游牧民nomad"),
+	7=> 	array ("pirate","海盗pirate"),
+	8=> 	array ("fairy","仙子fairy"),
+	9=> 	array ("dwarf","矮人dwarf"),
+	10=> 	array ("barbarian","野蛮人barbarian"),
+	11=> 	array ("assassin","刺客assassin"),
+	12=> 	array ("witch","女巫witch"),
+	13=> 	array ("faun","弗恩faun"),
+	14=> 	array ("troll","巨魔troll"),
+	15=> 	array ("courtesan","交际花courtesan"),
+	16=> 	array ("fortune-teller","占卜师fortune-teller"),
+	17=> 	array ("amazon","亚马逊女战士amazon"),
+	18=> 	array ("lizard-man","蜥蜴人lizard-man"),
+	19=> 	array ("explorer","探索者explorer"),
+	20=> 	array ("aristocrat","贵族aristocrat"),
+	21=> array ("doraemon","机器猫doraemon"),
 );
 
 // used to have priest:
@@ -145,7 +145,7 @@ $word=array (
 'Roguery' => array ("null","terrible","terrible","poor","poor","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","superb","superb","legendary","legendary"),
 'Luck' => array ("null","cursed","cursed","ill-starred","ill-starred","mediocre","mediocre","mediocre","fair","fair","fair","lucky","lucky","lucky","auspicious","auspicious","auspicious","charmed","charmed","blessed","blessed"),
 'Healing' => array ("null","terrible","terrible","poor","poor","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","superb","superb","legendary","legendary"),
-'Streetwise' => array ("null","babe in the woods","babe in the woods","clueless","clueless","foolish","foolish","unwise","unwise","fair","fair","alert","alert","alert","crafty","crafty","crafty","cunning as a fox","cunning as a fox","cunning as a shithouse rat","cunning as a shithouse rat"),
+'Streetwise' => array ("null","babe in the woods","babe in the woods","clueless","clueless","foolish","foolish","unwise","unwise","fair","fair","alert","alert","alert","crafty","crafty","crafty","cunning1","cunning1","cunning2","cunning2"),
 );
 
 //number and names of attributes
@@ -169,6 +169,71 @@ function getLocStr($fulltext, $lang) {
 		'Loc_UsingDropDownMenus'=> array ("drop-down menus", "下拉框调属性"),
 		'Loc_FAQ'=> array ("Frequently Asked Questions", "常见问题"),
 		'Loc_BackToMainPage'=> array ("back to the main page", "返回主页"),
+		'Loc_ChooseCharacterOr'=> array ("Click a picture to choose that character, or ", "点选一个角色，或者 "),
+		'Loc_SeeMoreCharacters'=> array ("see more characters", "刷新更多角色以供选择"),
+		'Loc_AcceptThisCharacter'=> array ("Accept this character", "确认扮演此角色"),
+		'Loc_TotalAttrAre'=> array ("The total attributes for this character are ", "该角色属性值总和为 "),
+		'Loc_TotalAttrNeedToBe'=> array ("Total attributes need to be ", "属性值总和必须等于 "),
+		'Loc_RandomTheirScores'=> array ("randomize their scores", "随机修改属性值"),
+		// $word
+		"near death"=> array ("near death","濒死"),
+		"sickly"=> array ("sickly","虚弱"),
+		"unhealthy"=> array ("unhealthy","不健康"),
+		"unremarkable"=> array ("unremarkable","寻常"),
+		"healthy"=> array ("healthy","健康"),
+		"robust"=> array ("robust","健壮"),
+		"unstoppable"=> array ("unstoppable","无人能敌"),
+		"repulsive"=> array ("repulsive","可憎"),
+		"hateful"=> array ("hateful","可恶"),
+		"annoying"=> array ("annoying","讨厌"),
+		"innocuous"=> array ("innocuous","寻常"),
+		"likeable"=> array ("likeable","讨人喜欢"),
+		"charming"=> array ("charming","迷人"),
+		"mesmerising"=> array ("mesmerising","有魅力"),
+		"puny"=> array ("puny","孱弱"),
+		"good"=> array ("good","不错"),
+		"fair"=> array ("fair","还行"),
+		"mediocre"=> array ("mediocre", "平庸"),
+		"great"=> array ("great","很好"),
+		"superb"=> array ("superb","非常好"),
+		"legendary"=> array ("legendary","传奇般"),
+		"average"=> array ("average","普通"),
+		"strong"=> array ("strong","强壮"),
+		"clueless"=> array ("clueless","鲁莽"),
+		"unwise"=> array ("unwise","不明智"),
+		"poor"=> array ("poor","糟糕"),
+		"agile"=> array ("agile","敏捷"),
+		"blessed"=> array ("blessed","有如神助"),
+		"deadly"=> array ("deadly","十分致命"),
+		"overwhelming"=> array ("overwhelming","异常强大"),
+		"foolish"=> array ("foolish","愚蠢"),
+		"alert"=> array ("alert","警惕"),
+		"cunning1"=> array("cunning as a fox","如狐狸般狡猾"),
+		"cunning2"=> array ("cunning as a shithouse rat","极度狡猾"),
+		// class
+		"talking-cat"=> array ("talking-cat","人语"),
+		"wizard"=> array ("wizard","魔法师"),
+		"scoundrel"=> array ("scoundrel","恶棍"),
+		"bard"=> 	array ("bard","吟游诗人"),
+		"knight"=> 	array ("knight","骑士"),
+		"nomad"=> 	array ("nomad","游牧民"),
+		"pirate"=> 	array ("pirate","海盗"),
+		"fairy"=> 	array ("fairy","仙子"),
+		"dwarf"=> 	array ("dwarf","矮人"),
+		"barbarian"=> 	array ("barbarian","野蛮人"),
+		"assassin"=> 	array ("assassin","刺客"),
+		"witch"=> 	array ("witch","女巫"),
+		"faun"=> 	array ("faun","弗恩"),
+		"troll"=> 	array ("troll","巨魔"),
+		"courtesan"=> 	array ("courtesan","交际花"),
+		"fortune-teller"=> 	array ("fortune-teller","占卜师"),
+		"amazon"=> 	array ("amazon","亚马逊女战士"),
+		"lizard-man"=> 	array ("lizard-man","蜥蜴人"),
+		"explorer"=> 	array ("explorer","探索者"),
+		"aristocrat"=> 	array ("aristocrat","贵族"),
+		"doraemon"=> array ("doraemon","机器猫"),
+		"clown"=> array ("clown","小丑"),
+		"bird"=> array ("bird","鸟"),
 	);
 
 	// localization
@@ -520,7 +585,7 @@ if ($mode==0) {
 	print "<table align=\"center\"><tr><td>";
 	print $startdiv."<img src=\"".$baseurl."images/misc/thumb_".$class[$prof][0].".jpg\"></div>";
 	print $startdiv."<i>".str_replace("_"," ",$name)."</i></div>";
-	print $startdiv.$classname[$prof][1]."(prof=".$prof.")</div>";
+	print $startdiv.getLocStr($classname[$prof][0], $lang)."(prof=".$prof.")</div>";
 	print "</td><td>";
 	$rolls="";
 	print "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\">";
@@ -530,7 +595,7 @@ if ($mode==0) {
 		if ($attributes[$loop]=="Stamina" or $attributes[$loop]=="Heroism") {
 			$rating=$rating-5;
 		}
-		print $word[$attributes[$loop]][$rating];
+		print getLocStr($word[$attributes[$loop]][$rating], $lang);
 		print ")</td></tr>";
 		$rolls=$rolls.chr($stats[$loop]+64);
 	}
@@ -555,7 +620,7 @@ if ($mode==0) {
 		print $link."game.php?lang=".$lang."&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='start playing'; return true\">".getLocStr("Loc_StartPlayingWithThisCharacter", $lang)."</a></div>";
 		print $line;
 		print $startdiv.getLocStr("Loc_EditCustomCharUsing", $lang);
-		print $link."index.php?mode=4&method=2&lang=".$lang."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">".getLocStr("Loc_UsingLinks", $lang)."</a> or <a href=\"".$baseurl."index.php?mode=4&method=1&lang=".$lang."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">".getLocStr("Loc_UsingDropDownMenus", $lang)."</a> or <a href=\"".$baseurl."index.php?mode=2&method=5&lang=".$lang."&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='make a small, random change to this character'; return true\">随机修改 their scores</a></div>";
+		print $link."index.php?mode=4&method=2&lang=".$lang."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">".getLocStr("Loc_UsingLinks", $lang)."</a> or <a href=\"".$baseurl."index.php?mode=4&method=1&lang=".$lang."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">".getLocStr("Loc_UsingDropDownMenus", $lang)."</a> or <a href=\"".$baseurl."index.php?mode=2&method=5&lang=".$lang."&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='make a small, random change to this character'; return true\">".getLocStr("Loc_RandomTheirScores", $lang)."</a></div>";
 		print $line;
 		print $startdiv."起名 - <a href=\"".$baseurl."index.php?mode=2&method=4&lang=".$lang."&prof=".$prof."&rolls=".$rolls."\" onMouseover=\"window.status='random new name for this character'; return true\">随机起名 randomly</a> or <a href=\"".$baseurl."index.php?mode=2&method=2&lang=".$lang."&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='enter a name of your choice for this character'; return true\">手工输入 your choice</a></div>";
 		print $line;
@@ -639,9 +704,9 @@ if ($mode==0) {
 	if ($orderplace>$classes) {
 		$orderplace=$orderplace-$classes;
 	}
-	print $startdiv."点选一个角色 Click a picture to choose that character, or</div>";
+	print $startdiv.getLocStr("Loc_ChooseCharacterOr", $lang);
 	//print $startdiv."<a href=\"".$baseurl."index.php?mode=5&lang=".$lang."&order=".$order."&orderplace=".$orderplace."\" onMouseover=\"window.status='see more characters'; return true\">刷新更多角色以供选择 see more characters</a></div>";
-	print $startdiv."<a href=\"".$baseurl."index.php?mode=5&lang=".$lang."\" onMouseover=\"window.status='see more characters'; return true\">刷新更多角色以供选择 see more characters</a></div>";
+	print "<a href=\"".$baseurl."index.php?mode=5&lang=".$lang."\" onMouseover=\"window.status='see more characters'; return true\">".getLocStr("Loc_SeeMoreCharacters", $lang)."</a></div>";
 	print $line;
 	print $link."index.php?mode=0&lang=".$lang."\" onMouseover=\"window.status='back to the starting page'; return true\">".getLocStr("Loc_BackToMainPage", $lang)."</a></div>";
 
@@ -798,7 +863,7 @@ if ($mode==0) {
 	//print character (name and picture)
 	print $startdiv."<img src=\"".$baseurl."images/misc/thumb_".$class[$prof][0].".jpg\"></div>";
 	print $startdiv."<i>".$name."</i></div>";
-	print $startdiv.$classname[$prof][1]."</div>";
+	print $startdiv.getLocStr($classname[$prof][0], $lang)."</div>";
 	print $line;
 
 	if ($method==1) {
@@ -818,7 +883,7 @@ if ($mode==0) {
 				}
 				print " value=".$y.">";
 				print $y." (";
-				print $word [$attributes[$att]][$x];
+				print getLocStr($word [$attributes[$att]][$x], $lang);
 				print ")</option>";
 			}
 			print "</select>";
@@ -871,18 +936,18 @@ if ($mode==0) {
 			if ($attributes[$loop]=="Stamina" or $attributes[$loop]=="Heroism") {
 				$rating=$rating-5;
 			}
-			print "<td>(".$word[$attributes[$loop]][$rating].")</td></tr>";
+			print "<td>(".getLocStr($word[$attributes[$loop]][$rating], $lang).")</td></tr>";
 		}
 		print "</table>";
 	}
 	print $line;
-	print "<div align=\"center\">The total attributes for this character are (该角色属性值总和为) ".$total."</div>";
+	print "<div align=\"center\">".getLocStr("Loc_TotalAttrAre", $lang).$total."</div>";
 	print $line;
 	print "<div align=\"center\">";
 	if ($total<>$attnum*10+10) {
-		print "Total attributes need to be (属性值总和必须等于) ".($attnum*10+10);
+		print getLocStr("Loc_TotalAttrNeedToBe", $lang).($attnum*10+10);
 	} else {
-		print "<a href=\"".$baseurl."index.php?mode=2&method=6&lang=".$lang."&prof=".$prof."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='continue, with the character as is'; return true\">Accept this character</a>";
+		print "<a href=\"".$baseurl."index.php?mode=2&method=6&lang=".$lang."&prof=".$prof."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='continue, with the character as is'; return true\">".getLocStr("Loc_AcceptThisCharacter", $lang)."</a>";
 	}
 	print "</div>";
 	print $line;
