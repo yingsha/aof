@@ -9358,7 +9358,7 @@ print "<div id=\"c1\" class=\"div_text\">";
 					// skip step+1
 					$newstep = $step;
 				}*/
-				$fullink="<a href=\"".$baseurl."game.php?lang=".$lang."&step=".($newstep);
+				$fullink="<a href=\"".$baseurl."game.php?lang=".$lang."&verbose=".$verbose."&step=".($newstep);
 				if (isset($paras[$para][1+($loop*2)]) AND isset($paras[$para][2+($loop*2)])) {
 					$fullink=$fullink."&para=".$paras[$para][2+($loop*2)]."&carry=".$carry."&street=".$street."&square=".$square."&weapon=".$weapon."&world=".$world."&blessings=".$blessings."&name=".$name."&prof=".$prof."&shells=".$shells."&maxsta=".$maxsta."&creda=".$creda."&rolls=".$rolls."\"";
 					print $fullink." onMouseover=\"window.status='continue to this section'; return true\">";
