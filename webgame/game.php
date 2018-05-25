@@ -50,6 +50,14 @@ if (!isset($lang)) {
 $lang = 0;
 }
 
+//Log
+// 0 - no log
+// <>0 - print log
+$verbose = filter_input(INPUT_GET, 'verbose', FILTER_SANITIZE_STRING);
+if (!isset($verbose)) {
+$verbose = 0;
+}
+
 if (!isset($step)) {
 	$step = 1;
 }
@@ -68,7 +76,7 @@ $word=array (
 	'Stamina' => array ("near death","sickly","sickly","sickly","unhealthy","unhealthy","unhealthy","unremarkable","unremarkable","unremarkable","unremarkable","healthy","healthy","healthy","healthy","robust","robust","robust","unstoppable","unstoppable","unstoppable"),
 	'Charisma' => array ("null","repulsive","repulsive","hateful","hateful","hateful","annoying","annoying","annoying","innocuous","innocuous","innocuous","likeable","likeable","likeable","charming","charming","charming","mesmerising","mesmerising","mesmerising"),
 	'Duelling' => array ("null","clumsy","clumsy","clumsy","clumsy","slow","slow","slow","slow","average","average","average","average","agile","agile","agile","agile","dangerous","dangerous","deadly","deadly"),
-	'Brawling' => array ("null","puny","puny","puny","weak","weak","weak","unremarkable","unremarkable","unremarkable","unremarkable","强壮 strong","强壮 strong","strong","strong","strong","powerful","powerful","powerful","legendary","legendary"),
+	'Brawling' => array ("null","puny","puny","puny","weak","weak","weak","unremarkable","unremarkable","unremarkable","unremarkable","strong","strong","strong","strong","strong","powerful","powerful","powerful","legendary","legendary"),
 	'Seafaring' => array ("null","gets seasick in the bath","gets seasick in the bath","landlubber","landlubber","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","old salt","old salt","old salt","old salt"),
 	'Magic' => array ("null","powerless","powerless","poor","poor","mediocre","mediocre","mediocre","fair","fair","fair","good","good","good","great","great","great","superb","superb","overwhelming","overwhelming"),
 	'Heroism' => array ("wicked","wicked","wicked","corrupt","corrupt","selfish","selfish","wavering","wavering","wavering","good-hearted","good-hearted","good-hearted","bold","bold","bold","bold","heroic","heroic","heroic","heroic"),
@@ -9244,8 +9252,9 @@ print "<div id=\"c1\" class=\"div_text\">";
 		if ($text2display=="no text") {
 			print $line;
 			$switch=0;
-			$currentpara=str_replace("WEAPONNAME",$armed,getLocStr($text2display, $lang));
-			print "<div><font color='grey'>".$currentpara." branch=".$branch.", para=".$para."</font></div>";
+			if ($verbose<>0) {
+				print "<div><font color='grey'>".getLocStr($text2display, $lang)." branch=".$branch.", para=".$para."</font></div>";
+			}
 		} else {
 			print $line;
 			$switch=0;
