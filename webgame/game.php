@@ -9250,9 +9250,9 @@ print "<div id=\"c1\" class=\"div_text\">";
 		$branch=$paras[$para][1];
 
 		if ($text2display=="no text") {
-			print $line;
 			$switch=0;
 			if ($verbose<>0) {
+				print $line;
 				print "<div><font color='grey'>".getLocStr($text2display, $lang)." branch=".$branch.", para=".$para."</font></div>";
 			}
 		} else {
