@@ -1022,6 +1022,7 @@ function getLocStr($fulltext, $lang) {
 	$localizationPrefix = "Loc_";
 	$localization=array(
 		"no text"=> array ("...", "……"),
+		'Loc_AdventureStage'=> array ("Adventure stage: ", "冒险阶段："),
 		'Loc_Credits'=> array ("Credits", "制作名单"),
 		'Loc_LeaveGame'=> array ("Leave game", "离开游戏 "),
 		'Loc_ReturnToMainMenu'=> array ("Return to main-menu", "返回主菜单"),
@@ -9198,7 +9199,7 @@ $art=array (
 
 print "<div id=\"h\">";
 //print "<div align=\"center\"><img src=\"images/misc/banner.jpg\"/></div>";
-print "冒险阶段：".$step;
+print getLocStr("Loc_AdventureStage", $lang).$step;
 print "</div>";
 
 print "<div id=\"c\" class=\"div_content\">";
