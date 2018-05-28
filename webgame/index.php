@@ -175,6 +175,13 @@ function getLocStr($fulltext, $lang) {
 		'Loc_TotalAttrAre'=> array ("The total attributes for this character are ", "该角色属性值总和为 "),
 		'Loc_TotalAttrNeedToBe'=> array ("Total attributes need to be ", "属性值总和必须等于 "),
 		'Loc_RandomTheirScores'=> array ("randomize their scores", "随机修改属性值"),
+		'Loc_Name'=> array ("Name", "起名"),
+		'Loc_NameRandom'=> array ("random", "随机起名"),
+		'Loc_NameEnterManually'=> array ("enter your choice", "手工输入"),
+		'Loc_NewCharacter'=> array ("New character", "新角色"),
+		'Loc_NewCharacterRandom'=> array ("random", "随机生成角色"),
+		'Loc_NewCharacterPreGenerated'=> array ("pre-generated", "选择预设的角色"),
+		'Loc_FollowingLinksOpenInNewWindows'=> array ("The following links all open in a new window:", "下列链接会弹出新窗口："),
 		// $word
 		"near death"=> array ("near death","濒死"),
 		"sickly"=> array ("sickly","虚弱"),
@@ -210,6 +217,31 @@ function getLocStr($fulltext, $lang) {
 		"alert"=> array ("alert","警惕"),
 		"cunning1"=> array("cunning as a fox","如狐狸般狡猾"),
 		"cunning2"=> array ("cunning as a shithouse rat","极度狡猾"),
+		"selfish"=> array ("selfish","自私的"),
+		"powerful"=> array ("powerful","有力的"),
+		"powerless"=> array ("powerless","无力的"),
+		"lucky"=> array ("lucky","幸运的"),
+		"terrible"=> array ("terrible","糟糕的"),
+		"bold"=> array ("bold","大胆的"),
+		"old salt"=> array ("old salt","老水手"),
+		"babe in the woods"=> array ("babe in the woods","初出茅庐"),
+		"good-hearted"=> array ("good-hearted","好心人"),
+		"slow"=> array ("slow","缓慢"),
+		"weak"=> array ("weak","弱"),
+		"corrupt"=> array ("corrupt","腐败的"),
+		"ill-starred"=> array ("ill-starred","坏运气的"),
+		"gets seasick in the bath"=> array ("gets seasick in the bath","澡盆里都晕船"),
+		"clumsy"=> array ("clumsy","笨拙的"),
+		"heroic"=> array ("heroic","英雄气概的"),
+		"cursed"=> array ("cursed","被诅咒的"),
+		"dangerous"=> array ("dangerous","危险的"),
+		"gets lost in the back yard"=> array ("gets lost in the back yard","后院也能迷路"),
+		"auspicious"=> array ("auspicious","吉祥的"),
+		"wavering"=> array ("wavering","摇摆不定"),
+		"landlubber"=> array ("landlubber","新水手"),
+		"wicked"=> array ("wicked","不好"),
+		"charmed"=> array ("charmed","福气好"),
+		"crafty"=> array ("crafty","得心应手"),
 		// class
 		"talking-cat"=> array ("talking-cat","人语"),
 		"wizard"=> array ("wizard","魔法师"),
@@ -277,6 +309,7 @@ if ($mode==0) {
 	print "&nbsp;<a href=\"".$baseurl."index.php?lang=1\">[中文Chinese]</a>";
 	print "&nbsp;<a href=\"".$baseurl."index.php?lang=2\">[中英对照]</a></div>";
 	print $line;
+	print "<hr/>";
 	print $line;
 	print $link."index.php?mode=2&method=1&lang=".$lang."\" onMouseover=\"window.status='randomly generated character'; return true\">".getLocStr("Loc_RandomCharacter", $lang)."</a></div>";
 	print $line;
@@ -285,11 +318,15 @@ if ($mode==0) {
 	print $startdiv.getLocStr("Loc_CreateCustomCharUsing", $lang);
 	print $link."index.php?mode=4&method=2&lang=".$lang."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">".getLocStr("Loc_UsingLinks", $lang)."</a> or <a href=\"".$baseurl."index.php?mode=4&method=1&lang=".$lang."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">".getLocStr("Loc_UsingDropDownMenus", $lang)."</a></div>";
 	print $line;
-	print $link."index.php?mode=6&lang=".$lang."\" onMouseover=\"window.status='link to us'; return true\">Link to Age of Fable</a></div>";
+	print "<hr/>";
 	print $line;
-	print $link."index.php?mode=1&lang=".$lang."\" onMouseover=\"window.status='FAQ'; return true\">".getLocStr("Loc_FAQ", $lang)."</a></div>";
+	print $startdiv.getLocStr("Loc_FollowingLinksOpenInNewWindows", $lang)."</div>";
 	print $line;
-	print $link."credits.php?lang=".$lang."\" onMouseover=\"window.status='artist and author details'; return true\">Credits</a></div>";
+	print $link."index.php?mode=6&lang=".$lang."\" onMouseover=\"window.status='link to us'; return true\" target=\"_blank\">Link to Age of Fable</a></div>";
+	print $line;
+	print $link."index.php?mode=1&lang=".$lang."\" onMouseover=\"window.status='FAQ'; return true\" target=\"_blank\">".getLocStr("Loc_FAQ", $lang)."</a></div>";
+	print $line;
+	print $link."credits.php?lang=".$lang."\" onMouseover=\"window.status='artist and author details'; return true\" target=\"_blank\">Credits</a></div>";
 	print $line;
 	// print $startdiv."Age of Fable is unfinished</div>";
 	// print $startdiv."and under construction.</div>";
@@ -298,15 +335,13 @@ if ($mode==0) {
 	// print $startdiv."Please feel free to leave</div>";
 	// print $startdiv."any feedback in the</div>";
 	print $startdiv."<a href=\"http://www.apolitical.info/guestbook\" onMouseover=\"window.status='leave feedback, or read other people\'s'; return true\" target=\"_blank\">Guestbook</a></div>";
-	print $startdiv."(opens in a new window)";
 	print $line;
-	print $link."index.php?mode=3&lang=".$lang."\" onMouseover=\"window.status='a small list of similar sites'; return true\">Links</a></div>";
+	print $link."index.php?mode=3&lang=".$lang."\" onMouseover=\"window.status='a small list of similar sites'; return true\" target=\"_blank\">Links</a></div>";
 	print $line;
 	print $startdiv."Library";
-	print $link."index.php?mode=7&branch=1&lang=".$lang."\" onMouseover=\"window.status='stories'; return true\">Stories</a> . <a href=\"".$baseurl."index.php?mode=7&branch=2&lang=".$lang."\" onMouseover=\"window.status='other resources'; return true\">Games</a></div>";
+	print $link."index.php?mode=7&branch=1&lang=".$lang."\" onMouseover=\"window.status='stories'; return true\" target=\"_blank\">Stories</a> . <a href=\"".$baseurl."index.php?mode=7&branch=2&lang=".$lang."\" onMouseover=\"window.status='other resources'; return true\" target=\"_blank\">Games</a></div>";
 	print $line;
 	print "<a href=\"http://www.apolitical.info/webgame/sourcecode.php\" onMouseover=\"window.status='source-code for Age of Fable'; return true\" target=\"_blank\">Source Code</a></div>";
-	print $startdiv."(opens in a new window)";
 } elseif ($mode==1) {
 	// Frequently Asked Questions
 	print $startdiv."<iframe src=\"faq.html\" height=450 frameborder=0></IFRAME></div>";
@@ -622,12 +657,13 @@ if ($mode==0) {
 		print $startdiv.getLocStr("Loc_EditCustomCharUsing", $lang);
 		print $link."index.php?mode=4&method=2&lang=".$lang."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">".getLocStr("Loc_UsingLinks", $lang)."</a> or <a href=\"".$baseurl."index.php?mode=4&method=1&lang=".$lang."&rolls=".$rolls."&name=".$name."\" onMouseover=\"window.status='choose your character\'s attributes'; return true\">".getLocStr("Loc_UsingDropDownMenus", $lang)."</a> or <a href=\"".$baseurl."index.php?mode=2&method=5&lang=".$lang."&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='make a small, random change to this character'; return true\">".getLocStr("Loc_RandomTheirScores", $lang)."</a></div>";
 		print $line;
-		print $startdiv."起名 - <a href=\"".$baseurl."index.php?mode=2&method=4&lang=".$lang."&prof=".$prof."&rolls=".$rolls."\" onMouseover=\"window.status='random new name for this character'; return true\">随机起名 randomly</a> or <a href=\"".$baseurl."index.php?mode=2&method=2&lang=".$lang."&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='enter a name of your choice for this character'; return true\">手工输入 your choice</a></div>";
+		print $startdiv.getLocStr("Loc_Name", $lang)." - <a href=\"".$baseurl."index.php?mode=2&method=4&lang=".$lang."&prof=".$prof."&rolls=".$rolls."\" onMouseover=\"window.status='random new name for this character'; return true\">".getLocStr("Loc_NameRandom", $lang)."</a> or <a href=\"".$baseurl."index.php?mode=2&method=2&lang=".$lang."&rolls=".$rolls."&prof=".$prof."&name=".$name."\" onMouseover=\"window.status='enter a name of your choice for this character'; return true\">".getLocStr("Loc_NameEnterManually", $lang)."</a>.</div>";
 		print $line;
-		print $startdiv."New character - <a href=\"".$baseurl."index.php?mode=2&method=1&lang=".$lang."\" onMouseover=\"window.status='randomly generate a new character'; return true\">random</a> or <a href=\"".$baseurl."index.php?mode=5&lang=".$lang."\" onMouseover=\"window.status='choose from a list of characters'; return true\">pre-generated</a>.</div>";
+		print $startdiv.getLocStr("Loc_NewCharacter", $lang)." - <a href=\"".$baseurl."index.php?mode=2&method=1&lang=".$lang."\" onMouseover=\"window.status='randomly generate a new character'; return true\">".getLocStr("Loc_NewCharacterRandom", $lang)."</a> or <a href=\"".$baseurl."index.php?mode=5&lang=".$lang."\" onMouseover=\"window.status='choose from a list of characters'; return true\">".getLocStr("Loc_NewCharacterPreGenerated", $lang)."</a>.</div>";
 		print $line;
 		print "<hr/>";
-		print $startdiv."The following links all open in a new window:</div>";
+		print $line;
+		print $startdiv.getLocStr("Loc_FollowingLinksOpenInNewWindows", $lang)."</div>";
 		print $line;
 		print $link."index.php?mode=6&lang=".$lang."\" onMouseover=\"window.status='link to us'; return true\" target=\"_blank\">Link to Age of Fable</a></div>";
 		print $line;
