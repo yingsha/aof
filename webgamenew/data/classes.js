@@ -1,0 +1,443 @@
+window.GAME_DATA_CLASSES = [
+  {
+    "image": "talking-cat",
+    "stats": [
+      1,
+      20,
+      5,
+      15,
+      1,
+      11,
+      1,
+      20,
+      5,
+      20,
+      1,
+      20
+    ],
+    "name": "Seti Nur-ishtar",
+    "gender": 4,
+    "id": 1,
+    "display_name": "人语猫talking cat"
+  },
+  {
+    "image": "wizard",
+    "stats": [
+      3,
+      8,
+      8,
+      8,
+      12,
+      20,
+      10,
+      12,
+      9,
+      10,
+      16,
+      4
+    ],
+    "name": "Perilandera",
+    "gender": 5,
+    "id": 2,
+    "display_name": "魔法师wizard"
+  },
+  {
+    "image": "scoundrel",
+    "stats": [
+      5,
+      16,
+      9,
+      12,
+      5,
+      6,
+      1,
+      5,
+      20,
+      20,
+      1,
+      20
+    ],
+    "name": "Urang Semalai",
+    "gender": 4,
+    "id": 3,
+    "display_name": "恶棍scoundrel"
+  },
+  {
+    "image": "bard",
+    "stats": [
+      8,
+      20,
+      5,
+      5,
+      10,
+      5,
+      5,
+      5,
+      12,
+      20,
+      9,
+      16
+    ],
+    "name": "Hisvet Sigrun",
+    "gender": 5,
+    "id": 4,
+    "display_name": "吟游诗人bard"
+  },
+  {
+    "image": "knight",
+    "stats": [
+      10,
+      5,
+      20,
+      15,
+      9,
+      10,
+      20,
+      5,
+      1,
+      10,
+      10,
+      5
+    ],
+    "name": "Be-Steadfast Toth",
+    "gender": 4,
+    "id": 5,
+    "display_name": "骑士knight"
+  },
+  {
+    "image": "nomad",
+    "stats": [
+      15,
+      5,
+      13,
+      13,
+      19,
+      5,
+      14,
+      20,
+      1,
+      5,
+      9,
+      1
+    ],
+    "name": "Taruk Few-Clothes",
+    "gender": 4,
+    "id": 6,
+    "display_name": "游牧民nomad"
+  },
+  {
+    "image": "pirate",
+    "stats": [
+      13,
+      13,
+      13,
+      13,
+      20,
+      1,
+      5,
+      5,
+      14,
+      9,
+      1,
+      13
+    ],
+    "name": "Two Souls Macout",
+    "gender": 4,
+    "id": 7,
+    "display_name": "海盗pirate"
+  },
+  {
+    "image": "fairy",
+    "stats": [
+      1,
+      19,
+      1,
+      1,
+      1,
+      19,
+      10,
+      10,
+      19,
+      19,
+      15,
+      5
+    ],
+    "name": "Damael",
+    "gender": 5,
+    "id": 8,
+    "display_name": "仙子fairy"
+  },
+  {
+    "image": "dwarf",
+    "stats": [
+      20,
+      5,
+      10,
+      17,
+      3,
+      3,
+      15,
+      15,
+      8,
+      8,
+      8,
+      8
+    ],
+    "name": "Longshanks Macabee",
+    "gender": 4,
+    "id": 9,
+    "display_name": "矮人dwarf"
+  },
+  {
+    "image": "barbarian",
+    "stats": [
+      14,
+      5,
+      14,
+      19,
+      14,
+      5,
+      9,
+      14,
+      10,
+      10,
+      1,
+      5
+    ],
+    "name": "Ektor the Patient One",
+    "gender": 4,
+    "id": 10,
+    "display_name": "野蛮人barbarian"
+  },
+  {
+    "image": "assassin",
+    "stats": [
+      1,
+      15,
+      15,
+      15,
+      5,
+      11,
+      1,
+      11,
+      15,
+      11,
+      5,
+      15
+    ],
+    "name": "Owl-Waits-For-the-Moon",
+    "gender": 4,
+    "id": 11,
+    "display_name": "刺客assassin"
+  },
+  {
+    "image": "witch",
+    "stats": [
+      13,
+      13,
+      5,
+      5,
+      1,
+      20,
+      5,
+      15,
+      5,
+      13,
+      20,
+      5
+    ],
+    "name": "Sulia Bukawayo",
+    "gender": 5,
+    "id": 12,
+    "display_name": "女巫witch"
+  },
+  {
+    "image": "faun",
+    "stats": [
+      5,
+      20,
+      1,
+      10,
+      5,
+      20,
+      1,
+      20,
+      20,
+      10,
+      7,
+      1
+    ],
+    "name": "Hekatotaratos",
+    "gender": 4,
+    "id": 13,
+    "display_name": "弗恩faun"
+  },
+  {
+    "image": "troll",
+    "stats": [
+      20,
+      1,
+      10,
+      20,
+      3,
+      10,
+      5,
+      20,
+      5,
+      10,
+      15,
+      1
+    ],
+    "name": "Ingvar Arnesson",
+    "gender": 4,
+    "id": 14,
+    "display_name": "巨魔troll"
+  },
+  {
+    "image": "courtesan",
+    "stats": [
+      1,
+      20,
+      1,
+      1,
+      8,
+      10,
+      15,
+      1,
+      8,
+      20,
+      15,
+      20
+    ],
+    "name": "白麻雀(White Sparrow)",
+    "gender": 5,
+    "id": 15,
+    "display_name": "交际花courtesan"
+  },
+  {
+    "image": "fortune-teller",
+    "stats": [
+      7,
+      15,
+      6,
+      8,
+      12,
+      1,
+      1,
+      15,
+      15,
+      15,
+      10,
+      15
+    ],
+    "name": "Goody Atkins",
+    "gender": 5,
+    "id": 16,
+    "display_name": "占卜师fortune-teller"
+  },
+  {
+    "image": "amazon",
+    "stats": [
+      15,
+      1,
+      17,
+      17,
+      17,
+      1,
+      12,
+      17,
+      1,
+      4,
+      17,
+      1
+    ],
+    "name": "Ana Blood-On-The-Arm",
+    "gender": 5,
+    "id": 17,
+    "display_name": "亚马逊女战士amazon"
+  },
+  {
+    "image": "lizard-man",
+    "stats": [
+      19,
+      1,
+      19,
+      19,
+      1,
+      19,
+      19,
+      19,
+      1,
+      1,
+      1,
+      1
+    ],
+    "name": "Bright Skin Young Jewel",
+    "gender": 4,
+    "id": 18,
+    "display_name": "蜥蜴人lizard-man"
+  },
+  {
+    "image": "explorer",
+    "stats": [
+      19,
+      15,
+      1,
+      1,
+      19,
+      1,
+      14,
+      19,
+      1,
+      14,
+      15,
+      1
+    ],
+    "name": "Temperance Jobsworth",
+    "gender": 4,
+    "id": 19,
+    "display_name": "探索者explorer"
+  },
+  {
+    "image": "aristocrat",
+    "stats": [
+      1,
+      10,
+      20,
+      1,
+      20,
+      20,
+      1,
+      10,
+      2,
+      20,
+      10,
+      5
+    ],
+    "name": "Euphemia",
+    "gender": 5,
+    "id": 20,
+    "display_name": "贵族aristocrat"
+  },
+  {
+    "image": "doraemon",
+    "stats": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "name": "机器猫(Doraemon)",
+    "gender": 4,
+    "id": 21,
+    "display_name": "机器猫doraemon"
+  }
+];

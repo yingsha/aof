@@ -1,0 +1,27 @@
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.game-container {
+    background-color: #fff;
+    min-height: 600px;
+}
+
+.game-log {
+    font-family: monospace;
+    background-color: #fefefe;
+}
