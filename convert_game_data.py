@@ -213,6 +213,34 @@ def process_event(evt):
             }
             options.append({ "text_zh": "...", "action": "check" })
 
+    elif type_id == 12: # Multi-Attr Check
+        # count, diff, attrs..., dests...
+        if len(args) >= 2:
+            try:
+                count = int(args[0])
+                diff = int(args[1])
+            except ValueError:
+                count = 0
+                diff = 0
+                
+            # args[2] to args[2+count] are attrs (slice end is exclusive)
+            # count=2, args[2], args[3]. slice [2:4]
+            attrs = [str(x) for x in args[2:2+count]]
+            
+            # args[2+count] to args[2+2*count+1] (slice end exclusive)
+            # count=2, dests needed: 3. args[4], args[5], args[6].
+            # slice [4:7]
+            dests = [str(x) for x in args[2+count:2+2*count+1]]
+            
+            logic = {
+                "type": "multi_check",
+                "count": count,
+                "diff": diff,
+                "attrs": attrs,
+                "dests": dests
+            }
+            options.append({ "text_zh": "...", "action": "check" })
+
     elif type_id == 13: # Click to Continue
         # next
         if len(args) >= 1:
@@ -221,6 +249,27 @@ def process_event(evt):
                 "text_key": "Loc_Continue",
                 "next_event": str(args[0])
             })
+
+    elif type_id == 14: # Gain Blessing
+        # blessing_name, next
+        if len(args) >= 2:
+            logic = {
+                "type": "gain_blessing",
+                "blessing": args[0],
+                "next": str(args[1])
+            }
+            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+
+    elif type_id == 15: # Blessing Check
+        # blessing_name, pass, fail
+        if len(args) >= 3:
+            logic = {
+                "type": "blessing_check",
+                "blessing": args[0],
+                "pass": str(args[1]),
+                "fail": str(args[2])
+            }
+            options.append({ "text_zh": "...", "action": "check" })
             
     elif type_id == 16: # Profession Check
         # prof_id, pass, fail
@@ -259,6 +308,32 @@ def main():
     if start_idx == -1:
         print("Could not find $paras start")
         return
+
+    # Step 0: Map keys to line numbers using the ORIGINAL content
+    key_line_map = {}
+    # Regex to find "Key" => array
+    # We search in the whole content or just after start_idx?
+    # Better search whole content or just the array part to avoid false positives?
+    # The array part is safest.
+    paras_content = content[start_idx:]
+    base_line = content.count('\n', 0, start_idx) + 1
+    paras_lines = paras_content.split('\n')
+    
+    key_pattern = re.compile(r"(['\"]?[\w\d]+['\"]?)\s*=>\s*array")
+    for m in key_pattern.finditer(paras_content):
+        key_raw = m.group(1)
+        # Parse key to match later usage (remove quotes etc)
+        key_parsed = str(parse_php_value(key_raw))
+        
+        lines_before = paras_content.count('\n', 0, m.start())
+        line_num = base_line + lines_before
+        
+        code_content = paras_lines[lines_before].strip() if lines_before < len(paras_lines) else ""
+        
+        key_line_map[key_parsed] = {
+            'line': line_num,
+            'code': code_content
+        }
 
     lines = content[start_idx:].split('\n')
     
@@ -344,8 +419,15 @@ def main():
         text = clean_args[0] if clean_args[0] != "no text" else ""
         type_id = clean_args[1] if len(clean_args) > 1 and isinstance(clean_args[1], int) else 0
         
+        # Lookup line info
+        line_info = key_line_map.get(str(key), {'line': 0, 'code': ''})
+        source_line = line_info['line']
+        source_code = line_info['code']
+
         event = {
             "id": str(key),
+            "source_line": source_line,
+            "source_code": source_code,
             "text_zh": text,
             "text_en": "", 
             "type": type_id,

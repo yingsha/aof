@@ -58,10 +58,18 @@ def parse_php_array(content, array_name):
                 cn = m.group(3)
                 result[key] = {"en": en, "zh": cn}
             else:
-                # 尝试匹配 "key" => array( "En", "Cn" ) (key 用双引号)
-                # 其实上面的正则已经涵盖了。
-                # 还有一种情况：key 没有引号？ PHP 数组 key 必须有引号除非是数字或常量。
                 pass
+
+        # 针对 $itemnames 数组
+        elif array_name == 'itemnames':
+            # key => array("Name", "Type")
+            # 1=> array ("done specially below","item"),
+            m = re.match(r'(\d+)=>\s*array\s*\(\s*"([^"]+)"\s*,\s*"([^"]+)"\s*\),?', line)
+            if m:
+                key = int(m.group(1))
+                name = m.group(2)
+                type_ = m.group(3)
+                result[key] = {"name": name, "type": type_}
 
     return result
 
@@ -74,6 +82,71 @@ def save_js(data, var_name, filename):
     with open(f'webgamenew/data/{filename}', 'w', encoding='utf-8') as f:
         f.write(js_content)
     print(f"Saved {filename}")
+
+def extract_keywords(content):
+    keywords = {}
+    
+    # We scan the file for comments formatted like "// 123 - Description"
+    # This is a bit heuristic but should work for this codebase.
+    
+    lines = content.split('\n')
+    
+    current_ids = []
+    
+    # Matches "// 123 - " or "// 123, 124 - "
+    regex_new = re.compile(r'^\s*//\s*(\d+(?:,\s*\d+)*)\s*-\s*(.*)$')
+    # Matches continuation lines "// text" but NOT new definitions
+    regex_cont = re.compile(r'^\s*//\s+(?!\d+\s*-)(.*)$')
+    
+    # Start scanning after "meanings of keywords"
+    start_marker = "// meanings of keywords:"
+    started = False
+    
+    for line in lines:
+        if start_marker in line:
+            started = True
+            continue
+            
+        if not started:
+            continue
+            
+        # Optimization: If we hit code (e.g. $paras =), we might want to stop?
+        # But comments might be interspersed.
+        # Let's just process lines that start with //
+        
+        if not line.strip().startswith('//'):
+            continue
+            
+        m_new = regex_new.match(line)
+        if m_new:
+            id_str = m_new.group(1)
+            desc = m_new.group(2).strip()
+            
+            # Handle "97,98 - ..."
+            ids = [int(x.strip()) for x in id_str.split(',')]
+            current_ids = ids
+            
+            for kid in ids:
+                keywords[kid] = desc
+        elif current_ids:
+            # Check continuation
+            m_cont = regex_cont.match(line)
+            if m_cont:
+                extra = m_cont.group(1).strip()
+                # Avoid matching completely unrelated comments
+                # Heuristic: if it's too short or looks like code, skip?
+                # For now, append everything.
+                if extra:
+                    for kid in current_ids:
+                        keywords[kid] += " " + extra
+                
+    # Format as list
+    kw_list = []
+    for kid, desc in keywords.items():
+        kw_list.append({"id": kid, "name": desc})
+    kw_list.sort(key=lambda x: x['id'])
+    
+    return kw_list
 
 def main():
     # 1. Classes & Attributes (from index.php)
@@ -115,12 +188,28 @@ def main():
     game_content = extract_from_file('webgame/game.php')
     loc_game = parse_php_array(game_content, 'localization')
     
-    # Merge: game.php has more specific ones, but index.php has UI ones.
-    # We combine them.
     localization = {**loc_index, **loc_game}
     
     print(f"Extracted {len(localization)} localization keys.")
     save_js(localization, 'GAME_DATA_LOCALIZATION', 'localization.js')
+
+    # 3. Items (from game.php)
+    items_dict = parse_php_array(game_content, 'itemnames')
+    items = []
+    for kid, val in items_dict.items():
+        val['id'] = kid
+        items.append(val)
+    
+    # Sort by ID
+    items.sort(key=lambda x: x['id'])
+    
+    print(f"Extracted {len(items)} items.")
+    save_js(items, 'GAME_DATA_ITEMS', 'items.js')
+    
+    # 4. Keywords (from game.php comments)
+    keywords = extract_keywords(game_content)
+    print(f"Extracted {len(keywords)} keywords.")
+    save_js(keywords, 'GAME_DATA_KEYWORDS', 'keywords.js')
 
 if __name__ == "__main__":
     main()

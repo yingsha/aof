@@ -18,6 +18,37 @@ A complete modernization effort has been executed to convert the legacy PHP game
 
 ### Changes Log
 
+#### 2026-01-19 Update
+
+1.  **Game Logic & Data Integrity**:
+    - Refined `convert_game_data.py` to robustly handle complex PHP string concatenations and escaped characters, fixing truncated text issues in game events.
+    - Implemented parsing for legacy HTML artifacts (removing `<img>` drop-caps and restoring text).
+    - Added full support for advanced Logic Types: `gain_blessing` (Type 14), `blessing_check` (Type 15), and the complex `multi_check` (Type 12) with configurable difficulty and destinations.
+    - Extracted original PHP source code context into `events.js` to aid content verification in the editor.
+
+2.  **Visual Editor Enhancements (`editor.html`)**:
+    - **Navigation & References**: Added "Referenced By" panel to visualize event predecessors and flow; Unified "Go ->" navigation buttons.
+    - **Search & Filter**: Implemented text search and descriptive Type filtering (e.g., "Attribute Check (3)") for easier event management.
+    - **Logic Builder**: Created a dynamic visual logic builder for all event types, including specific UIs for Multi-Attribute Checks, Item/Keyword operations, and Blessings.
+    - **New Editors**: Added dedicated editors for **Items**, **Keywords**, and integrated **Blessings** management.
+    - **UX**: Added Source Code view with syntax highlighting; Enabled ESC key to close modals.
+
+3.  **In-Game Features & Restoration**:
+    - **Custom Character System**: Fully restored and modernized the "Create Custom Character" feature:
+        - Added "Random Character" generation.
+        - Implemented manual Attribute modification and Name editing in the `CONFIRM_CHAR` screen.
+        - Added "Random Class" switching within the customization view.
+        - Fixed character portrait URL resolution (`thumb_` prefix).
+    - **Debug System**: Implemented an in-game **Debug UI** (toggleable) allowing real-time modification of:
+        - Shells (Money)
+        - Attributes
+        - Inventory (Add/Remove Items)
+        - Keywords (Add/Remove)
+        - Direct Event Jumping for testing story branches.
+    - **Visuals**: Updated `webgamenew` layout and correctly linked remote image assets.
+
+#### Previous Updates (Initial Porting)
+
 1.  **Project Modernization**:
     - Created `webgamenew/` directory with a modern frontend structure (HTML5, CSS3, Vue 3).
     - Decoupled data from logic: All game content (classes, events, localization) extracted from PHP files into structured JavaScript data files.

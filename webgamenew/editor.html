@@ -24,6 +24,8 @@
         <ul class="nav nav-tabs mb-3">
             <li class="nav-item"><a class="nav-link" :class="{active: activeTab === 'classes'}" @click="activeTab = 'classes'" href="#">Classes</a></li>
             <li class="nav-item"><a class="nav-link" :class="{active: activeTab === 'events'}" @click="activeTab = 'events'" href="#">Events (Story)</a></li>
+            <li class="nav-item"><a class="nav-link" :class="{active: activeTab === 'items'}" @click="activeTab = 'items'" href="#">Items</a></li>
+            <li class="nav-item"><a class="nav-link" :class="{active: activeTab === 'keywords'}" @click="activeTab = 'keywords'" href="#">Keywords</a></li>
             <li class="nav-item"><a class="nav-link" :class="{active: activeTab === 'localization'}" @click="activeTab = 'localization'" href="#">Localization</a></li>
         </ul>
 
@@ -56,21 +58,90 @@
             </div>
         </div>
 
+        <!-- Items Tab -->
+        <div v-if="activeTab === 'items'">
+            <div class="mb-3 text-end">
+                <button class="btn btn-primary btn-sm" @click="addItem">Add New Item</button>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="item in items" :key="item.id" @click="editItem(item)" class="edit-row">
+                            <td>{{ item.id }}</td>
+                            <td>{{ item.name }}</td>
+                            <td>{{ item.type }}</td>
+                            <td><button class="btn btn-danger btn-sm" @click.stop="deleteItem(item)">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Keywords Tab -->
+        <div v-if="activeTab === 'keywords'">
+            <div class="row mb-3">
+                 <div class="col">
+                    <input type="text" class="form-control" v-model="keywordSearch" placeholder="Search keywords...">
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-primary btn-sm" @click="addKeyword">Add New Keyword</button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="kw in filteredKeywords" :key="kw.id" @click="editKeyword(kw)" class="edit-row">
+                            <td>{{ kw.id }}</td>
+                            <td>{{ kw.name }}</td>
+                            <td><button class="btn btn-danger btn-sm" @click.stop="deleteKeyword(kw)">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
         <!-- Events Tab -->
         <div v-if="activeTab === 'events'">
             <div class="row mb-3">
-                <div class="col">
+                <div class="col-md-3">
+                    <select class="form-select" v-model="eventTypeFilter">
+                        <option value="all">All Types</option>
+                        <option v-for="(label, id) in eventTypes" :key="id" :value="id">{{ label }}</option>
+                    </select>
+                </div>
+                <div class="col-md-7">
                     <input type="text" class="form-control" v-model="eventSearch" placeholder="Search events by ID or text...">
                 </div>
-                <div class="col-auto">
+                <div class="col-md-2 text-end">
                     <button class="btn btn-primary" @click="addEvent">Add New Event</button>
                 </div>
             </div>
             <div class="list-group">
                 <div v-for="evt in filteredEvents" :key="evt.id" class="list-group-item list-group-item-action" @click="editEvent(evt)">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">{{ evt.id }}</h5>
-                        <small>{{ evt.options.length }} options</small>
+                        <h5 class="mb-1">
+                            <span class="badge bg-secondary me-2">{{ evt.type }}</span>
+                            {{ evt.id }}
+                        </h5>
+                        <small>
+                            <span v-if="evt.source_line" class="badge bg-light text-dark border me-1">Line: {{ evt.source_line }}</span>
+                            {{ evt.options.length }} options
+                        </small>
                     </div>
                     <p class="mb-1 text-truncate">{{ evt.text_zh }}</p>
                     <small class="text-muted">{{ evt.text_en }}</small>
@@ -114,6 +185,7 @@
         </div>
 
         <!-- Modals -->
+        
         <!-- Class Edit Modal -->
         <div v-if="editingClass" class="modal d-block" style="background: rgba(0,0,0,0.5)">
             <div class="modal-dialog modal-lg">
@@ -151,37 +223,429 @@
             </div>
         </div>
 
-        <!-- Event Edit Modal -->
-        <div v-if="editingEvent" class="modal d-block" style="background: rgba(0,0,0,0.5)">
-            <div class="modal-dialog modal-lg">
+        <!-- Item Edit Modal -->
+        <div v-if="editingItem" class="modal d-block" style="background: rgba(0,0,0,0.5)">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Edit Event</h5>
-                        <button type="button" class="btn-close" @click="editingEvent = null"></button>
+                        <h5 class="modal-title">Edit Item</h5>
+                        <button type="button" class="btn-close" @click="editingItem = null"></button>
                     </div>
                     <div class="modal-body">
                         <div class="mb-2">
-                            <label>Event ID</label>
-                            <input type="text" class="form-control" v-model="editingEvent.id">
+                            <label>ID</label>
+                            <input type="number" class="form-control" v-model.number="editingItem.id">
                         </div>
                         <div class="mb-2">
-                            <label>Description (ZH)</label>
-                            <textarea class="form-control" v-model="editingEvent.text_zh" rows="2"></textarea>
+                            <label>Name</label>
+                            <input type="text" class="form-control" v-model="editingItem.name">
                         </div>
                         <div class="mb-2">
-                            <label>Description (EN)</label>
-                            <textarea class="form-control" v-model="editingEvent.text_en" rows="2"></textarea>
+                            <label>Type</label>
+                            <input type="text" class="form-control" v-model="editingItem.type">
                         </div>
-                        <hr>
-                        <h6>Options <button class="btn btn-sm btn-outline-primary" @click="addOption(editingEvent)">+</button></h6>
-                        <div v-for="(opt, idx) in editingEvent.options" :key="idx" class="border p-2 mb-2 rounded bg-light">
-                            <div class="row mb-1">
-                                <div class="col"><input type="text" class="form-control form-control-sm" v-model="opt.text_zh" placeholder="Option Text (ZH)"></div>
-                                <div class="col"><input type="text" class="form-control form-control-sm" v-model="opt.text_en" placeholder="Option Text (EN)"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" @click="editingItem = null">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Keyword Edit Modal -->
+        <div v-if="editingKeyword" class="modal d-block" style="background: rgba(0,0,0,0.5)">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Edit Keyword</h5>
+                        <button type="button" class="btn-close" @click="editingKeyword = null"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-2">
+                            <label>ID</label>
+                            <input type="number" class="form-control" v-model.number="editingKeyword.id">
+                        </div>
+                        <div class="mb-2">
+                            <label>Description</label>
+                            <textarea class="form-control" v-model="editingKeyword.name" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" @click="editingKeyword = null">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Edit Modal -->
+        <div v-if="editingEvent" class="modal d-block" style="background: rgba(0,0,0,0.5)">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-outline-secondary btn-sm me-1" @click="goBack" :disabled="navIndex <= 0" title="Go Back">&lt;</button>
+                            <button class="btn btn-outline-secondary btn-sm me-2" @click="goForward" :disabled="navIndex >= navHistory.length - 1" title="Go Forward">&gt;</button>
+                            <h5 class="modal-title m-0">Edit Event</h5>
+                        </div>
+                        <button type="button" class="btn-close" @click="editingEvent = null"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <!-- Left Column: Properties -->
+                            <div class="col-md-7 border-end">
+                                <div class="row mb-2">
+                                    <div class="col-md-3">
+                                        <label>ID</label>
+                                        <input type="text" class="form-control" v-model="editingEvent.id">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <label>Type</label>
+                                        <select class="form-select" v-model.number="editingEvent.type">
+                                            <option v-for="(label, id) in eventTypes" :key="id" :value="Number(id)">{{ label }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+        
+                                <div class="mb-2" v-if="editingEvent.source_code">
+                                    <label class="small text-muted">Source (Line {{ editingEvent.source_line }})</label>
+                                    <div class="form-control form-control-sm bg-light font-monospace text-muted" style="font-size: 0.8rem; white-space: pre-wrap; word-break: break-word;" v-html="formatSourceCode(editingEvent.source_code)"></div>
+                                </div>
+
+                                <!-- Logic Editor -->
+                                <div v-if="[3,4,5,6,7,8,9,10,11,12,14,15,16].includes(editingEvent.type)" class="card p-2 mb-2 bg-light border-info">
+                                    <h6 class="card-subtitle mb-2 text-muted">Event Logic Settings</h6>
+                                    
+                                    <div v-if="!editingEvent.logic">
+                                        <button class="btn btn-sm btn-warning" @click="ensureLogic('default')">Initialize Logic Object</button>
+                                    </div>
+                                    <div v-else>
+                                        <!-- Type 3: Attr Check -->
+                                        <div v-if="editingEvent.type === 3" class="row g-2">
+                                            <div class="col-4">
+                                                <label>Attribute</label>
+                                                <select class="form-select form-select-sm" v-model="editingEvent.logic.attr">
+                                                    <option v-for="attr in attributes" :value="attr">{{ attr }}</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-4">
+                                                <label>Diff</label>
+                                                <input type="number" class="form-control form-control-sm" v-model.number="editingEvent.logic.diff">
+                                            </div>
+                                             <!-- Pass/Fail Links -->
+                                            <div class="col-6">
+                                                <label>Pass Event</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.pass">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.pass)" v-if="editingEvent.logic.pass">Go -></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <label>Fail Event</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.fail">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.fail)" v-if="editingEvent.logic.fail">Go -></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Type 4: Random -->
+                                        <div v-if="editingEvent.type === 4">
+                                            <label>Random Targets</label>
+                                            <div v-for="(t, idx) in editingEvent.logic.targets" :key="idx" class="input-group input-group-sm mb-1">
+                                                <input type="text" class="form-control" v-model="editingEvent.logic.targets[idx]">
+                                                <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.targets[idx])">Go -></button>
+                                                <button class="btn btn-outline-danger" @click="editingEvent.logic.targets.splice(idx,1)">X</button>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-primary" @click="if(!editingEvent.logic.targets) editingEvent.logic.targets=[]; editingEvent.logic.targets.push('')">+ Add Target</button>
+                                        </div>
+
+                                        <!-- Type 5: Item Check -->
+                                        <div v-if="editingEvent.type === 5" class="row g-2">
+                                            <div class="col-12">
+                                                <label>Item</label>
+                                                <select class="form-select form-select-sm" v-model.number="editingEvent.logic.item_id">
+                                                    <option v-for="i in items" :value="i.id">{{ i.id }}: {{ i.name }}</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6"><label>Have (Pass)</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.pass">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.pass)" v-if="editingEvent.logic.pass">Go -></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6"><label>Don't Have (Fail)</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.fail">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.fail)" v-if="editingEvent.logic.fail">Go -></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Type 6: Keyword Check -->
+                                        <div v-if="editingEvent.type === 6" class="row g-2">
+                                            <div class="col-12">
+                                                <label>Keyword</label>
+                                                <select class="form-select form-select-sm" v-model.number="editingEvent.logic.keyword_id">
+                                                     <option v-for="k in keywords" :value="k.id">{{ k.id }}: {{ k.name.substring(0, 80) }}</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6"><label>Have (Pass)</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.pass">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.pass)" v-if="editingEvent.logic.pass">Go -></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6"><label>Don't Have (Fail)</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.fail">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.fail)" v-if="editingEvent.logic.fail">Go -></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Type 7: Gain/Lose Item -->
+                                        <div v-if="editingEvent.type === 7" class="row g-2">
+                                             <div class="col-8">
+                                                <label>Item</label>
+                                                <select class="form-select form-select-sm" v-model.number="editingEvent.logic.item_id">
+                                                    <option v-for="i in items" :value="i.id">{{ i.id }}: {{ i.name }}</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-4">
+                                                <label>Action</label>
+                                                <select class="form-select form-select-sm" v-model="editingEvent.logic.item_op">
+                                                    <option value="add">Add</option>
+                                                    <option value="remove">Remove</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12"><label>Next Event</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.next">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.next)" v-if="editingEvent.logic.next">Go -></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                         <!-- Type 8: Gain/Lose Keyword -->
+                                        <div v-if="editingEvent.type === 8" class="row g-2">
+                                             <div class="col-8">
+                                                <label>Keyword</label>
+                                                <select class="form-select form-select-sm" v-model.number="editingEvent.logic.keyword_id">
+                                                    <option v-for="k in keywords" :value="k.id">{{ k.id }}: {{ k.name.substring(0,80) }}</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-4">
+                                                <label>Action</label>
+                                                <select class="form-select form-select-sm" v-model="editingEvent.logic.keyword_op">
+                                                    <option value="add">Add</option>
+                                                    <option value="remove">Remove</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12"><label>Next Event</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.next">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.next)" v-if="editingEvent.logic.next">Go -></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Type 9: Stat Change -->
+                                        <div v-if="editingEvent.type === 9" class="row g-2">
+                                            <div class="col-6">
+                                                <label>Stat</label>
+                                                <select class="form-select form-select-sm" v-model="editingEvent.logic.stat_attr">
+                                                    <option v-for="attr in attributes" :value="attr">{{ attr }}</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6">
+                                                <label>Amount (Pos/Neg)</label>
+                                                <input type="number" class="form-control form-control-sm" v-model.number="editingEvent.logic.stat_val">
+                                            </div>
+                                            <div class="col-12"><label>Next Event</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.next">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.next)" v-if="editingEvent.logic.next">Go -></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Type 10: Money Change -->
+                                        <div v-if="editingEvent.type === 10" class="row g-2">
+                                            <div class="col-6">
+                                                <label>Amount</label>
+                                                <input type="number" class="form-control form-control-sm" v-model.number="editingEvent.logic.money_val">
+                                            </div>
+                                            <div class="col-6">
+                                                <label>Next</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.next">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.next)" v-if="editingEvent.logic.next">Go -></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Type 11: Money Check -->
+                                        <div v-if="editingEvent.type === 11" class="row g-2">
+                                            <div class="col-12">
+                                                <label>Required Amount</label>
+                                                <input type="number" class="form-control form-control-sm" v-model.number="editingEvent.logic.amount">
+                                            </div>
+                                            <div class="col-6"><label>Pass</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.pass">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.pass)" v-if="editingEvent.logic.pass">Go -></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6"><label>Fail</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.fail">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.fail)" v-if="editingEvent.logic.fail">Go -></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Type 12: Multi-Attr Check -->
+                                        <div v-if="editingEvent.type === 12" class="row g-2">
+                                            <div class="col-6">
+                                                <label>Count (N)</label>
+                                                <input type="number" class="form-control form-control-sm" v-model.number="editingEvent.logic.count" @change="ensureLogicLists">
+                                            </div>
+                                            <div class="col-6">
+                                                <label>Difficulty</label>
+                                                <input type="number" class="form-control form-control-sm" v-model.number="editingEvent.logic.diff">
+                                            </div>
+                                            
+                                            <div class="col-12" v-if="editingEvent.logic.attrs">
+                                                <label>Attributes ({{ editingEvent.logic.count }})</label>
+                                                <div v-for="(attr, idx) in editingEvent.logic.attrs" :key="'attr'+idx" class="mb-1">
+                                                    <select class="form-select form-select-sm" v-model="editingEvent.logic.attrs[idx]">
+                                                        <option v-for="a in attributes" :value="a">{{ a }}</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-12" v-if="editingEvent.logic.dests">
+                                                <label>Destinations ({{ editingEvent.logic.count + 1 }})</label>
+                                                <div v-for="(dest, idx) in editingEvent.logic.dests" :key="'dest'+idx" class="input-group input-group-sm mb-1">
+                                                    <span class="input-group-text" style="width: 80px;">{{ idx === 0 ? 'Fail All' : 'Pass ' + idx }}</span>
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.dests[idx]">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.dests[idx])">Go -></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <button class="btn btn-sm btn-outline-secondary" @click="ensureLogicLists">Fix Array Sizes</button>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Type 14: Gain Blessing -->
+                                        <div v-if="editingEvent.type === 14" class="row g-2">
+                                            <div class="col-12">
+                                                <label>Blessing</label>
+                                                <select class="form-select form-select-sm" v-model="editingEvent.logic.blessing">
+                                                    <option v-for="b in blessings" :value="b">{{ b }}</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12"><label>Next</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.next">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.next)" v-if="editingEvent.logic.next">Go -></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Type 15: Blessing Check -->
+                                        <div v-if="editingEvent.type === 15" class="row g-2">
+                                            <div class="col-12">
+                                                <label>Blessing</label>
+                                                <select class="form-select form-select-sm" v-model="editingEvent.logic.blessing">
+                                                    <option v-for="b in blessings" :value="b">{{ b }}</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6"><label>Pass</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.pass">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.pass)" v-if="editingEvent.logic.pass">Go -></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6"><label>Fail</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.fail">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.fail)" v-if="editingEvent.logic.fail">Go -></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Type 16: Profession Check -->
+                                        <div v-if="editingEvent.type === 16" class="row g-2">
+                                            <div class="col-12">
+                                                <label>Profession</label>
+                                                <select class="form-select form-select-sm" v-model.number="editingEvent.logic.prof_id">
+                                                    <option v-for="cls in classes" :value="cls.id">{{ cls.display_name }}</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6"><label>Pass</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.pass">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.pass)" v-if="editingEvent.logic.pass">Go -></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6"><label>Fail</label>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control" v-model="editingEvent.logic.fail">
+                                                    <button class="btn btn-primary" @click="navigateTo(editingEvent.logic.fail)" v-if="editingEvent.logic.fail">Go -></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="mb-2">
+                                    <label>Description (ZH)</label>
+                                    <textarea class="form-control" v-model="editingEvent.text_zh" rows="3"></textarea>
+                                </div>
+                                <div class="mb-2">
+                                    <label>Description (EN)</label>
+                                    <textarea class="form-control" v-model="editingEvent.text_en" rows="2"></textarea>
+                                </div>
                             </div>
-                            <div class="row">
-                                <div class="col"><input type="text" class="form-control form-control-sm" v-model="opt.next_event" placeholder="Next Event ID"></div>
-                                <div class="col-auto"><button class="btn btn-sm btn-danger" @click="editingEvent.options.splice(idx, 1)">X</button></div>
+                            
+                            <!-- Right Column: Options -->
+                            <div class="col-md-5">
+                                <h6>Options <button class="btn btn-sm btn-outline-primary" @click="addOption(editingEvent)">+</button></h6>
+                                <div v-for="(opt, idx) in editingEvent.options" :key="idx" class="border p-2 mb-2 rounded bg-light">
+                                    <div class="row mb-1">
+                                        <div class="col"><input type="text" class="form-control form-control-sm" v-model="opt.text_zh" placeholder="Option Text (ZH)"></div>
+                                    </div>
+                                    <div class="row mb-1">
+                                        <div class="col"><input type="text" class="form-control form-control-sm" v-model="opt.text_en" placeholder="Option Text (EN)"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="input-group input-group-sm">
+                                                <span class="input-group-text">Next:</span>
+                                                <input type="text" class="form-control" v-model="opt.next_event" placeholder="Next Event ID">
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="btn btn-sm btn-info me-1" v-if="opt.next_event" @click="navigateTo(opt.next_event)">Go -></button>
+                                            <button class="btn btn-sm btn-danger" @click="editingEvent.options.splice(idx, 1)">X</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Referenced By Section -->
+                        <div class="mt-3 border-top pt-2" v-if="referencedBy && referencedBy.length > 0">
+                            <h6 class="text-muted">Referenced By (Predecessors) <span class="badge bg-secondary rounded-pill">{{ referencedBy.length }}</span></h6>
+                            <div class="list-group" style="max-height: 200px; overflow-y: auto;">
+                                <div v-for="ref in referencedBy" :key="ref.id" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center p-2">
+                                    <div class="text-truncate me-2" style="max-width: 80%;">
+                                        <small class="fw-bold">{{ ref.id }}</small> <span class="badge bg-light text-dark border ms-1" style="font-size: 0.7em;">Type {{ ref.type }}</span>
+                                        <div class="small text-muted text-truncate">{{ ref.text }}</div>
+                                    </div>
+                                    <button class="btn btn-sm btn-primary py-0" style="font-size: 0.8rem;" @click="navigateTo(ref.id)">Go -></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -203,6 +667,8 @@
     <script src="data/classes.js"></script>
     <script src="data/localization.js"></script>
     <script src="data/events.js"></script>
+    <script src="data/items.js"></script>
+    <script src="data/keywords.js"></script>
 
     <script src="js/editor.js"></script>
 </body>
