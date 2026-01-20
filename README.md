@@ -18,6 +18,27 @@ A complete modernization effort has been executed to convert the legacy PHP game
 
 ### Changes Log
 
+#### 2026-01-20 Update
+
+1.  **Event Logic Overhaul**:
+    -   Converted `Type 1` (Single Link), `Type 2` (Free Choice), `Type 13` (Click Continue), and `Type 17` (Conditional Choice) from legacy `options` arrays to structured `logic` objects for better consistency and editor support.
+    -   Implemented advanced parsing and handling for Types 18-25 (Lose Companions, Level Check, Stat Swap, Random Checks, Profession Changes, Endings).
+    -   Fixed `Graph View` visualization to accurately render outgoing links based on the new `logic` structure, removing duplicate edges and correctly labeling "Pass/Fail" paths.
+
+2.  **Storytelling & UX Improvements**:
+    -   **Story Feed**: Implemented a continuous "accumulated text" system (Story Feed) where narrative text is appended rather than replaced, creating a seamless reading experience. Text is only cleared upon game restart.
+    -   **Inline Status Updates**: Integrated important game state changes (Items gained/lost, Stat updates, Check results) directly into the story flow using visual alerts, ensuring players don't miss critical information.
+    -   **Auto-Advance**: Enhanced `Type 1` events to automatically advance the story with a slight delay if text is present, maintaining narrative pacing.
+
+3.  **Editor Graph View Enhancements**:
+    -   **Visual Styling**: Added color-coding for different event types (Endings, Choices, Random) and improved edge labeling.
+    -   **Interaction**: Implemented right-click panning, box selection for multi-node inspection, and a docked "Edit Panel" for rapid content modification.
+    -   **Navigation**: Added "Back/Forward" history navigation within the Graph View.
+    -   **Dynamic Layout**: Added controls for Font Size and Link Length to optimize readability for complex story branches.
+
+4.  **Data Enrichment**:
+    -   **Keywords**: Created a specialized extractor to parse detailed keyword descriptions from original `game.php` comments, significantly improving context for content creators.
+
 #### 2026-01-19 Update
 
 1.  **Game Logic & Data Integrity**:

@@ -115,14 +115,19 @@
                     <div v-if="currentEvent">
                         <!-- Image if any (logic needed to extract image from text or separate field) -->
                         
-                        <div class="game-text mb-4 fs-5" v-html="t(currentEvent.text_key) || currentEvent.text_zh"></div>
+                        <div class="game-text mb-4 fs-5" v-html="accumulatedText"></div>
                         
+                        <!-- Continue Button for Type 13 -->
+                        <div v-if="currentEvent && currentEvent.logic && currentEvent.logic.type === 'click_continue'" class="text-center mb-4">
+                            <button class="btn btn-primary btn-lg" @click="goToEvent(currentEvent.logic.next, true)">{{ t('Loc_Continue') }}</button>
+                        </div>
+
                         <div class="game-actions">
                             <div class="list-group">
-                                <button v-for="(opt, idx) in currentEvent.options" :key="idx"
+                                <button v-for="(choice, idx) in availableChoices" :key="idx"
                                         class="list-group-item list-group-item-action py-3"
-                                        @click="handleOption(opt)">
-                                    {{ t(opt.text_key) || opt.text_zh }}
+                                        @click="goToEvent(choice.next_event, true)">
+                                    {{ t(choice.text_key) || choice.text }}
                                 </button>
                             </div>
                         </div>

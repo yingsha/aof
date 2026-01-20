@@ -86,28 +86,35 @@ def process_event(evt):
         
     elif type_id == 1: # Single Link
         if len(args) >= 1:
-            options.append({
-                "text_zh": "继续", # Default
-                "text_key": "Loc_Continue",
-                "next_event": str(args[0])
-            })
+            logic = {
+                "type": "single_link",
+                "next": str(args[0])
+            }
+            # No options needed for single link, handled by logic and auto-advance
 
     elif type_id == 2: # Free Choice
         # args[0] is count
         # then text, target pairs
         if len(args) > 0:
             count = args[0]
+            choices = []
             idx = 1
             for _ in range(count):
                 if idx + 1 < len(args):
                     txt = args[idx]
                     target = args[idx+1]
-                    options.append({
-                        "text_zh": str(txt), # Might be a key
+                    choices.append({
+                        "text": str(txt), # Might be a key
                         "text_key": str(txt) if str(txt).startswith("Loc_") else None,
                         "next_event": str(target)
                     })
                     idx += 2
+            logic = {
+                "type": "free_choice",
+                "count": count,
+                "choices": choices
+            }
+        # No options needed in the event itself, options will be rendered by UI based on logic
 
     elif type_id == 3: # Saving Roll
         # attr, diff, success, fail
@@ -244,11 +251,11 @@ def process_event(evt):
     elif type_id == 13: # Click to Continue
         # next
         if len(args) >= 1:
-            options.append({
-                "text_zh": "继续",
-                "text_key": "Loc_Continue",
-                "next_event": str(args[0])
-            })
+            logic = {
+                "type": "click_continue",
+                "next": str(args[0])
+            }
+            # No options needed, as the UI will render a continue button based on logic
 
     elif type_id == 14: # Gain Blessing
         # blessing_name, next
@@ -281,6 +288,206 @@ def process_event(evt):
                 "fail": str(args[2])
             }
             options.append({ "text_zh": "...", "action": "check" })
+
+    elif type_id == 17: # Conditional Choice
+        # Type 17: Free choice with conditions
+        # Slot 0: count (max number of choices)
+        # Then for each choice: text, condition_number, destination
+        # Condition encoding:
+        #   0 = always show
+        #   1-999 = requires keyword with that ID
+        #   1000+ = requires NOT having keyword (value - 1000 = keyword ID)
+        #   -1 to -99 = requires item (abs value = item ID)
+        #   -100 or less = requires NOT having item (abs value - 100 = item ID)
+        if len(args) >= 1:
+            count = args[0] if isinstance(args[0], int) else 0
+            choices = []
+            idx = 1
+            for _ in range(count):
+                if idx + 2 < len(args):
+                    text = str(args[idx])
+                    cond = args[idx + 1] if isinstance(args[idx + 1], int) else 0
+                    dest = str(args[idx + 2])
+                    
+                    # Parse condition
+                    cond_type = "always"  # default
+                    cond_id = 0
+                    if cond == 0:
+                        cond_type = "always"
+                    elif cond >= 1000:
+                        cond_type = "no_keyword"
+                        cond_id = cond - 1000
+                    elif cond > 0:
+                        cond_type = "has_keyword"
+                        cond_id = cond
+                    elif cond <= -100:
+                        cond_type = "no_item"
+                        cond_id = abs(cond) - 100
+                    elif cond < 0:
+                        cond_type = "has_item"
+                        cond_id = abs(cond)
+                    
+                    choice = {
+                        "text": text,
+                        "text_key": text if text.startswith("Loc_") else None,
+                        "condition_type": cond_type,
+                        "condition_id": cond_id,
+                        "condition_raw": cond,  # Keep raw value for reference
+                        "next_event": dest
+                    }
+                    choices.append(choice)
+                    
+                    # Also add to options array for game display
+                    options.append({
+                        "text_zh": text,
+                        "text_key": text if text.startswith("Loc_") else None,
+                        "condition_type": cond_type,
+                        "condition_id": cond_id,
+                        "next_event": dest
+                    })
+                    
+                    idx += 3
+            
+            logic = {
+                "type": "conditional_choice",
+                "count": count,
+                "choices": choices
+            }
+
+    elif type_id == 18: # Lose all companions
+        # slot 2 = destination.
+        if len(args) >= 1:
+            logic = {
+                "type": "lose_companions",
+                "next": str(args[0])
+            }
+            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+
+    elif type_id == 20: # Level Check
+        # level, pass, fail
+        if len(args) >= 3:
+            logic = {
+                "type": "level_check",
+                "level": args[0],
+                "pass": str(args[1]),
+                "fail": str(args[2])
+            }
+            options.append({ "text_zh": "...", "action": "check" })
+
+    elif type_id == 21: # Stat Swap
+        # target_attr, source_attr, next
+        if len(args) >= 3:
+            logic = {
+                "type": "stat_swap",
+                "target_attr": args[0],
+                "source_attr": args[1],
+                "next": str(args[2])
+            }
+            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+
+    elif type_id == 22: # Shell Random Check (1-99)
+        # slot 2 empty, pass, fail
+        if len(args) >= 3:
+            logic = {
+                "type": "shell_random_check",
+                "pass": str(args[1]),
+                "fail": str(args[2])
+            }
+            options.append({ "text_zh": "...", "action": "check" })
+
+    elif type_id == 23: # Random Profession
+        # next
+        if len(args) >= 1:
+            logic = {
+                "type": "random_prof",
+                "next": str(args[0])
+            }
+            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+
+    elif type_id == 24: # Become Clown
+        # next
+        if len(args) >= 1:
+            logic = {
+                "type": "clown_prof",
+                "next": str(args[0])
+            }
+            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+
+    elif type_id == 25: # Winning End
+        # behaves like 0
+        pass
+
+    elif type_id == 19: # Not Implemented Message
+        # No arguments, it's just a placeholder message.
+        # This type doesn't have a next event from args, so we can make one that goes to an 'empty' state or a special debug event.
+        logic = {
+            "type": "not_implemented",
+            "next": "0" # Default to 0 for fallback
+        }
+
+    elif type_id == 20: # Level Check
+        # slot 2 is a level
+        # slot 3 is destination if you're at least that level
+        # slot 4 is destination if not.
+        if len(args) >= 3:
+            logic = {
+                "type": "level_check",
+                "level": args[0],
+                "pass": str(args[1]),
+                "fail": str(args[2])
+            }
+            options.append({ "text_zh": "...", "action": "check" })
+
+    elif type_id == 21: # Stat Swap
+        # special: change attribute named in slot 2 to equal attribute named in slot 3
+        # destination is slot 4
+        # attr1_name, attr2_name, next
+        if len(args) >= 3:
+            logic = {
+                "type": "stat_swap",
+                "attr1": args[0],
+                "attr2": args[1],
+                "next": str(args[2])
+            }
+            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+
+    elif type_id == 22: # Random Shell Check (1-99)
+        # slot 2 is empty
+        # slot 3 is destination if make it
+        # slot 4 is destination if don't
+        if len(args) >= 2:
+            logic = {
+                "type": "random_money_check",
+                "pass": str(args[0]), # args[0] is pass, args[1] is fail based on context
+                "fail": str(args[1])
+            }
+            options.append({ "text_zh": "...", "action": "check" })
+
+    elif type_id == 23: # Random Profession Change
+        # slot 2 is destination
+        if len(args) >= 1:
+            logic = {
+                "type": "random_prof_change",
+                "next": str(args[0])
+            }
+            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+
+    elif type_id == 24: # Change Profession to Clown (0)
+        # slot 2 is destination
+        if len(args) >= 1:
+            logic = {
+                "type": "set_prof_clown",
+                "next": str(args[0])
+            }
+            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+
+    elif type_id == 25: # Winning End
+        # Same as type 0, but implies a win state and shows attributes.
+        # No specific args for logic, will just be an end state.
+        # We can add a flag to the event to indicate winning for frontend.
+        logic = {
+            "type": "winning_end"
+        }
 
     # Generic Fallback for unhandled types or missing args
     if not options and not logic and type_id != 0:

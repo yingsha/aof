@@ -23,6 +23,7 @@ createApp({
             prof: 0
         });
         const currentEvent = ref(null);
+        const accumulatedText = ref("");
         const gameLogs = ref([]);
         const hasSave = ref(false);
         
@@ -31,6 +32,43 @@ createApp({
         const debugJumpId = ref('');
         const debugAddItemSelect = ref('');
         const debugAddKwSelect = ref('');
+
+        const availableChoices = computed(() => {
+            if (!currentEvent.value || !currentEvent.value.logic || !currentEvent.value.logic.choices) {
+                return [];
+            }
+
+            if (currentEvent.value.logic.type !== 'conditional_choice' && currentEvent.value.logic.type !== 'free_choice') {
+                return []; // Only conditional_choice and free_choice expose options this way
+            }
+            
+            if (currentEvent.value.logic.type === 'free_choice') {
+                return currentEvent.value.logic.choices;
+            }
+
+            // For conditional_choice
+            return currentEvent.value.logic.choices.filter(choice => {
+                const conditionType = choice.condition_type;
+                const conditionId = parseInt(choice.condition_id);
+
+                switch (conditionType) {
+                    case 'always':
+                        return true;
+                    case 'has_keyword':
+                        return currentCharacter.value.keywords.includes(conditionId);
+                    case 'no_keyword':
+                        return !currentCharacter.value.keywords.includes(conditionId);
+                    case 'has_item':
+                        return currentCharacter.value.inventory.includes(conditionId);
+                    case 'no_item':
+                        return !currentCharacter.value.inventory.includes(conditionId);
+                    default:
+                        return true;
+                }
+            });
+        });
+
+        let autoJumpTimer = null;
 
         // --- Loading ---
         const loadData = () => {
@@ -66,8 +104,13 @@ createApp({
         
         const findEvent = (id) => events.value.find(e => e.id == id);
 
-        const goToEvent = (id) => {
-            console.log(`[Goto] Event ID: ${id}`);
+        const goToEvent = (id, append = false) => {
+            if (autoJumpTimer) {
+                clearTimeout(autoJumpTimer);
+                autoJumpTimer = null;
+            }
+
+            console.log(`[Goto] Event ID: ${id} (Append: ${append})`);
             const evt = findEvent(id);
             if (!evt) {
                 addLog(`Error: Event ${id} not found.`);
@@ -75,20 +118,31 @@ createApp({
                 return;
             }
 
-            console.log(`[Event] Type: ${evt.type}, Text: ${evt.text_zh.substring(0, 20)}...`);
+            console.log(`[Event] Type: ${evt.type}, Text: ${evt.text_zh ? evt.text_zh.substring(0, 20) : '(No Text)'}...`);
 
-            // Handle Logic Events (non-interactive)
+            // Set current event always
+            currentEvent.value = evt;
+
+            // Update Text Display - always update text before handling logic
+            const text = t(evt.text_key) || evt.text_zh;
+            if (append) {
+                if (text) accumulatedText.value += "<br><br>" + text;
+            } else {
+                accumulatedText.value = text || "";
+            }
+            
+            // Handle Logic Events (non-interactive, or those that set currentEvent and return)
             if (evt.logic) {
                 console.log(`[Logic] Processing logic type: ${evt.logic.type}`, evt.logic);
-                handleLogic(evt);
-                return;
+                handleLogic(evt, append);
+                return; // Logic events handle their own flow
             }
 
-            // Interactive Event
-            currentEvent.value = evt;
+            // If it's an interactive event without explicit logic (e.g., old-style options),
+            // its text is already set above and it will wait for user interaction via handleOption.
         };
 
-        const handleLogic = (evt) => {
+        const handleLogic = (evt, append = false) => {
             const l = evt.logic;
             let nextId = null;
             let result = "";
@@ -105,6 +159,43 @@ createApp({
                 nextId = passed ? l.pass : l.fail;
                 result = `[Check] ${l.attr} (${statVal}) vs Roll ${roll}: ${passed ? 'Success' : 'Fail'}`;
                 addLog(result);
+
+                // Add to story text
+                accumulatedText.value += `<br><br><div class='alert ${passed ? 'alert-success' : 'alert-danger'} py-1 mb-0'>${l.attr} Check: ${passed ? 'PASSED' : 'FAILED'} (Roll ${roll} <= ${statVal})</div>`;
+            }
+            else if (l.type === 'single_link') {
+                // Type 1
+                nextId = l.next;
+                // Auto-jump, always append for Type 1 now
+                const hasText = evt.text_zh && evt.text_zh.trim() !== '' && evt.text_zh !== '...' && evt.text_zh !== 'no text';
+                const delay = hasText ? 2000 : 50;
+                
+                if (autoJumpTimer) clearTimeout(autoJumpTimer); // Clear existing, if any
+                autoJumpTimer = setTimeout(() => {
+                    goToEvent(nextId, true); // Always append for auto-jump Type 1
+                }, delay);
+                return; // Prevent immediate goToEvent below
+            }
+            else if (l.type === 'click_continue') {
+                // Type 13: Display current text and wait for user to click a 'continue' button.
+                // We need to render the current event here for its options.
+                currentEvent.value = evt; // Set current event so options can be displayed.
+                // There should be a default 'continue' option in currentEvent for this type.
+                // No nextId is set here, as the UI handles it via options.
+                return; // Prevent immediate goToEvent below, wait for user interaction
+            }
+            else if (l.type === 'free_choice') {
+                // Type 2: Display current event and its choices, wait for user selection.
+                currentEvent.value = evt; // Set current event so options can be displayed.
+                // The options array should be populated from evt.logic.choices
+                // No nextId is set here, as the UI handles it via options.
+                return; // Prevent immediate goToEvent below, wait for user interaction
+            }
+            else if (l.type === 'conditional_choice') {
+                // Type 17: Display current event and its conditional choices, wait for user selection.
+                // The UI needs to filter choices based on conditions.
+                currentEvent.value = evt; // Set current event so conditional choices can be displayed.
+                return; // Prevent immediate goToEvent below, wait for user interaction
             }
             else if (l.type === 'random') {
                 const targets = l.targets;
@@ -113,38 +204,59 @@ createApp({
                 }
             }
             else if (l.type === 'effect') {
+                let effectMessages = [];
                 if (l.item_op) {
                     const iid = parseInt(l.item_id);
+                    const itemName = getItemName(iid);
                     if (l.item_op === 'add') {
-                        if(!currentCharacter.value.inventory.includes(iid)) 
+                        if(!currentCharacter.value.inventory.includes(iid)) {
                             currentCharacter.value.inventory.push(iid);
-                        addLog(`[Item] Gained item #${iid}`);
+                            effectMessages.push(`Gained item: ${itemName}`);
+                        }
                     } else {
                         currentCharacter.value.inventory = currentCharacter.value.inventory.filter(i => i !== iid);
-                        addLog(`[Item] Lost item #${iid}`);
+                        effectMessages.push(`Lost item: ${itemName}`);
                     }
+                    addLog(`[Item] ${l.item_op === 'add' ? 'Gained' : 'Lost'} item #${iid}`);
                 }
                 if (l.keyword_op) {
                     const kid = parseInt(l.keyword_id);
+                    const kwName = getKwName(kid);
                     if (l.keyword_op === 'add') {
-                        if(!currentCharacter.value.keywords.includes(kid))
+                        if(!currentCharacter.value.keywords.includes(kid)) {
                             currentCharacter.value.keywords.push(kid);
+                            effectMessages.push(`Gained keyword: ${kwName}`);
+                        }
                     } else {
                         currentCharacter.value.keywords = currentCharacter.value.keywords.filter(k => k !== kid);
+                        effectMessages.push(`Lost keyword: ${kwName}`);
                     }
+                    addLog(`[Keyword] ${l.keyword_op === 'add' ? 'Gained' : 'Lost'} keyword #${kid}`);
                 }
                 if (l.stat_attr) {
                     const idx = attributes.value.indexOf(l.stat_attr);
                     if (idx >= 0) {
+                        const oldVal = currentCharacter.value.stats[idx];
                         currentCharacter.value.stats[idx] += parseInt(l.stat_val);
-                        addLog(`[Stat] ${l.stat_attr} ${l.stat_val > 0 ? '+' : ''}${l.stat_val}`);
+                        const newVal = currentCharacter.value.stats[idx];
+                        const op = l.stat_val > 0 ? '+' : '';
+                        effectMessages.push(`${l.stat_attr} ${op}${l.stat_val} (${oldVal} -> ${newVal})`);
+                        addLog(`[Stat] ${l.stat_attr} ${op}${l.stat_val}`);
                     }
                 }
                 if (l.money_val) {
+                    const op = l.money_val > 0 ? '+' : '';
+                    const oldMoney = currentCharacter.value.money;
                     currentCharacter.value.money += parseInt(l.money_val);
-                    addLog(`[Money] ${l.money_val > 0 ? '+' : ''}${l.money_val} shells`);
+                    const newMoney = currentCharacter.value.money;
+                    effectMessages.push(`Shells ${op}${l.money_val} (${oldMoney} -> ${newMoney})`);
+                    addLog(`[Money] ${op}${l.money_val} shells`);
                 }
                 nextId = l.next;
+
+                if (effectMessages.length > 0) {
+                    accumulatedText.value += "<br><br><div class='alert alert-info py-1 mb-0'>" + effectMessages.join("<br>") + "</div>";
+                }
             }
             else if (l.type === 'item_check') {
                 const has = currentCharacter.value.inventory.includes(parseInt(l.item_id));
@@ -215,8 +327,63 @@ createApp({
                 }
                 addLog(`[Multi Check] Successes: ${successCount}`);
             }
+            else if (l.type === 'not_implemented') {
+                // Type 19: Just show a message and go to next (usually 0)
+                addLog("Event not implemented yet.");
+                nextId = l.next; // Should be '0'
+            }
+            else if (l.type === 'lose_companions') {
+                // Type 18
+                addLog("[Event] Lost all companions (Not fully implemented)");
+                nextId = l.next;
+            }
+            else if (l.type === 'level_check') {
+                // Type 20
+                const lvl = currentCharacter.value.level || 1;
+                const req = parseInt(l.level);
+                nextId = lvl >= req ? l.pass : l.fail;
+                addLog(`[Level Check] Level ${lvl} vs ${req}: ${lvl >= req ? 'Pass' : 'Fail'}`);
+            }
+            else if (l.type === 'stat_swap') {
+                // Type 21
+                const targetIdx = attributes.value.indexOf(l.target_attr);
+                const sourceIdx = attributes.value.indexOf(l.source_attr);
+                if (targetIdx >= 0 && sourceIdx >= 0) {
+                    currentCharacter.value.stats[targetIdx] = currentCharacter.value.stats[sourceIdx];
+                    addLog(`[Stat Swap] ${l.target_attr} became ${l.source_attr} (${currentCharacter.value.stats[targetIdx]})`);
+                }
+                nextId = l.next;
+            }
+            else if (l.type === 'random_money_check') {
+                // Type 22
+                const roll = Math.floor(Math.random() * 99) + 1;
+                const has = currentCharacter.value.money >= roll;
+                nextId = has ? l.pass : l.fail;
+                addLog(`[Shell Rand Check] Money ${currentCharacter.value.money} vs Roll ${roll}: ${has ? 'Pass' : 'Fail'}`);
+            }
+            else if (l.type === 'random_prof_change') {
+                // Type 23
+                if (classes.value.length > 0) {
+                    const rndCls = classes.value[Math.floor(Math.random() * classes.value.length)];
+                    currentCharacter.value.prof = rndCls.id;
+                    addLog(`[Prof Change] Changed profession to ${rndCls.display_name}`);
+                }
+                nextId = l.next;
+            }
+            else if (l.type === 'set_prof_clown') {
+                // Type 24
+                currentCharacter.value.prof = 0; 
+                addLog(`[Prof Change] Changed profession to Clown`);
+                nextId = l.next;
+            }
+            else if (l.type === 'winning_end') {
+                // Type 25
+                addLog("*** YOU WIN! ***");
+                gameState.value = 'WIN'; // Assuming we handle this or it just stays here
+                return;
+            }
             
-            if (nextId) goToEvent(nextId);
+            if (nextId) goToEvent(nextId, append);
             else {
                 addLog("Error: Logic event has no destination or stuck.");
                 console.error("Logic event stuck:", evt);
@@ -226,7 +393,7 @@ createApp({
         const handleOption = (opt) => {
             console.log("Option clicked:", opt);
             if (opt.next_event) {
-                goToEvent(opt.next_event);
+                goToEvent(opt.next_event, true); // Keep story feed
             }
         };
 
@@ -263,7 +430,7 @@ createApp({
         
         const debugJump = () => {
             if (debugJumpId.value) {
-                goToEvent(debugJumpId.value);
+                goToEvent(debugJumpId.value, true);
             }
         };
         
@@ -349,7 +516,8 @@ createApp({
             // Special Shells logic (game.php 910)
             if (pid == 8 || pid == 13) currentCharacter.value.money = 0;
             
-            goToEvent(startId);
+            accumulatedText.value = ""; // Clear text on start
+            goToEvent(startId, true); 
         };
 
         const addLog = (msg) => {
@@ -399,13 +567,14 @@ createApp({
 
         return {
             gameState, classes, attributes, lang, items, keywordsData,
-            currentClass, currentCharacter, currentEvent, gameLogs, hasSave,
+            currentClass, currentCharacter, currentEvent, accumulatedText, gameLogs, hasSave,
             debugMode, debugJumpId, debugAddItemSelect, debugAddKwSelect,
             t, setLang, showPreGenerated, selectClass, createRandomCharacter, changeRandomClass, randomizeStats, updateStat,
-            startGameplay, addLog, saveGame, loadGame, handleOption,
+            startGameplay, addLog, saveGame, loadGame, handleOption, goToEvent,
             // Debug methods
             debugToggle, debugAddShells, debugAddItem, debugRemoveItem,
-            debugAddKeyword, debugRemoveKeyword, debugJump, getItemName, getKwName
+            debugAddKeyword, debugRemoveKeyword, debugJump, getItemName, getKwName,
+            accumulatedText, availableChoices
         };
     }
 }).mount('#app');
