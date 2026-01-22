@@ -225,6 +225,16 @@ createApp({
         const eventTypeFilter = ref('all');
         const keywordSearch = ref('');
 
+        // Data Check State
+        const checkStatus = ref("");
+        const brokenLinks = ref([]);
+        const unreachableNodes = ref([]);
+        const ENTRY_POINTS = [
+            '200', 'Fstart', 'Dstart', 'Faunstart1', 
+            'Rstart', 'Pstart', 'Astart', 'Tstart', 
+            'Cstart', 'Ftstart', 'Catstart', 'Snow'
+        ];
+
         // Loading
         const loadData = () => {
             if (window.GAME_DATA_CLASSES) classes.value = window.GAME_DATA_CLASSES;
@@ -629,6 +639,112 @@ createApp({
             return esc(code);
         };
         
+        const findEvent = (id) => events.value.find(e => String(e.id) === String(id));
+
+        const getEventChildren = (evt) => {
+            const children = [];
+            if (!evt) return children;
+            
+            // Helper
+            const add = (id, reason) => {
+                const s = String(id).trim();
+                if (s && s !== 'undefined' && s !== 'null' && s !== "") {
+                    children.push({ id: s, reason });
+                }
+            };
+
+            // Options (Legacy)
+            if (evt.options) {
+                evt.options.forEach((opt, i) => add(opt.next_event, `Option ${i+1}`));
+            }
+
+            // Logic
+            if (evt.logic) {
+                const l = evt.logic;
+                if (l.next) add(l.next, 'Logic Next');
+                if (l.pass) add(l.pass, 'Logic Pass');
+                if (l.fail) add(l.fail, 'Logic Fail');
+                if (l.targets) l.targets.forEach(t => add(t, 'Random Target'));
+                if (l.dests) l.dests.forEach(d => add(d, 'Multi Check Dest'));
+                if (l.choices) {
+                    l.choices.forEach(c => add(c.next_event, 'Choice: ' + c.text));
+                }
+            }
+            return children;
+        };
+
+        const runDataCheck = () => {
+            checkStatus.value = "Running analysis...";
+            brokenLinks.value = [];
+            unreachableNodes.value = [];
+            
+            setTimeout(() => {
+                const reachable = new Set();
+                const queue = [...ENTRY_POINTS];
+                
+                // Add all entry points to visited immediately if they exist
+                ENTRY_POINTS.forEach(id => {
+                    const sid = String(id);
+                    // Special case: if entry point itself doesn't exist, we can't traverse from it
+                    // But we still mark it as 'reachable' in the set so we don't list it as unreachable if it were in the list?
+                    // Actually, if it's not in events list, we can't start traversal.
+                    if (findEvent(sid)) {
+                        reachable.add(sid);
+                    }
+                });
+
+                // BFS for reachability
+                let visitedCount = 0;
+                // Use a separate set for queue processing to avoid loops
+                // actually 'reachable' set is enough to prevent re-queueing
+                // But queue initialization needs to be filtered by reachable
+                const processingQueue = [...reachable]; 
+
+                while (processingQueue.length > 0) {
+                    const currId = processingQueue.shift();
+                    const evt = findEvent(currId);
+                    if (!evt) continue;
+
+                    visitedCount++;
+                    const children = getEventChildren(evt);
+                    
+                    children.forEach(child => {
+                        const childId = String(child.id);
+                        
+                        // Check for broken link
+                        // ID '0' is implicitly valid (End) even if not in events array
+                        if (!findEvent(childId) && childId !== '0') {
+                             // Check if we already recorded this broken link to avoid dups
+                             const exists = brokenLinks.value.find(b => b.sourceId === evt.id && b.targetId === childId);
+                             if (!exists) {
+                                 brokenLinks.value.push({
+                                     sourceId: evt.id,
+                                     targetId: childId,
+                                     reason: child.reason
+                                 });
+                             }
+                        } else {
+                            if (!reachable.has(childId) && childId !== '0') {
+                                reachable.add(childId);
+                                processingQueue.push(childId);
+                            }
+                        }
+                    });
+                }
+
+                // Identify Unreachable
+                events.value.forEach(evt => {
+                    const id = String(evt.id);
+                    // Don't mark ID 0 as unreachable if it exists (it's the end)
+                    if (id !== '0' && !reachable.has(id)) {
+                        unreachableNodes.value.push(evt);
+                    }
+                });
+                
+                checkStatus.value = `Analysis complete. Found ${unreachableNodes.value.length} unreachable nodes and ${brokenLinks.value.length} broken links. Scanned ${visitedCount} reachable nodes.`;
+            }, 50);
+        };
+
         const updateGraphStyle = () => {
             if (!cy) return;
             cy.style().selector('node').style('font-size', graphFontSize.value + 'px').update();
@@ -1112,6 +1228,7 @@ createApp({
             filteredLoc, filteredEvents, filteredKeywords,             referencedBy,
             graphCenterId, graphDepth, selectedEvents,
             graphFontSize, graphLineLength, updateGraphCenter,
+            checkStatus, brokenLinks, unreachableNodes, runDataCheck, findEvent,
             // methods
             editClass, addClass, deleteClass,
             editItem, addItem, deleteItem,

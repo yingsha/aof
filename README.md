@@ -8,6 +8,11 @@ Age of Fable is a classic text-based web game originally developed in PHP. This 
 
 ## Changes Log (更新日志)
 
+#### 2026-01-23 Update
+
+*   **Editor Tools**: Added "Data Issues" tab to detect unreachable story nodes and broken links, ensuring game flow integrity. (编辑器工具：添加“数据问题”选项卡以检测不可达的故事节点和断开的链接，确保游戏流程完整性。)
+*   **Editor Core**: Implemented BFS-based reachability analysis. (编辑器核心：在 `editor.js` 中实现了基于 BFS 的可达性分析。)
+
 #### 2026-01-22 Update
 
 *   **Bug Fixes & Logic Refinement**: Resolved critical logic stuck issues (e.g., `Foxwoman3`, `Cryerfree`) by fixing duplicate key handling in PHP parsing and correcting logic types. (修复了关键的逻辑卡死问题，纠正了 PHP 解析中的重复键处理和逻辑类型映射错误。)

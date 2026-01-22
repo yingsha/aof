@@ -87132,7 +87132,7 @@ window.GAME_DATA_EVENTS = [
   {
     "id": "Gladiatorslavepy1d2",
     "source_line": 6441,
-    "source_code": "'Gladiatorslavepy1d2'=> array (\"no text\",12,3,20,\"Magic\",\"Streetwise\",\"Charisma\",\"Gladiatorslavedemonfff\",\"Gladiatorslavedemonfs\",\"Gladiatorslavedemonfs\",\"Gladiatorslavedemonss\"),",
+    "source_code": "'Gladiatorslavepy1d2'=> array (\"no text\",12,3,20,\"Magic\",\"Streetwise\",\"Charisma\",\"Gladiatorslavedemonff\",\"Gladiatorslavedemonfs\",\"Gladiatorslavedemonfs\",\"Gladiatorslavedemonss\"),",
     "text_zh": "",
     "text_en": "",
     "type": 12,
@@ -87152,7 +87152,7 @@ window.GAME_DATA_EVENTS = [
         "Charisma"
       ],
       "dests": [
-        "Gladiatorslavedemonfff",
+        "Gladiatorslavedemonff",
         "Gladiatorslavedemonfs",
         "Gladiatorslavedemonfs",
         "Gladiatorslavedemonss"

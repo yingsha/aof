@@ -42,7 +42,59 @@
             <li class="nav-item"><a class="nav-link" :class="{active: activeTab === 'keywords'}" @click="activeTab = 'keywords'" href="#">Keywords</a></li>
             <li class="nav-item"><a class="nav-link" :class="{active: activeTab === 'localization'}" @click="activeTab = 'localization'" href="#">Localization</a></li>
             <li class="nav-item"><a class="nav-link" :class="{active: activeTab === 'graph'}" @click="activeTab = 'graph'; initGraph()" href="#">Graph View</a></li>
+            <li class="nav-item"><a class="nav-link" :class="{active: activeTab === 'datacheck'}" @click="activeTab = 'datacheck'; runDataCheck()" href="#">Data Check</a></li>
         </ul>
+
+        <!-- Data Check Tab -->
+        <div v-if="activeTab === 'datacheck'">
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <button class="btn btn-primary" @click="runDataCheck">Run Analysis</button>
+                    <span class="ms-2" v-if="checkStatus">{{ checkStatus }}</span>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header bg-warning text-dark">
+                            Broken Links ({{ brokenLinks.length }})
+                        </div>
+                        <div class="list-group list-group-flush" style="max-height: 500px; overflow-y: auto;">
+                            <div v-if="brokenLinks.length === 0" class="list-group-item text-muted">No broken links found.</div>
+                            <div v-for="(item, idx) in brokenLinks" :key="idx" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" @click="editEvent(findEvent(item.sourceId))">
+                                <div>
+                                    <small class="fw-bold">{{ item.sourceId }}</small> points to <span class="text-danger fw-bold">{{ item.targetId }}</span>
+                                    <div class="small text-muted">{{ item.reason }}</div>
+                                </div>
+                                <button class="btn btn-sm btn-outline-secondary" @click.stop="editEvent(findEvent(item.sourceId))">Edit Source</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header bg-secondary text-white">
+                            Unreachable Nodes ({{ unreachableNodes.length }})
+                        </div>
+                        <div class="list-group list-group-flush" style="max-height: 500px; overflow-y: auto;">
+                            <div v-if="unreachableNodes.length === 0" class="list-group-item text-muted">All nodes are reachable.</div>
+                            <div v-for="node in unreachableNodes.slice(0, 100)" :key="node.id" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" @click="editEvent(node)">
+                                <div>
+                                    <strong>{{ node.id }}</strong> <small class="text-muted">(Type {{ node.type }})</small>
+                                    <div class="text-truncate small text-muted" style="max-width: 300px;">{{ node.text_zh }}</div>
+                                </div>
+                                <button class="btn btn-sm btn-outline-secondary" @click.stop="editEvent(node)">Edit</button>
+                            </div>
+                            <div v-if="unreachableNodes.length > 100" class="list-group-item text-center text-muted">
+                                ... and {{ unreachableNodes.length - 100 }} more
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Graph Tab -->
         <div v-show="activeTab === 'graph'" style="height: 85vh;">
