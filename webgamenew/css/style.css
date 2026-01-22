@@ -25,3 +25,29 @@ body {
     font-family: monospace;
     background-color: #fefefe;
 }
+
+.game-over-text {
+    font-family: "Brush Script MT", "Comic Sans MS", cursive;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #dc3545;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    border-top: 2px solid #dc3545;
+    border-bottom: 2px solid #dc3545;
+    padding: 20px;
+}
+
+.winning-text {
+    font-family: "Brush Script MT", "Comic Sans MS", cursive;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #198754;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    border-top: 2px solid #198754;
+    border-bottom: 2px solid #198754;
+    padding: 20px;
+}

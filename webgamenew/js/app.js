@@ -1,4 +1,4 @@
-const { createApp, ref, computed, onMounted } = Vue;
+const { createApp, ref, computed, onMounted, watch, nextTick } = Vue;
 
 createApp({
     setup() {
@@ -24,6 +24,16 @@ createApp({
         });
         const currentEvent = ref(null);
         const accumulatedText = ref("");
+        
+        // Auto-scroll logic
+        watch(accumulatedText, async () => {
+            await nextTick();
+            const container = document.getElementById('story-container');
+            if (container) {
+                container.scrollTop = container.scrollHeight;
+            }
+        });
+
         const gameLogs = ref([]);
         const hasSave = ref(false);
         
@@ -126,7 +136,7 @@ createApp({
             // Update Text Display - always update text before handling logic
             const text = t(evt.text_key) || evt.text_zh;
             if (append) {
-                if (text) accumulatedText.value += "<br><br>" + text;
+                if (text) accumulatedText.value += "<p>" + text + "</p>";
             } else {
                 accumulatedText.value = text || "";
             }
@@ -140,6 +150,13 @@ createApp({
 
             // If it's an interactive event without explicit logic (e.g., old-style options),
             // its text is already set above and it will wait for user interaction via handleOption.
+
+            if (evt.type === 0) { // Standard End
+                addLog("--- GAME OVER ---");
+                accumulatedText.value += `<div class="game-over-text">Game Over</div>`;
+                // Don't exit to MENU automatically, let player read text
+                return;
+            }
         };
 
         const handleLogic = (evt, append = false) => {
@@ -157,11 +174,13 @@ createApp({
                 const passed = roll <= statVal;
                 
                 nextId = passed ? l.pass : l.fail;
-                result = `[Check] ${l.attr} (${statVal}) vs Roll ${roll}: ${passed ? 'Success' : 'Fail'}`;
+                result = `[Check] ${l.attr} Check: ${passed ? 'PASSED' : 'FAILED'} (You have ${statVal} vs Roll ${roll})`;
                 addLog(result);
 
                 // Add to story text
-                accumulatedText.value += `<br><br><div class='alert ${passed ? 'alert-success' : 'alert-danger'} py-1 mb-0'>${l.attr} Check: ${passed ? 'PASSED' : 'FAILED'} (Roll ${roll} <= ${statVal})</div>`;
+                accumulatedText.value += `<div class='alert ${passed ? 'alert-success' : 'alert-danger'} py-1 mt-2 mb-2 small'>${l.attr} Check: ${passed ? 'PASSED' : 'FAILED'} (You have ${statVal} vs Roll ${roll})</div>`;
+                goToEvent(nextId, true); // Always append for checks
+                return;
             }
             else if (l.type === 'single_link') {
                 // Type 1
@@ -201,6 +220,10 @@ createApp({
                 const targets = l.targets;
                 if (targets && targets.length > 0) {
                     nextId = targets[Math.floor(Math.random() * targets.length)];
+                }
+                if (nextId) {
+                    goToEvent(nextId, true); // Always append for random events
+                    return;
                 }
             }
             else if (l.type === 'effect') {
@@ -242,6 +265,18 @@ createApp({
                         const op = l.stat_val > 0 ? '+' : '';
                         effectMessages.push(`${l.stat_attr} ${op}${l.stat_val} (${oldVal} -> ${newVal})`);
                         addLog(`[Stat] ${l.stat_attr} ${op}${l.stat_val}`);
+                        
+                        // Check for Stamina death
+                        if (l.stat_attr === 'Stamina' && currentCharacter.value.stats[idx] < 1) {
+                            accumulatedText.value += "<div class='alert alert-danger py-1 mt-2 mb-2 small'>" + t('Loc_YouHaveDied') + "</div>";
+                            accumulatedText.value += `<div class="game-over-text">Game Over</div>`;
+                            // Don't exit automatically
+                            return; // Stop further processing
+                        } else if (currentCharacter.value.stats[idx] < 1) {
+                            // Other attributes just cap at 1
+                            currentCharacter.value.stats[idx] = 1;
+                            effectMessages.push(`${l.stat_attr} capped at 1`);
+                        }
                     }
                 }
                 if (l.money_val) {
@@ -255,24 +290,36 @@ createApp({
                 nextId = l.next;
 
                 if (effectMessages.length > 0) {
-                    accumulatedText.value += "<br><br><div class='alert alert-info py-1 mb-0'>" + effectMessages.join("<br>") + "</div>";
+                    accumulatedText.value += "<div class='alert alert-info py-1 mt-2 mb-2 small'>" + effectMessages.join("<br>") + "</div>";
+                }
+                if (nextId) {
+                    goToEvent(nextId, true);
+                    return; // Stop further processing after goToEvent
                 }
             }
             else if (l.type === 'item_check') {
                 const has = currentCharacter.value.inventory.includes(parseInt(l.item_id));
                 nextId = has ? l.pass : l.fail;
+                goToEvent(nextId, true); // Always append for checks
+                return;
             }
             else if (l.type === 'keyword_check') {
                 const has = currentCharacter.value.keywords.includes(parseInt(l.keyword_id));
                 nextId = has ? l.pass : l.fail;
+                goToEvent(nextId, true); // Always append for checks
+                return;
             }
             else if (l.type === 'prof_check') {
                 const isProf = currentCharacter.value.prof == parseInt(l.prof_id);
                 nextId = isProf ? l.pass : l.fail;
+                goToEvent(nextId, true); // Always append for checks
+                return;
             }
             else if (l.type === 'money_check') {
                 const has = currentCharacter.value.money >= parseInt(l.amount);
                 nextId = has ? l.pass : l.fail;
+                goToEvent(nextId, true); // Always append for checks
+                return;
             }
             else if (l.type === 'gain_blessing') {
                 const bName = l.blessing;
@@ -290,6 +337,8 @@ createApp({
                     }
                 }
                 nextId = l.next;
+                goToEvent(nextId, true);
+                return; // Prevent immediate goToEvent below
             }
             else if (l.type === 'blessing_check') {
                 const bName = l.blessing;
@@ -304,6 +353,8 @@ createApp({
                     console.warn(`Unknown blessing check: ${bName}, assuming fail.`);
                     nextId = l.fail;
                 }
+                goToEvent(nextId, true);
+                return; // Prevent immediate goToEvent below
             }
             else if (l.type === 'multi_check') {
                 let successCount = 0;
@@ -326,16 +377,24 @@ createApp({
                     addLog("Error: Multi check has no destinations");
                 }
                 addLog(`[Multi Check] Successes: ${successCount}`);
+                if (nextId) {
+                    goToEvent(nextId, true);
+                    return;
+                }
             }
             else if (l.type === 'not_implemented') {
                 // Type 19: Just show a message and go to next (usually 0)
                 addLog("Event not implemented yet.");
                 nextId = l.next; // Should be '0'
+                goToEvent(nextId, true); // Always append for not implemented events
+                return;
             }
             else if (l.type === 'lose_companions') {
                 // Type 18
                 addLog("[Event] Lost all companions (Not fully implemented)");
                 nextId = l.next;
+                goToEvent(nextId, true); // Always append for lose companions events
+                return;
             }
             else if (l.type === 'level_check') {
                 // Type 20
@@ -343,6 +402,8 @@ createApp({
                 const req = parseInt(l.level);
                 nextId = lvl >= req ? l.pass : l.fail;
                 addLog(`[Level Check] Level ${lvl} vs ${req}: ${lvl >= req ? 'Pass' : 'Fail'}`);
+                goToEvent(nextId, true); // Always append for level checks
+                return;
             }
             else if (l.type === 'stat_swap') {
                 // Type 21
@@ -353,6 +414,8 @@ createApp({
                     addLog(`[Stat Swap] ${l.target_attr} became ${l.source_attr} (${currentCharacter.value.stats[targetIdx]})`);
                 }
                 nextId = l.next;
+                goToEvent(nextId, true); // Always append for stat swap events
+                return;
             }
             else if (l.type === 'random_money_check') {
                 // Type 22
@@ -360,30 +423,57 @@ createApp({
                 const has = currentCharacter.value.money >= roll;
                 nextId = has ? l.pass : l.fail;
                 addLog(`[Shell Rand Check] Money ${currentCharacter.value.money} vs Roll ${roll}: ${has ? 'Pass' : 'Fail'}`);
+                goToEvent(nextId, true); // Always append for checks
+                return;
             }
             else if (l.type === 'random_prof_change') {
                 // Type 23
                 if (classes.value.length > 0) {
                     const rndCls = classes.value[Math.floor(Math.random() * classes.value.length)];
+                    const oldProfName = currentProfessionName.value;
                     currentCharacter.value.prof = rndCls.id;
+                    currentClass.value = rndCls; // Update UI class
                     addLog(`[Prof Change] Changed profession to ${rndCls.display_name}`);
+                    accumulatedText.value += `<div class='alert alert-info py-1 mt-2 mb-2 small'>Profession changed from ${oldProfName} to ${rndCls.display_name}</div>`;
                 }
                 nextId = l.next;
+                goToEvent(nextId, true); // Always append for random prof change events
+                return;
             }
             else if (l.type === 'set_prof_clown') {
                 // Type 24
+                const oldProfName = currentProfessionName.value;
                 currentCharacter.value.prof = 0; 
+                
+                // Update UI class for Clown
+                const clownCls = classes.value.find(c => c.id == 0);
+                if (clownCls) {
+                    currentClass.value = clownCls;
+                } else {
+                    // Fallback mock object for Clown if not in classes list
+                    // Assuming image is class0.jpg
+                    currentClass.value = { 
+                        id: 0, 
+                        name: 'Clown', 
+                        display_name: 'Clown', 
+                        image: 'class0',
+                        stats: currentCharacter.value.stats // Keep current stats or reset?
+                    };
+                }
+
                 addLog(`[Prof Change] Changed profession to Clown`);
+                accumulatedText.value += `<div class='alert alert-info py-1 mt-2 mb-2 small'>Profession changed from ${oldProfName} to Clown</div>`;
                 nextId = l.next;
             }
             else if (l.type === 'winning_end') {
                 // Type 25
                 addLog("*** YOU WIN! ***");
-                gameState.value = 'WIN'; // Assuming we handle this or it just stays here
+                accumulatedText.value += `<div class="winning-text">The End</div>`;
+                // Don't change gameState to WIN (which might hide text), just stay in PLAYING
                 return;
             }
             
-            if (nextId) goToEvent(nextId, append);
+            if (nextId) goToEvent(nextId, true);
             else {
                 addLog("Error: Logic event has no destination or stuck.");
                 console.error("Logic event stuck:", evt);
@@ -443,6 +533,12 @@ createApp({
             const k = keywordsData.value.find(x => x.id == id);
             return k ? k.name : `Keyword ${id}`;
         };
+
+        const currentProfessionName = computed(() => {
+            const profId = currentCharacter.value.prof;
+            const cls = classes.value.find(c => c.id == profId);
+            return cls ? cls.display_name : "Unknown";
+        });
 
         // --- Setup Logic ---
         const showPreGenerated = () => gameState.value = 'SELECT_CLASS';
@@ -516,8 +612,8 @@ createApp({
             // Special Shells logic (game.php 910)
             if (pid == 8 || pid == 13) currentCharacter.value.money = 0;
             
-            accumulatedText.value = ""; // Clear text on start
-            goToEvent(startId, true); 
+            accumulatedText.value = ""; // Clear on new game start
+            goToEvent(startId, true); // Then start with append mode
         };
 
         const addLog = (msg) => {
@@ -574,7 +670,7 @@ createApp({
             // Debug methods
             debugToggle, debugAddShells, debugAddItem, debugRemoveItem,
             debugAddKeyword, debugRemoveKeyword, debugJump, getItemName, getKwName,
-            accumulatedText, availableChoices
+            accumulatedText, availableChoices, currentProfessionName
         };
     }
 }).mount('#app');

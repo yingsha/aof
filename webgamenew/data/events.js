@@ -197,13 +197,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You've killed many people and felt nothing. But for some reason you can't stop thinking about the way the man looked at you, just before his eyes glazed over. You know that a dead man's eyes don't really show an image of the last thing he saw, but you keep wondering, what if it did? When you start to plan to dig up the body, you realise that you have lost control. Taking only a few cowrie shells, the islands' most common currency, you leave your home city and buy a berth on a ship headed for Karrakara. If there are no answers in the great city, there are no answers anywhere.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 20,
@@ -217,13 +211,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -529,13 +517,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You could probably defeat one of the dwarves, but you soon realise you have no chance against them as a group. You take several flesh wounds before beating a retreat into the darkness.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -550,13 +532,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're no match for one of the dwarves, let alone three. Within minutes you have taken several flesh wounds. You beg for mercy. The dwarves kick you a few times, and then let you run into the darkness.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -593,13 +569,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In the morning the dwarves share breakfast with you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -614,13 +584,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -784,13 +748,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You also find a finely-wrought medallion.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -805,13 +763,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "There are a few shells, but otherwise the bag is empty.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 5,
@@ -851,13 +803,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -933,13 +879,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -967,13 +907,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In the forest with no food or means to make a fire, you spend a miserable night with your back to a tree, one eye open and WEAPONNAME at the ready.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -988,13 +922,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -1088,13 +1016,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -1109,13 +1031,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -1218,13 +1134,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You reluctantly hand over the shells and custody of your boat, and head into town.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -4,
@@ -1344,13 +1254,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You sail to the swamps outside of Karrakara. Once you've found a sufficiently out-of-the-way spot, you secure your boat as best you can. The walk back is slow and unpleasant, but you forget your discomfort once you're back in the great city.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -1365,13 +1269,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -1515,13 +1413,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You reluctantly hand over the shells and custody of your boat, and head into town.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -2,
@@ -1535,13 +1427,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -1606,13 +1492,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -1627,13 +1507,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -1708,13 +1582,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You decide not to get involved. You leave the pond, followed by a tirade of abuse from the frog.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -1787,13 +1655,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The spell tells you that the frog really is a human that has been changed by magic. However it also tells you that the frog isn't entirely telling the truth.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -1929,13 +1791,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You offer to take the frog with you to try and find some way of breaking the curse without inflicting it on anyone else. The frog claims to be sorry for trying to trick you, and grateful for your help. You put it, or him, in your backpack and leave the pond.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -2096,13 +1952,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You'd heard that some humans were good. In fury and desperation you realise that this must be untrue.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -2150,13 +2000,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your goblin cloak, while well-tailored, doesn't stand up at all to stretching.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -2171,13 +2015,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Scouting",
@@ -2212,13 +2050,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The neckweasel tries valiantly to stay wrapped around your tiny neck, but soon realises that it'll smother you, and slinks sadly into the undergrowth.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -2233,13 +2065,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -2274,13 +2100,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Princess Yasmina declares that turning into a frog is just <i>typical</i> of you, and stomps off into the forest.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -2356,13 +2176,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'You have been a reasonable servant, but in this form you can be of no further use to me.' He turns and pads into the forest.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -2377,13 +2191,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -2444,13 +2252,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 18,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "lose_companions",
       "next": "69a"
@@ -2463,13 +2265,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -2558,13 +2354,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -2579,13 +2369,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -2643,13 +2427,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -2664,13 +2442,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -2731,13 +2503,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "But it leaves its mark on you. Your hands are stunted, with webbing between the fingers. You practice with your WEAPONNAME and find that at least they don't seem to work any less well.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -2959,13 +2725,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You remember the drum that Prince Dimitri gave you, which has shrunk to frog-size. You pat it as best you can with your tiny webbed feet. It barely makes a noise. However, as soon as you look up, you see Prince Dimitri grinning down at you. He begins to cast a spell, and soon you feel your bones beginning to twist and grow. Soon you're back to normal. Prince Dimitri takes the drum from you, breezily tells you that you're now even, and vaguely points out the direction you should go before he disappears into the forest.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -3000,13 +2760,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In your head, you hear the spell talking to you. 'Look - the whole point of this spell is changing you into something alien to yourself. But you're already green and inhuman. It doesn't have any symmetry or poetic justice to it. I'm going to just take a bit of your magic and change you back.' With that, you realise that you've turned back into your normal form.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -3050,13 +2804,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You notice the crown has transformed into a human-sized crown. You take it with you.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -3071,13 +2819,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -3237,13 +2979,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -3283,13 +3019,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -3304,13 +3034,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -3325,13 +3049,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -3474,13 +3192,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You aren't going to risk your life to save someone who might already be dead. You retreat from the clearing. The slugs are either unaware of you or choose to ignore you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -3725,13 +3437,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You decide you've done your best, and abandon the warrior. The slugs are either unaware of you or ignore you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -3834,13 +3540,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -3855,13 +3555,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It's raised a large red welt, but doesn't seem to have done any other damage.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -3876,13 +3570,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Her fighting technique shows far less evidence of training than you would have expected from her obviously expensive equipment. You are able to get the better of her. You notice that the Slugs do not take any role in the fight. Presumably their role is to warn her. You make as if to deliver a killing blow, then say 'I told you I was trying to help you', and run out of the clearing before she can recover. When you stop to catch your breath, you reflect that you'll be less likely to try and help someone next time.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -3897,13 +3585,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You meet the warrior's attack. Her fighting technique seems slow and clumsy. Yet when you seperate you realise that she has cut you several times and you haven't made a mark.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -3994,13 +3676,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -4240,13 +3916,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You decide to eat at a new food court. However you leave when your sandwich is found guilty of treason.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -4281,13 +3951,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your food tastes extra-delicious. The waiter explains that it's been deep-Freud. This makes it taste just like Mother used to make.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -4322,13 +3986,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A nearby cafe has become fashionable, and is patronised by the wealthy and famous. You see the famous fashion designer, Spider-Cultist Dior.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -4363,13 +4021,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A well-known holy sage has closed his monastery and opened a sandwich shop. He promises to make you one with everything.<br><br>He also asks if you want some infini-tea. But you decline. You've heard it takes forever to make.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -4404,13 +4056,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You visit a cafe that promises 'food like Great-Great-Great-Great-Great-Great-Grandmother used to make', and enjoy a bowl of primordial soup.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -4425,13 +4071,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -4465,13 +4105,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You visit a new restaurant, owned by the noted actor and hideous mutant Dustin Half-Man.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -4486,13 +4120,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend a shell on a meal and a room.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -4862,13 +4490,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -4957,13 +4579,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Owyth's room is empty, but for a note.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -4998,13 +4614,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'My Dear Friend', it reads, 'I thank you again for saving my life. In return, I give you my most precious posession. Years ago, while wandering the empty foothills near Tok, I saw what seemed to be the bastard child of a hut and a giant's suit of armour. I found inside a metal box, festooned all over with unearthly-seeming jewels, which I have never been able to prise from it. Though all agreed it must be of great value, none have been able to tell me what it is - not even the owners, if owners there be, for though I combed the area many times, I never found the hut again.'",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -5065,13 +4675,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'My Dear Friend', it reads, 'I thank you again for saving my life. In return, I give you my most precious posession. It is the fabled Pearl of Wisdom. It is said that it may be easily broken, and any who do so will find it full of the very stuff of knowledge, which they may drink. It was given to me some time ago, for much the same reasons as I now pass it on to you.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -5125,13 +4729,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find the shells in your room. Owyth's philosophy aside, you're sure that you've received poor compensation for the loss of your companion.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 7,
@@ -5183,13 +4781,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Owyth tells you vaguely that he's had some luck, and gives you a couple of shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 2,
@@ -5203,13 +4795,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You have to pay another shell to feed Owyth.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -5267,13 +4853,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Owyth tells you of his travels in the inland. He says that once he travelled to the edge of a great desert. The people who lived there told him that travellers lost in the desert sometimes met the souls of the dead. The dead would lead the virtuous to safety, but the wicked must travel with them forever.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -5418,13 +4998,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are indeed filled with a certain longing to see the desolate scene for yourself.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -5439,13 +5013,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'OK, fine. I'm going to transport you there now.' You protest, but the box begins to glow with magical energy. At once you find yourself standing on a beach. Looking inland you see two stone pyramids. Beyond that, the island seems to offer nothing but sand. The sun is setting. Too late, you realise the box's true nature. It's a terrible machine of the Ancients: a Plot Device.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -5505,13 +5073,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The noise of a crowd brings you into the street. You see a strange sight in the sky. It looks like the result if a hut and a giant suit of armour decided to have a child. As you stare open-mouthed, you hear a whistling sound, which gets louder and louder. Before you realise what's happening, something has hit you on the head.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -5526,13 +5088,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "When you recover, you look at the object. It's a box, set all over with unearthly-seeming jewels. You try to pry them off, without success. Everyone you show it to agrees it must be valuable, but no one can tell you what it is.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -5580,13 +5136,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -5614,13 +5164,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You decide to head for the only place they'll fear to follow you; the desert.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -5797,13 +5341,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "With no one else to help you, you beat the drum of Prince Dimitri. You feel a horrible sensation, as if ghostly tentacles were caressing your heart.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -5943,13 +5481,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You remember the Well of New Life you found in the forest. Could it truly give you a new life?",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -6170,13 +5702,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -6220,13 +5746,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -6241,13 +5761,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -6262,13 +5776,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -6410,13 +5918,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your smile freezes a little when you learn that you'll be sent there by official City Catapult. You thank the official and prepare to leave the city, perhaps forever.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -6658,13 +6160,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -6699,13 +6195,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You bid farewell to Owyth. He presents you with a parting gift - the few shells he's managed to save. You realise that they'll be poor compensation for the loss of your companion.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -6720,13 +6210,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 7,
@@ -6780,13 +6264,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You give the unicorn its freedom. You're only sure that it was a real unicorn when you see it gallop away.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -6801,13 +6279,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -6842,13 +6314,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You take the horse outside the city, where you let it ride away.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -6999,13 +6465,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -7248,13 +6708,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They have a great admiration for the dwarvish practice of sharing the wealth, and so your story doesn't get the sympathy you hoped for. They tell you that they're sorry, but they aren't going to help you. Enraged and desperate, you declare that they can stay with the rats and effluent in their sewer for all the use they are. You return to your room.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -7327,13 +6781,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They listen to your story. When you finish one shakes his head sadly, and remarks 'we thought you believed in what we were doing...but you're really just a con-artist aren't you?' You protest, but to no avail. Sadly, you bid them farewell forever.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -7628,13 +7076,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You quickly track her down in a seedy waterfront bar. She's happy to see you, and says that she knows of a crew who's looking for someone.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -7649,13 +7091,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wear yourself out walking up and down the docks, unsuccessfully looking for work, until at last you accept defeat.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -7670,13 +7106,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -7691,13 +7121,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're accepted into the crew of the <i>Beggar Thy Neighbour</i>, captained by the feared talking sheep, Baa-Baa Rossa. You take your sign-on bonus of five shells.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -7712,13 +7136,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 5,
@@ -7853,13 +7271,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pay a farmer who's going that way to give you a lift.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -3,
@@ -7952,13 +7364,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You keep an eye out, but no opportunity presents itself.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -8146,13 +7552,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The captain is unimpressed with your toadying. In fact he says it's embaaaaaaarrassing.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -8167,40 +7567,12 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
       "stat_val": -2,
       "next": "Karracpirloop"
-    }
-  },
-  {
-    "id": "Karracpirs2tc",
-    "source_line": 1683,
-    "source_code": "'Karracpirs2tc'=> array (\"There are few talking animals in the crew, so you find it easy to make friends with the captain.\",1,\"Karracpirs2ds1\"),",
-    "text_zh": "",
-    "text_en": "",
-    "type": 3,
-    "options": [
-      {
-        "text_zh": "掷骰检定",
-        "text_key": "Loc_RollDice",
-        "action": "check"
-      }
-    ],
-    "logic": {
-      "type": "check",
-      "attr": "Charisma",
-      "diff": 17,
-      "pass": "Karracpirs2tcs",
-      "fail": "Karracpirs2df"
     }
   },
   {
@@ -8280,13 +7652,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The captain says you make him nervous hanging around all the time, like you were planning to stab him in the back.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -8323,13 +7689,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your dainty wiles don't really work on sheep, and so your efforts are in vain.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -8383,13 +7743,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You quickly learn that the captain isn't very popular. But that doesn't mean they prefer you. You gain nothing for your trouble but a beating.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -8404,13 +7758,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -8489,7 +7837,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "With tears in their eyes, the pirates agree to mend their wicked ways. With a light heart you set a course for the open sea, and a new life.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Karracpirrebf",
@@ -8507,13 +7858,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Over the next few months you take in a vast haul of booty. The ship nearly sinks from the geegaws and trinkets the crew buys every time you hit port.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 1000,
@@ -8580,13 +7925,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -8626,13 +7965,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -8647,13 +7980,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Roguery",
@@ -8696,13 +8023,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -8717,13 +8038,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The prince looks at the crew suspiciously, but takes his money and flies off.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -100,
@@ -8737,13 +8052,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The prince takes his money.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -100,
@@ -8757,13 +8066,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Hm...I suppose one good turn deserves another. Here.' The prince gives you a small drum. 'If you're ever in trouble, play on that and I'll see what I can do!' He flies off.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -8806,13 +8109,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wait until sunset but the Prince, if that's who it was, doesn't pay you a vist. The crew is amazed at your cunning in avoiding the mighty Prince Dimitri.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -8892,13 +8189,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He accepts your surrender, and his money back.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -100,
@@ -8912,13 +8203,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He beats you up for trying to fool him, then takes his money back.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -8933,13 +8218,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -100,
@@ -9081,13 +8360,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "One day while you're sunning yourself on deck, you see see what looks like a large bird coming towards you. As it gets closer you see that it's a man on a flying carpet. He is richly dressed, and has a bird made of fire.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -9115,13 +8388,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He lands in front of you.<br><br>'I am Prince Dimitri!' he announces in a booming voice.<br><br>'And I have come to capture you single-handedly, o feared pirates!' Some of the sillier pirates cheer, then quickly try and make it sound like they were just coughing.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -9166,13 +8433,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The arrogant prince puts you all in chains, confiscates your ill-gotten loot, and sails your ship to Karrakara, where you're placed in the dungeons to await your trial. You have the wit to give a false name, so at least your pursuers will have no way of finding you.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1000,
@@ -9221,13 +8482,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Everyone looks at you, muttering that you beat Prince Dimitri. You don't doubt that your fearsome reputation will filter through many a disreputable tavern into general society.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -9242,13 +8497,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -9276,13 +8525,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Prince Dimitri snaps his fingers and the entire crew falls down in a deep sleep. He beats you severely for defying him.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -9327,13 +8570,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The prince snaps his fingers and the entire crew falls into a deep sleep.<br><br>'That's how much this crew is worth to me!' he gloats.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -9361,13 +8598,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Hmm...not a bad idea. What do you say crew?' You're a bit hurt by the huge cheer that the pirates give. However, you console yourself, at least if your pursuers track you this far they'll find Prince Dimitri instead of you.<br><br>'Hm...I suppose one good turn deserves another. Here.' The prince gives you a small drum. 'If you're ever in trouble, play on that and I'll see what I can do!'.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -9382,13 +8613,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You take your portion of the crew's wealth, and a small boat. The pirates wave you goodbye as you head to sea.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -900,
@@ -9402,13 +8627,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -9563,13 +8782,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You study the currents until you're sure you can safely slip away. Before sunrise you take a trip to the cargo hold. You help yourself to your fair share of the booty. Then you lower a boat into the water, dive after it, and sail away.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -9584,13 +8797,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -900,
@@ -9641,13 +8848,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As you planned, the current takes you to Karrakara. You have no doubt that your pursuers will have given up by now, or at most will track you to the pirate ship.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -9662,13 +8863,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -9709,13 +8904,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -9730,13 +8919,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You look for an opportunity to slip away. But none presents itself.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -9782,13 +8965,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -9869,13 +9046,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You tell the crew about the great treasure lying in wait in the desert. After much argument they agree to go after it. You dock the ship in a lawless port, and spend your entire haul on camels to ride, mules to carry the treasure, and supplies. Then you make your way through the desert, until you see the tower.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -2000,
@@ -10054,7 +9225,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Filled with a sudden burst of idealism, you address the crew on the folly of pursuing wealth. You suggest that you should find an island somewhere and settle, giving up this cutthroat life.<br><br>The pirates, perhaps sensing the unearthly nature of the place, are much moved. With tears in their eyes, they agree to mend their wicked ways. With unfilled saddle-bags, but light hearts, you head back across the desert for your waiting ship, and a new life.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Karracparg2",
@@ -10258,13 +9432,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Soon the treasure is packed and ready. You head back to the ship, laden with wealth.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 1000,
@@ -10300,7 +9468,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As you sail away, you're filled with a sudden burst of idealism. You address the crew, suggesting that you should find an island somewhere and settle, giving up this cutthroat life.<br><br>The pirates, perhaps aided by their newfound wealth, are much moved. With tears in their eyes, they agree to mend their wicked ways. With light hearts, but holds weighed down with treasure, you set sail for a new life.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Shellressf",
@@ -10322,13 +9493,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -850,
@@ -10405,13 +9570,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You defend yourself, until a stray fist knocks you to the ground and all goes dark.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -10439,13 +9598,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wake up to find yourself the only living creature in a field of corpses. The feeling in your head has abated; not as if it's gone, but as if it's satisfied with its work. Cursing your folly in leading the crew to this end, you head into the desert, leaving the treasure behind forever.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -10460,13 +9613,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -10531,13 +9678,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stay in the background, hoping the foul crew will become used to you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -10552,13 +9693,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -10573,13 +9708,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Roguery",
@@ -10594,13 +9723,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -10666,13 +9789,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your nerves are worn away by the constant danger of getting your fur wet.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -10687,13 +9804,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -10708,13 +9819,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend weeks with the pirates, improving your aaaaring and yo-ho-ho'ing abilities.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Seafaring",
@@ -10729,13 +9834,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -10814,13 +9913,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -10835,13 +9928,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The whole crew comes down with dysentry, and for a week you curse the gods that brought you here.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -10876,13 +9963,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -10927,13 +10008,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A cut across your face gives you a horrible scar, and nearly removes an eye.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -10948,13 +10023,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -10969,13 +10038,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You survive unscathed after your opponent slips and breaks their nose.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Luck",
@@ -11110,13 +10173,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You vanish into the twisting streets. You feel a bit guilty for your bloody deed. But after all it was four to one, and their spears didn't look like they were for scratching your back.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -11131,13 +10188,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Brawling",
@@ -11152,13 +10203,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -11242,13 +10287,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They agree to report that you've died, for 40 shells. Having little choice you pay this vast sum.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -40,
@@ -11262,13 +10301,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You know that they won't accept money. But they agree to take the dwarven medallion, along with your promise to never return home.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -11345,13 +10378,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The battle is fierce, and their barbed spears find your flesh more than once.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -11440,13 +10467,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Stabling costs another shell.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -11480,13 +10501,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The imp eats another shell.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -11650,13 +10665,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're tormented by a procession of ghouls and demons. Most of them are fever-dreams, but at least one of them makes off with a large number of your shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -11670,13 +10679,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're tormented by a procession of ghouls and demons. Most of them are fever-dreams, but at least one of them makes off with your shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -11703,13 +10706,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -11724,13 +10721,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -11820,13 +10811,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "When you're tired of Karrakara you're tired of life. And indeed you are. You remember the shop where courage was bought and sold. You set out to try and find it, and although you don't remember where it was you find it almost straight away. You feel as if it has found you. The creature seems literally to have not moved since you were last there, and this time doesn't have to ask what you've come for. It takes your shells and gives you one of its flowers.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -8,
@@ -11840,13 +10825,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You eat the flower as the creature indicates. And immediately you feel a sense of courage and purpose, which is no less overwhelming for the fact that you realise it's completely false. You thank the creature and leave the shop.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Heroism",
@@ -11893,13 +10872,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Life in the big city is too much for you. You obliterate yourself for as long as you can in the taverns.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -11935,13 +10908,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You eventually wake up in the cells, faced by a grinning guard who's all too happy to tell you about the brawl you started for no reason.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -11969,13 +10936,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -11990,13 +10951,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -12044,13 +10999,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Poverty and misery combine to sap your will to live.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -12147,13 +11096,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "That night your sleep is filled with nightmares, in which you try and walk through the city - but everyone can somehow see that you're a murderer. You jerk awake several times an hour, until in the morning you are soaked in sweat and feel more exhausted than when you lay down. You are unsure whether you're being haunted, or are simply racked with guilt. However you know that you must somehow atone for your crime, or it will kill you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -12168,13 +11111,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -12457,13 +11394,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "With a cry of rage you fall on the foul creatures. Your WEAPONNAME sings as it swings through the air. Their knives sting you like wasps, but they retreat again and again. At last one says 'very well!' - and then you wake up.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -12514,13 +11445,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -12535,13 +11460,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -12556,13 +11475,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -12577,13 +11490,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -12611,13 +11518,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find yourself on the floor of your room. Your body is covered in scratches, and your blankets are stained with blood.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -12679,13 +11580,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Unable to get back to sleep, you think about your crime. You realise that you feel no guilt.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -12700,13 +11595,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -12721,13 +11610,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -12787,13 +11670,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Looking at yourself in the mirror, you're overjoyed to see that the 'tails' on your head have stopped moving. You must admit that now they're still they actually do look good.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -12808,13 +11685,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -12874,13 +11745,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Looking at yourself in the mirror, you're overjoyed to see that your hair has grown out, and you've basically returned to normal.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -12895,13 +11760,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -12996,13 +11855,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In an idle moment you remember something about your brief journey into the sewers. You had the strong feeling that you weren't alone - that, indeed, there were several people looking at you from the shadows. It wasn't frightening - in fact it was more like they were scared of you - and unlike many things felt in shadow it hasn't faded away in daylight.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -13017,13 +11870,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -13038,13 +11885,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -13120,13 +11961,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -13183,13 +12018,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your knowledge of healing allows you to clean and dress the wound in your shoulder.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -13225,13 +12054,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -13246,13 +12069,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -13287,13 +12104,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The wound in your shoulder flares up, and causes you an hour of agony. When it dies down you realise that you'll have to do something about it soon.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -13386,13 +12197,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -13440,13 +12245,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You hand over the bag of shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -100,
@@ -13460,13 +12259,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Thank you! I knew you'd keep it safe for me!' He turns to leave. 'Hm. I suppose one good turn deserves another. Here.' He gives you a small drum. 'If you're ever in trouble, play on that and I'll see what I can do!'. And with that he leaves.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -13481,13 +12274,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The porter asks you breathlessly whether that was really <i>the</i> Prince Dimitri. The porter looks at you in a strange way, and you realise that some of the Prince's glamour has rubbed off on you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -13502,13 +12289,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -13620,14 +12401,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Karradimitrishells",
       "fail": "Karradimitrinoshells"
     }
@@ -13687,14 +12463,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Karradimitriall",
       "fail": "Karradimitriangry"
     }
@@ -13706,14 +12477,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Curse and damn you for a useless thief!' he cries.",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Karradimitriangry1",
       "fail": "Karradimitribroke"
     }
@@ -13767,13 +12533,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your insides start to feel hot. Within seconds they feel like they're on fire. You begin to sweat profusely, and writhe in agony on your hammock.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -13842,13 +12602,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Well, just give me what you have and we'll call it even.' You hand over your shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -100,
@@ -14002,13 +12756,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're shocked to notice that the red flower you picked hasn't wilted at all.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -14085,13 +12833,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -14106,13 +12848,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -14187,13 +12923,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Owyth has had enough. He ostentatiously turns away from you and hops away with a surprising amount of dignity.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -14208,13 +12938,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -14317,13 +13041,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You manage to track down a magician's apprentice who needs shells quickly. For a small fee, he agrees to do some research for you.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -3,
@@ -14337,13 +13055,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -14455,13 +13167,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You think that the sinister owner of the courage shop may be able to help you. Although you don't really want to go, you find the shop again and explain what you want. The creature tells you that it will help you, for the price you both know. You manage to stand still as the creature extracts your courage from you, by biting your arm and sucking out your blood.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -14560,13 +13266,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She's as good as her word. You accompany her to her hovel where she mixes the foul-smelling brew, and coats you and everything you own in it. You find it easy enough to sneak to the catapult in the dead of night - for who, after all, would willingly go there? It takes an hour to prime the infernal device. Finally you climb in. She says goodbye, and with a sickening lurch you hurtle into the sky. You scream in terror as you fly through space, landing neatly on a great bridge in the sky, just as you were told. You see a building in the distance, which you assume is Zareth's house.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -14581,13 +13281,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -14628,13 +13322,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Janooth is a giant bird, which flies, never landing, over the inland wilderness. It's said that if you fall beneath the shadow of Janooth, you can make a wish and have it come true - but that you must do so before the shadow passes away from you. Like many stories of the interior it's unclear how much of it, if any, is true.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -14674,13 +13362,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -14695,13 +13377,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Owyth is outraged. He hops away, swearing violently at you as he goes.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -14716,13 +13392,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -14737,13 +13407,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -14758,13 +13422,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stop at a town which is said to be close to Janooth.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -14874,13 +13532,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The wise-woman tells you that Janooth is indeed real, and is even able to give you slightly vague directions as to where it can be found.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -15154,13 +13806,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -3,
@@ -15174,13 +13820,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Luck",
@@ -15259,13 +13899,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -15396,13 +14030,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You swear under your breath, and hurry as fast as you can.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -15708,13 +14336,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -15729,13 +14351,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The griffin knocks you and your mount to the ground. You leap up, WEAPONNAME at the ready, to see the griffin finishing the beast off. It begins to feed.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -15798,13 +14414,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The griffin sinks its claws into you, and almost gets its teeth into your neck before you cut its throat.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -15932,13 +14542,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The journey turns out to be longer and harder than it sounded, but eventually you arrive in a tiny hamlet.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -15953,13 +14557,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The tiny village is called Waterhalf. The people seem to be in awe of a visitor from the city, let alone Owyth. They tell you that Janooth does indeed fly near to their village, and standing under his shadow does grant wishes - with various complicated rules about what can and can't be wished for. It seems that the great bird follows a regular path each year. Alas, it won't appear here for many months. They tell you that you're welcome to stay and wait, or they'll take care of Owyth for you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -16020,13 +14618,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -16104,13 +14696,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are greatly fortunate. You find a young woman and her father who are abandoning their failed farm and heading off to Karrakara. They tell you you can have your pick of their horses.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -16531,13 +15117,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -16551,13 +15131,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -6,
@@ -16571,13 +15145,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The horse seems to be of middling quality.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -16592,13 +15160,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -12,
@@ -16612,13 +15174,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The unicorn, is a sulky, silent beast. You've heard of people fashioning fake 'horns' for normal horses, but you can't really tell if it's genuine or not.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -16687,13 +15243,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -16808,13 +15358,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -16902,13 +15446,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "No one else is willing and able to guide you. But an old woman tells you her Unnerving Beast knows the way. This riding-beast is so named because its face is almost human.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -17026,13 +15564,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Riding this creature is indeed nerve-wracking. It frequently uses its owl-like neck to turn around and look at you, with what you swear is a lofty sneer on its face. Finally you arrive. The Unnerving Beast gives a strangely human giggle, and pads away.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -17047,13 +15579,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find a young man who says it's not far, and offers to take you there for free.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -17182,13 +15708,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He's too strong for you. You think you might die here, when the man seems to panic. He grabs a handful of your shells and runs off, leaving you bleeding in the road.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -17203,13 +15723,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -6,
@@ -17262,13 +15776,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -17283,13 +15791,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -17405,13 +15907,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -17426,13 +15922,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -17530,13 +16020,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -17551,13 +16035,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The road takes you through a small, dark wood.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -17617,13 +16095,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -17666,13 +16138,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A few weeks after you arrive the village learns that one of their number has gotten into 'some trouble' in the city, and needs to pay 'some men'.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -17686,13 +16152,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Aside from a few curses that need to be lifted, there is mercifully little demand for your money.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -3,
@@ -17726,13 +16186,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "On the way back, you reflect on your theoretical sympathy with the down-trodden peasantry.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -17767,13 +16221,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "On the way back, you reflect on your theoretical belief in law and the solid traditions of the peasantry.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -17788,13 +16236,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -17891,13 +16333,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Derna pats your shoulder and says that he never really doubted you. He says the shells will go into the common treasury.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1000,
@@ -17936,13 +16372,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You admit that the shells are yours. After a short discussion the villagers decide to punish you by keeping the shells, and making you leave the village.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1000,
@@ -17989,13 +16419,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "But you are unable to become a murderer a second time. You run from the circle. The villagers don't try and stop you.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1000,
@@ -18009,13 +16433,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 18,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "lose_companions",
       "next": "Janoothleave1"
@@ -18069,13 +16487,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You do your best, but are no match for the woman. She wounds you several times before you have to admit defeat. You are exiled from the village, without your shells.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -18090,13 +16502,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1000,
@@ -18110,13 +16516,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are almost evenly matched, and both of you take several minor cuts.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -18131,13 +16531,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "But in the end you deliver a killing blow. You stare at the dead eyes of the woman who died so that your lie wouldn't be found out.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -18191,13 +16585,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stay with the villagers for several months. You take to their slow, natural life much more easily than you thought you would.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -18212,13 +16600,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -18233,13 +16615,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Scouting",
@@ -18292,13 +16668,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -18346,13 +16716,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He seems dazed and sick, but he thanks you and presents you with his crown, which is now normal-sized.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -18387,13 +16751,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He gives you ten shells, which he says isn't much but is all he has.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -18407,13 +16765,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He gives you a black pearl, which he says is said to be valuable, although he has no idea why.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -18472,13 +16824,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stay in the village for a short time while Owyth recovers. Eventually he claims that he's fit to travel, though not up to fighting yet. Although you're not sure whether he really is, you agree to leave with him.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -18674,13 +17020,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It shatters with a sound like music heard in a dream, and you drink the liquid inside.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -18695,13 +17035,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -18716,13 +17050,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -18737,13 +17065,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Healing",
@@ -18758,13 +17080,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Scouting",
@@ -18779,13 +17095,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Seafaring",
@@ -18906,13 +17216,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your ability to see in the dark has the advantage that you can see where you're going, but the disadvantage that you can see where you're going. You almost faint from the horror you're wading in.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -18981,13 +17285,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -19077,13 +17375,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "To your joy, your wings unfurl and you rise into the air, out of the water and the grasp of that which lurks under the surface. The pure light of Faerie fills the dank sewer, and the thing cringes from it as if ashamed, and is gone. Slowly the light fades and you fall gently back into the vileness. But you now know that, while cast out, you're not abandoned; you may yet return.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -19098,13 +17390,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You try and run, to no avail. Your legs are bound by living ropes, and you're dragged under the water.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -19189,13 +17475,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -19264,13 +17544,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -19315,13 +17589,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -19416,13 +17684,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -19496,13 +17758,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Hours later the sewer system turns to cave tunnels, the cave tunnels to a ruined temple, and at last you emerge from the ruined temple into an empty backstreet.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -19517,13 +17773,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -19538,13 +17788,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -19559,13 +17803,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -19671,13 +17909,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You eventually find an officer of the government ready to listen to your story - an old wizard with hard, ageless eyes. He thanks you, and gives you a pouch full of shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 20,
@@ -19691,13 +17923,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -19725,13 +17951,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "To your surprise, the voices seem to be having an animated, intellectual discussion about the theories of the well-known rebel preacher, the gnome Chomsky. The sewers echo eerily with heated political discussion, and the air whirls with clove-scented smoke as you creep closer. You see a small group of humans, mostly young, sitting on a square of stone which is raised above the water level of the sewers, like an island in a river. They're sitting around a brazier, which provides a dim light, the clove smoke, and presumably some heat.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -19809,13 +18029,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Good people' she says, 'things will never go well so long as goods be not in common, and so long as there be peasants and gentlemen. By what right are they whom we call lords greater folk than we? On what grounds have they deserved it? Why do they hold us in serfage? If we all were made by the same gods, how can they say or prove that they are better than we, if it be not that they make us gain for them by our toil what they spend in their pride? They are clothed in velvet and warm in their furs and their ermines, while we are covered with rags. They have wine and spices and fir bread; and we oat-cake and straw, and water to drink. They have leisure and fine houses; we have pain and labour, the rain and the wind in the fields. And yet it is of us and of our toil that these men hold their state.'",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -19830,13 +18044,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -19881,13 +18089,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your eyes are watering from the smoke and sewer vapours already. However it's just possible that there's a tear in there somewhere. Although both you and the young woman are physically in a sewer, it seems to you that morally you are on very different levels.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -19902,13 +18104,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Anger wells up within you. Their ideas sound fine in theory, but you can well imagine the chaos and violence that would follow an attempt to put them into practice. It makes you want to cut their heads off!",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -20181,13 +18377,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You desperately strike out at enemies you can't see, with more frenzy than skill. Their blades find your skin a few times, but finally you hear them retreat into the tunnels.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -20248,13 +18438,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You step out of the shadows and greet them. They're frozen with shock. You calmly announce that you believe they're planning to overthrow the government. Their jaws drop as one, like puppets moved by the same puppeteer. You reflect on the power of a good entrace and calm demeanour.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -20324,13 +18508,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -20413,13 +18591,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You can feel your memory of the people in the sewers dissolving. You desperately try to bring it back. Then you realise that it was only a daydream, and there's nothing to be found here.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -20467,13 +18639,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You've only taken a couple of steps when you feel something ripping your arm, like a cat's claw but far larger and more painful. You look down and see a small arrow, almost a toy, in your arm.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -21120,13 +19286,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Reluctantly you say that you do know Billy, but you're hardly close friends, and in fact you have some doubts about his sanity. Billy screams and accuses you of every crime under the sun.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -21163,13 +19323,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "One of the rebels tells Billy to pipe down. She thanks you for your honesty, and says that they're aware of Billy's problems, but he has a good heart.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -21214,13 +19368,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -21235,13 +19383,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The ceremony you enter into is secret, and not one that we'll describe here. But at the end of it, you're a member of the group. They tell you of their founder Bill Posters (who has unfortunately been prosecuted). Then everyone drinks a cup of herbal tea. They explain that proper tea is theft.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -21376,13 +19518,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -21443,13 +19579,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -21464,13 +19594,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -21533,13 +19657,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -21599,13 +19717,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel a rush of guilt for taking shells from those who, in theory, you regard as villains.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -21620,13 +19732,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 15,
@@ -21640,13 +19746,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -21681,13 +19781,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You resolve that this is one thing the nobility can't have just by snapping their fingers.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -21765,13 +19859,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -21811,13 +19899,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 8,
@@ -21831,13 +19913,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -21852,13 +19928,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -21873,13 +19943,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -21936,13 +20000,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It seems that most people in Karrakara who need a horse already have one. There are a few rich enough to buy a horse they don't need, but they want something more fashionable like a zebra, a giant turtle, or a rickshaw pulled by an animated skeleton. You wear your boots out in a vain search for a buyer.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -22002,13 +20060,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 5,
@@ -22022,13 +20074,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -22065,13 +20111,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He is outraged that you refused his help. He tells you that you can rot in hell next time you need his help.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -22124,13 +20164,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You take the horse just outside the city walls, where you let it go. It gallops off without delay.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -22145,13 +20179,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -22206,13 +20234,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -22273,13 +20295,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -22294,13 +20310,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -22315,13 +20325,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wearily lead the unicorn, or false unicorn, around the cobbled steets, looking for a buyer.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -22366,13 +20370,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -22387,13 +20385,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 15,
@@ -22407,13 +20399,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You hand over the unicorn and go on your merry way.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -22428,13 +20414,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The sorcerer looks like his dog just died, but tells you he wouldn't sell a unicorn either.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -22496,13 +20476,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -22602,13 +20576,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -22622,13 +20590,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 4,
@@ -22642,13 +20604,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -22663,13 +20619,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You take the beast just outside the city walls, where you let it go. It gallops off without delay. For a few seconds as you watch it, you're sure it was a real unicorn. You think you've just thrown away a lot of cowrie shells, but you feel like you did the right thing.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -22684,13 +20634,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -23228,13 +21172,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -23289,13 +21227,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -23335,13 +21267,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -23483,13 +21409,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Strange magics leap from the woman's fingers, and dig into your skin like cats' claws. Bleeding from a dozen points, you turn and run.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -23571,13 +21491,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At the sight of so many cats, you're unable to help yourself. You open your jaws wide and gobble one down. It's delicious, but you feel shame under the cats' contemptuous stares.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -23592,13 +21506,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -23660,13 +21568,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You decide to name it Piteous Mew, in honour of how you found it.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -23681,13 +21583,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Unbeknownst to you, those who decide such things have decreed that carrying a cat is the very essence of fashion.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -23715,13 +21611,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stalk off, still fuming with indignation.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -23749,13 +21639,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You walk away, with the foul noise now sounding like a rebuke.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -23790,13 +21674,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pass a street singer, singing the famous ballad 'The Crows Call My Name' by the poet Caaaaaw. Personally you prefer the farmer-poet Noel Cowherd.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -23831,13 +21709,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Everyone on the streets is talking about the mysterious playwright who arrived in town promising to set the stage on fire. Sadly, on the opening night of his first play it turned out that he meant it literally. Opinion is divided over whether anyone has the right to yell 'theatre' in a crowded fire.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -24100,13 +21972,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You cast a druidic charm.<br><br>'I'm not the druid you're looking for!' you cry. Hypnotised, they agree that you can go about your business.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -24121,13 +21987,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As they're armed, you think it's best to pay them.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -15,
@@ -24141,13 +22001,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -24244,13 +22098,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -24338,13 +22186,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -24445,13 +22287,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The priestess tells you that Daba forgives all sins. But her grim demeanour gives you no confidence. You slink out of the temple feeling guiltier than when you came in.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -24466,13 +22302,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The priestess tells you that Daba forgives your sins. You leave the temple feeling as if you've left a burden of guilt behind.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -24520,13 +22350,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The priestess says that your sins are obviously outweighed by your courage. She tells you that many of the Amazons have abandoned Daba and taken up the worship of Su-Averna. She says that a priest of Averna visited them, and the Amazons asked him whether Averna would beat Daba in a fight. The priest answered that it was a childish and irrelevant question, and so they beat him and sent him away. Next year another priest came, and the Amazons asked him the same question. He declared that Averna was a goddess of peace and harmony. He, too, was beaten and sent away.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -24592,13 +22416,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -24613,13 +22431,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -24634,13 +22446,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -24655,13 +22461,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your smile freezes a little when you learn that you'll be sent there by giant catapult. You thank the priestess and prepare to leave the city, perhaps forever.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -24696,13 +22496,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -24762,13 +22556,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The street never sleeps; and the pinch-faced touts and gamblers look like they don't either.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -24823,13 +22611,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -24869,13 +22651,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You see the street gamblers who say you owe them money. They're all drunk, and their pockets bulge with shells. They pat you on the back and tell you not to worry about your debt. A smirking, shark-eyed tout welcomes them into a gambling hall.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -24890,13 +22666,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You see the street gamblers who say you owe them money. They recognise you, and you see their knives. But they wave your words away.<br><br>'Fifteen shells isn't gonna help us now.' one says. They stare at you with desperate eyes. A smirking, shark-eyed tout gestures them into a gambling hall. They enter, stumbling like men going to execution. Somehow you know that you aren't going to see them again.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -24911,13 +22681,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -24932,13 +22696,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -25023,13 +22781,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They have the look of desperate men. They say that you owe them twenty shells, not fifteen. Seeing their sharp knives, you have no choice but to pay.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -20,
@@ -25043,13 +22795,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They have the look of desperate men. They demand all your shells. Seeing their sharp knives, you have no choice but to pay.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -20,
@@ -25063,13 +22809,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A smirking, shark-eyed tout gestures them into a gambling hall and they enter, stumbling like men going to execution. Somehow you know that you aren't going to see them again.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -25157,13 +22897,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -25238,13 +22972,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You scream and run, not stopping until you get home. When you calm down you start to think that it was probably just someone who looked like her. But you know you're not going back to find out.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -25259,13 +22987,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -25280,13 +23002,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -25301,13 +23017,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After a second you realise that it must be someone who looks a lot like her. Nonetheless you're quite shaken, and you decide to move on.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -25451,13 +23161,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel like you're winning, but your victories are like drinking salt water, leaving you somehow poorer than before. You walk away still wondering what happened.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -25484,13 +23188,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You seem to have the golden touch, picking up shell after shell.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 8,
@@ -25504,13 +23202,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You seem to have the golden touch, picking up shell after shell.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 15,
@@ -25571,13 +23263,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -25592,13 +23278,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -25613,13 +23293,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -25654,13 +23328,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -25725,13 +23393,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A grinning, wide-eyed man with a pair of dice tattooed on his forehead notices you. He throws you a couple of shells and tells you to stop looking so miserable. You hurry away before he changes his mind.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 2,
@@ -25765,13 +23427,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -25871,13 +23527,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -25940,13 +23590,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -26074,13 +23718,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -26095,13 +23733,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -26129,13 +23761,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find yourself at the far end of the street, in front of a huge, dark building. Like the current of a river, the street seems to have carried you here. There are less people around, and they look more desperate.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -26195,13 +23821,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -26216,13 +23836,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel that the imp might be right. Like one wading upriver, you turn around and leave Dead Eye Street forever.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -26237,13 +23851,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -26258,13 +23866,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -26334,13 +23936,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He instantly crumples, cringing so convincingly that you almost feel sorry for him.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -26420,13 +24016,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You run until you can taste blood in your mouth, leaving the street of gamblers behind you forever. When you stop running, you start trembling like grass in the wind as you think of how close you came to death.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -26441,13 +24031,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -26462,13 +24046,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Healing",
@@ -26483,13 +24061,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Duelling",
@@ -26504,13 +24076,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Brawling",
@@ -26525,13 +24091,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Roguery",
@@ -26546,13 +24106,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -26567,13 +24121,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -26619,13 +24167,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "His knife slices across your face.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -26752,13 +24294,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -26799,13 +24335,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -26890,13 +24420,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -26911,13 +24435,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -26932,13 +24450,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The gamblers are all eager to talk. But they all want to talk about gambling. They tell you how their luck's changing and the big win's coming. What they say makes a lot of sense.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -27013,13 +24525,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The workers are friendly and happy to talk, until they see you've got no money.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -27034,13 +24540,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -27055,13 +24555,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The workers are friendly and happy to talk, as long as you keep handing over shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -27075,13 +24569,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -27096,13 +24584,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find an empty table, and exchange an idle greeting with the woman there. She bares her teeth, and hisses at you. The hateful sound freezes your blood. You look at her face and realise that it's the witch whose cat-piano you destroyed!",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -27117,13 +24599,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -27151,13 +24627,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find an empty table, and exchange idle banter with the woman there; a young elf who looks strangely familiar. She tells you about how she's going to leave here soon, to work in an inn called Serene Dreams. You start to talk about how you've been to Serene Dreams. But then you realise where you've seen her before; on stage at Serene Dreams. For an instant the solid walls of time and space become clear, leaving you like one who walks on solid ground, then suddenly finds themselves falling into an infinite abyss.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -27530,13 +25000,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You play. At first you win. Then you lose. Then you lose more trying to win it back. Finally he takes the last of your shells, giggling in triumph. Two bouncers drag you to the doorway and throw you into the street, swearing at you for having no more money.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1000,
@@ -27550,13 +25014,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -27571,14 +25029,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You play. In only a few minutes, the last of your shells are gone.",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Deadeyemainefp0",
       "fail": "Deadeyemainefa"
     }
@@ -27590,13 +25043,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Two bouncers drag you into an alley behind the hall and beat you up, swearing at you for having no more money.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1000,
@@ -27610,13 +25057,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -27631,13 +25072,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -27745,13 +25180,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A drunken gambler tells you to cheer up, and tosses you a couple of shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 2,
@@ -27786,13 +25215,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You hang around for hours, feeling more and more sick and tired. Nothing comes your way but condescending sniggers from the silk-dressed thugs that stand in the doorway of every gambling hall.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -27807,13 +25230,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You hang around the cold and busy street for hours, gaining nothing but contemptuous sniggers from the silk-dressed thugs that stand in the doorway of every gambling hall.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -27862,13 +25279,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find a man lying in the gutter, dead to the world. You help yourself to his shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 4,
@@ -27882,13 +25293,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find two sailors, shouting insults and punching each other until blood flows. You pick up a few shells that drop from their pockets.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 4,
@@ -27902,13 +25307,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -27936,13 +25335,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -27987,13 +25380,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -28030,13 +25417,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The man isn't really prepared to be heckled back. He withers under the chill wind of your rhetoric. Eventually he mumbles that you probably do have courage. You walk off, feeling very proud of yourself.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -28051,13 +25432,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -28072,13 +25447,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The man's patter takes on an ugly tone as you argue with him. Yet instead of walking away in disgust, you feel compelled to keep arguing. After a while, you feel like you really do lack courage. You slink off like a beaten dog.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -28093,13 +25462,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -28149,13 +25512,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "But you manage to stay in the room until the coals finally run out, and the place begins to cool down. The attendant has you enter an icy-cold bath, and you get your clothes back and leave. You really do feel like some of the evil has been sweated out of you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -28170,13 +25527,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "But the heat is too much. You have the attendant give you your clothes back and stumble into the street. You feel as if your life's blood, not sweat, had poured out of you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -28191,13 +25542,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Brawling",
@@ -28212,13 +25557,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Duelling",
@@ -28233,13 +25572,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -28267,13 +25600,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -28360,13 +25687,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You chat to the men as you play. One tells you of his adventures on Dead Eye Street, the street of gamblers. An evil place, he calls it. He says he once saw someone bet their life, and drop dead after losing the bet. He whispers that he wishes someone would burn it down.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -28519,13 +25840,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -3,
@@ -28539,13 +25854,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -28559,13 +25868,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -8,
@@ -28579,13 +25882,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -12,
@@ -28645,13 +25942,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "When you get up, you're fifteen shells poorer.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -15,
@@ -28963,13 +26254,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The man gives you the details. You wonder how you got into this nightmare. You feel like you're screaming, inside your head where no one can hear. And yet, one part of your mind coldly takes in everything he says.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -28984,13 +26269,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -29027,13 +26306,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -29068,13 +26341,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It doesn't sound like they're interested in hearing what you have to say, so you hand over the shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -15,
@@ -29088,13 +26355,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -29332,13 +26593,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -29352,13 +26607,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -29372,13 +26621,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -15,
@@ -29418,14 +26661,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Gamblerswinsma1",
       "fail": "Gamblerswin3"
     }
@@ -29437,14 +26675,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Gamblerswin9",
       "fail": "Gamblerswin6"
     }
@@ -29456,14 +26689,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Gamblerswinmed1",
       "fail": "Gamblerswin3"
     }
@@ -29475,14 +26703,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Gamblerswin12",
       "fail": "Gamblerswin6"
     }
@@ -29494,14 +26717,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Gamblerswinbig1",
       "fail": "Gamblerswin6"
     }
@@ -29513,14 +26731,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Gamblerswin12",
       "fail": "Gamblerswin9"
     }
@@ -29532,13 +26745,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After a flurry of hands, you're three shells richer.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 3,
@@ -29552,13 +26759,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After a flurry of hands, you're six shells richer.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 6,
@@ -29572,13 +26773,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After a flurry of hands, you're nine shells richer.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 9,
@@ -29592,13 +26787,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After a flurry of hands, you're twelve shells richer.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 12,
@@ -29625,13 +26814,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -29824,13 +27007,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Its dagger pokes your flesh again and again, like a sewing needle through cloth.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -29858,13 +27035,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wish her well in her quest, and walk on.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -30204,13 +27375,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The frog tells you not to worry, and thanks you for looking out for a stranger. It heaps praise on your good nature and courage, each honeyed word lacerating your guilty heart.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -30238,13 +27403,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You tell her about Janooth. She is very grateful, and resolves to set off at once. You silently congratulate yourself on talking your way out of danger...albeit by lying and sending the victim of your lies into danger.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -30259,13 +27418,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -30280,13 +27433,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -30336,13 +27483,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The apprentice reluctantly agrees to help her, but angrily tells you never to darken his door with your problems again.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -30357,13 +27498,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The apprentice is furious with you for interrupting his work. He angrily tells you to go, and never come again.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -30426,13 +27561,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature's absurd flesh is weak, but its spirit is more than willing. In a frenzy, it hits you with the pommel of its dagger until you can't stand.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -30551,13 +27680,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It kicks you a few times, then tells you you're not worth taking revenge on.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -30594,13 +27717,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You angrily reject this slur on your honour.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -30645,13 +27762,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -30666,13 +27777,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You notice that a crowd has gathered. None of them, not even people you know, will look you in the eye.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -30802,13 +27907,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You cast a druidic charm.<br><br>'I'm not the druid you're looking for!' you cry. Hypnotised, the frog agrees that you can go about your business.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -30863,13 +27962,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Well, there's no doubt about it. You are indeed a cat.' You go on your way with an utter smugness, that should be revolting but is somehow adorable.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -30884,13 +27977,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The doctor looks at Piteous Mew.<br><br>'Yes, no doubt about it. That's a cat all right'. Greatly relived, you go on your way.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -30918,13 +28005,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Well, it was very lucky you came to us. The test showed that you don't have a cat. Here you are - it's named Piteous Mew.'",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -30939,13 +28020,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -30960,13 +28035,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -30994,13 +28063,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -31036,13 +28099,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'No errors. Readability statistics. Average Sigils per Incantation: ten.' the gnome rattles off a list of numbers. Confident in your status as a mighty wizard, you leave.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -31057,13 +28114,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'You used the Dread Name of Knowing, instead of the Dread Syllable of Knowing. Ignore once? Ignore all? Change? Change all?' he barks at you. In the end you have corrected many of your spells.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -31091,13 +28142,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -31147,13 +28192,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You join the queue, and eventually it's your turn to pay and go in.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -2,
@@ -31167,13 +28206,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Inside, a seal basks on a rock. It spends half an hour telling you that you're absolutely right, you can do it, and you should go for it right now.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -31188,13 +28221,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -31234,13 +28261,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stand outside the tent and deliver a speech denouncing those who give meaningless slogans instead of real help.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -31277,13 +28298,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The crowd listens for a while, but returns to their line. Finally you walk off, thinking that you'll never understand people.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -31298,13 +28313,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The crowd listens for a while, first skeptically, but eventually roaring with approval.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -31407,13 +28416,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -31473,13 +28476,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You leave, with the guilty knowledge that the rebel whose preaching so inspired you wouldn't have stayed silent.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -31516,13 +28513,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You leave, with a few guilty looks over your shoulder at the people lining up for their false hope.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -31537,13 +28528,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -31630,13 +28615,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She pays you and you sit down.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 4,
@@ -31650,13 +28629,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She holds up her hand, revealing long, sharp fingernails which she uses to clip your hair. She holds up a mirror. You are horrified at the stunted, thin bristles which sprout from your head, like the lawn of a palace, once luxuriant but now blighted by the sun.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -31671,13 +28644,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -31732,13 +28699,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Any human would still describe you as long of hair and beard. But in the mirror you see a dwarfen male who has consented to the mutilation of himself, and cut his very hair. You feel like wisdom, age and experience have all fallen beneath the witches' blades.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -31753,13 +28714,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The face that looks back at you is sickeningly familiar. You see, not an accomplished and worldly courtesan, but a nervous boy in makeup. It is as if the witch has hideously fulfilled that lying promise of all who sell beauty - and taken away twenty years.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -31787,13 +28742,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You make your way back to the shop. The brightly-clad woman smiles at you. 'So...the little mouse was not so clever after all hmm? You have returned - returned to the trap, hoping to find sustenance, and finding only YOUR DOO...ahem, awesome, welcome back!'",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -31808,13 +28757,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Well, come back if you change your mind'.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -31876,13 +28819,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Fear grips your heart - what does she know about what people will say?",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -31922,13 +28859,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You smirk at her feeble ploy.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -31943,13 +28874,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pay her and sit down.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -31963,13 +28888,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She calls out 'Felix, can you bring some hair extensions?'. Felix, a small man with darting eyes and a long, thin, mustache, brings out a handful of thick strands of hair. They writhe in his hand like the tails of rats. The bright woman weaves them into your hair. She holds up a mirror. 'They'll look great once they stop moving' she says. Horrified at the nest of squirming, wriggling things, as if rats had burrowed into your head and become trapped, you leave the shop.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -31984,13 +28903,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -32065,13 +28978,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Although you hate to ignore his distress, you know that some gangs use children to snare the unwary, leading well-meaning adults into an out-of-the-way place where they can be robbed.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -32086,13 +28993,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -32227,13 +29128,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He looks at you as a prisoner looks at a door in his cell which he didn't even know was there as it swings open. He wipes his eyes, nose, and forehead, and thanking you sets off at a brisk pace.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -32343,13 +29238,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -32399,13 +29288,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You make your way to the nearest public baths, where you drown yourself and your clothes in every scent and soap available.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -2,
@@ -32419,13 +29302,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You make your way back to your room, where you wash yourself and your clothes as best you can. You feel like the sewer has somehow branded you, so that you're going to be able to smell it on yourself whether it's really there or not.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -32440,13 +29317,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Although it's rather like being trapped in some great beast's intestines, your search is at least brief. You find the key and return it to the grateful child.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -32461,13 +29332,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -32495,14 +29360,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Childhelpf3",
       "fail": "Childhelpf4"
     }
@@ -32514,13 +29374,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As you wander the city you are accosted by a wide-eyed, staring goblin.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -32643,13 +29497,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You give him a couple of shells. He bows his head and says 'thank you.'",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -2,
@@ -32663,14 +29511,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Madgobgivef",
       "fail": "Madgobgives"
     }
@@ -32682,14 +29525,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Madgobgiveff",
       "fail": "Madgobgivefs"
     }
@@ -32701,14 +29539,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Madgobgivefs",
       "fail": "Madgobgivess"
     }
@@ -32720,13 +29553,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -32741,13 +29568,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -32762,13 +29583,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -32818,13 +29633,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He looks around as if seeing the world for the first time. 'Medra's balls!' He cries. 'I think you've cured me!' He slaps you on the back joyfully. 'By the Nine Gods, I'll never forget this! If you're ever in Tok, you won't have to pay for anything, I swear it!'. He hurries off, almost skipping with happiness. You smile, hoping he finds his way back to Tok safely, wherever that may be.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -32839,13 +29648,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -32860,13 +29663,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You have found the docks area. The docks at Karrakara have ships from all over the known world, and sometimes beyond. There's also a small cluster of temples here.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -32947,13 +29744,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -32968,13 +29759,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -33011,13 +29796,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -33095,13 +29874,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -33176,13 +29949,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Alas, you bump into a drunken pirate, in town on shore leave - or as pirates call it, 'arrrr and arrrr'.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -33232,13 +29999,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pay her and she declares you her best mate. She tells you she needs the money to buy a new mizzen-mast. Apparently the old one's mizzen. She stumbles off.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -7,
@@ -33280,13 +30041,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pay her and she declares you her best mate. She tells you she needs the money to buy a new mizeen-mast. Apparently the old one's mizzen. She stumbles off.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -33328,13 +30083,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pay her and she declares you her best mate. She tells you she needs the money to buy a new mizzen-mast. Apparently the old one's mizzen. She stumbles off.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -3,
@@ -33476,13 +30225,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You look down, and see a nail sticking out of your chest.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -33510,13 +30253,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "When the smoke clears, nothing has happened. The pirate turns the machine around and stares at it, wrinkling her brow. Then there's another boom, and another cloud of smoke. When the smoke has cleared, the pirate is lying dead.<br><br>Bystanders decide that you were probably responsible and, despite your protests, you're arrested.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -33564,13 +30301,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "To your shame, you faint.<br><br>When you wake up, you've been arrested for vagrancy. Luckily, the guard tells you, someone has kindly paid your fine. Your heart sinks at the sneer in his voice.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -33585,13 +30316,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Along with some other unfortunates you're put in a cart and taken into the wilderness. Eventually you're transferred to a ship, bound for a barbarian city. You've been sold as a slave, to fight to the death as a gladiator.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -33765,13 +30490,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He stabs you with a flensing knife before you have time to react. Enraged, you raise your WEAPONNAME and he runs off.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -34044,13 +30763,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "An acolyte starts to tell you to begone. But he stops, and abruptly starts cringing and begging your pardon. He bestows a blessing on you, shaking in fear all the while.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Stamina",
@@ -34064,13 +30777,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Feeling like a bully, yet unsure why he's so scared, you go on your way.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -34312,13 +31019,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You try and get a blessing from the temple. But an acolyte chases you off. The docks aren't the Street of the Gods, where the priests look at your shell-purse before they look at your soul. They are there for the truly deserving.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -34333,13 +31034,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A bald-headed acolyte chases you away, cursing you for a worthless seeker of undeserved blessings.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -34408,13 +31103,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You see an empty lot that will be a temple to the goddess of procrastination, when they get round to building it.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -34442,13 +31131,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Su-Averna is said to appear as a small, boyish woman in the garb of an athlete. She is the patron of dancers and athletes, but also of those artists who represent the human form.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Stamina",
@@ -34462,13 +31145,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Ianidhini is a minor deity of the centaurs, adopted by humans as the patron of worldly wisdom and of all who dress in the clothes of the opposite gender, whether for reasons of disguise, acting, or inclination. He or she is both male and female, so as to understand both, and at other times of no gender, to be fooled by either. For similar reasons, Ianidhini's hindquarters are a mixture of all the five races of centaurs: horse, zebra, donkey, mountain goat, and camel (whatever that may be). Ianidhini is the youngest of the original eleven centaurs; five pairs each founded one of the five races, and Ianidhini was brought forth to keep peace between them. All eleven are children of one human and one quadraped parent. Bitter theological debate rages over whether they came from human fathers and animal mothers, or vice versa.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Streetwise",
@@ -34482,13 +31159,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Numen Mari is said to appear as a plume of water in a roughly human shape. Travellers by sea often throw cowrie shells into the water to ensure a safe journey.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Seafaring",
@@ -34502,13 +31173,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Mother Iasthis is said to appear as a smiling, middle-aged woman borne by a flock of geese. Her symbols are the salmon and the snake. The latter relates to a legend that a traveller who was disrespectful of her found his feet turning to lead, then his staff to rope, and finally the road ahead of him to a great snake.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Shelter",
@@ -34522,13 +31187,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You accept the blessing from the priestess, with an uneasy feeling that there may be others more worthy than yourself.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -34556,13 +31215,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You accept the blessing from the priestess, with an uneasy feeling that there may be others more worthy than yourself.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -34611,13 +31264,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel a little bit guilty as you look at the hard-working hobbits, some of whom may have had barely four meals today.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -34645,13 +31292,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You enter the Temple of Pie, to find that they're eating pie.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -34707,13 +31348,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You mention that the gnomes are said to also have a god of pie. 'What?' she asks - 'a single god for blueberry <i>and</i> apple?' She laughs at this absurd heresy.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -34748,13 +31383,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The walls of the temple are covered in writing, setting out the deeds of the recently dead. As you eat you read the 'obbit-uaries.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -34809,13 +31438,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The Father of Wine, or his wife and rival the Mother of Beer, are worshipped by most of the folk in Karrakara. You drink the thick, concentrated potion that the priestess gives you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -34830,13 +31453,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -34851,13 +31468,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Charisma",
@@ -34871,13 +31482,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Luck",
@@ -35196,13 +31801,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -35216,13 +31815,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -15,
@@ -35236,13 +31829,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -20,
@@ -35256,13 +31843,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A handshake and an exchange of oaths later, you are the owner of an old but sturdy-looking one-person boat.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -35587,13 +32168,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -35608,13 +32183,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -35629,13 +32198,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -35650,13 +32213,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -35671,13 +32228,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -35692,13 +32243,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -35713,13 +32258,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The Father of Wine, or his wife and rival the Mother of Beer, are worshipped by most of the folk in Karrakara.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -35807,13 +32346,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You toast the couple. Then you decide to have another. After a while, someone suggests that they should sort out the deluded worshippers of the Mother of Beer. It seems to you like a great idea. Somehow this leads to a fight.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -35874,13 +32407,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "When you wake up you're at home, and you've somehow spent huge amounts of money but gained nothing of value.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -35894,13 +32421,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "When you wake up you're at home You feel terrible, and you have a vague memory of having challenged someone to a duel for telling you to stop dancing on the tables. You think you might have fallen badly trying to get away from them.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Duelling",
@@ -35915,13 +32436,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Brawling",
@@ -35949,13 +32464,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The wedding party, and perhaps the Father of Wine himself, are insulted by your refusal. But you know that the madness of wine can lead you into worse danger.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -35970,13 +32479,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -36051,13 +32554,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -36362,13 +32859,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A passing peasant says to you 'they do say that if you believed everything you heard in the markets, you'd end up with no money and a sore arse!', and laughs uproariously. The merchant glares at her.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -36408,13 +32899,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -15,
@@ -36441,13 +32926,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You realise that you've chanced upon a powerful magic item: a Rod of Puerile Humour. Some say they were made by a sorceress as mighty as she was immature. Others say that a dwarven hero forged them, after he saw how jolly hobbits were and how grim his own folk. Others blame the wicked jester-kings of Badum-Tish. But every story agrees that they were too powerful, and all were destroyed.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -36627,13 +33106,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A passing peasant says to you 'they do say that if you believed everything you heard in the markets, you'd end up with no money and a sore arse!', and laughs uproariously. The merchant glares at her.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -36673,13 +33146,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -36694,13 +33161,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The merchant carefully wraps the pearl for you, and you continue to browse.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -36833,13 +33294,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A passing peasant says to you 'they do say that if you believed everything you heard in the markets, you'd end up with no money and a sore arse!', and laughs uproariously. The merchant glares at her.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -36879,13 +33334,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -36900,13 +33349,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You take the medallion, which is lighter than it looks, and continue to browse.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -15,
@@ -36973,13 +33416,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A passing peasant says to you 'they do say that if you believed everything you heard in the markets, you'd end up with no money and a sore arse!', and laughs uproariously. The merchant glares at her.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -37019,13 +33456,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -37040,13 +33471,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The merchant gives you a nondescript-looking sack to carry it in. You continue to browse.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -8,
@@ -37140,13 +33565,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -37186,13 +33605,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You hand over the shells, and take delivery of the imp, who thanks you profusely. The merchant tells you that the imp lives on shells - which he seems to mean literally.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -37207,13 +33620,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -37227,13 +33634,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -37274,13 +33675,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wander through a small market. A street-seller claims to have for sale the wonder of the ages; the Miniature Talking Frog of Am-Kesh.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -37365,13 +33760,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You hand Owyth back to the seller and pass by.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -37386,13 +33775,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You hand over your shells and take posession of the frog.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -37406,13 +33789,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -37447,13 +33824,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -37501,13 +33872,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A passing peasant says to you 'they do say that if you believed everything you heard from street sellers, you'd end up with no money and a sore arse!', and laughs uproariously. The street seller glares at her.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -37547,13 +33912,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You shake your head and pass by.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -37568,13 +33927,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your wandering steps take you to the Street of the Gods - home to many of the religions in Karrakara. Some of the temples are grand buildings, some are nothing more than single, rented rooms that may proclaim a different universal truth in a week's time.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -37642,13 +33995,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -37735,13 +34082,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -37756,13 +34097,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -37777,13 +34112,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -37798,13 +34127,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -37819,13 +34142,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -37840,13 +34157,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -37861,13 +34172,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -37882,13 +34187,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -37903,13 +34202,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -37924,13 +34217,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -37945,13 +34232,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -37966,13 +34247,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -37987,13 +34262,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel hot breath on your neck as your life's blood drains away. Finally you feel something withdrawing from your flesh, with a sound like a knife being drawn from a scabbard. In the dark you hear the voice, now sounding horribly satisfied, say 'it is done. Another is saved, and you are forgiven.' Feeling weak in both body and spirit, you stumble out of the darkness, through the abandoned room, and into the Street of the Gods.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -38021,13 +34290,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You run out of the room, and towards the bigger temples.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -38062,13 +34325,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A sign promising 'Miracles and Power' catches your eye. The priest sits calm and silent, rather than frantically hawking for worshippers: most unusual, particularly when you're the only one attending him. He greets you, and starts to ask you questions about your life. You find yourself opening up to him. You talk for hours. When you're done, he calmly tells you of a great evil abroad in the land. There's a man, or a thing in the form of a man, that you can destroy. You nod agreement. He tells you to return to your room and wait. He says he must leave the city, but others will contact you. He adds that you'll be paid. 'But', he smiles, 'the likes of you never really work for money.'",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -38096,13 +34353,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -38157,13 +34408,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The only silent people are the so-called 'Mouthess Ones': the priests of the Queen of Welcome, the goddess who appears as a dancing child with the head of a cat. They never speak in public, but advertise their faith by covering everything they own with representations of the goddess, and the short prayer 'Hail, O Kitty'.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -38178,13 +34423,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As usual, the only silent people are the priests of the cat-headed Queen of Welcome. A passing peasant remarks on the irony that those who are known for never moving their tongues are also known for pussy worship.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -38318,13 +34557,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -38338,13 +34571,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "random",
@@ -38425,13 +34652,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -38534,13 +34755,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You manage to fake enough sincerity to gain a blessing.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "random",
@@ -38647,13 +34862,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -38687,13 +34896,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The wound in your shoulder seems to have healed.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -38708,13 +34911,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -38749,13 +34946,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -38815,13 +35006,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A passing peasant says to you 'they do say that if you believed everything you heard in the markets, you'd end up with no money and a sore arse!', and laughs uproariously. The young man glares at her.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -39063,13 +35248,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "While it's not magic, it might be useful as a blanket.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -39104,13 +35283,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You give the man five shells, which he takes with a bewildered air.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -39149,13 +35322,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You give the young man five shells and take posession of the fur.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -39169,13 +35336,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You give the young man three shells and take posession of the fur.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -3,
@@ -39189,13 +35350,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You give the young man two shells and take posession of the fur.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -2,
@@ -39222,13 +35377,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In any case it's too big to lug around the street, so you return to your room.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -39243,13 +35392,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The fur is far too big to lug around the street, so you return to your room.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -39264,13 +35407,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In any case it's too big to lug around the street, so you return to your room.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -39359,13 +35496,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wander the city, finding no adventure. However when you return to your room you find that someone has made off with some of your shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -39420,13 +35551,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are attacked by a group of thieves. They beat you badly, or from their point of view extremely well, and take every single cowrie shell you have.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -39441,13 +35566,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -7,
@@ -39461,13 +35580,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are attacked by a group of would-be thieves. You manage to fight back until they realise you're too much trouble and run off. However you take several wounds.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -39515,13 +35628,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You realise the truth of the saying; 'fires and brawls are the flowers of Karrakara.'",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -39569,13 +35676,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Owyth makes a vague excuse about still being too sick and tells you he's not coming with you. He says he'll find you when you return.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -39590,13 +35691,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -39631,13 +35726,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You leave the unicorn in Owyth's keeping.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -39652,13 +35741,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -39693,13 +35776,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You leave the horse in Owyth's keeping.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -39714,13 +35791,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -39875,13 +35946,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As you're about to leave, you notice the priestess of Aal-Tep, still doggedly preaching to passers-by. She recognises you, and once you tell her where you're going she blesses you.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Seafaring",
@@ -39895,13 +35960,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -39949,13 +36008,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Owyth makes a vague excuse about still being too sick and tells you he's not coming with you. He says he'll find you when you return.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -39970,13 +36023,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -40074,13 +36121,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pass over the River Phoenix, through the Forest Gump, and past several posters advertising a reward for anyone who captures the editors of the Atlas of Karrakara.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -40162,13 +36203,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -40196,13 +36231,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He lands in front of you.<br><br>'I am Prince Dimitri!' he announces in a booming voice.<br><br>'You look like a trustworthy type - here, take care of this for me!' He hands you a bag, and flies off as suddenly as he appeared. You look inside the bag, and are astonished to find that it's full of cowrie shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 100,
@@ -40302,13 +36331,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -40470,13 +36493,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You give them time to fall asleep, then attempt to quietly sneak away.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -40526,13 +36543,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are about to leave when the goblin asks you what you're doing. For the moment you forget your fears, and feel nothing but embarrassment. You mumble an excuse and leave as quickly as you can. As you walk along in the dark you try and tell yourself that he must have been up to something if he was awake.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -40645,13 +36656,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You give them a bit of time to think that you've fallen asleep. Then you quietly creep away from the camp site and circle round in the dark. You come up behind them and, in a few moments, you have cut both their throats. For a second you feel relief. Then, suddenly, you realise that you may have just murdered two perfectly innocent travellers.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -40666,13 +36671,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -40751,13 +36750,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You awake from a good night's sleep.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -40792,13 +36785,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are dismayed to find that the goblin and the boy have left in the night, taking the unicorn with them.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -40833,13 +36820,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are dismayed to find that the goblin and the boy have left in the night, taking the unicorn with them.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -40874,13 +36855,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are dismayed to find that the goblin and the boy have left in the night, taking a fair amount of your money with them. Luckily they seemed to miss the hidden pocket in your shell-purse.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -40914,13 +36889,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are dismayed to find that the goblin and the boy have left in the night, taking your shells with them.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -40960,13 +36929,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You go to sleep. In the morning you wake refreshed, and part ways.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -40981,13 +36944,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stay awake the entire night, but the two travellers don't try anything. In the morning you part ways.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -41043,13 +37000,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They circle around opposite sides of you. In the darkness you can hardly see them, let alone block their knives. You lash out desperately at the darkness, but take several cuts.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -41064,13 +37015,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Eventually the two travellers retreat into the darkness. You spend the night standing with your back to a tree, waiting for an attack that doesn't come. Finally the sun rises. You waste no time in moving on.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -41169,13 +37114,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They're carrying a lot of junk. The only item that seems valuable is a book, written in a language you don't understand.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -41190,13 +37129,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -41409,13 +37342,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -3,
@@ -41429,13 +37356,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -41489,13 +37410,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -41613,13 +37528,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -41654,13 +37563,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stay silent, unsure why you're sheltering a criminal from her victim.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -41675,13 +37578,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblin is surprised and grateful for your information, and tells you that no-one has helped him in this land of strangers. He offers to reward you once he's completed his revenge and returned to his estates in the land of Tok.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -41716,13 +37613,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You reflect that you have just helped a noble who, after all, has only lost one of his many posessions, to someone who probably had far less. You finish your meal and go upstairs.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -41948,13 +37839,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblin tells you his story in great detail, while you nod and shake your head at the right moments. He's greatly impressed with you, and tells you that no-one has really listened to him in this land of strangers. He offers to reward you once he's completed his revenge and returned to his estates in the land of Tok.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -41989,13 +37874,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You thank the goblin and excuse yourself, feeling like a hypocrite.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -42010,13 +37889,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You offer the goblin a few shells. He refuses, until you tell him he can consider it a loan. He is obviously grateful, and tells you that no-one has helped him in this land of strangers. He offers to reward you once he's completed his revenge and returned to his estates in the land of Tok.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -42031,13 +37904,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -3,
@@ -42071,13 +37938,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You reflect that you have just helped a noble who, after all, has only lost one of his many posessions, to someone who probably had far less. You finish your meal and go upstairs.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -42092,13 +37953,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You finish your meal with the gratifying feeling of having helped someone worse off than yourself.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -42133,13 +37988,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Looking at your shell-purse, you aren't sure you weren't too generous.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -42174,13 +38023,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -42298,13 +38141,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblin's quarterstaff hits you squarely on the head.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -42354,13 +38191,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblin is too strong for you. The world starts to go black, when someone hits the goblin from behind and drags him off you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -42449,13 +38280,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A good meal and a firm hammock restore your strength.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -42470,13 +38295,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -42627,13 +38446,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -42648,13 +38461,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -42714,13 +38521,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pass a more than miserable night, trying to sleep on hard ground in an open field.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -42951,13 +38752,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -42972,13 +38767,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -43028,13 +38817,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The man takes your shell and puts it in a shallow clay bowl near the campfire, which already contains a few shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -43090,13 +38873,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He seems to bear you no grudge. Fights must be fairly common among these people.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -43124,13 +38901,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stand up and raise your fists, telling the man you're not paying.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -43180,13 +38951,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You grapple with the man, but he quickly knocks you down.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -43308,13 +39073,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "To your surprise, he draws a rusty, bone-handled dagger. His hands shake, but he moves towards you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -43389,13 +39148,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stare at the unmoving corpse, realising you have become a murderer. You see the other men begin to move towards you like rats out of the darkness. You turn and run, and you don't stop running until you have entered the forest. You hear howls of grief and rage behind you, but no one seems to be following.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -43410,13 +39163,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Someone produces loaves of gluey brown bread, and everyone including you gets a small piece.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -43464,13 +39211,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After the meal, one of the men stands up. In a rough voice he begins to make a speech. 'Good people' he says, 'things will never go well so long as goods be not in common, and so long as there be peasants and gentlemen. By what right are they whom we call lords greater folk than we? On what grounds have they deserved it? Why do they hold us in serfage? If we all were made by the same gods, how can they say or prove that they are better than we, if it be not that they make us gain for them by our toil what they spend in their pride? They are clothed in velvet and warm in their furs and their ermines, while we are covered with rags. They have wine and spices and fir bread; and we oat-cake and straw, and water to drink. They have leisure and fine houses; we have pain and labour, the rain and the wind in the fields. And yet it is of us and of our toil that these men hold their state.'",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -43485,13 +39226,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Some people shout agreement as he speaks. Some mutter and gesture their disgust, and some ignore him altogether.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -43536,13 +39271,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find yourself nodding agreement with the man's ideas. Your own dreams of wealth and fame seem somewhat smaller than they did before.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -43557,13 +39286,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The man's ideas sound fine in theory; but you can easily imagine the chaos and blood that would follow in practice.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -43591,13 +39314,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "For a while everyone shares stories of their adventures. One by one people lie down to sleep. You find it surprisingly comfortable and easy to sleep lying by the fire.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -43700,13 +39417,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They report that they found what looked like the tracks of several people. They think someone was out to rob the group, but ran off when you roused the camp. Everyone smiles and pats you on the back as you settle back down.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -43763,13 +39474,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wake up with a strange feeling on your wrists and neck. You feel your wrists, and they feel like cold iron. You and the rest of the group are chained together. Or at least, those of you that aren't lying dead. The man who demanded a shell from you is one such. As you watch, two of your captors strip his corpse of its armour.<br><br>The slavers are a motley crew of humans, dwarves, and goblins - only slightly less hungry-looking than those they've enslaved. A pinch-faced goblin kicks you, and commands you to march. You feel sick horror at the thought that you could've roused the camp, and perhaps driven the slavers off.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -43784,13 +39489,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -43902,13 +39601,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In the morning, you are one of the last to wake. The men drift off in various directions, alone or in small groups. You are angered to find that someone has robbed you in your sleep.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -4,
@@ -43922,13 +39615,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -44011,13 +39698,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find some pretty-looking fungi and eat them. You roll around on the forest floor in agony as the poison works its way through your system.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -44073,13 +39754,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You begin to get hungry, so you look for food. You find some High John the Conkaroo, a powerful herb which restores both body and spirit.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -44094,13 +39769,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -44115,13 +39784,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -44136,13 +39799,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -44170,13 +39827,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find some fruit and mushrooms, and make a reasonable evening meal.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -44191,13 +39842,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your stomach growls in protest, but you know better than to guess which plants are poisonous.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -44234,13 +39879,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend a miserable night with your back to a tree, jumping at every night sound.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -44290,13 +39929,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In the morning you try to retrace your steps. But you soon realise that one part of a forest looks pretty much like another. Soon you admit that you're hopelessly lost.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -44311,13 +39944,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -44345,13 +39972,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "All of a sudden the forest ends, and you find yourself near where you first got lost.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -44366,13 +39987,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -44585,13 +40200,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As you flee, the creature rears up and rakes your back with its claw-like hooves.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -44647,13 +40256,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "When you get clear of the wood you slow down and examine your wound. Although the cut doesn't seem too deep, your shoulder feels like it's on fire.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -44799,13 +40402,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You hold your WEAPONNAME ready while it tells you its secrets. As a creature of bile and spite, it has a natural affinity for poison. It teaches you a technique which will render any poison harmless in your body. The creature's discourse, while obviously focussed on pain and suffering, necessarily gives you some ideas about how to heal.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Healing",
@@ -44820,13 +40417,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -44854,13 +40445,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -44910,13 +40495,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You lower your WEAPONNAME and travel onwards.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -44956,13 +40535,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature chuckles and tells you to throw your shells on the ground. It clearly has no desire for the shells, but enjoys making you suffer.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -15,
@@ -44996,13 +40569,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature mockingly asks why you're not in Faerie, and whinneys with pleasure when you flinch.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -45037,13 +40604,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature mockingly asks how a champion like yourself comes to give in so easily, and whinneys with pleasure when you flinch.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -45147,13 +40708,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You realise that the creature was most likely a Hollow Mockery. Such things may be created when a person dies in a way which caricatures the purpose of their entire life. The idealist who builds so many prisons in the name of freedom that he's eventually hung as a tyrant; the woman who, desperate for a child to nurture, steals another's baby and then starts a house fire while cooking for it, killing the baby and herself; the hunter who seeks food, freedom, and solitude in the forest, and then starves to death, caught in their own trap and with no one to call for help. The spirit of such a person knows no rest as the morbid irony gnaws at them, and so the corpse releases melancholic vapours which can coalesce into the abomination you met. It must have killed recently to have only wanted to rob you. You feel lucky to be alive.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -45308,13 +40863,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find work as a forester, looking for the rare sheep-tree. The work is difficult and frustrating. Often you find a tree, but the sheep's coat has already fully grown and the sheep has blown away in the wind. However they pay and feed you well.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 8,
@@ -45328,13 +40877,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -45349,13 +40892,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -45392,13 +40929,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Like any farmer, your employer loses a lot of stock to sheeplifters. You win his trust, and a bonus, when you tell him a few ideas to keep them away.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 4,
@@ -45437,13 +40968,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 4,
@@ -45457,13 +40982,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -45506,13 +41025,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After some months, you look at your hands, and notice they're covered in stains from the sheep's brightly coloured wool. You realise that you smell like a small room full of sheep. The farmer tells you you get used to it after a while, but you rally your dreams of glory and hit the road.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -45540,13 +41053,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -45596,13 +41103,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Many kind folk of farm and forest take pity on you and feed you. To your disgust, you begin to get good at looking pitiful. You start to do it without thinking.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -45617,13 +41118,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -45638,13 +41133,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -45659,13 +41148,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -45693,13 +41176,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Finding no work nor even charity you begin to get a desperate, hungry look about you. Your heart fills with hate for all well-fed and safe folk.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -45714,13 +41191,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -45735,13 +41206,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -45831,13 +41296,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The road takes you through a small, dark wood.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -45952,13 +41411,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The farm's scarecrow is the best you've ever seen. It's outstanding in its field.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -46003,13 +41456,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "With a heavy heart, you begin the long journey back the way you came.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -46052,13 +41499,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -46121,13 +41562,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -46190,13 +41625,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Without warning, the forest ends, and you find the way more or less clear ahead of you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -46211,13 +41640,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -46258,13 +41681,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -46364,13 +41781,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -2,
@@ -46427,13 +41838,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The cryer tells you that the Amazons have abandoned their god Daba, and taken up the worship of Su-Averna. He says that a priest of Averna visited them, and the Amazons asked him whether Averna would beat Daba in a fight. He answered that it was a childish and irrelevant question, and so they beat him and sent him away. Next year another priest came, and the Amazons asked him the same question. He declared that Averna was a goddess of peace and harmony. He, too, was beaten and sent away.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -46493,13 +41898,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He tells you that everyone's talking about the new Lizard-Man comedian, Eddie Lizzard. The cryer tells you many of the comedian's amusing observations about how cold-blooded guys are different to warm-blooded guys. You make a note to use them.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -46514,13 +41913,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You thank him and move on.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -46548,13 +41941,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -46582,13 +41969,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He tells you that many of the towns in the area are suffering from a disease, which some learned people say is carried in river water. You thank him, and travel on.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -46743,13 +42124,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He reluctantly gives your shells back. The sphinx hisses at you as you leave.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -46764,13 +42139,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 2,
@@ -46840,13 +42209,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She slashes your arm. Beads of blood hang off you like cheap jewellery.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -46874,14 +42237,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Cryerfreeg",
       "fail": "Cryerfree1"
     }
@@ -46893,13 +42251,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -47045,13 +42397,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -47079,13 +42425,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A year later a third priest came, and again the Amazons asked him the same question. He thought for a while, then said 'if it was possible for Daba and Averna to have a fight, and if both fought with all their strength, then most likely Averna would beat Daba.' And so the Amazons tore down the temple of Daba and accepted Averna instead. The cryer adds that the priest is now thought by some followers of Averna to be a living saint, and by others to be a heretic.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -47113,13 +42453,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -47134,13 +42468,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The sphinx tries to scratch your face. The cryer chants a spell which clouds your mind.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -47187,13 +42515,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your WEAPONNAME is no match for the sphinx's claws.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -47394,13 +42716,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You almost pass out from the vile smell and sight.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -47428,13 +42744,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You almost pass out from the vile smells and sight.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -47449,13 +42759,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Some time later, you wrap the bloody skin around yourself and set off.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -47483,13 +42787,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -47688,13 +42986,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You can't even tell whether their mutterings are meant to be replies to you, or are just part of their sickness.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -47731,13 +43023,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You throw your hands up in disgust, and stalk out of the town.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -47882,13 +43168,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Fishermen believe that, by looking at the rubbish they drag from the sea, they can divine the will of the sea god Numen Mari. You tell the woman that you'll do this.<br><br>'Good idea' she whispers. 'Go and look it up on the net.'<br><br>You take out a fishing boat and a net, cast it out and drag it in. The signs are indeed good. You return to shore and tell the old woman that you accept.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -47925,13 +43205,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -47946,13 +43220,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Leaving the woman you go down to the beach, where you cut your arms with a seashell and study the patterns your blood makes. You can find nothing.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -47992,13 +43260,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -48026,13 +43288,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She gasps out the currents that flow to Atnos. She tells you to take a boat from the dock. You make her as comfortable as you can, and set off in a fishing boat.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -48060,13 +43316,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The townsfolk allow you to examine them - or perhaps don't notice, or are too weak to protest.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -48103,13 +43353,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You gather some grasses that, when combined, ease pain and aid healing. You then have to place them in the people's mouths yourself.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -48124,13 +43368,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -48222,13 +43460,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After some time, you begin to get an itching in one of your shoulder blades, which won't go away. You feel your back, and your skin feels as rough and broken as if an arrow had pierced it. Although you can't see it, you know what it looks like, because the townsfolk bear exactly the same mark.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -48265,13 +43497,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After hours of breathing in unclean air, you're severely weakened.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -48308,13 +43534,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "But no visions of the truth come to you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -48351,13 +43571,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -48469,13 +43683,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -48596,13 +43804,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A few hours later, you get a strange, hollow feeling in your legs. It works its way slowly up your body over the next hour. When it reaches your bowels you are instantly in absolute agony. You expel foul matter from all ends until, and beyond, the point where you should have nothing left.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -48617,13 +43819,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Too weak to move, you pass into a sleep which brings nothing but nightmares. When you wake up you're strong enough to stand. You reflect that you have, at least, probably found the source of the town's malaise.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -48676,13 +43872,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -48717,13 +43907,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -48861,13 +44045,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She hands over the shells, and takes the stick off you. She happily starts whacking herself in the face with it. 'Soon I'll be the most fearsome ogre-wife there is!' she cries happily.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -48882,13 +44060,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 20,
@@ -48942,13 +44114,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -48983,13 +44149,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -49004,13 +44164,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The man in Karrakara told the truth: many people are eager to buy. You finally settle on a price of 16 shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 16,
@@ -49049,13 +44203,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -49112,13 +44260,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You realise you're starving. You buy a plate of hot mushrooms, overpriced though it is.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -2,
@@ -49132,13 +44274,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -49258,13 +44394,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -49352,13 +44482,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A passing peasant says 'they do say that if you believed everything...'<br><br>'Sorry, you've done that already' you interrupt. She walks off grumpily.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -49530,13 +44654,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -6,
@@ -49550,13 +44668,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -49571,13 +44683,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -49640,13 +44746,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -49701,13 +44801,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A passing peasant says 'they do say that if you believed everything...'<br><br>'Sorry, you've done that already' you interrupt. She walks off grumpily.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -49797,13 +44891,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -49817,13 +44905,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -49873,13 +44955,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -49934,13 +45010,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A passing peasant says 'they do say that if you believed everything...'<br><br>'Sorry, you've done that already' you interrupt. She walks off grumpily.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -50030,13 +45100,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -3,
@@ -50050,13 +45114,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -50071,13 +45129,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wait until the stallholder's attention is elsewhere then take the book and walk off. The right or wrong of it doesn't occur to you. You are simply elated to have gotten away with it. You feel like you've won some rare prize, rather than a worn notebook. You feel like risking everything - you feel, in fact, like one who has gambled their life and won.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -50092,13 +45144,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Roguery",
@@ -50113,13 +45159,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -50604,13 +45644,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -50624,13 +45658,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -2,
@@ -50644,13 +45672,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A meal and a comfortable hammock restore your strength. You wake up early the next morning.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -50785,13 +45807,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -50879,13 +45895,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "One of the dancers stares straight into your eyes. He grins and his nostrils flare, as if he can smell your fear, and finds it delightful.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -50942,13 +45952,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "One picks up the bowl, and with a defeated look shatters it on the ground. Instead of shells, it's full of butterflies, who fly into the mouths of the people around. Instantly, the cloud of fear is gone. The people look at you with gratitude and admiration. They call on various gods to protect you.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "random",
@@ -50962,13 +45966,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "One grovellingly tells you 'oh great one, you obviously have courage to spare. If you want to sell any, visit Phoedocia of Karrakara, conveniently located at the corner of Lamp and Crown Streets.' He hands you a flier.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -51018,13 +46016,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Before you can react he stabs it into your heart. You fall to the ground, unable to stand, as he sucks your life's blood and spits it into the begging bowl. The men leave you lying on the ground, and walk off. After several minutes, you're able to stand.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -51206,13 +46198,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -51227,13 +46213,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -51300,13 +46280,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The magician notices right away that Owyth is a victim of magic. The frog tells his sad story. The magician says his apprentice in Karrakara might be able to find a cure. He gives you directions.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -51321,13 +46295,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You enter the town. But as you walk down the main road, a huge and fearsome-looking ogre puts his gauntlet on your shoulder and tells you you're under arrest. He leads you, surprisingly gently, to the town jail. The guard captain says that a goblin and a young human came here some time ago, with a story of meeting a sinister traveller who tried to kill them in the night - and you meet the description they gave.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -51956,13 +46924,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -51977,13 +46939,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -51998,13 +46954,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -52019,13 +46969,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -52040,13 +46984,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -52061,13 +46999,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -52081,13 +47013,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -52101,13 +47027,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -15,
@@ -52121,13 +47041,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -20,
@@ -52211,13 +47125,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The guard isn't fooled by your pretending to be sick. You are beaten up, and then put in chains.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -52276,13 +47184,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -52297,13 +47199,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -52363,13 +47259,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -52384,13 +47274,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -52405,13 +47289,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -52426,13 +47304,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -52447,13 +47319,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -52594,13 +47460,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The wait is horrible. Your food seems to be what the pigs didn't want, and the cell is so damp and mouldy that you feel like your body is decaying in sympathy. Boils break out all over your skin, especially behind one shoulder, where it feels like you've been stabbed in the back.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -52615,13 +47475,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -52636,13 +47490,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The wait is horrible. Your food seems to be what the pigs didn't want, and the cell is so damp and mouldy that you feel like your body is decaying in sympathy.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -52719,13 +47567,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The cell next door holds a murderer. He is a member of a sect called the Shining Company, who make friends with travellers and then strangle and rob them in the name of their goddess. Although, like all his sect, he refused to speak in court, he talks freely to you with a chilling cheerfulness about his many murders. One day he mentions two others in the sect, a goblin and a young boy.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -52740,13 +47582,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You sit bolt upright - could they be the two travellers you killed? You question him frantically. Finally, although there's nothing that could be proved, even if he would cooperate, your burden of guilt is at least partly lightened. You weren't imagining things, and you killed in self-defence",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -52814,13 +47650,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At last, your tunnel breaks through to the sewer system - luckily above water level. You enter the tunnels, happy in the knowledge that the guards will no doubt cover their failure by listing you as having died in your cell.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -52848,13 +47678,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The guards don't notice you digging a tunnel with your spoon - but your trial arrives long before it's finished.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -52929,13 +47753,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your (in theory) respectable status in society entitles you to be tried by a fellow 'gentle'.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -52950,13 +47768,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -53251,13 +48063,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Prince Dimitri takes you on his flying carpet back to Karrakara. He tells you that the soldiers will, no doubt, cover up their failure and claim that you were killed. He reminds you that his debt is paid before flying off.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -53285,13 +48091,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -53359,13 +48159,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You approach the rat, but it jabs at you with its spear, then runs into the darkness.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -53440,13 +48234,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Hours later you rise from the sewers, like a dirty and stinking opposite of the sun, which is just showing its face to the highest towers of the city as you show yours to the lowest streets.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -53677,13 +48465,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A huge, smirking masked man gleefully takes the skin off your back.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -53720,13 +48502,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You manage to stay silent, hopefully robbing him of some job satisfaction.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -53741,13 +48517,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You faint at the sight of the huge, smirking masked man assigned to flog you. You're sentenced to get a severe talking-to instead.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -53762,14 +48532,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Arrestedfinerich",
       "fail": "Arrestedfinepoor"
     }
@@ -53781,13 +48546,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The clerk of the court cackles as he counts your fine piled up on his desk.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -50,
@@ -53888,13 +48647,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find yourself staring at the floor and mumbling. You leave the Hall of Judgement wishing they'd flogged you instead.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -53999,13 +48752,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You make several good points about the law being cobwebs for the nobles and chains of steel for the peasants, which causes the false Mrs Lippman to falter, and dulls the impact of her manipulation.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -54020,13 +48767,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You make several points about about the law being cobwebs for the rich and chains of steel for the peasants, but once you say them out loud they sound like excuses.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -54041,13 +48782,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find yourself staring at the ground and burning with shame, though not entirely for reasons the courts would approve of.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -54084,13 +48819,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You suppose that you deserve whatever you get, and the Rebuker's words are indeed true, but this seems more designed to humiliate than to reform. You leave the Hall of Judgement feeling equally disillusioned about yourself and them.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -54105,13 +48834,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find yourself staring at the floor and mumbling. You leave the Hall of Judgement wishing they'd flogged you instead.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -54159,13 +48882,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -54238,13 +48955,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -54259,13 +48970,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -54501,13 +49206,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -54522,13 +49221,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -54568,13 +49261,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -54614,13 +49301,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -8,
@@ -54659,13 +49340,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -54680,13 +49355,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -55166,13 +49835,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -55187,13 +49850,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -55233,13 +49890,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -55279,13 +49930,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -8,
@@ -55324,13 +49969,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -55345,13 +49984,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -55522,13 +50155,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -55543,13 +50170,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -55589,13 +50210,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -55635,13 +50250,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -8,
@@ -55680,13 +50289,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -55701,13 +50304,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -55722,13 +50319,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "random",
@@ -55742,13 +50333,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "random",
@@ -55762,13 +50347,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "random",
@@ -55795,13 +50374,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creatures cringe at your bold declaration, and scuttle aside to let you pass.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -55902,13 +50475,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You boldly approach the squatting creatures.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -56084,13 +50651,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -56105,13 +50666,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -56151,13 +50706,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -56197,13 +50746,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -8,
@@ -56242,13 +50785,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -56263,13 +50800,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -56284,13 +50815,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creatures move back to let you pass.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -56391,13 +50916,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creatures claw at your face and chest, seemingly trying to dig out your eyes and heart.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -56412,13 +50931,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -56433,13 +50946,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They quickly overpower you. Pinning you to the ground, they place their hands over your eyes. For a few seconds you feel as if water is being poured into you. Then you feel their hands lift from your eyes. The creatures are gone. Bloody and confused, you get to your feet and continue down the tunnel.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -56454,13 +50961,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creatures' claws slice your face and chest, seemingly trying to dig out your eyes and heart. Although they give you several wounds, you eventually drive them off.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -56475,13 +50976,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -56509,13 +51004,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creatures are no match for you. They scuttle away from you. You notice a few shells lying on the ground, that they may have been counting or gambling with. You help yourself to them, and continue down the tunnel.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 4,
@@ -56691,13 +51180,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You grab the Pearl and swallow it. The army of horrors in your mind is turned back by the peaceful wisdom which flows from the pearl.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -56712,13 +51195,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You sink to the floor of the tunnel, holding your hands to your face, as if to tear out the images that caper and gibber in your mind.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -56766,13 +51243,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You lie writhing on the tunnel floor, breathing the dust of unknown offerings and the ancient dead.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -56800,13 +51271,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -56821,13 +51286,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The walls tell the main ideas of the religion of the angry Nara Lion-Father, his mother Nakima, and the first man Osho.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -56842,13 +51301,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -56957,13 +51410,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You eventually recognise the esoteric script. It says 'All the false gods of the world bear witness to the glory of Nara.'",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -57055,13 +51502,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -57253,13 +51694,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'LOL! ROFLMAO!' Four pairs of legs crash together, applauding you. You realise it's no statue of a goddess, but the goddess herself.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -57376,13 +51811,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'NOOB!' You fall to the ground in shock as the voice screeches from the statue.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -57397,13 +51826,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'NOOB! u r lame!'",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -57501,13 +51924,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stand fore the statue for some time, waiting for you know not what. But nothing moves except the dust motes. Finally you turn and leave. You feel an inexplicable sense of failure, as if your very soul had been weighed and found wanting.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -57614,13 +52031,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You can't think of anything other than facing Nara yourself.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -57703,13 +52114,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Winged cats, living trees, beautiful women clad in coral and night, all fly, run, slide or scuttle past you and into the darkness, howling for vengeance. Soon the air is split by the dying roar of Nara, ragged and desperate. And split indeed; the roof of the temple opens to the sky. The temple, the god, and you know not what secrets crumble into ruin.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -57724,13 +52129,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The gods fly to freedom. Some bless you as they leave - but most don't.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "random",
@@ -57744,13 +52143,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -57765,13 +52158,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You raise your WEAPONNAME, but Yag-kosha gently tells you that it would do nothing to a god. He takes hold of one of his tusks, and wrenches it free. Trembling, you cut his skin. You see his eyes glaze over as you take out his heart. It's a diamond bigger than your fist.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -57812,13 +52199,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Suddenly the air is split by a ragged, desperate roar. And split indeed; the roof of the temple opens to the sky. Daylight and clean air enter where they have been strangers for untold years. The chorus of gods rises to a scream. Nara's eyes fly open as the light hits him, as big as two suns - and he, his temple, and you know not what secrets crumble into ruin.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -57833,13 +52214,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "All around you the gods fly to freedom. Winged cats, living trees, beautiful women clad in coral and night, all stream past you and into the sky. Some bless you as they pass - but most don't.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "random",
@@ -57853,13 +52228,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "random",
@@ -57873,13 +52242,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "random",
@@ -57938,13 +52301,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Sadly, you continue your journey.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -58005,13 +52362,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -58066,13 +52417,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -58100,13 +52445,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You tremble at the thought of your blasphemous pride, in refusing to help gods.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -58121,13 +52460,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -58281,13 +52614,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Without a word you turn and run, not stopping until you've left this evil place.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -58302,13 +52629,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Without a word you turn and run, not stopping until you've left this evil place.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -58379,13 +52700,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You step out of the shadows, and walk towards the priest, boldly denouncing Nara.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -58676,13 +52991,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -58806,13 +53115,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -58862,13 +53165,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -58923,13 +53220,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Walking through a small village, you feel a firm hand on your shoulder. The village guard tells you that a passing unicorn complained about being spied on. You match the description the unicorn gave. You spend a miserable week in the guardhouse cell. You're taken back to Karrakara, and another cell.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -58944,13 +53235,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -59069,13 +53354,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You cast a druidic charm.<br><br>'I'm not the druid you're looking for!' you cry. Hypnotised, the goblins agree that you can go about your business.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -59146,13 +53425,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblins head straight for your hiding place.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -59514,13 +53787,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You start to run, but after a few seconds you double over in pain. You recognise the symptoms of an illness only suffered by bards - minstrel cramps.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -59587,13 +53854,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You run, shameful though it is for a knight to flee from mere goblins.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -59726,13 +53987,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "An arrow scrapes your cheek, making you look lopsided. You howl in pain and stop running.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -59747,13 +54002,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "An arrow pierces your hand - you howl in pain and stop running.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Duelling",
@@ -59768,13 +54017,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Brawling",
@@ -59809,13 +54052,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "An arrow misses you - but runs the imp right through, killing it instantly. Numb with horror, you stop running.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -59830,13 +54067,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "An arrow bites into your shoulder.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -59851,13 +54082,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You howl in pain and stop running, lucky to be alive.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -59893,13 +54118,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Soon the goblins get sick of chasing you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -59949,13 +54168,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "But at last they drop away. You walk with a new confidence through the treacherous landscape.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Scouting",
@@ -60083,13 +54296,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He presents you with a fine horse.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -60104,14 +54311,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Tokfriendgo",
       "fail": "Tokfriendsh1"
     }
@@ -60123,13 +54325,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He presents you with ten shells, a fortune for the goblins.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -60173,13 +54369,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend a week as the king's honoured guest, resting and recovering your strength.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -60268,13 +54458,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A goblin pulls out the witches' bundle. She drops it. All the goblins scream in terror. They quickly give you your posessions back. Bowing and stammering what you assume is an apology, the goblins let you leave.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -60376,13 +54560,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblins bring you a bowl full of shells. Bowing and scraping, they let you leave.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -60396,13 +54574,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -60580,13 +54752,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblins fall on you, snarling and howling as they beat you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -61003,13 +55169,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -61024,13 +55184,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -61045,13 +55199,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "One day a human arrives. He puts you in a cart and takes you towards Karrakara. Your joy is short-lived. He stops in the wilderness, and you're transferred on to a ship. You've been sold as a slave, to fight to the death as a gladiator.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -61224,13 +55372,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're taken by surprise. You fight back as best you can, but there are too many of them. Beaten and bloody, you're thrown back into your cell.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -61316,13 +55458,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "But she was expecting you. You feel agonising pain as a sword pierces your skin.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -61350,13 +55486,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She turns out to be fiercer than you thought.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -61397,13 +55527,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -61446,13 +55570,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You think you're moving silently. But then a spear whistles out of the darkness and pierces your leg.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -61780,13 +55898,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -12,
@@ -61800,13 +55912,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -8,
@@ -61820,13 +55926,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -4,
@@ -61865,13 +55965,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -61999,13 +56093,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblin is quick and vicious, and you're no match for him. Soon you're covered in bruises and your clothes are stained with your own blood.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -62061,13 +56149,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblin is quick and vicious. You defend yourself as best you can, but you're soon covered in bruises and your clothes stained with your own blood.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -62082,13 +56164,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "To your surprise, after a few minutes your opponent abruptly hands his weapon to the old goblin. He bows to you, and they walk you back to your cell, looking at you with a new sense of respect.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -62250,13 +56326,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblins are angry at your cowardice. They beat you for several minutes.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -62345,13 +56415,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You play the drum. Only a few seconds pass before Prince Dimitri appears out of the sky. The goblins cower as you get on the carpet and fly away. He sets you down and takes back the drum, reminding you that his debt is now paid.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -62486,13 +56550,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Then a second letter arrives. He tells you that he's had to give them your horse, but that they've agreed to let you go.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -62507,13 +56565,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -62528,13 +56580,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Then a second letter arrives. He tells you that he's had to give them your unicorn, but that they've agreed to let you go.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -62549,13 +56595,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -62570,13 +56610,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Then a second letter arrives. He tells you that he had to promise a goblin official that you'd pay him ten shells. An important-looking old goblin visits your cell, and collects his bribe.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -62590,13 +56624,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Then a second letter arrives. He tells you that he had to take out a loan that he could never repay to get you out. He says that he has to leave Karrakara, and bids you farewell. You feel gratitude and shame for your friend's sacrifice.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -62611,13 +56639,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -62913,13 +56935,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You realise that you've travelled round the whole island, and ended up back at Karrakara.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -62934,13 +56950,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -63008,13 +57018,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -63084,13 +57088,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You fall for hours. At last you land on jagged rocks. You feel agonising pain, but are surprised to find yourself still alive. You look around. The princess is nowhere to be seen. A cackling, hideous grey creature strikes you with a cruel whip, demanding you join a procession of similarly bloody and bewildered captives.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -63105,13 +57103,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -63126,13 +57118,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You fall for hours. At last you land on jagged rocks. You feel agonising pain, but are surprised to find yourself still alive. You look around, and see a cackling, hideous grey creature. It strikes you with a cruel whip, demanding you join a procession of similarly bloody and bewildered captives.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -63147,13 +57133,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -63168,13 +57148,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -63189,13 +57163,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -63223,13 +57191,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are set to a pointless and unending labour, carrying rocks from one place to another. Your skin is burned by flames, and your eyes sting from the noxious ash in the air. The overseers visit hideous tortures on anyone for so much as wiping the sweat from their brow, or for no reason. A howling wind stops you talking to anyone, and the gruelling labour seems to weaken rather than strengthen.<br><br>You cry in despair as you recall stories of the Land of Thin Flowers, or the World Lit Only By Fire, the place of punishment of the wicked dead.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -63244,13 +57206,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -63295,13 +57251,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You begin to grovel and toady to your tormentors.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -63371,13 +57321,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You attract the attention of the demons, but it gains you nothing but more punishment.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -63452,13 +57396,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -63473,13 +57411,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -63494,13 +57426,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -63582,13 +57508,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You look for a likely-looking fellow-captive to confide in. To your surprise you see Spider-Woman-At-Middle-Age, the elf you left behind in the arena of Karsh. You fear that she died and you're talking to her ghost. But she says that she tried to escape, and when she dug a tunnel it opened to a pit which led to this place. She shares her theory that this isn't the true Land of Thin Flowers, but an imitation of it made to fool its inmates - for what purpose she can't say.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -63673,13 +57593,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You soon find a dwarf whose spirit isn't completely broken, who agrees to escape with you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -63694,13 +57608,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your charges fear to talk to you, and your voice seems to have become harsh and screeching, like scraping metal.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -63728,13 +57636,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're caught speaking out of turn and horribly punished.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -64025,13 +57927,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You shed your demon skin like a snake. It rots in the sun.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -64068,13 +57964,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel clean and shining, like one fresh from the baths.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -64089,13 +57979,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A god must've seen your treachery, because you retain an invisible taint of demonkind.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -64235,13 +58119,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As you walk you think about how even the demons of the underworld couldn't hold you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -64256,13 +58134,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -64337,13 +58209,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -64440,13 +58306,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -64461,13 +58321,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -64482,13 +58336,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You hear noises up ahead. Creeping foward, you see a group of hideous creatures. Their faces are as white as chalk, whiter than a fish's belly, while their clothes are all colours of the rainbow, and all brighter than a pimp's smile. Some are on horses while others are on foot.<br><br>You hide behind a tree and watch them. They seem to be trying to catch a chicken. They shout at each other, barking like dogs on the hunt.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -64611,13 +58459,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They're delighted with the Rod of Puerile Humour. They point out that you got your Rod out straight away, that you certainly have a firm grip on your Rod, and similar observations.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -64632,13 +58474,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They gasp in amazement at the book, and stare at its pages like children watching a play.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -64653,13 +58489,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They sigh in rapture at the rose, staring at it like one who, wandering the hills, comes suddenly upon the gods.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -64831,13 +58661,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They give you a unicorn. They giggle like schoolgirls as they point out that it has an enormous horn.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -64852,13 +58676,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They give you a crown. It's battered, but it looks like real gold.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -64873,13 +58691,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They give you a hand-written manuscript, titled 'A Guide to Beating the System on Dead Eye Street'. It describes the street of gamblers in Karrakara where, it's said, those who've gambled away their last shell can bet their lives - and those who've lost their lives can bet their souls.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -64894,13 +58706,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creatures begin to dance around you, chanting in their animal-like voices. You feel a strange pressure in your head. You start to sneeze uncontrollably. Something seems to be moving under your skin, and into your nose. You give a particularly huge sneeze, and the two pale creatures from the pyramid shoot out of your nostrils and onto the ground. They look at you and the creatures for a second, then crawl away, muttering.<br><br>You thank the creatures and move on.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -64915,13 +58721,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They give you a large handful of cowrie shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -65092,13 +58892,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They stare into your eyes. Their garishly painted faces (if paint it is) seem to drink all the joy out of your soul, leaving only misery.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -65113,13 +58907,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -65207,13 +58995,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The clowns soon overwhelm you. Their twisted, damp hands paw at your posessions. One holds up the glass bottle, and they gasp in wonder.<br><br>They stare at it as if it was a gigantic diamond. Another clown grabs at it, then another. Soon you're forgotten as they start to fight amongst themselves, howling and screaming. After a few minutes, all the clowns are unconscious. The bottle has been broken in the struggle. You continue on your way.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -65315,13 +59097,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You manage to stop yourself crying out in disgust. Their loud, lip-smacking noises cover your escape. You feel great relief that you didn't show yourself.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -65410,13 +59186,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They punch and kick you without mercy.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -65466,13 +59236,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It barks a command, and someone brings a mirror. They hold it up to your face. You're horrified to see that you've turned into one of them!",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -65487,15 +59251,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 24,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "clown_prof",
+      "type": "set_prof_clown",
       "next": "Clownhitf2"
     }
   },
@@ -65552,13 +59310,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -65593,13 +59345,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pass through a tangled wood. A troll booth blocks the road. The troll watches you without much interest.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -65684,13 +59430,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -65705,13 +59445,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're aware of this trollish custom and so you duck out of the way, and it only clips you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -65791,13 +59525,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You push your way through the forest for several hours.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -65812,13 +59540,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After several hours you emerge back on to the road. Walking along, you find the booth again. You realise you've gone backwards. You blush as the troll stares at you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -65853,13 +59575,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Insects sting you all over. Eventually, cursing and almost crying with frustration, you find the path again. You continue on your way, resolving to just pay next time.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -65874,13 +59590,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -65895,13 +59605,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Insects sting you all over, opening a particularly nasty wound on your shoulder. But eventually you find the path again and continue on your way.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -65982,13 +59686,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Some hours later you hear someone calling you. You turn around and see a distinguished-looking man in green, being carried piggy-back over a stream by a huge, red-faced companion. The man in green lands gracefully on the ground and introduces himself as Robin Goodfellow. He suggests that, since you seem to be going the same way, you should travel together to deter bandits.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -66070,13 +59768,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Soon the route turns out to be more roundabout than you thought. You find yourself back at the same stream. You curse the mess that your two-faced ettiquite has created for you. You resolve that next time you meet someone who gives you the creeps, you'll just say so.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -66091,13 +59783,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -66147,13 +59833,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -66193,13 +59873,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You walk along, Robin's speech rattling in your ear. You feel like you're being forced to travel two roads at once, the physical road and the intricate path of his conversation. You envy his companion, seemingly more beast than man, or those holy folk who vow never to speak nor listen to idle chatter.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -66214,13 +59888,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -66305,13 +59973,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "There's nothing for it but to give him the money. He assures you of his intention to repay you, words which sound as hollow as your coin-purse.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -66325,13 +59987,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You blush and mumble that, in fact you don't have the shells to give him.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -66359,13 +60015,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At last, as the shadows of evening grow, you stop and make camp at the only shelter you can see - a ruined temple.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -66400,13 +60050,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your blessing keeps you safe during the night.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -66480,13 +60124,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find nothing. At last you decide the ruins are safe and go to sleep.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -66542,13 +60180,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You hear a sound like a man muttering. You creep closer, and your heart leaps into your mouth.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -66563,13 +60195,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -66632,13 +60258,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find a less-haunted spot, and go to sleep.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -66653,13 +60273,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You decide to travel on through the night rather than sleep here.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -66709,13 +60323,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're able to find a plant which soaks the poison. But you decide to travel on during the night rather than sleep here.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -66730,13 +60338,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The poison takes hold of you, and you lie in the ruins, sick and feverish almost to the point of wishing for death.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -66899,13 +60501,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Nothing unnatural disturbs your rest, but the night is bitterly cold, and you keep thinking you hear wolves, or the unquiet dead creeping up on you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -67056,13 +60652,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature's sharp hooves wound you, until at last you run off.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -67077,13 +60667,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature's sharp hooves wound you, and you strike home with your WEAPONNAME, until at last both you and it slink away.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -67098,13 +60682,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature's sharp hooves wound you, but at last you drive it off.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -67141,13 +60719,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At last you open your eyes. The sight before you is more solid, but no less hideous, than any of your dreams. It looks like the partly-flayed corpse of a horse. It's covered in blood - much of it yours.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -67162,13 +60734,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -67196,13 +60762,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A hideous creature grins at you in the dark. It looks like the partly-flayed corpse of a horse. You just have time to grab your WEAPONNAME before it leaps at you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -67290,13 +60850,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -67311,13 +60865,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -67332,13 +60880,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -67438,13 +60980,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -67481,13 +61017,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -67502,13 +61032,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -67536,13 +61060,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wrap the fur around yourself. Instantly the heat of the desert disappears. The relief is like a drug.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -67590,13 +61108,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The sun is hotter than you've ever felt, and it seems to be getting worse. You feel like your blood will soon boil. The dunes seem to dance in front of your eyes.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -67676,13 +61188,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your legs begin to feel heavier and heavier as you walk.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -67737,13 +61243,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You realise that without natural or magic protection, you are basically a walking meal for the vultures.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -67953,13 +61453,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -68135,13 +61629,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pursue the oasis. As you get closer you see that the trees have short legs, and are carrying a 'lake' in a large bowl. As they see you they sigh 'oh all right, <i>fine</i>' and stand still. You rest in the shade for a while and then move on.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -68169,13 +61657,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pursue the oasis. But it stays on the horizon, neither disappearing nor getting any closer. At last, exhausted, you give up.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -68190,13 +61672,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -68282,13 +61758,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -68328,13 +61798,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You rest for a while.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -68459,13 +61923,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -68546,13 +62004,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You notice something growing in the tree. You climb up to get a closer look, and see that it's growing cowrie shells. You realise that this must be a rare Money Tree. You collect all the shells you can reach, and finally leave the oasis.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 15,
@@ -68632,13 +62084,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You grab at the shells. The thing's head is soft and yielding. Thorns rake your exposed skin. Finally the shells are yours.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -68653,13 +62099,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 12,
@@ -68673,13 +62113,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You beat at the thing again and again with your WEAPONNAME. Finally, it turns back into a palm tree - dead or dormant, you know not. You climb the tree and take the shells before moving on.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 15,
@@ -68693,13 +62127,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -68714,13 +62142,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You travel over the desert for the entire day. As the sun begins to set you see a settlement in the distance. You head towards it. As you get closer, the desert ends. You feel relief - which ends as you realise you've gone in a circle and you're back where you started.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -68735,13 +62157,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -68807,13 +62223,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Scouting",
@@ -68828,13 +62238,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -68934,13 +62338,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your legs begin to feel heavier and heavier as you walk.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -68975,13 +62373,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You realise that without natural or magic protection, you are basically a walking meal for the vultures.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -69090,13 +62482,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -69111,13 +62497,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -69237,13 +62617,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "There is something unnatural about the caravan, something worse than thirst and exhaustion. You find strength that you though you'd spent long ago, and turn and run into the sands.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -69323,13 +62697,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -69369,13 +62737,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -69433,13 +62795,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel there's something not quite right about the ease with which you found this room, to say nothing of the question of who actually owns the shells. You leave the tower and continue your journey.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -69454,13 +62810,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You fill your shell-purse almost to bursting point. You vow that you'll return once you find a way of moving the shells without letting anyone else in on the secret. You leave the tower and head back into the desert. The journey seems much easier with a purse full of money, and soon you find your way out of the desert and to a village, where you hire a horse and guide to take you back to civilisation in comfort.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 40,
@@ -69515,13 +62865,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You clutch your head, as each individual shell seems to scream its demand at you. With your last piece of will, you try and run from the room.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -69692,13 +63036,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Suddenly you realise that these thoughts are not your own. You run from the room. But you turn at the doorway, and vow to whatever is in there that you'll solve the problem and return, not to serve it but to destroy it.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -69753,13 +63091,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Despite your physical suffering you feel a sudden lightness of spirit. A column of smoke shaped like a bird of prey comes out of your mouth and curls into the sky. You realise that your suffering is punishment for murder, and that you've atoned.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -69796,7 +63128,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "First you see a few tufts of grass, in thin clumps like an old man's hair. Then there are trees and, at last, the desert has ended and you are standing on the shores of a great lake. You see animals and, in the distance, a village. Safe at last, you begin your new life.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Inlandss6f",
@@ -69814,13 +63149,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wander the city, until a shop sign catches your eye: 'Phoedocia of Karrakara - Courage Bought and Sold'. Curious, you enter the shop. A horrible, insect-like creature offers you a flower, then catches itself. In a low, calm voice it asks 'have you come to buy or sell? I buy for six shells, sell for eight'.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -69923,13 +63252,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature takes your shells and gives you the flower, which it indicates that you should eat. You do so, and soon feel an enormous sense of courage and goodness wash over you. You feel as if you are on a great quest - but not what the quest might be. You thank the creature and leave the shop.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -8,
@@ -69943,13 +63266,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Heroism",
@@ -69985,13 +63302,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Abruptly it stops. In the same calm voice it says 'Idiot - you have no courage to sell. Get thee gone'. Feeling somewhat faint, you leave the shop.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -70006,13 +63317,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Eventually the creature stops. It gives you six shells and, in the same calm voice, asks you to return if you need money. Feeling somewhat faint, you leave the shop.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -70027,13 +63332,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 6,
@@ -70060,13 +63359,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You see a street preacher, with a large crowd around him. There's nothing unusual about that, nor about the fact that he is not giving a speech so much as serving as the centre of an all-in shouting match. However, the tone of the argument is strange. Religous debates are basically a form of free entertainment - but these people seem to be genuinally angry at each other.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -70106,13 +63399,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You squeeze your way as far into the crowd as you can. The preacher is a thin, mousy-looking young man, but he has a booming voice, which is ragged with the effort of being heard above the crowd. He waves his arms like an actor as he speaks.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -70183,13 +63470,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -70204,13 +63485,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -70295,13 +63570,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are hit from behind, and fall to the ground, desperately trying to protect yourself from the whirlwind of fists and kicking feet. Eventually you manage to get out of the crowd.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -70349,13 +63618,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -70491,13 +63754,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -70542,13 +63799,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -70563,13 +63814,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You shout at the preacher to run, and raise your WEAPONNAME.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -70623,13 +63868,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The guards kick and beat you for several minutes, then drag you as roughly as they can to the city dungeons.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -70644,13 +63883,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The guards kick you around, then drag you to the city dungeons.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -70726,13 +63959,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You shout at the preacher to run, and raise your WEAPONNAME.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -70747,13 +63974,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -70768,13 +63989,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -70966,13 +64181,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You head back to your room as fast as you can. When you arrive, you discover that some of the shells you were carrying have been lost or stolen.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -71012,13 +64221,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find a street preacher, who is addressing a small crowd about the grace and mercy of Aal-Tep, the Spider Of the Flayed Head Who Drowns the World In Blood.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -71063,13 +64266,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You drop a shell in her donation box. She offers you a copy of the Book of Pestilence, but you claim to already have one.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -71083,13 +64280,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -71145,13 +64336,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Her faith is like a fog, and your arguments like a well-forged sword, which can cut through the fog again and again without moving it. You grow increasingly frustrated before eventually slinking away.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -71192,13 +64377,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You manage to point out the obvious problems with interpreting a 500-foot-long half ape-half tarantula blood god as an embodiment of love and understanding. However, as you hammer home your points, you begin to realise that you're probably not telling her anything she doesn't know on some level already. You begin to feel that an illogically nice god is at least better than a consistently murderous one. In the end you apologise for your tone and admit that there may be some value in what she says. She thanks you, and blesses you in the name of Aal-Tep as you make a graceful exit.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Charisma",
@@ -71212,13 +64391,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -71233,13 +64406,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your wandering steps take you to a nearly-deserted part of the city. As you turn a corner, you come across a small imp carrying a glass bottle of liquid.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -71315,13 +64482,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature is too fast for you, and manages to sink its teeth into your skin. You try to grab it but it leaps away, and bites you again.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -71336,13 +64497,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are at the creature's mercy. 'Where is that which thou hast stolen?' it squeaks at you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -71377,13 +64532,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -71398,13 +64547,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -71432,13 +64575,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You explain that you no longer have the bundle. The imp is driven to even greater fury, and begins tearing at your skin with its tiny, but razor-sharp teeth. You try unsuccessfully to protect yourself.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -71466,13 +64603,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature is too fast for you, and manages to bite you several times before you tear it away and wring its neck.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -71558,13 +64689,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Having no shells, you have nothing to give the imp but your sympathy.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -71630,13 +64755,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The imp puts down the bottle it's carrying, and takes the shell in both hands. It begins to gnaw on it like it was a loaf of bread, until soon it's all gone.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -71718,13 +64837,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You return to your inn. The imp follows you, chattering excitedly about the many adventures the two of you will have. Most of them seem to involve huge piles of the most succulent cowrie shells. It also tells you about itself. Apparently it likes big butts. Also, it cannot lie.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -71739,13 +64852,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -71840,13 +64947,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -72069,13 +65170,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -72090,13 +65185,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -72226,13 +65315,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -72247,13 +65330,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -72364,13 +65441,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 3,
@@ -72405,13 +65476,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -72426,13 +65491,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -72467,13 +65526,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -72523,13 +65576,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You make no money. Dozens of times you are refused help before you even finish asking for it. After several hours you are approached by one of Karrakara's many groups of street preachers. Most of them wear old-fashioned armour, which you guess is meant to be a symbol of their staunch faith. One asks you whether you'd like a meal and a hammock for the night.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -72579,13 +65626,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They take you to their temple, which they call a barracks, and feed you a basic meal while they tell you all about the many, many people their chief god Nara Lion-Father has it in for. The god is apparently particularly upset about the ludicrous theological errors of the numerous false worshippers of Nara. You realise the incredible power of smiling and nodding when the priest congratulates you on your obvious spiritual insight.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -72600,13 +65641,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -72666,13 +65701,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -72707,13 +65736,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The priest blesses you in Nara's name.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Duelling",
@@ -72727,13 +65750,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Although the priest makes no sign of approval, you have the strange feeling that Nara himself does.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -72822,13 +65839,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The priest looks offended. He tells you that, of course, it's your choice, but it's only a little ritual, and Nara knows they don't get many worshippers...You recognise emotional blackmail when you hear it, but it's still effective in making you feel awful.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -72972,13 +65983,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The ritual is long and obscure, as befits its theme of enduring hardship. You gather that it's about the three gods of this religion; Osho the first man, Nara Lion-Father himself, and his mother Nakima.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Stamina",
@@ -72992,13 +65997,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -73035,13 +66034,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You raise your WEAPONNAME and lay about you. The priest and adepts have heavy clubs, inscribed with religious symbols. Their weapons are slow and bulky, and they fight in a strangly chivalrous manner, refusing to use feet and elbows. But there are many more of them than there are of you, and by the time you fight your way free and run out the temple door you're bleeding heavily. You hear the priest saying 'congratulations, you've completed the Ritual'.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -73107,13 +66100,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -73128,13 +66115,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -73149,13 +66130,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -73183,13 +66158,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -73229,13 +66198,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Wordlessly she takes the bundle, and you find yourself again in the forest. You turn around and begin the journey back to Karrakara.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -73451,13 +66414,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -73472,13 +66429,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You make your way back to Karrakara and Dahlia Two Voices.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -73513,13 +66464,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You report your failure. Each of her faces stares at you with pure malevolence.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -73681,13 +66626,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The raven lands on your shoulder. It says hello to you in a croaky voice. Then it loudly and graphically begins to tell you about the dysentry it had once, before moving on to a critique of your clothes. You realise that you've been given a supernatural gift as useful in the arcane arts as it is socially embarrassing; an over-familiar.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -73702,13 +66641,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -73723,13 +66656,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -73744,13 +66671,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You continue your studies. You learn magic. You also learn to live with nameless fear. In the end you can even stand to turn your back on the voices. Eventually you take your leave of her. After several months with no company other than a being who has either several bodies or none, your social skills are somewhat blunted.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -73765,13 +66686,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -73786,13 +66701,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -73807,13 +66716,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -73854,13 +66757,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She pays, or they pay, your fee.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 20,
@@ -73874,13 +66771,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -73928,13 +66819,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are overcome by a burning desire to give her the bundle. However you know this desire is not your own, and you are able to throw it off. You find yourself in Karrakara; you do not get a sense of travel, more a sense of realising that you were always there.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -73949,13 +66834,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She does not move her lips or make a sound, but she seems to be contemptuously amused by your presumption. You find yourself in Karrakara; you do not get a sense of travel, more a sense of realising that you were always there. You feel terribly weak.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -73990,13 +66869,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She says 'your ambition is praiseworthy, so I will give you a parting gift: kiss someone to change places with them'. Your bones start to move of their own accord. You shrink and deform into the shape of a frog. She reaches down, takes the bundle and, smiling, places a small crown on your head. All your equipment has been changed into a small, frog-sized version of itself.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -74011,13 +66884,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -74032,13 +66899,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -74053,13 +66914,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She has given you an insulting parting gift: a single cowrie shell.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 1,
@@ -74093,13 +66948,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You work at the markets for several weeks. Although the pay is low, you are able to put up with the worst food and lodgings, and so you save up a fair bit of money.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -74159,13 +67008,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -74193,13 +67036,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "ou wait until a clear morning, when the sea's as flat as a mirror, and make your way to the jetty to set out for the great city of Karrakara. Your ship, really a coracle with ideas above its station, slips into the water. You look at your small pile of cowrie shells, the islands' most common currency. You wonder whether you should return some to the sea god Numen Mari, to ensure a safe journey.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -74214,13 +67051,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "On a clear morning, before even the seagulls have woken up, you make your way to the jetty to set out for the great city of Karrakara. Your ship, really a coracle with ideas above its station, slips into the water. You look at your small pile of cowrie shells, the islands' most common currency. You wonder whether you should return some to the sea god Numen Mari, to ensure a safe journey.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -74235,13 +67066,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "ou take passage on a ship, heading to a new life in the great city of Karrakara. But alas, the ship is wrecked, and it seems that only you survive. You reflect that, at least, your lord will believe you dead.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -74291,13 +67116,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "On a clear morning, before even the seagulls have woken up, you make your way to the jetty to set out for the great city of Karrakara. Your ship, really a coracle with ideas above its station, slips into the water. You look at your small pile of cowrie shells, the islands' most common currency. You wonder whether you should return some to the sea god Numen Mari, to ensure a safe journey.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -74337,13 +67156,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wait until you can no longer see the bottom, and thus are in the domain of the sea god. You drop five shells over the side. Each one seems more reluctant than the last to leave your hand. You are unsure whether your offering has any effect, but you do reach Karrakara without incident.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -74489,13 +67302,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -74510,13 +67317,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -74531,13 +67332,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The gods are never there when you want them, and always there when you don't. Your ship is broken, your shells are lost, and you are battered and nearly drowned. Thankfully Numen Mari does not take your WEAPONNAME or drown you. You cough the air out of your lungs, and find yourself you know not where.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -74578,13 +67373,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The gods must be looking the other way today, because you reach your destination of Karrakara without incident.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -74612,13 +67401,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -20,
@@ -74729,13 +67512,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -74798,13 +67575,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -3,
@@ -74838,13 +67609,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -74878,13 +67643,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -7,
@@ -74924,13 +67683,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The work is incredibly hard. Even in the bitter cold you're soon panting like a thirsty dog.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -74967,13 +67720,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At last you finish. You sleep in the farmer's cart as she drives to the great city. The cold, the rough ride, and the uncertainty of your future combine to plague you with nightmares.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -75071,13 +67818,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your guide robs you in your sleep, and leaves you to find the way yourself. You spend the miles bitterly vowing not to trust anyone ever again.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1000,
@@ -75091,13 +67832,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -75112,13 +67847,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Roguery",
@@ -75133,13 +67862,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -75195,13 +67918,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pass over the River Phoenix, through the Forest Gump, and past several posters advertising a reward for the capture of a rogue mapmaker.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -75229,13 +67946,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -75292,13 +68003,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -75463,13 +68168,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -75484,13 +68183,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -75504,13 +68197,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -75525,13 +68212,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -75677,13 +68358,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -75710,13 +68385,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -75731,13 +68400,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -75790,13 +68453,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -75859,13 +68516,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -75880,13 +68531,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -75901,13 +68546,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -75922,13 +68561,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -75998,13 +68631,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You keep an eye out for Princess Yasmina. But, alas, she does not appear.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -76019,13 +68646,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -76342,13 +68963,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend several weeks doing little but watching the sea and the gulls - and the body of the fish-woman, which strangely refuses to decay.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -76363,13 +68978,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -76384,13 +68993,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -76405,13 +69008,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Scouting",
@@ -76474,13 +69071,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -76528,13 +69119,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Finally a ship passes by the island. It turns out to be captained by the feared pirate Lorena Hobbit.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -76589,13 +69174,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She takes all your shells, and drops you off at Karrakara.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1000,
@@ -76609,13 +69188,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She seeks to rob you, but you have nothing she wants. She orders her crew to beat you up, then leaves you stranded.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -76643,13 +69216,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Food on the island is scarce, and you nearly waste away.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -76703,13 +69270,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Her upper body is that of a red herring.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -76724,13 +69285,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You beat the drum. For a moment you think that nothing has happened. Then you see the black shape in the sky, which quickly turns into Prince Dimitri on his flying carpet. You explain your problem, and he tells you to hop on. The carpet is surprisingly comfortable, almost like riding in a carriage. You fly a short distance over the sea, to what indeed turns out to be Karrakara.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -76745,13 +69300,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Prince Dimitri says 'I'm surprised you called on me just to get a lift.' He smiles as if no one could possibly be unable to find their way off a deserted island, and you cringe as if the mistake was yours and not his.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -76872,13 +69421,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -76893,13 +69436,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You try and pace yourself, but you soon realise that swimming this distance is beyond you. You turn around and head back to the island. You wade ashore and lie gasping on the beach.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -76927,13 +69464,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Exhausted, you wade ashore. You look back to the sea, but you can't see the island.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -76994,13 +69525,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Princess Yasmina is surprsingly helpful, gathering wood and even making the odd suggestion. You labour for hours under a sun that seems ever more merciless. Working without proper tools you don't expect to produce a masterpiece.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -77015,13 +69540,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You labour for hours under a sun that seems ever more merciless. Working by yourself and without proper tools you don't expect to produce a masterpiece.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -77077,13 +69596,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -77098,13 +69611,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -77132,13 +69639,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -77153,13 +69654,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -77215,13 +69710,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -77236,13 +69725,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -77270,13 +69753,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -77291,13 +69768,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -77312,13 +69783,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -77368,13 +69833,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "However your hope is as short-lived as the raft itself. The water isn't even over your head when it falls apart. In despair, you sit on the beach and consider your options.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -77389,13 +69848,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -77410,13 +69863,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -77508,13 +69955,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are further offshore than you thought. You find yourself starting to cramp.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -77529,13 +69970,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -77550,13 +69985,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It seems that all currents do indeed flow to Karrakara. The raft gradually starts to fall apart, but by the time it sinks you have no trouble swimming the remaining distance. As you wade ashore you feel a sudden sense of joy and relief.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -77619,13 +70048,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The dragon gives you a lazy blast of fire as you run back to the beach.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -77758,13 +70181,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You beg the dragon's esteemed pardon, and back away tugging your forelock. 'And don't come back' the dragon says, closing its eyes.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -77779,13 +70196,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You beg the dragon's esteemed pardon, and back away tugging your forelock. 'And don't come back until you can heal me' the dragon says, closing its eyes.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -77800,13 +70211,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Bah - stop wasting my last years, lackwit!'. The dragon gives you a half-hearted blast of fire. As you run back to the beach, he says 'and never come back.'",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -77821,13 +70226,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -77842,13 +70241,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Hm. You've tried - but this is beyond you. I will allow you to leave me.' The dragon closes its eyes. 'Return to me only when you can heal me.'",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -77876,13 +70269,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -77897,13 +70284,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -77972,13 +70353,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pass over the River Phoenix, through the Forest Gump, and past several posters advertising a reward for the capture of a rogue mapmaker.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -78039,13 +70414,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Yasmina directs you to her parents' house.<br><br>'Hi Mum, I've decided to move back home' she tells the lady of the house.<br><br>'We owe you our thanks...I suppose' the elder noblewoman tells you. She gives you ten shells.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -78085,13 +70454,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -78145,13 +70508,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Courtesy and pride forbid you to protest at her shabby treatment of you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -78166,13 +70523,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel slightly ashamed of meekly accepting this shabby treatment from the hated aristocracy.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -78240,13 +70591,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel a slight sense of shame at your mercantile squabbling.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -78304,13 +70649,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The woman sighs.<br><br>'I suppose you're right.' She gives you another twenty shells. You thank her and take your leave.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 20,
@@ -78377,13 +70716,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -78418,13 +70751,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You quickly track down Owyth, who's kept the horse for you.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -78439,13 +70766,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -78460,13 +70781,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -78501,13 +70816,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You quickly track down Owyth, who's kept the unicorn for you.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -78522,13 +70831,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -78571,13 +70874,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You quickly track down Owyth, who seems pleased to see you again.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -78686,13 +70983,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Short of cash, you quickly spin some sugar-flavoured futures for the gullible and wealthy.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 6,
@@ -78706,13 +70997,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -78748,13 +71033,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Choosing your hunger over your shame, you quickly find, flirt, fornicate, and forget a wealthy and gullible patron.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -78768,13 +71047,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -79106,13 +71379,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -79149,13 +71416,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You put it out of your mind. It had the smell of dark sorcery, and in any case the whole thing seemed a little like a dream. The more you think about it, the more you think you might really have dreamed it. And, like the details of a dream, you soon forget everything about the shop, and wonder why you're thinking about your dreams when you need money.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -79170,13 +71431,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -79191,13 +71446,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -79212,13 +71461,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -79233,13 +71476,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend hours trying to find Lamp and Crown Streets, but without any success. You ask a few passers-by for help, but they stare at you as if you've gone mad. You start to think that you might have only visited the shop in a dream. And, like the details of a dream, you abruptly forget everything about the shop, and wonder why you're wandering the city when you need money.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -79254,13 +71491,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find the shop fairly easily. There, you tell the repulsive Phoedocia that you want to sell some courage, and submit to the nauseating process by which courage is extracted: by having the shopkeeper suck it out in your blood.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -79275,13 +71506,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 6,
@@ -79350,13 +71575,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -79458,13 +71677,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -79534,13 +71747,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The men visit you, and you tell them you've failed.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -79588,13 +71795,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -79609,13 +71810,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -79845,13 +72040,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -79886,13 +72075,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The men visit you, and you tell them you've done the job. They nod, and tell you the debt is clear. You're relived to see the last of them.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -79927,13 +72110,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Next day the young man visits you and gives you your shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 20,
@@ -80015,13 +72192,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "However a nagging voice in your head whispers that you are standing at the edge of an abyss.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -80058,13 +72229,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -80154,13 +72319,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -80339,13 +72498,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You can't find any work. Over several days you become more and more hungry and depressed.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -80424,13 +72577,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -80445,13 +72592,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -80532,13 +72673,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -80628,13 +72763,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -80683,13 +72812,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He tells you to wait right there. Several hours later, as the market is closing, you realise he has ripped you off. You are filled with a great disgust for humanity.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -80704,13 +72827,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -80725,13 +72842,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -80853,13 +72964,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Somewhat to your surprise, he is as good as his word. He gets you a job doing manual work for one of the stallholders.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -80874,13 +72979,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He tells you to wait right there. Several hours later, as the market is closing, you realise he isn't coming back. You wonder whether he was trying a complicated scam on you that didn't work, or was simply deranged.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -80916,13 +73015,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -80957,13 +73050,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -81041,13 +73128,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find a public park and spend a cold and hungry night, unable to sleep and jumping at every shadow.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -81062,13 +73143,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend the night cold and hungry in a public park, trying to sleep and stay alert at the same time.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -81108,13 +73183,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -81176,13 +73245,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend a frustrating and sleepless night wandering the richer districts of the city, looking for an opportunity that never arrives.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -81219,13 +73282,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -81261,13 +73318,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Eventually you notice an open second-storey window, in an unguarded house. You clamber up and let yourself in. The house has many fine paintings and tapestries, but the only things you can find that you can carry are a few shells. You aren't sure that the owner will even notice that they've been robbed.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -81302,13 +73353,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -81363,13 +73408,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Eventually you find a large house which, strangely, lies open and unguarded. You enter, and follow a twisting corridor. As you walk along you realise you don't feel the tension you should be feeling. Indeed, far from the normal fear of a burglar, you don't even feel hunger, fatigue, or homesickness. The corridor ends in a brighly-lit room, where a woman in the white robes of a priestess greets you. She tells you to return that which has been stolen. You hand her the black pearl which you have brought with you, as if it was only natural to bring it on a robbery. The woman wishes you health and safety, which you feel is no empty formula. You leave the house which, now that your strange mood has passed, you see is obviously a temple.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -81384,13 +73423,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -81405,13 +73438,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Shelter",
@@ -81463,13 +73490,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You take the pearl, which you're sure isn't really twisting in your hands, and run out of the temple, as you now clearly see it is.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -81484,13 +73505,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -81518,13 +73533,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -81569,13 +73578,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You follow a middle-aged woman in fine clothes who is leaving a shabby beer shop. You creep up behind her, but as you are about to hit her she says turns around. She is so cross-eyed that, when she looks at you, she seems to be looking over your shoulder at someone about to stab you in the back. She holds a dagger in each hand, and calmly says 'don't you know noone gets robbed around here without my say-so?'. You take in her expensive jewellery, peasant's accent, and total lack of fear, and realise you've done something rather silly.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -81623,13 +73626,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -81729,13 +73726,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -81772,13 +73763,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Perhaps he was fairly far gone, because you quickly run him through. You go through his pockets and run off.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -81793,13 +73778,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -81814,13 +73793,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He is impossibly graceful for his size and drunken state. He slurs insults and threats at you as his sword gives you several flesh wounds. You run off, and he lumbers after you, still bellowing beery rage.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -81904,13 +73877,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Without thinking, you raise your WEAPONNAME and kill him with one blow. You watch numbly as he calls out for the wife he was abusing minutes before, then dies. You come to your senses and run off.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -81925,13 +73892,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -81946,13 +73907,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -81967,13 +73922,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He seems to have no sense of pain, and you retreat after taking several hits to the face.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -82001,13 +73950,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You quickly find a suitable labourer, hit him from behind, and take his shells.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -82022,13 +73965,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 6,
@@ -82150,13 +74087,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -82231,13 +74162,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A white bear, carrying a richly-dressed and sad-looking girl, blocks your path.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -82328,13 +74253,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -82412,13 +74331,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The girl's replies to your enquiries are mumbled and sullen, and punctuated by heavy sighs which suggest you are unbeleivably wearisome. The effect is most depressing.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -82433,13 +74346,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -82502,13 +74409,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The bear gives you a huge clout on the head, which knocks you to the ground.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -82571,13 +74472,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel guilty about leaving the girl at the mercy of a fierce bear.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -82592,13 +74487,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -82697,13 +74586,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -82718,13 +74601,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The bear tells the princess to climb down, which she does in silence. With an air of relief, the bear thanks you and trots off into the forest.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -82752,13 +74629,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You shake your head, and make your way out of the clearing. The bear seems disappointed, but not surprised.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -82841,13 +74712,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -82875,13 +74740,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The girl heaves a sigh which seems to contain all the troubles of the world, and gives you a look of world-weary contempt.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -82896,13 +74755,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -82917,13 +74770,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -82958,13 +74805,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -83019,13 +74860,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -83194,13 +75029,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "On top of the numbered cube, you find its book. You open it, but can't understand anything. You take it with you anyway.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -83228,13 +75057,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature knocks you to the ground. The WEAPONNAME falls from your hands. The wolf's claws sink into your skin.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -83309,13 +75132,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your WEAPONNAME is too far to reach. You hear the great wings of Death, coming to carry you away.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -83387,13 +75204,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You push, but the creature is too heavy.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -83585,13 +75396,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -83683,13 +75488,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -83734,13 +75533,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A great wolf, with two people on its back, slams into you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -83950,13 +75743,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "But as time wears on you become colder and colder.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -84071,13 +75858,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Before you can react, the wolf slashes you across the face.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -84118,13 +75899,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You put a shell in the wolf's mouth, and climb on its back.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -84138,13 +75913,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You put two shells in the wolf's mouth, and you and Yasmina climb on its back.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -2,
@@ -84310,13 +76079,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your articulate and sincere argument for the overthrow of all governments and the sharing of all wealth obviously impresses them. In a whisper, they tell you of a widespread and undeclared rebellion for the very aims you have named. They promise that they will vouch for you to the other members of this group, and contact you when the time arrives.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -84331,13 +76094,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -84352,13 +76109,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your articulate and sincere condemnation of wanton rebellion obviously impresses them. They tell you that they have many friends in the government of Karrakara. They also say that there could well be a job for one with your talents and convictions. They promise to find you when the time arrives.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -84464,13 +76215,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -84485,13 +76230,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You try to contribute to the conversation, but it soon becomes obvious that you have little knowledge of or interest in the subject. The travellers and you sink into embarrassed silence.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -84616,13 +76355,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You sit bolt upright - could they be the two travellers you killed? You question them frantically. At last, you are sure. Your burden of guilt is at least partly lightened. You weren't imagining things, and you killed in self-defence.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -84698,13 +76431,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -84732,13 +76459,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel your head. It doesn't seem to hurt, but your forehead seems different somehow. There's a lake nearby, and you look at your reflection. You're noticeably less attractive than before. You notice a very homely owl sitting in a nearby tree. You realise that you're in the Ugly Forest, home of the Ugly Trees, which mar the beauty of all who touch them.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -84753,13 +76474,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -84774,13 +76489,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -84795,13 +76504,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The wolf stops and says 'end of the line please.' Although you seem to be in the same dark forest, you thank it and dismount. Seeing your confusion, it points a paw in the direction you should go.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -84836,13 +76539,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -84929,13 +76626,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're relived to find that Princess Yasmina makes no objection.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -85003,13 +76694,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After only a few minutes of foot-stomping and declaring she hates you, she agrees to follow you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -85046,13 +76731,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You climb a tall tree. While you're there, you decide to see if you recognise the area. To your joy, you do - and it looks like you're not very far away.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -85067,13 +76746,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -85110,13 +76783,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You climb a tall tree. While you're there, you decide to see if you can see a way out of the forest. Your heart sinks as you see nothing but trees beyond trees.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -85239,13 +76906,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You fall to the ground with a wet thump. The softness of the ground doesn't seem to make it hurt any less.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -85328,13 +76989,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Somewhat ashamed of being afraid of an unpleasant smell, you retrace your steps.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -85349,13 +77004,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You retrace your steps. The ground returns to normal, but soon the trees have changed. They've become noticeably more twisted, with sparse leaves, uneven branches, and a generally unpleasant appearance. Even the animals are different: a homely-looking bird watches you sadly.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -85443,13 +77092,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After a long and loud argument you give in to despair, and agree to retrace your steps instead.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -85477,13 +77120,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Somewhat to your surprise the Princess agrees to follow you after only a small amount of foot-stamping and declaring she hates you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -85498,13 +77135,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -85617,13 +77248,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You vomit copiously, squatting miserably in your own and the forest's filth.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -85708,13 +77333,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You think you know what this is. It's neither faeces nor a strange kind of earth. Rather, it's a type of minor demon, which lives on the foul wastes of material creatures - and so naturally tries to provoke such from any passer-by, by adopting a disgusting illusory form. You are ashamed of how easily you were tricked.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -85762,13 +77381,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -85808,13 +77421,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -85849,13 +77456,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You retrace your steps. The trees soon return to normal, but you notice the ground becoming muddier and muddier. It also starts to smell worse and worse. Soon it almost feels like you're walking through faeces.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -85892,13 +77493,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Several branches brush your face. Although you notice nothing, each one causes your face to get slightly less attractive.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -86055,13 +77650,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The stick uglifies the skin of your hands.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -86076,13 +77665,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -86110,13 +77693,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The stick uglifies your clothes.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -86237,13 +77814,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -86363,13 +77934,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -2,
@@ -86530,13 +78095,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You bid him goodbye. He gives you a far too jovial farewell, and you leave him to his corpse.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -86551,13 +78110,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You step into the boat. Your position is cramped, but would be quite comfortable if not for the still and silent presence behind you. The man grins, and seems to be looking at something no one else can see.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -86627,13 +78180,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -86709,13 +78256,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Before you can react, he has stabbed you in the arm several times.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -86743,13 +78284,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -86794,13 +78329,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Eventually you manage to get a fire going, and push the boat and bodies into the middle of the river. You watch the fire which, some say, seperates the body from the soul, turning the body into hardened base matter and the soul to a pure vapour which may rise to the celestial realm. When the fire has consumed all, and in turn been consumed by the river, you take your leave.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -86815,13 +78344,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend several hours on the horrible and difficult task of giving the two a respectful burial. All authorities agree that such close contact with the dead puts you in physical, and possibly even spiritual, peril.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -86856,13 +78379,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Indeed, you feel an itching in your shoulder. Some folk have told you that this is the sign of a murdered ghost, stabbing you in the back. It's said to leave a wound that doesn't heal normally.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -86877,13 +78394,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Indeed, you feel a weakness that seems a result of more than natural exhaustion.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -86992,13 +78503,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You set sail. But immediately after you cast off, you are confronted by the spirit of the river: one of the many daughters of the sea god Numen Mari and his former wife, the Crone. She thanks you for not polluting her with corpses, and blesses you. She says it may protect you from the horrors on land.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Scouting",
@@ -87012,13 +78517,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You set sail. But immediately after you cast off, you are confronted by the spirit of the river: one of the many daughters of the sea god Numen Mari and his former wife, the Crone. She reviles you for polluting her with the dead, and calls ill-fortune on you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -87046,13 +78545,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -87067,13 +78560,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -87088,13 +78575,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -87109,13 +78590,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -87130,13 +78605,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -87228,13 +78697,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The river carries you into a huge cave. All is utterly dark. The river starts flowing downwards, faster and faster, until suddenly there's no river at all, and you're hurtling through empty space.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -87315,13 +78778,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -87361,13 +78818,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -87402,13 +78853,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -87423,15 +78868,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You raise the bucket to your lips. The water is clear and cold, but you can feel no effect beyond slaking your thirst.",
     "text_en": "",
     "type": 23,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "random_prof",
+      "type": "random_prof_change",
       "next": "Foxwoman4"
     }
   },
@@ -87468,13 +78907,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After a while, you see the familiar clearing ahead of you. The vixen is standing by the well, just as you left her. You tell her that you're ready to find a new life. She offers you the bucket from the well, and you drink from it.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -87559,13 +78992,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your bones start to move of their own accord. You shrink and deform into the shape of a frog. You can feel a small crown on your head. All your equipment has been changed into a small, frog-sized version of itself. You look around, to find yourself in a swamp. You hear the vixen's voice, as if from far away: 'if you tire of your new life, get someone to kiss you and you'll change places with them.'",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -87593,7 +79020,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": " at you sadly, as if bidding you farewell. Your bones start to move of their own accord. You turn into a bird. Free at last you open your wings to embrace the wind, and head into the sky.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Weasel",
@@ -87622,13 +79052,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -87716,13 +79140,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -87737,13 +79155,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -87758,13 +79170,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It squirms in your hand, and starts scratching at you until you have to drop it.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -87779,13 +79185,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The animal wriggles until it's comfortable, but is happy to stay hanging around your neck. You set off again, displaying far more style than you did before.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -87800,13 +79200,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -87866,13 +79260,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -87960,13 +79348,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -88079,13 +79461,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The beast knocks you to the ground. It kicks you several times then trots away, still swearing and muttering threats.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -88100,13 +79476,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You suspect it might not have been a real unicorn.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -88121,13 +79491,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -88142,13 +79506,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -88185,13 +79543,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -88206,13 +79558,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -88227,13 +79573,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -88248,13 +79588,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -88339,13 +79673,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -88360,13 +79688,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -88425,13 +79747,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -88446,13 +79762,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You carefully approach the animal. To your surprise it shows no fear of you. After only half an hour you're able to ride it. You've heard of animals, both on land and sea, which look like unicorns but aren't. Whether this one is the real thing or not, it's truly a fine beast.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -88520,13 +79830,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -88561,13 +79865,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -88703,13 +80001,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -8,
@@ -88723,13 +80015,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblins seem almost hypnotised by the medallion, and are happy to accept it.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -88744,13 +80030,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblins draw in their breath when they see the pearl, and are eager to accept it.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -88765,13 +80045,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblins are fascinated by the box, and gladly accept it as payment.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -88786,13 +80060,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The benches are too small for you, so you squat down on your haunches and wait. Surprisingly quickly, he makes a cloak that fits you. As soon as you put it on, the forest seems sharper and clearer. You see other goblin buildings all around you, and wonder how you could have missed them before.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -88807,13 +80075,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Scouting",
@@ -88841,13 +80103,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The goblins talk together in hushed voices. Then one tells you that two sorcerers have started claiming to be King and Queen of the Forest. So far the goblins have simply stayed out of their way. But if you could convince them to move on, the goblins say they'd certainly make you a fine cloak for free.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -88862,13 +80118,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -88923,13 +80173,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -88957,13 +80201,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -89138,13 +80376,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You return to the goblins and report your failure. They are far more forgiving than you thought they'd be. They tell you that you can still buy a cloak if you want it.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -89312,13 +80544,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You lower your WEAPONNAME and silently turn and walk away.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -89333,13 +80559,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your chest tightens as you raise your WEAPONNAME.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -89376,13 +80596,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The air seems to grow somehow thicker around you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -89419,13 +80633,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The Forest Queen gives you a bag of shells. You count them, and finding the correct total you walk away.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 20,
@@ -89439,13 +80647,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -89480,13 +80682,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The Forest Queen throws her hands in the air. 'Very well! You want to be a con-artist's servant, so you shall. We'll leave.' Keeping your WEAPONNAME at the ready, you retreat down the hillside. You look at the Forest King and his features seem to melt into each other. Finally you're looking at an ordinary mountain.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -89547,13 +80743,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The Forest Queen draws in an inhumanly large breath, then lets it out. You are knocked off your feet by a bitterly cold and unrelenting wind. You fall down the mountain, and every rock seems to find you on the way down. You look up at the gigantic Forest King and realise you're out of your league.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -89588,13 +80778,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -89639,13 +80823,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You bend to kiss the creature. You are almost knocked off your feet by a bolt of energy which leaps from it to you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -89660,13 +80838,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "For a moment you get a terrible sense of your skin crawling, as if your features were subtly changing.",
     "text_en": "",
     "type": 21,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "stat_swap",
       "target_attr": "Charisma",
@@ -89681,13 +80853,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You bend to kiss the creature. You are almost knocked off your feet by a bolt of energy which leaps from it to you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -89702,13 +80868,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "For a moment you get a terrible sensation in your stomach, as if your insides were rearranging themselves.",
     "text_en": "",
     "type": 21,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "stat_swap",
       "target_attr": "Heroism",
@@ -89801,13 +80961,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A water-spirit swims by you. It tells you that the creature is uncatchable. It also says there's a bar on the bottom, but it's a dive. The creature blesses you and you return to the surface.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Magic",
@@ -89821,13 +80975,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You realise, too late, that you're running out of breath. You take in a lungful of water before you break the surface.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -89905,13 +81053,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You run into the dark and strange wood. Thorns and branches rake your face, like the fingernails of an angry woman.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -89926,13 +81068,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature is nowhere to be seen, and you are covered in cuts, especially in your shoulder. You backtrack to the clearing, where you continue on your way. Soon the trees thin out and you see daylight again.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -89990,13 +81126,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Like most magical creatures it has a pile of treasure, even though it has no possible use for it. You eventually settle on fifteen shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 15,
@@ -90023,13 +81153,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Very well' the creature says. Again you kiss the creature, and a bolt of energy almost knocks you down.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -90044,13 +81168,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'There you are: I've changed the smart to match the mace.'<br><br>It doesn't feel quite right, but you're too stunned to stop the creature as it walks into the darkness.",
     "text_en": "",
     "type": 21,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "stat_swap",
       "target_attr": "Streetwise",
@@ -90131,13 +81249,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You walk through the forest, alert for danger, but hearing only the imp perched on your shoulder noisily eating a cowrie shell.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -90164,13 +81276,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You walk through the forest, through what seems to you an unnatural silence. Suddenly you realise why: the imp should be chattering into your ear. You look around, but the imp is nowhere to be seen. You call out, to no avail. You realise that, unless the imp can find cowrie shells, it'll starve to death. You feel stupid and selfish for bringing it here.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -90185,13 +81291,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -90246,13 +81346,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -90267,13 +81361,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -90308,13 +81396,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -90329,13 +81411,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -90392,13 +81468,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -90413,13 +81483,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -90434,13 +81498,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -90536,13 +81594,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You begin to get hungrier and hungrier, until you convince yourself to try some of the delicious-looking fungi growing at the base of a tree. Your stomach soon begins to cramp and you huddle on the forest floor in agony for what seems like hours.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -90557,13 +81609,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wander through the endless forest, getting hungrier and hungrier.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -90598,13 +81644,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You think you see some figs. But they turn out to be just figs of your imagination.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -90660,13 +81700,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You begin to get hungry, so you look for food. You find some High John the Conkaroo, a powerful herb which restores both body and spirit.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -90681,13 +81715,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -90702,13 +81730,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -90723,13 +81745,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -90757,13 +81773,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You begin to get hungry, so you gather some fruit and mushrooms and regain your strength.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -91031,13 +82041,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -91052,13 +82056,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You greet a horsewoman riding the opposite way to you. She tells you that you're very close to Karrakara, and points you in the right direction. Soon you see the walls of the great city.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -91073,13 +82071,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -91107,13 +82099,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -91251,13 +82237,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A flower-seller tells you that, according to rumour, Billy Two-Shits has been murdered. Apparently he got involved with organised crime, and fell victim to a raging drug hobbit.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -91272,13 +82252,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -91323,13 +82297,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The work is boring and tiring, but at least not particularly difficult.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -91364,13 +82332,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -91407,13 +82369,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You get talking to one of the other workers, a middle-aged woman who tells you she used to 'work on ships'. She seems to mean that she was a pirate. One of her stories in particular sticks in your mind. She tells you about black pearls, which aren't really pearls as all, but the souls of dragons. Dragons are practically immortal, but any damage to a pearl is damage to the dragon itself. For this reason the dragon will guard the pearl at all costs; and indeed she thinks that the stories of dragons obsessively hoarding treasure may come from this.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -91441,13 +82397,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The stallholder pays you at the end of the day.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 4,
@@ -91506,13 +82456,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend a shell on a meal and a room.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -91551,13 +82495,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -91619,13 +82557,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -91640,13 +82572,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -91725,13 +82651,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -91746,13 +82666,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -91883,13 +82797,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You try to land a fist on his face as he claws at your skin with his long fingernails.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -91951,13 +82859,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He gets the better of you. You huddle in a ball while he kicks you several times in the stomach. You are too overwhelmed with pain to think of using your WEAPONNAME.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -91972,13 +82874,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He takes all your money. Weak and destitute, you spend the night shivering in the street.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1000,
@@ -91992,13 +82888,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -92013,13 +82903,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -92034,13 +82918,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -92102,13 +82980,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -92148,13 +83020,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Serene Dreams is crowded, noisy and dirty, a place of much laughter and little joy. You look at the stage, watching the absent-eyed young elf woman who sits on a swing, with a sinking feeling about what the work might involve. The owner reads your expression. He tells you it's 'nothing like that'; the work is fighting, for money. Not to the death, only until one fighter gives up. And you get paid even if you don't win. He tells you to come back tonight.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -92191,13 +83057,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -92348,13 +83208,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -92408,13 +83262,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -92457,13 +83305,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are out of your league. The huge man catches you with one of his stone blocks in the first minute of the fight.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -92478,13 +83320,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You concentrate on dodging the stone blocks which the huge man whirls at you. They seem to be designed more for show than for practical use. You get one or two hits in - although whether he feels them is another question. You start to think you might be able to beat him, when the gnome blows a dart at you. Your leg instantly goes numb. The large man drops the pretense of using the blocks and punches you efficiently in the face. You lose consciousness.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -92512,13 +83348,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are dragged off stage to howls of the unrestrained contempt of those who know they will never have to do better. The owner tells you 'I said I'd pay you, and I will, but that was pathetic'. He gives you four shells and you change back into your normal clothes. One of the waitresses gives you your gear back with a look of pity. Still streaming blood, you are pushed out into the cold night.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 4,
@@ -92532,13 +83362,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "When you come to, the owner gives you six shells. He praises your efforts in a surprisingly warm tone. You are disgusted to find yourself proud of impressing him. He tells you you can come back whenever you want. You change back into your normal clothes and get your gear back. Still bleeding, but feeling better than you should, you walk into the cold night.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 6,
@@ -92552,13 +83376,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The owner gives you eight shells. He pats you on the back, praising your cleverness and 'fighting heart'. You find yourself preening. A small voice tells you that you shouldn't be proud of being part of this farce, but for the most part you feel almost like you're flying. You change back into your normal clothes and get your gear back. You laugh at nothing as you walk into the cold night.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 8,
@@ -92572,13 +83390,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -92593,13 +83405,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -92674,13 +83480,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You decide not to fool yourself by glorifying what was inglorious.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -92695,13 +83495,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -92736,13 +83530,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -92757,13 +83545,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -92836,13 +83618,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The nuts are excellent. As you take another handful, you still seem to hear the voices cheering you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -92887,13 +83663,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You suppose that you must be destined to be a great hero.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -92908,13 +83678,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spit the nuts out as you realise with horror that the voices praising you are coming from them.<br><br>'Oh yes', the manager says. 'All our snacks are complimentry.'",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -92942,13 +83706,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -92963,13 +83721,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You fight several times over the next few weeks. You seem to be deliberately matched with weaker opponents - to the point where some of the fights aren't so much matches as a sadistic form of comedy. But the crowd cheers you just the same.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -92983,13 +83735,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -93044,13 +83790,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -93065,13 +83805,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You make friends with another lizard-man, who's been in Karrakara for a lot longer than you. He works in Serene Dreams as a comedian, calling himself Eddie Lizzard. He's able to give you many excellent pieces of advice on getting on with humans.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -93192,13 +83926,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You take the shells. Nothing more is said, but the imp is there when you start your next fight, and gone when you finish it.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -93212,13 +83940,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -93233,13 +83955,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -93254,13 +83970,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -93310,13 +84020,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -93331,13 +84035,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -93352,13 +84050,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -93373,13 +84065,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -93416,13 +84102,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -93459,13 +84139,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -93480,13 +84154,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -93501,13 +84169,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -93522,13 +84184,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -93589,13 +84245,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "On the bright side, you do keep getting paid, and although you start splashing your money around, you manage to save a fair bit.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 12,
@@ -93654,13 +84304,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're proud of the owner's praise. You tell him you're ready for the next level of challenger. He smiles and tells you he knew you were ready. He gives you directions to a training camp, a short journey outside the city.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -93775,13 +84419,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -93988,13 +84626,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She seems outraged by your attack. She screams and stabs at you with savage fury, and a surprising amount of skill.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -94066,13 +84698,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You turn tail and run.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -94193,13 +84819,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wish her good luck, and continue your journey.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -94234,13 +84854,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -94255,13 +84869,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -94433,13 +85041,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Full of shame and anger, you take out your coin-purse. She bursts into laughter.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -94454,13 +85056,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At last you see a place that matches the directions you were given. You get back on the path, and soon find yourself at a rough camp.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -94475,13 +85071,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -94496,13 +85086,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -94643,13 +85227,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Once you're a safe distance away, you suggest to the elf that you should travel together for safety. She says that she'll be safe by herself, and that she needs to think about what to do. You reluctantly say goodbye to her, and set off.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -94689,13 +85267,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -94735,13 +85307,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -94781,13 +85347,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It's easy enough to head back into the forest without anyone noticing.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -94802,13 +85362,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -94968,13 +85522,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You raise your WEAPONNAME, and yell a curse on the slavers, and on all who follow their vile trade.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -95017,13 +85565,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The blacksmith swings his hammer round, catching you neatly in the side of the head, and the world goes black.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -95051,13 +85593,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The blacksmith swings his hammer round, catching your arm.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -95153,13 +85689,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "But alas, they're too cunning for you. You feel a sharp pain between your shoulderblades and fall to the forest floor.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -95342,13 +85872,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They hunt you through the silent forest. For hours you dodge them, trembling with a mixture of fear and outrage.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -95428,13 +85952,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "By the time the two men return to the camp, they have a lynch mob waiting for them. The men chase them into the forest. You don't know whether they catch them, but in any case the camp becomes a scene of drunken, violent celebration. Soon you think it'd be best to leave.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -95469,13 +85987,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You run into the safety of the quiet forest.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -95490,13 +86002,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -95511,13 +86017,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -95703,13 +86203,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're below decks in a huge ship. To your surprise the slavers don't leave you in chains once you're on board, or take any of your gear - not even your WEAPONNAME.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -95724,13 +86218,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -95745,13 +86233,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -95766,13 +86248,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -96075,13 +86551,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At least no one identifies you as the one responsible. Everyone is only lightly whipped.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -96165,13 +86635,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -96267,13 +86731,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your suspicions were right. You are dragged on to the deck. With your WEAPONNAME in hand to compound the humiliation, you're whipped until you've almost been skinned.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -96663,13 +87121,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Without anything seeming to change, the creature is suddenly not there. A guard stares at the empty air in confusion - but your plan has failed.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -96723,13 +87175,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature flies throughout the ship, killing everyone - prisoners and slavers alike. Your cell is painted with blood, and only you are left alive. The creature opens the cell door. Sickened, you swim to shore, and head into the forest. You feel numbed with guilt.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -96744,13 +87190,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature flies throughout the ship, killing all the slavers. It opens the cell door, and you walk out onto a deck which is awash with blood. Your fellow captives look at you with more fear than they ever gave the guards. You all jump into the river and swim to shore. You feel the taint of dark sorcery on you as you head into the forest alone.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -97116,13 +87556,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You attack the guard, but he manages to fight you off and raise the alarm. You howl with pain as a sword cuts your face.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -97137,13 +87571,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your rebellion ends nearly as soon as it starts, with several slaves dead and all wounded.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -97171,13 +87599,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You kill one guard - but not before he raises the alarm. The guards swarm onto the deck, as numerous as ants.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -97246,13 +87668,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Indeed, you have no reason to disagree with his assessment. What, after all, is the point of words and causes? Sunk in misery, you resolve to have no more to do with either.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -97267,13 +87683,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -97288,13 +87698,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -97523,13 +87927,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -97603,13 +88001,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -97696,13 +88088,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The young elf agrees with your decision. You notice that your fellow-captives are doing their best to practice their weapons. You do the same.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Duelling",
@@ -97767,13 +88153,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You notice that your fellow-captives are doing their best to practice their weapons. You do the same.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Duelling",
@@ -97788,13 +88168,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Brawling",
@@ -97822,13 +88196,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -98015,13 +88383,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -98111,13 +88473,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You both throw down your weapons.<br><br>'Behold, Karsh' you shout.<br><br>'Here are two who will not be slaughtered for your amusement.'",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -98272,13 +88628,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The gladiator kicks some blood-stained sand into your eyes, blinding you long enough for his sword to slash across your stomach. You fall to your knees in agony.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -98381,13 +88731,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As the crowd howls for your blood, you feel yourself about to vomit. Seeing no value in maintaining decorum at this point, you do so. What emerges from your mouth isn't bile and half-digested food. It's the bloodless, eyeless creatures that you fought in the pyramid. The crowd falls silent. Sitting on their haunches, the two creatures berate the crowd. They say that your death would be irrelevant - but someone should've checked whether you were the vessel of some higher beings. They crawl slowly out of the arena. You follow them. Everyone stares at you as if you were a mighty magician, and none stop you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -98463,13 +88807,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -98484,13 +88822,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You lie on the comfortable hammock and sink into sleep.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -98559,13 +88891,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In the morning, you ask your captors about the elf. But you learn that she was killed last night, while you slept. You vow to escape this foul place.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -98580,13 +88906,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -98718,23 +89038,13 @@ window.GAME_DATA_EVENTS = [
     "id": "Gladiatorchoose1f",
     "source_line": 6554,
     "source_code": "'Gladiatorchoose1f'=> array (\"At last you get the grim news that you're scheduled to fight. After a sleepness night you walk into the arena, WEAPONNAME in hand.\",13,\"Gladiatorchoose1g\"),",
-    "text_zh": "",
+    "text_zh": "At last you get the grim news that you're scheduled to fight. After a sleepness night you walk into the arena, WEAPONNAME in hand.",
     "text_en": "",
-    "type": 12,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "type": 13,
+    "options": [],
     "logic": {
-      "type": "multi_check",
-      "count": 0,
-      "diff": 0,
-      "attrs": [],
-      "dests": [
-        "Gladiatorchoose1fa"
-      ]
+      "type": "click_continue",
+      "next": "Gladiatorchoose1g"
     }
   },
   {
@@ -98744,13 +89054,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After several weeks you finish your tunnel. But you've made it too short. It opens into a cell, identical to your own. The cell's been decorated with a few personal things. It seems the owner must've been killed recently and it hasn't yet been cleared. It looks to you like an omen of your own fate, and your heart is weighted down with despair.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -98830,13 +89134,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your tunnel is discovered in short order. Thankfully you're one of the better-performing pieces of property the slavers own, and so you're whipped rather than executed.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -98855,19 +89153,6 @@ window.GAME_DATA_EVENTS = [
     "logic": {
       "type": "single_link",
       "next": "Gladiatorchoose1f"
-    }
-  },
-  {
-    "id": "Gladiatorchoose1f",
-    "source_line": 6554,
-    "source_code": "'Gladiatorchoose1f'=> array (\"At last you get the grim news that you're scheduled to fight. After a sleepness night you walk into the arena, WEAPONNAME in hand.\",13,\"Gladiatorchoose1g\"),",
-    "text_zh": "At last you get the grim news that you're scheduled to fight. After a sleepness night you walk into the arena, WEAPONNAME in hand.",
-    "text_en": "",
-    "type": 13,
-    "options": [],
-    "logic": {
-      "type": "click_continue",
-      "next": "Gladiatorchoose1g"
     }
   },
   {
@@ -98898,13 +89183,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your opponent is a monstrous creature that seems to be the offspring of a cat and a spider. It has apparently been in the arena for hours, as the place is strung with webs, as thick as ropes.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -98993,13 +89272,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You charge at the foul beast. Its webs stick to you like an unwanted suitor, but you rip yourself free, knowing that to be held is death. You raise your WEAPONNAME and kill the creature as the crowd cheers.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -99064,13 +89337,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The arena attendants rush onto the sand, and whip you for failing to entertain the crowd. After stripping enough skin from your back they admit that you won the bout.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -99457,13 +89724,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She's taken completely by surprise as you cut her down.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -99528,13 +89789,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The elf is quicker than you, but you have more staying power. You take several cuts, but at last your WEAPONNAME stops her heart.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -99634,13 +89889,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -99655,13 +89904,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -99706,13 +89949,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At last the crowd grows bored with you, and you're freed.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Brawling",
@@ -99727,13 +89964,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Duelling",
@@ -99748,13 +89979,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -99769,13 +89994,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -99790,13 +90009,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -99831,13 +90044,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At last you're able to find a guard who needs money quickly, and bribe them.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -99917,14 +90124,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Gladiator2na",
       "fail": "Gladiator2poor"
     }
@@ -99961,13 +90163,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "When he's next on duty, you arrange it to look like you overpowered him and escaped. He'll no doubt be whipped at the very least, and you wonder what desperation led him to this.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1000,
@@ -99981,14 +90177,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Gladiator2na",
       "fail": "Gladiator2poor"
     }
@@ -100037,13 +90228,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "With consummate hypocrisy, these traders in human flesh despite bribery. Thankfully you're one of the better-performing pieces of property the slavers own, and so you're whipped rather than executed.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -100071,13 +90256,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend weeks practicing.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Brawling",
@@ -100092,13 +90271,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Duelling",
@@ -100166,13 +90339,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You think about the poor elf. But, at last, you admit there's nothing you can do.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -100187,13 +90354,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -100236,13 +90397,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find it easy enough to get work on a ship headed for Karrakara. At last you breathe the filthy, beloved air of the great city.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 5,
@@ -100303,13 +90458,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The journey back is gruelling but uneventful.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -100345,13 +90494,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You try to remember the rebel's speech against the wealthy and powerful of the world.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -100407,13 +90550,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The crowd is silent - ashamed of their bloodlust, yet unable or unwilling to overcome it.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -100469,13 +90606,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The crowd howls with rage at the idea that Karsh the Mighty should fear another city. You step back, like someone at the beach hit unexpectedly by a wave.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -100490,13 +90621,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The crowd laughs and claps at your speech. They are so far from taking your threat seriously that they believe you've made a grim joke.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -100524,13 +90649,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You turn to face the crowd. You see the futility of begging or threatening this fearless, merciless mob.<br><br>'Hail, o Karsh' you say. 'Those about to die salute you.'",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -100647,21 +90766,25 @@ window.GAME_DATA_EVENTS = [
     "id": "Gladiatorweakf",
     "source_line": 6690,
     "source_code": "'Gladiatorweakf'=> array (\"It's easy to find the elf. She stands at the head of a small group who have neither died nor fled. Keeping five men at bay, she screams a string of obscenities and threats. Dead enemies lie at her feet.\",2,2,\"Help her\",\"Gladiatorweakelf\",\"Make your escape\",\"Gladiatorweakr2ssan\"),",
-    "text_zh": "",
+    "text_zh": "It's easy to find the elf. She stands at the head of a small group who have neither died nor fled. Keeping five men at bay, she screams a string of obscenities and threats. Dead enemies lie at her feet.",
     "text_en": "",
-    "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "type": 2,
+    "options": [],
     "logic": {
-      "type": "effect",
-      "stat_attr": "Heroism",
-      "stat_val": 4,
-      "next": "Gladiatorweakf1"
+      "type": "free_choice",
+      "count": 2,
+      "choices": [
+        {
+          "text": "Help her",
+          "text_key": null,
+          "next_event": "Gladiatorweakelf"
+        },
+        {
+          "text": "Make your escape",
+          "text_key": null,
+          "next_event": "Gladiatorweakr2ssan"
+        }
+      ]
     }
   },
   {
@@ -100671,13 +90794,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -100734,13 +90851,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Some men run out of the forest at your call.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -100783,13 +90894,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "This knowledge comes too late, as you're brought to the ground by a vicious blow from a club.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -100804,13 +90909,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your WEAPONNAME dances in the air like a girl at her wedding. You retreat into the forest, and at last the men leave you for easier prey.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -100838,13 +90937,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You run join the elf, your WEAPONNAME at the ready.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -100887,13 +90980,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Outnumbered, unready, and unarmoured, you nonetheless take a grim toll on your enemies. But there are too many of them, and at last you're forced to throw down your WEAPONNAME. It's a small satisfaction that, as cold metal wraps around your neck and wrists, the slavers seem more frightened of you than you of them.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -100921,13 +91008,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You fight with a savagery and skill that, if this really was a camp to train professional fighters, would do your teachers proud. Your opponents seem unprepared for someone who fights back. They waver. Finally one throws down his sword and runs. At that, like the breaking of a dam, the others turn and run into the forest.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -100955,13 +91036,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -100976,13 +91051,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -101025,13 +91094,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "An arrow buries itself in your leg and brings you down like a hunted deer.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -101137,13 +91200,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You see the elf lying dead.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -101257,13 +91314,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You listen as the men move back and forth. Every so often you hear a scream. At last you can stand it no longer - you stand up and run. But after a few steps you feel an explosion of pain on the back of your head, and you fall to the ground.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -101336,13 +91387,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -101386,44 +91431,13 @@ window.GAME_DATA_EVENTS = [
     }
   },
   {
-    "id": "Gladiatorweakf",
-    "source_line": 6690,
-    "source_code": "'Gladiatorweakf'=> array (\"It's easy to find the elf. She stands at the head of a small group who have neither died nor fled. Keeping five men at bay, she screams a string of obscenities and threats. Dead enemies lie at her feet.\",2,2,\"Help her\",\"Gladiatorweakelf\",\"Make your escape\",\"Gladiatorweakr2ssan\"),",
-    "text_zh": "It's easy to find the elf. She stands at the head of a small group who have neither died nor fled. Keeping five men at bay, she screams a string of obscenities and threats. Dead enemies lie at her feet.",
-    "text_en": "",
-    "type": 2,
-    "options": [],
-    "logic": {
-      "type": "free_choice",
-      "count": 2,
-      "choices": [
-        {
-          "text": "Help her",
-          "text_key": null,
-          "next_event": "Gladiatorweakelf"
-        },
-        {
-          "text": "Make your escape",
-          "text_key": null,
-          "next_event": "Gladiatorweakr2ssan"
-        }
-      ]
-    }
-  },
-  {
     "id": "Gladiatorweakk",
     "source_line": 6691,
     "source_code": "'Gladiatorweakk'=> array (\"You creep back as quietly as you can. But not quietly enough: you feel a sharp pain on the back of your skull, and fall to the ground.\",9,\"Stamina\",-3,\"Gladiatorweakr2ffa\"),",
     "text_zh": "You creep back as quietly as you can. But not quietly enough: you feel a sharp pain on the back of your skull, and fall to the ground.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -101438,13 +91452,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -101459,13 +91467,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You notice a man who seems to be an adventurer studying a notice board. You walk up and look at the board, but all the notices are for mundane jobs. The man notices your confused expression. He explains that when someone wants to make a job known, yet not attract unnecessary attention, they will put a semmingly everyday notice up, with a special symbol. Usually the only true part of the notice will be the address. Symbols, apparently graffiti or idle doodling, will indicate the job's true nature to those who need to know. He is happy to tell you some examples.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -101480,13 +91482,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -101584,13 +91580,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Seeing that you're determined, the imp spreads his wings and flies off, apparently quite hysterical with fear.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -101605,13 +91595,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -101747,13 +91731,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The cacophony of voices screeches triumphantly behind you: 'behold, inventor of false fortunes, the mask has met the face.' As you run back to the heart of town you feel an unnatural twisting in your guts, like a animal buried and trying to dig its way out.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -101820,13 +91798,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -101881,13 +91853,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -101937,13 +91903,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You open the bundle. It turns out to be a branch, tied with ribbon. It has either been shaped, or has grown naturally, to resemble the silhouette of a woman's face. You carefully re-wrap it.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -102006,13 +91966,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -102027,13 +91981,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -102048,13 +91996,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You tell yourself that, if Dahlia was truly a powerful witch, she'd be able to deliver it herself, or themselves...but the words are not enough to stop you looking over your shoulder or stop your heart hammering for the entire journey back into town.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -102190,13 +92132,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You run yourself ragged trying to find a buyer, without success. You are half-aware that your haste is born of fear.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -102393,13 +92329,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 2,
@@ -102448,13 +92378,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 3,
@@ -102525,13 +92449,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 4,
@@ -102627,13 +92545,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 6,
@@ -102647,13 +92559,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -102715,13 +92621,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -102766,13 +92666,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You decide that it was a false economy to leave the boat in the swamp; someone or something has doubtless stolen or destroyed it.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -102787,13 +92681,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -102808,13 +92696,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -102851,13 +92733,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -102872,13 +92748,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You leave Karrakara and do your best to find your way back to where you left your boat.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -102913,13 +92783,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -102956,13 +92820,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "On your way, you see a flock of wild fairies, a sure sign of good luck.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -102997,13 +92855,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are unsure who is worse off; they who are unknowingly trapped in a fetid swamp, or you who are trapped and do know it.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -103073,13 +92925,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find the spot where you left your boat. However the boat is gone, leaving only the frayed ends of the rope you tied it with. You feel an urge to strangle whoever took it.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -103094,13 +92940,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -103115,13 +92955,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -103136,13 +92970,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -103157,13 +92985,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -103287,13 +93109,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The ghoul sinks its teeth into your leg.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -103363,13 +93179,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You sail your boat to the docks, where an old man takes your four shells and custody of your boat.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -4,
@@ -103383,13 +93193,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -103463,13 +93267,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -103551,13 +93349,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As you get closer you see that it's not a city - or at least not a city as you know them. It's a group of steel houses, each as big as a village, and each with legs so long that they can walk through the sea like waders at the beach. Someone throws down a rope ladder and you climb aboard one of the houses. The people feed you a strange-tasting but nourishing meal.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -103592,13 +93384,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -103708,13 +93494,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -103729,13 +93509,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -103889,13 +93663,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "On impulse, you offer the rose to the creature.<br><br>'For...for me?' it says.<br><br>'Oh, you shouldn't have.' A blush covers the creature's hideous face. It waves goodbye as you take your leave.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -103910,13 +93678,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -103951,13 +93713,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'well...hello sailor' the creature says, in voice that would be seductive if it came from one less monstrous. You cringe with horror, until you notice the imp giggling and simpering.<br><br>You wait awkwardly while the two creatures exchange banter.<br><br>Finally the imp looks at you. 'Look...we have to talk. It's not you, it's me. I just think we've grown apart, and uh...yeah. I'm moving in with Cthulhu here.'<br><br>The imp climbs on to Cthulhu's outstretched hand. They, and the city, start to sink beneath the waves. Before the sea covers him entirely the imp says 'Anyway, I hope we can still be friends.'",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -103992,13 +93748,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -104087,13 +93837,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -104202,13 +93946,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -104278,13 +94016,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The flower smells wonderful after the salt and rot smell of the sea. You decide to wear it.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -104299,13 +94031,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -104345,13 +94071,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find any number of edible things.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -104366,13 +94086,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -104547,13 +94261,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You throw your own flower away, lest you become bewitched.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -104568,13 +94276,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -104589,13 +94291,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "By picking all the flowers around her, you allow her to come to her senses. She shame-facedly confirms your theory. She takes you back to her village, where her frantic relatives feed and bless you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -104610,13 +94306,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Streetwise",
@@ -104681,13 +94371,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -104740,13 +94424,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -104811,13 +94489,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find yourself standing in the field. Neither monster nor elf can be seen. You're covered in blood and bruises.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -104913,13 +94585,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your heart is sickened to leave the elf woman to her vigil, but you tell yourself that you have more important goals. Indeed, you wonder what.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -105040,13 +94706,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You look over your shoulder at the island as you sail away, more like one exiled from their motherland than one who has stopped briefly on a journey.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -105061,13 +94721,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Seafaring",
@@ -105122,13 +94776,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -105168,13 +94816,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You reluctantly return some shells to the dark water.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -105330,13 +94972,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You get the strong feeling that the sea god needs no offering for this quest, which will after all aid all those who sail the sea.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Luck",
@@ -105363,13 +94999,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The wind immediately picks up, and the dark clouds on the horizon seem like the angry brow of the god. Everything takes on the aspect of an omen. In a panic, you throw a handful of shells overboard.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -105438,13 +95068,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You desperately grab the drum of Prince Dimitri and beat it. Sure enough, the smug one appears on his carpet, and grabs you from the greedy arms of the god. He takes the drum from you, explaining that his debt is now cleared.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -105492,13 +95116,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You tell him your quest, and he says it's on his way and he'll fly you straight there. You think better of asking why he doesn't defeat the Colossos himself.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -105558,13 +95176,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You see what looks from a distance like a small island. As your craft drifts closer, you see that it's a part of the sea which seems to be boiling.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -105660,13 +95272,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -105681,13 +95287,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -105769,13 +95369,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In the end Numen Mari, god of the sea, decreed that Anhotep would be doomed to drown. As the sea rose inch by inch, Anhotep and his court crowded into the highest towers, sealing the common people into lower rooms and letting them drown. Then the higher nobles sacrificed the lower, cutting their throats and climbing on their bodies. Finally Anhotep himself stood on the highest tower in his city - now barely above sea level - and killed the higher nobles, just to climb on them and stay above water for a few more minutes. It's said that the sea itself rejected the vile city, and to this day tries to vomit it out.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -105977,13 +95571,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In the end Numen Mari, god of the sea, decreed that Anhotep would be doomed to drown. As the sea rose inch by inch, Anhotep and his court crowded into the highest towers, sealing the common people into lower rooms and letting them drown. Then the higher nobles sacrificed the lower, cutting their throats and climbing on their bodies. Finally Anhotep himself stood on the highest tower in his city - now barely above sea level - and killed the higher nobles, just to climb on them and stay above water for a few more minutes. It's said that the sea itself rejected the vile city, and to this day tries to vomit it out.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -106018,13 +95606,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -106039,13 +95621,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -106154,13 +95730,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -106215,13 +95785,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You look at the object that the woman gave you. Before you can work out what it is it shatters, with a sound like music heard in a dream. You find yourself holding a pile of shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -106235,13 +95799,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -106281,13 +95839,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It shatters with a sound like music heard in a dream, and you drink the liquid inside.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -106302,13 +95854,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -106323,13 +95869,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -106344,13 +95884,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Healing",
@@ -106365,13 +95899,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Scouting",
@@ -106386,13 +95914,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Seafaring",
@@ -106465,22 +95987,13 @@ window.GAME_DATA_EVENTS = [
     "id": "boilingseaside1fs",
     "source_line": 6952,
     "source_code": "'boilingseaside1fs'=> array (\"At that moment you realise that you can see something.\",13,\"boilingseaside1fs0\"),",
-    "text_zh": "",
+    "text_zh": "At that moment you realise that you can see something.",
     "text_en": "",
-    "type": 3,
-    "options": [
-      {
-        "text_zh": "掷骰检定",
-        "text_key": "Loc_RollDice",
-        "action": "check"
-      }
-    ],
+    "type": 13,
+    "options": [],
     "logic": {
-      "type": "check",
-      "attr": "Luck",
-      "diff": 20,
-      "pass": "boilingseaside1f",
-      "fail": "boilingseaside1s"
+      "type": "click_continue",
+      "next": "boilingseaside1fs0"
     }
   },
   {
@@ -106515,32 +96028,13 @@ window.GAME_DATA_EVENTS = [
     "options": []
   },
   {
-    "id": "boilingseaside1fs",
-    "source_line": 6952,
-    "source_code": "'boilingseaside1fs'=> array (\"At that moment you realise that you can see something.\",13,\"boilingseaside1fs0\"),",
-    "text_zh": "At that moment you realise that you can see something.",
-    "text_en": "",
-    "type": 13,
-    "options": [],
-    "logic": {
-      "type": "click_continue",
-      "next": "boilingseaside1fs0"
-    }
-  },
-  {
     "id": "boilingseaside1fs0",
     "source_line": 6953,
     "source_code": "'boilingseaside1fs0'=> array (\"A spot of light glows as faint as a candle burning in a window in the next village. You swim towards it. It grows brighter, and soon you see a young man, riding on a giant turtle. Both turtle and rider are lit like fireflies. They lead you back to the column of water. When they see you're safe they wave, and are gone. As you re-enter the column you suddenly notice that your arms and legs are burning with fatigue and your heart's thumping as if it was trying to escape. You wonder how long you were swimming for.\",9,\"Stamina\",-5,\"boilingseaside1fs1\"),",
     "text_zh": "A spot of light glows as faint as a candle burning in a window in the next village. You swim towards it. It grows brighter, and soon you see a young man, riding on a giant turtle. Both turtle and rider are lit like fireflies. They lead you back to the column of water. When they see you're safe they wave, and are gone. As you re-enter the column you suddenly notice that your arms and legs are burning with fatigue and your heart's thumping as if it was trying to escape. You wonder how long you were swimming for.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -106606,13 +96100,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -106655,13 +96143,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You can't help but take the water into your lungs. It feels surprisingly peaceful.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -106689,13 +96171,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You can't help but take the water into your lungs. It feels surprisingly peaceful.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -106723,13 +96199,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You see something shining, like a coin on the sea floor. As you get closer, you see that it's bigger than a coin, and further away than you thought. You think perhaps it's a shield, or a suit of armour. But as you continue downwards and start to make out details, you are shocked to see the whole world below you in the darkness.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -106851,13 +96321,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -106914,13 +96378,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After a moment of panic, you remember that what you're seeing is more likely to be an illusion. Far from making you frightened of Anhotep, it seems rather pathetic that the exiled king would keep up a pretence of being ruler of the world.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -106935,13 +96393,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You tremble in awe and ignorance at the power of one who could take the whole world with him into exile.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -107021,13 +96473,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You tremble in awe and ignorance at the thought of the sorcerer who could bring the whole world to the bottom of the sea.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -107055,13 +96501,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In the end Numen Mari, god of the sea, decreed that Anhotep would be doomed to drown. As the sea rose inch by inch, Anhotep and his court crowded into the highest towers, sealing the common people into lower rooms and letting them drown. Then the higher nobles sacrificed the lower, cutting their throats and climbing on their bodies. Finally Anhotep himself stood on the highest tower in his city - now barely above sea level - and killed the higher nobles, just to climb on them and stay above water for a few more minutes. It's said that the sea itself rejected the vile city, and to this day tries to vomit it out.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -107131,13 +96571,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The water seems to help you along, as if the place were a mouth spitting you out.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -107165,13 +96599,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As soon as you take it from her she, the forest, and all around disappears, and there is nothing but the black and silent sea and the burning in your lungs. You desperately kick for the surface.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -107214,13 +96642,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -107235,13 +96657,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -107253,21 +96669,10 @@ window.GAME_DATA_EVENTS = [
     "id": "mermaid",
     "source_line": 8584,
     "source_code": "'mermaid'=> array (\"John William Waterhouse\",\"public\"),",
-    "text_zh": "",
+    "text_zh": "John William Waterhouse",
     "text_en": "",
-    "type": 6,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
-    "logic": {
-      "type": "keyword_check",
-      "keyword_id": 111,
-      "pass": "Islandhub",
-      "fail": "mermaid0"
-    }
+    "type": 0,
+    "options": []
   },
   {
     "id": "mermaid0",
@@ -107276,13 +96681,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -107569,13 +96968,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She croons at you about nothing. Several secrets of the sea are hidden in her baby-talk, like pearls in the ocean. At last she says goodbye to you and dives into the sea.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Seafaring",
@@ -107661,13 +97054,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -107777,13 +97164,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You recognise personal experience in her sigh, and comfort her as best you can.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -107798,13 +97179,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Healing",
@@ -107819,13 +97194,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're unable to resist huffing at such maudlin tripe.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -107873,13 +97242,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend hours talking with her. She has an expert knowledge of beauty, and gives you several useful tips - although she notes that you, as one born male who has transformed themselves into a beautiful woman, must surely already be skilled in the arts of appearance. Finally she says she has to go, and slips into the sea.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -107894,13 +97257,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend hours talking with her. She has an expert knowledge of beauty, and gives you several useful tips. Finally she says she has to go, and slips into the sea.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -107912,21 +97269,10 @@ window.GAME_DATA_EVENTS = [
     "id": "mermaidsong",
     "source_line": 8664,
     "source_code": "'mermaidsong'=> array (\"Howard Pyle\",\"public\"),",
-    "text_zh": "",
+    "text_zh": "Howard Pyle",
     "text_en": "",
-    "type": 16,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
-    "logic": {
-      "type": "prof_check",
-      "prof_id": 13,
-      "pass": "mermaidsongfaun",
-      "fail": "mermaidsong0"
-    }
+    "type": 0,
+    "options": []
   },
   {
     "id": "mermaidsong0",
@@ -108069,13 +97415,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Her song is beautiful, but after a while you start to pay attention to the words. The mermaid's song has all the secrets of the sea, and you're able to remember some of what she says.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Seafaring",
@@ -108147,13 +97487,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Her song is beautiful, but sad. It fills you with a longing for something that has no words or shape to describe it.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -108168,13 +97502,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You listen for hours. You realise it's getting colder and you're getting hungrier, yet you're unable to move away. She keeps singing as the sun goes down and through the night, and you're still listening the next morning. You lose track of time but finally you pass out, and dream of her singing. When you wake up, she's gone. Shivering, hungry, and filled with a longing that can never be met, you cast off.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -108189,13 +97517,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -108245,13 +97567,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The mermaid starts to sing about the sea itself. Her song contains the secret of talking to the waves, so that you can never drown.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -108342,13 +97658,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "When her attention is taken by a passing bird, you try and creep forward. But you slip on a wet rock, and cut your head.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -108457,13 +97767,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The shell is full of seawater and slime, but when you clear that away you find it's full of cowrie shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 20,
@@ -108497,13 +97801,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The shell is full of seawater and slime, but when you empty that out you find a small, perfectly-formed black pearl.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -108538,13 +97836,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The shell is full of seawater and slime, but when you empty that out you find a finely-wrought medallion. It seems to be dwarvish.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -109195,13 +98487,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They throw down a bag. You open it, and find 10 shells. You thank them and sail on.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -109252,13 +98538,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "One hits you on the head as you make your escape.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -109308,13 +98588,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They throw down more of the strange food you had when you visited them the first time. You finish it, thank them, and sail on.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -109372,7 +98646,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They chatter amongst themselves. Finally, they lower a rope ladder. Elated, you start to climb, to safety and to your new life.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Fleeendlf3fs",
@@ -109421,13 +98698,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They lower a cat down on a rope. You realise that they must have misinterpreted your request.<br><br>Unbeknownst to you, those who decide such things have decreed that carrying a cat is the very essence of fashion.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -109442,13 +98713,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You decide to name the creature Piteous Mew, in honour of its constant yowling.<br><br>Despairing of making yourself understood, you thank them and sail on.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -109463,13 +98728,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They lower a creature down on a rope. You realise that they must have misinterpreted your request.<br><br>The creature is a neckweasel. These long, furry creatures can sometimes be persuaded to hang limply around a person's neck. They're considered most fashionable. You carefully place it around your neck.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -109484,13 +98743,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Despairing of making yourself understood, you thank them and sail on.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -109618,13 +98871,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At last you sight the promised island. You follow the directions you were given, expecting to find a town. But you find only a deserted beach. There's nothing but the hulks of a few fishing boats, filled with holes and ravaged by time.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -109664,13 +98911,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You drift away with the current, looking for another sanctuary.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -109831,7 +99072,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "But they greet you warmly, asking eagerly if you're going to stay. You realise that there's work to be done here, and you could find worse quests. Thanking them, and assuring them you're staying, you begin your new life.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Safeislandnsf",
@@ -109840,13 +99084,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You see that there's nothing here for you but strife and death. You steal a fairly seaworthy craft and set out to sea, looking for another sanctuary.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -109861,13 +99099,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -109933,7 +99165,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The god of the island is none other than the gentle, elephant-headed Yag-kosha. He greets you warmly, and you're accepted into a land where, as in the body of the god himself, animal and human co-exist without strife. Safe at last, you begin your new life.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Safeislandyyy",
@@ -109942,7 +99177,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The god of the island was none other than the gentle, elephant-headed Yag-kosha. You tell the story of his sacrifice at your hands. You're accepted into a land where, as with the god himself, animal and human co-exist without strife. Safe at last, you begin your new life.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Amazonisland",
@@ -110082,13 +99320,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find an open entrance in the pyramid, and follow a winding tunnel inside.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -110124,13 +99356,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -110265,13 +99491,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They're so still and silent that they could be dead. At last you can stand the horrible tableau no longer, and flee the place.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -110341,13 +99561,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At last you stumble and fall. The creatures don't stop their dance. They drag you along, stepping on your legs as willingly as on the ground.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -110460,13 +99674,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In return the creatures give you two secrets. Firstly, they tell you the password to enter the city of the Amazons. Then they tell you that a giant creature, half-cat and half-spider, spins webs between these pyramids, so that any who walk between them will likely be caught and eaten.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -110481,13 +99689,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -110556,13 +99758,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In return the creatures tell you the password to the city of the Amazons.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -110577,13 +99773,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In return the creatures tell you that a giant creature, half-cat and half-spider, spins webs between these pyramids, so that any who walk between them will likely be caught and eaten.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -110645,15 +99835,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Yes!' They cry.<br><br>'Let us trade places!' They begin dancing around you, chanting a spell, as you try in vain to stop them. At last they stop. You see that they all have your face! One holds up a mirror so you can see yourself. To your horror, you see that you now look like a clown.",
     "text_en": "",
     "type": 24,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "clown_prof",
+      "type": "set_prof_clown",
       "next": "Finalptraden2"
     }
   },
@@ -110664,13 +99848,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -110773,13 +99951,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They throw a few shells at your feet. You gather them up, then leave.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 5,
@@ -110950,13 +100122,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You tiptoe away, ashamed of your failure to defend this holy place.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -111115,13 +100281,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They lay their meagre haul before you - a few shells, and the bottle - and scurry away.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 5,
@@ -111173,13 +100333,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The elf takes the bottle, and the two looters scurry off. You wait a few minutes, then you also leave the pyramid.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 5,
@@ -111373,13 +100527,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They take the medallion and scurry off into the darkness.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -111394,13 +100542,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They take the fur and scurry off into the darkness.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -111415,13 +100557,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -111436,13 +100572,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -111701,13 +100831,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You desperately try to keep the two looters at bay. You take several small wounds.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -111735,13 +100859,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The two looters are, together, almost a match for you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -111853,13 +100971,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -111906,13 +101018,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -111927,13 +101033,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "And indeed you do feel a new strength as you leave the pyramid.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Healing",
@@ -112035,13 +101135,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wake up with a start, as you hear the dying scream of your unicorn.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -112056,13 +101150,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Finally it seems like they catch you, and cut you with cloven hooves as sharp as knives. You wake up with a start, a bloody wound on your chest.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -112162,13 +101250,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Pathetic!' it sneers. Before you can react, it sinks its teeth into your neck.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -112183,13 +101265,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It ignores all but the Pearl of Wisdom, which it eats. The Pearl rattles inside it as if the creature was hollow.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -112204,13 +101280,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It starts eating your shells. Each one rattles inside it, as if the creature was hollow.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1000,
@@ -112246,13 +101316,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It trots off into the night, the rose held in its lipless fangs. You settle back to sleep.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -112267,13 +101331,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'You halfwit - I was taunting you with sarcasm!' Enraged, the creature sinks its teeth into your neck.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -112288,13 +101346,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Most satisfactory' the creature sneers. It trots off into the night. When it leaves, it's as if a great weight had been lifted from the place. Feeling safe, you have the luxury of wishing you'd fought instead of giving in. You settle back to sleep.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -112348,13 +101400,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature's fangs and hooves draw your blood many times.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -112420,13 +101466,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -112492,13 +101532,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After a few minutes you notice a cut on your hand. Then another opens on your cheek, and another on your leg. It seems as if every old cut and scratch you've ever had is re-opening.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -112612,13 +101646,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You watch in horror as the wounds join up, small streams of blood starting to join into a great river. You realise you'll die if you stay here. You run back to the column, where your wounds close up.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -112716,13 +101744,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -112737,13 +101759,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -113097,13 +102113,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They spring upon you, and beat you mercilessly.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -113155,13 +102165,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -113262,13 +102266,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pull the red rose from your pack and throw it behind you, hoping it'll distract them. They stop and stare in wonderment at its perfection, and you make your escape.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -113303,13 +102301,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pull the dwarven medallion from your pack and throw it behind you, hoping it'll distract them. They stop and stare in wonderment at how it catches the light, and you make your escape.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -113344,13 +102336,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pull the black pearl from your pack and throw it behind you, hoping it'll distract them. They stop and stare in wonderment at it, and you make your escape.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -113385,13 +102371,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You pull the glass bottle from your pack and throw it behind you, hoping it'll distract them. They stop and stare in wonderment at how it catches the light, and you make your escape.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -113406,13 +102386,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They catch you and beat you savagely.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -113526,7 +102500,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A flyspeck on the horizon grows larger, and eventually you stand before the ruined statue of Ozymandias. The great king lies face down in a shallow oasis, ignored by the animals that a nomad is watering there. The proud tyrant now serves as a perch for a few birds. The sight of nature placidly triumphant fills you with a great sense of peace. Satisfied, you turn for home.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Finalozyn",
@@ -113849,13 +102826,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -113870,13 +102841,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -113995,13 +102960,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -114016,13 +102975,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -114155,13 +103108,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The Amazons, being a forthright and guileless folk, have little resistance to magic; not like the cunning and devious Karrakarans. You find it simple enough to mesmerise her. Feeling slightly guilty, you enter the city.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -114250,13 +103197,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She is happy to accept your challenge, and seems to look at you with a little more respect.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -114312,13 +103253,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She laughs derisively at your ruse.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -114421,7 +103356,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The girl is posessed by an evil spirit which, after several hours, you're able to coax out with the promise of sweets. The queen is beside herself with gratitude. She appoints you Royal Physician, and gives you gifts of weapons, jewellery and land. Safe and secure at last you vow to cease your wanderings, and live the rest of your life here.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Finalozyassf3",
@@ -114478,13 +103416,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Alas, your useless wings click together like broken bones, and your attempts to take flight bring naught but pain.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -114499,13 +103431,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At that moment your wings spread, and you feel the glorious sensation of rising off the ground. You're clumsy in the air, you who once danced on light in Faerie, but you slowly float over the walls, and down again into the city of the Amazons.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -114573,13 +103499,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The stone seems to delight in crumbling beneath your fingers, and you fall several times.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -114594,13 +103514,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You realise that this climb is beyond you. You decide to dig under the wall instead.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -114615,13 +103529,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You make it over the wall with only a few scratches, and slip unobserved into the city of the Amazons.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -114661,13 +103569,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -114704,13 +103606,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The spirit in the coffin speaks to you.<br><br>'What? I'm trying to sleep! Every century it's some damn thing.' It tells you of a secret door into the city. You close the coffin, and cover it again with sand. The secret door is indeed there. You open it, and slip unnoticed into the city of the Amazons.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -114806,13 +103702,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -114827,13 +103717,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Without warning, the sand gives way beneath you, and you fall into darkness.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -114868,13 +103752,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -114889,13 +103767,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At last you tunnel under the wall, and slip unnoticed into the city of the Amazons.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -115003,13 +103875,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The palace guards laugh at the thought of letting the likes of you into the palace.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -115111,13 +103977,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The palace guards believe your story about having an important message for the queen. They let you into the palace unsupervised.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -115132,13 +103992,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -115219,13 +104073,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Their hands reach inside your chest. It feels like your heart is being filled with fine wine.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -115240,13 +104088,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Healing",
@@ -115917,13 +104759,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Their hands reach inside your chest. It feels like your heart is being filled with fine wine.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -115938,13 +104774,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Healing",
@@ -115959,13 +104789,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They thank you for the bottle.<br><br>'It's much nicer than here' they say. One puts their finger in the bottle. Then their whole hand follows, then the entire body. Another pours themselves into the bottle in the same way, then another and another, until at last the courtyard is deserted. You hear their muffled voices praising their new home. You try to pick the bottle up, but it's too heavy to move. You leave.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -115993,13 +104817,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As soon as you hold the rose close to the figures, it dies.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -116014,13 +104832,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -116035,13 +104847,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Their hands reach inside your chest. It feels like your heart is being filled with fine wine.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -116056,13 +104862,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Healing",
@@ -116077,13 +104877,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They thank you for the fur.<br><br>'It's much nicer than here' they say. One climbs under the fur. Then another follows, and another. In defiance of nature, there seems to be room for them all. At last the courtyard is deserted. You hear their muffled voices praising their new home. You try to pick it up, but it's too heavy to move. You leave.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -116098,13 +104892,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -116119,13 +104907,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -116173,13 +104955,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They accept a handful of shells, and thank you with the air of one who has recieved an unwanted birthday present. You leave the courtyard.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -116219,13 +104995,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -116240,13 +105010,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They give you a knife to draw your blood, and a cup to catch it in.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -116261,13 +105025,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -116308,13 +105066,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Their hands reach inside your chest. It feels like ice in your heart.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -116329,13 +105081,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -116558,13 +105304,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find a large fur.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -116579,13 +105319,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find a cloak, of goblinish make. They're said to reveal to the wearer many things which would otherwise be hidden.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Scouting",
@@ -116600,13 +105334,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -116621,13 +105349,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You find a bag of shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -116721,13 +105443,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You rummage through the room, but find nothing useful. At last you take a bag of shells, even though you know that the Amazons generally don't use them.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -116855,13 +105571,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You turn a corner, and scream in pain as a spear pierces your leg.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -117072,13 +105782,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -117121,13 +105825,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The fur does seem to have the power to protect you from the elements.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -117142,13 +105840,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Whether the fur really has magical abilities to protect you from the elements, or is simply very warm, you don't know, but you manage to get some sleep.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -117163,13 +105855,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The fur doesn't seem to have any magic ability to protect you from the elements, as you'd hoped.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -117204,13 +105890,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The night is bitterly cold, although you wrap yourself in the fur.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -117225,13 +105905,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The night is bitterly cold.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -117362,13 +106036,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -117417,13 +106085,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -117478,13 +106140,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You dream of a cat god who resents your presence. You wake to find a group of alley cats staring hatefully at you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -117499,13 +106155,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You dream of a cat god who protects you from the elements. When you wake, you find that you've been kept warm by alley cats lying over you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -117582,13 +106232,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In the early hours of the morning an Amazon archer kicks you until you wake.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -117656,13 +106300,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You try to knock her aside, but she lets fly with an arrow. It pierces your leg and you collapse in pain.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -117677,13 +106315,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You knock her aside, and run out of the alley. You feel a sharp pain as her arrow nicks your ear.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -117784,13 +106416,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -117805,13 +106431,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -117826,13 +106446,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "When you wake, someone has stolen the fur.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -117953,13 +106567,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The withered hands cover your mouth and pin your arms and legs. Where they touch your skin, it too withers.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -117974,13 +106582,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A hole opens in the ground. Like a greedy mouth it swallows you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -117995,13 +106597,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spring to your feet and run out of the park. When you look at your face in a puddle, you see that, where the withered hands brushed over your skin, it too has withered.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -118016,13 +106612,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Shaking with terror, you walk through the empty streets.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -118104,13 +106694,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -118155,13 +106739,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -118198,13 +106776,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The plant gives you the eyes of an owl.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Scouting",
@@ -118219,13 +106791,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The plant gives you the eyes of a child.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -118240,13 +106806,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The plant gives you the eyes of a demon.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -118261,13 +106821,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -118304,13 +106858,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "But you meet her gaze unflinchingly, until at last her river of insult runs dry. She walks off muttering, and you continue your search.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -118345,13 +106893,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stand in the street, open-mouthed like a fish torn from the water, trying in vain to come up with a response. She walks off triumphantly, and you continue your search.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -118366,13 +106908,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -118387,13 +106923,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -118428,13 +106958,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -118514,13 +107038,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -118560,13 +107078,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -118581,13 +107093,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She's not interested in anything you have to offer.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -118811,13 +107317,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -118831,13 +107331,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You return to your inn. The owner demands another shell from you, which you don't have. You think you're being ripped off, but you also think that no one's going to help a broke foreigner. You take your gear and leave.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -118932,13 +107426,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -4,
@@ -118977,13 +107465,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You elect to sleep on the streets rather than submit to her extortion.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -118998,13 +107480,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -119019,13 +107495,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 1,
@@ -119079,13 +107549,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After much arguing she agrees that, since you have to leave your mount here, you're unlikely to skip out without paying. You give her a single shell.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -1,
@@ -119144,13 +107608,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -119225,13 +107683,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After much arguing, she eventually throws you bodily into the street. You walk off, bereft of dignity.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -119271,13 +107723,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -119292,13 +107738,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -119313,13 +107753,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -119334,13 +107768,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -119405,13 +107833,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "There are a few other travellers staying in the inn. You sit in the common room for a while, and fall into conversation with two women. Though the skin of one is coal-black, and the other like gold, they have the same scarred, weathered faces; sisters in experience though not blood. They warm to you immediately, and tell you that they have a little business going, which sounds like smuggling or some similar criminal enterprise. They offer to find a job for you, which you promise to think over.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -119426,13 +107848,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -119447,13 +107863,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You spend a comfortable night, and awake very refreshed.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -119468,13 +107878,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -119592,13 +107996,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After a few months your fingers are as covered in rings as those of a leper are with sores, and you drink the finest cherry wine where once you drank unclean water.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 1000,
@@ -119704,13 +108102,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -119725,7 +108117,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "One day you realise that you no longer yearn for Karrakara, or any other place. You have become a veritable pharaoh of rogues here in the city of the Amazons, and the city has become your home.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Amasmugf",
@@ -119828,13 +108223,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The judges of the Amazons show you some measure of mercy, and let you off with a flogging.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -119849,13 +108238,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -120126,13 +108509,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The imp weeps bitter tears, but agrees to go in order to save you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -120147,13 +108524,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -120168,13 +108539,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -120214,13 +108579,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -120260,13 +108619,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -120281,13 +108634,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -120302,13 +108649,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -120348,13 +108689,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -120369,13 +108704,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She's much taken with your unicorn, and agrees to forget she saw you in return for it. Sensing that refusal would be a death sentence, you give her the animal.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -120440,13 +108769,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You are evenly matched. Soon both of you are covered in cuts and bruises.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -120491,13 +108814,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -121143,13 +109460,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -121164,13 +109475,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -121280,7 +109585,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The battle is swift and certain. Soon the queen surrenders, the guards throw down their weapons, and you are the new queen of the Amazons. Somewhat surprised by the sudden change in your fortune, but trying to maintain a regal bearing, you take your place upon the marble throne, and begin your new life.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Amatempappreb1sb",
@@ -121328,13 +109636,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The crowd is bewildered, then outraged, by your sudden turn to moderation. They soon decide that you're part of the problem. Before you know it, some of the crowd beat and curse you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -121349,13 +109651,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The crowd is too far gone to listen to reason. They move off, newly united in their thirst for justice. You have a sinking feeling that you might have caused a massacre.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -121370,13 +109666,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The crowd agrees to curb their rage for now. They disperse, newly united in their thirst for justice. You have the feeling that you might have almost caused, then prevented, a massacre.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -121484,13 +109774,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -121533,13 +109817,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She's far stronger than you. You endure a severe beating while the other Amazons cheer.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -121554,13 +109832,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You're evenly matched.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -121654,13 +109926,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -121675,13 +109941,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -121801,13 +110061,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As a fortune-teller you're an expert in talking a great deal and saying nothing. The Amazon smiles, and the crowd lets you pass.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -121822,13 +110076,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As a former courtesan you're an expert in talking a great deal and saying nothing. The Amazon smiles, and the crowd lets you pass.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -121843,13 +110091,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As a former aristocrat you're an expert in talking a great deal and saying nothing. The Amazon smiles, and the crowd lets you pass.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -121920,13 +110162,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -121971,13 +110207,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The crowd is ready for your craven retreat.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -121992,13 +110222,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You open your mouth as if to respond. Then, when the crowd relaxes, you turn and run. They're taken by surprise, and you soon leave them behind.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -122080,13 +110304,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Many in the crowd are intimidated by your calm disdain. But a few bolder souls shove you as you walk by. Instinctively, you push back.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -122198,13 +110416,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They're struck dumb by the novelty of your ideas. The crowd disperses with an air of uncertainty, and you go on your way.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -122263,13 +110475,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They appear somewhat ashamed of themselves, and disperse with an air of uncertainty. You go on your way.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -122284,13 +110490,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "They're outraged by your impudence. Some of them leap forward, and begin beating you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -122326,13 +110526,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You see the high column of stone, on top of which sits the temple of the Amazons' god Daba. A dangerous-looking stairway winds around the column, ensuring that no one approaches the god without good cause. Desperate to escape the mob, you run up the stairs.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -122420,13 +110614,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -122469,13 +110657,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -122490,13 +110672,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -122524,13 +110700,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -122625,13 +110795,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The crowd snarls at you. But no one wants to be the first to step forward. At last, shame-faced, they stand aside to let you pass.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -122646,13 +110810,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -122667,13 +110825,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -122725,13 +110877,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A few of the bolder members of the crowd beat you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -122772,13 +110918,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -122821,13 +110961,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -122863,13 +110997,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "There seem to be two main temples here. A large, new-looking building has a statue of the Karrakaran goddess Su-Averna on the roof.<br><br>The temple of Daba, the Amazons' own god, sits atop a high column of stone. A thin stairway without any rail winds around the column, ensuring that no one approaches the god without good cause.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -122929,13 +111057,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The temple of the Amazons' god sits atop a high column of stone. A dangerous-looking stairway winds around the column, ensuring that no one approaches the god without good cause.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -123094,13 +111216,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The trip is frightening and wearying. It feels as if the squat, angry god has laid an invisible rock on your back. You imagine him smiling gleefully at your agony.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -123115,13 +111231,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The trip is frightening and wearying. You imagine the squat, angry god smiling gleefully at your discomfort.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -123136,13 +111246,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The trip is frightening. Yet, as if the squat, angry god was holding your hand and guiding you, you are refreshed rather than wearied by the exercise.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -123231,13 +111335,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As you take step after identical step your thoughts drift. You don't notice the loose stone until you step on it. For several terrifying seconds you seem to hang, suspended over the abyss, until you regain your balance. You seem to hear faint, malicious laughter as you continue your climb.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -123397,13 +111495,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You look through your belongings for a suitable offering, but find none. You feel horribly embarrassed, as if it was the god's birthday and you a guest at his party.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -123418,13 +111510,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You lay the rose at the feet of the god.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -123439,13 +111525,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You lay the Pearl of Wisdom at the feet of the god.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -123460,13 +111540,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You lay the drum of Prince Dimitri at the feet of the god.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -123481,13 +111555,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You lay the fur at the feet of the god.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -123502,13 +111570,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -123523,13 +111585,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -123544,13 +111600,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel as if the god approves of your offering. Your blood seems to flow with a new vigour.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Duelling",
@@ -123565,13 +111615,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Brawling",
@@ -123717,7 +111761,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "She declares that you are obviously favoured by the god, and so appoints you Defender of the Temple. You receive gifts of weapons, jewellery and land. Safe and secure at last you vow to cease your wanderings, and live the rest of your life in the city of the Amazons.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Amatemptemp2",
@@ -123918,13 +111965,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "At the last minute you tear your attention away from the seductive voices. You run out of the temple and collapse, sick and trembling. At last you decide to visit the temple of Daba.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -123939,13 +111980,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -124249,13 +112284,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Nothing in your experience resembles what you saw.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -124270,13 +112299,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The knowledge chatters at the edge of your mind without showing itself, like a predator in the night. You grow more determined to fight it.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -124313,13 +112336,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Like a dog digging up a corpse, the head brings to mind various travellers' tales that you had forgotten. Stories of cannibal cults, ships whose crews descended into animal form, bodiless voices in the night whispering seductive blasphemies, all seem to crowd around you, filling the shadows of the alley and the spaces at the corners of your sight.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -124381,13 +112398,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You put the head back and, with a feeling of relief combined with shame, decide to visit the temple of Daba.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -124535,7 +112546,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Satisfied that you have completed your mission you leave the city of the Amazons, bound for your home in Karrakara.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Amaheadbackfsasn",
@@ -124544,13 +112558,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Satisfied that you have defeated the evil in this place, you hurry away to the temple of Daba.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -124565,13 +112573,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -124634,13 +112636,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The priest sees through your pretended devotion to the false Averna. But a voice behind him cries out, recognising you as the one who argued against Daba. Much relived, you leave the temple. You decide to visit the temple of Daba.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -124735,13 +112731,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Like a dog digging up a corpse, the head brings to mind various travellers' tales that you had forgotten. Stories of cannibal cults, ships whose crews descended into animal form, bodiless voices in the night whispering seductive blasphemies, all seem to crowd around you, filling the shadows of the alley and the spaces at the corners of your sight.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -124846,13 +112836,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You stand in the public square and loudly denounce what you saw in the temple.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -125097,13 +113081,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You turn your attention from these other voices as much as possible. Yet they still fill your head until it feels like a rotten fruit, about to burst and reveal the corruption within.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -125118,13 +113096,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -125169,13 +113141,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You loudly denounce the priest.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -125261,13 +113227,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The whistling blade draws a red line on your flesh.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -125295,13 +113255,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The whistling blade draws a red line on your flesh.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -125475,13 +113429,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -125552,13 +113500,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The whistling blade draws a red line on your flesh.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -125573,13 +113515,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You leap aside from the whistling blade.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -125766,13 +113702,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -125787,13 +113717,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -125868,13 +113792,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The Amazon accepts the magic fur, and stands by to let you in.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -125889,13 +113807,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The Amazon accepts the goblin-tailored cloak. As you hand it over your vision dims, and much that was clear becomes hidden.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Scouting",
@@ -125910,13 +113822,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -125931,13 +113837,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The Amazon agrees to let you in for 30 shells. Having no other choice, you hand over the money.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -30,
@@ -125951,13 +113851,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You go through the contents of your backpack, but nothing interests the Amazon.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -125972,13 +113866,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -126096,13 +113984,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -126276,13 +114158,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The key fits into the ancient lock and, with some careful pressure, turns and opens the guard door. You can't pull it out, so you leave it and enter the city.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -126297,13 +114173,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The key goes halfway into the ancient lock and then sticks fast.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -126340,13 +114210,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It snaps. Cursing your luck, you consider your options.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -126361,13 +114225,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -126423,13 +114281,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You make it just high enough that it hurts when you fall.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -126509,13 +114361,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You land with a shattering impact.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -126739,13 +114585,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The spell tells you that you shouldn't have climbed up here in the first place.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -126821,13 +114661,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -126933,13 +114767,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A voice says 'excuse me.' You see a door, almost completely covered by ivy. Instead of a handle, it has an arm ending in a gloved hand. Below the arm is a huge mouth. Above the arm an equally oversized, single eye stares at you.<br><br>You clear the ivy away. The arm helps you.<br><br>'Have you come to deal with the Colossos?' the door asks.<br><br>You confirm that you have.<br><br>'Oh, how wonderful to have some quiet! I'd love to let you in. But I'm a slave to my programming I'm afraid. You're going to have to prove you're either a mighty hero or a cunning merchant...Er, effectively that means arm-wrestle me or give me six shells.'",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -127029,13 +114857,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You drop six shells into the door's mouth. The door chews for a while, then opens for you.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -6,
@@ -127079,13 +114901,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The door forces your arm down. 'Sorry about that' it says. 'I wasn't even trying very hard.'",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -127100,13 +114916,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -127239,13 +115049,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Thorns cut your hands as you clear away the vines.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -127260,13 +115064,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You clear a small section of the wall. Just as the woman claimed, writing has been carved into it. You read as much as you can, but learn nothing but some obscure details of the migrations of the Ancients.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -127356,13 +115154,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You clear away more vines, revealing more writing. It concerns the order of lizard-folk shamans, the Frill-Necked Wizards. They believe that there will come a time when four grim llamas ride throughout the world spreading misery and death. They call them the Four Llamas of the Alpacalypse. Filled with mystic knowledge, you finish reading and leave.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -127540,13 +115332,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Holding your breath, you take the key.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -127603,13 +115389,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You vomit onto the foul earth, and stagger away as quickly as you can.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -127624,13 +115404,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The smell seems to be a physical thing, like a swarm of insects crawling into your body. You take the key and stagger away as quickly as you can. You feel welts forming on your skin, and your shoulder feels as if a sword had been run through it.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -127689,13 +115463,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You walk through the swamp, guided by the hideous voice in the sky. All of a sudden you feel sharp teeth biting into your leg.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -127732,13 +115500,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You scream in pain and fear as the ghoul's claws puncture your skin.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -127811,13 +115573,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Having no boat, you arrange your gear as best you can and swim into the harbour. The Colossos looms over you. You try and sound like a dignified citizen of Old Atnos as you demand admittance to its skull.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -127854,13 +115610,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You sail into the harbour. The Colossos looms over you. You bellow a challenge to it.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -128145,13 +115895,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Have some ugly, invader!' it cries. 'As you will no doubt observe, there's plenty more where that came from!'",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -128166,13 +115910,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Have some hurt, invader!' it cries. 'There's plenty more where that came from!",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -128276,13 +116014,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Coming into town, you find there's no need to report your success. The old woman, and the other townsfolk, are all on their feet. They greet you joyfully. They present you with half the town's remaining treasury.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 50,
@@ -128296,13 +116028,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -128317,13 +116043,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -128358,13 +116078,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The town's priest asks their god to bless you as you continue on your way.",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "random",
@@ -128408,13 +116122,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After a short journey, you arrive at Karrakara.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -128429,13 +116137,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wave goodbye to the townsfolk and set out to sea.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -128513,13 +116215,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A bolt of energy leaps from the creature. It picks you up, carries you out of the Colossos, and drops you. You land with a shattering impact.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -128581,13 +116277,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -128615,13 +116305,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A bolt of energy leaps from the creature and knocks you to the ground.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -128741,13 +116425,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You try the key. Once again it jams in the lock, but this time the door opens.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -128783,13 +116461,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The key goes halfway into the ancient lock and then sticks fast.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -128826,13 +116498,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You bruise your shoulder barging the door, but eventually it gives way with a rusty shriek.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -128847,13 +116513,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You bruise your shoulder barging the door. The rusted metal shrieks, but refuses to move.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -128906,13 +116566,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -128927,13 +116581,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -128948,13 +116596,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -129028,13 +116670,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -129090,13 +116726,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You try and cling to the Colossos' hair, but the climb is beyond you. You fall, landing with a shattering impact.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -129227,13 +116857,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You jump into the water and try to head for land.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -129336,13 +116960,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Finally your craft comes to rest on the docks of the dying town.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -129382,13 +117000,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -129446,13 +117058,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -129467,13 +117073,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You enter the town, to find everyone dead.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -129523,13 +117123,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -129569,13 +117163,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You feel a hostile presence, like the spirits of the dead rebuking you. Your hand goes to your forehead, as if they had branded you with a murderer's mark.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -129590,13 +117178,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You carry out your grim labour until all are buried.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -129666,13 +117248,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -129687,13 +117263,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You think you have a sore shoulder from carrying bodies. But it burns, and when you touch it it feels rough, as if a dagger had wounded you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -129809,13 +117379,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -129852,13 +117416,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -129894,13 +117452,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -129988,13 +117540,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -130092,13 +117638,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -130135,13 +117675,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You almost walk over it before you notice it. It gives a high-pitched, child-like shriek, and you feel a sharp pain in your leg. Looking down, you see your leg is on fire! You roll around on the ground, beating out the flames. You hear an inhuman voice apologising to you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -130242,13 +117776,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It reaches into its mouth and retches wetly. It produces a handful of shells. It tells you that this is to not tell anyone what you've seen. Although you are slightly revolted by the manner of their appearance, you take them. You and the half-slug head back to the beach, where it watches you push your craft into the sea.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 8,
@@ -130275,13 +117803,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The three of them leave, and you stand guard. There appears to be nothing to guard against on the island. After a while they return. The half-slug approaches you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -130339,13 +117861,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -130360,13 +117876,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -130450,13 +117960,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "There is no one around. You decide to wait for the trio, rather than run off and run the risk of meeting them in the forest. After a while they return. The half-slug approaches you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -130484,13 +117988,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You hear shouting, and realise that the trio has returned to see you leaving their hut. You see all three of them point their carved sticks at you. You run into the forest. You feel a sharp pain in your arm, and smell burning.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -130505,13 +118003,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As quickly as you can, you push your craft into the sea. The seawater stings your wound, but seems to help it.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -130526,13 +118018,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You walk over to the cabinet and attempt to remove some of the jewels. They are worked into the cabinet so cunningly that you can't see a single gap. After trying several jewels, you hear a rumbling noise coming from outside the hut. In a panic you look out the window of the hut, and are shocked to see that the hut is flying into the air.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -130567,7 +118053,10 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You enter the celestial realm. You look down and see the world. You notice that several places have their names written next to them, just as in the atlas you read as a child. Presumably, you think, this is so the gods can keep track. In any case, you've truly found a place where vengeance will never find you. Safe at last, you sail towards the stars.",
     "text_en": "",
     "type": 25,
-    "options": []
+    "options": [],
+    "logic": {
+      "type": "winning_end"
+    }
   },
   {
     "id": "Spacejewel2",
@@ -130646,13 +118135,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Oh yes?' the man bellows angrily. 'And yet you didn't have enough to pay back my good friend Prince Dimitri did you?' He punches you in the face, and flies off.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -130787,13 +118270,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -5,
@@ -130807,13 +118284,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -10,
@@ -130896,13 +118367,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -2,
@@ -130916,13 +118381,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Your suggestion of a lower fee outrages the man. 'Well!' he bellows, 'you can bloody well float then!' He tugs on his beast's reins, and flies away from you. You wonder where your bargaining skills went.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -130937,13 +118396,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You claim poverty, but offer to give the man 'what little you have'.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -130958,13 +118411,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'oh well' the man coughs in an embarrassed way. 'Very kind, but there's no need for that.' You realise that offering money can be a way of making sure you don't have to give any.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -130979,13 +118426,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -131136,13 +118577,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -131228,13 +118663,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Owyth tells you grimly that he means to find Zareth or die trying. He hops away.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -131249,13 +118678,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -131270,13 +118693,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -131291,13 +118708,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -131312,13 +118723,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "With nothing else for it, you step off the edge of the bridge. You don't fall, but seem to be sinking slowly. You look down, and see the whole world.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -131388,13 +118793,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The unicorn turns to you.<br><br>'Well, goodbye.' It says. It gallops away along the bridge.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -131451,13 +118850,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The horse looks around at the void. Its eyes bulge in panic. It rears up, then bolts off along the bridge. You swear in frustration, and set off on foot.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -131542,13 +118935,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Eventually you reach the building.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -131563,13 +118950,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "After untold hours the building doesn't look any closer. You stop, miserable and exhausted.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -131628,13 +119009,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A coach driven by a giant bee stops gives you a ride. As you talk to it you realise it's mistaken you for Pollen Farrell, a bee-grade celebrity.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -131717,13 +119092,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A coach stops near you. However the coachman wants four shells to let you ride.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -131843,13 +119212,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -4,
@@ -131863,13 +119226,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You plead and whine, disgusting the driver and yourself. But in the end you get your free ride.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -131884,13 +119241,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "No one stops. You feel miserable and tired.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -131905,13 +119256,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -131926,13 +119271,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A coach stops and you climb in. The occupants turn out to be members of a strange sect, the Seventh Day Inventists. You listen politely to their drivel about 'experiments' and 'rational explanations'. And yet, sensible though you are, you can't help wondering if there's any truth in their ideas.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -131969,13 +119308,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You nimbly jump onto the back of a carriage, and hang on until it reaches the building. Feeling rather dashing, you drop to the ground.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -132011,13 +119344,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -132032,13 +119359,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -132106,13 +119427,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -132147,13 +119462,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In shock, you return the shells while Prince Dimitri heaps praise on your honesty and courage.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -100,
@@ -132167,13 +119476,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 14,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "gain_blessing",
       "blessing": "Heroism",
@@ -132187,13 +119490,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He gives you a small drum. 'If you're ever in trouble, play on that and I'll see what I can do!'",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -132221,13 +119518,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -132242,14 +119533,9 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He looks in your coin-purse. He snarls like an angry dog.",
     "text_en": "",
     "type": 22,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "check"
-      }
-    ],
+    "options": [],
     "logic": {
-      "type": "shell_random_check",
+      "type": "random_money_check",
       "pass": "Bridgebuildingdfs",
       "fail": "Bridgebuildingdff"
     }
@@ -132261,13 +119547,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'May devils have your soul! Just give me what you have then.' You see no way out other than obeying.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -100,
@@ -132330,13 +119610,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Spying Owyth, Prince Dimitri cries 'A ha! I have a suitably ironic punishment!' He chants in an unknown tongue. You shrink and deform into the shape of a frog. All your equipment changes into a small, frog-sized version of itself, and you notice you're wearing a tiny crown. At the same time, Owyth changes into a man.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -132364,13 +119638,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Prince Dimitri picks you up. He walks out of the building, and to the edge of the bridge.<br><br>'If you can find someone to kiss you, you'll change back and they'll turn into a frog' he tells you. Taking careful aim, he hurls you into the abyss. You tumble through space and back to earth, landing neatly in a pond in a forest.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -132385,13 +119653,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -132476,13 +119738,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -132539,13 +119795,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You cough and sneeze uncontrollably. You tremble like you've got a fever. Zareth tells you that it's an acquired taste.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -132560,13 +119810,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You start to sneeze uncontrollably. You feel something in your nose. It seems to be moving. You give a particularly huge sneeze, and the two pale creatures from the pyramid shoot out of your nostrils and onto the floor. They look at you and Zareth for a second, then run out of the room. Zareth says that you'll probably sleep better with them gone.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -132614,13 +119858,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Zareth notices Owyth.<br><br>'A ha! I suppose you want me to cure this poor man? Hm..this will take a few weeks.' Owyth hops onto his hand.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -132635,13 +119873,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -132656,13 +119888,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -132677,13 +119903,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -132800,13 +120020,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -132941,13 +120155,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -133038,13 +120246,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -133140,13 +120342,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Zareth's eyes light up, and he cackles with glee. He agrees to teach you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -133174,13 +120370,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You wither under his gaze, like a plant under the desert sun.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -133195,13 +120385,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -133249,13 +120433,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Finally, Zareth teaches you some of the occult lore of Barsoom. 'It would've been death for me even to know these things, let alone to speak of them.' he tells you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Magic",
@@ -133270,13 +120448,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Scouting",
@@ -133304,13 +120476,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -133491,13 +120657,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You swing your WEAPONNAME into one of the worshippers. He crumples as if he were made of paper. But there's nothing hollow about the swords that slash across your skin.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -133598,13 +120758,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -133647,13 +120801,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You fight desperately against the screeching, hollow figures. But there seems to be no end to them.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -133668,13 +120816,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You fight desperately against the screeching, hollow figures. But there seems to be no end to them.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -133817,13 +120959,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You manage to delicately hint that you have more work to do, and the drag-on apologises.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -133838,13 +120974,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You listen to its intricate tale, vowing never to listen to anyone for more than five minutes again.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -133859,13 +120989,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As the creature flies away, something flies out of your mouth to join it. A heavy, sickening thing, nothing other than the doom laid on you when you became a murderer.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -133915,13 +121039,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "As silent as a shadow you flit from tree to tree, and finally stand pressed against the remaining wall of the ruin, watching the worshippers. They stand around a huge winged dragon, which is bound to an altar. As you watch they draw swords from their black cloaks. One by one they make a small cut in the great beast's flesh, and drink its blood.<br><br>You notice that, although it thrashes and strains as if it was held in thick chains of meteoric iron, it actually seems to be tied only by ropes. Presumably some magic is at work.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -134253,13 +121371,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -134315,20 +121427,29 @@ window.GAME_DATA_EVENTS = [
     "id": "Ztemplems",
     "source_line": 8375,
     "source_code": "'Ztemplems'=> array (\"The spell shows you a path to the ruin, where you can sneak from tree to tree and not be seen.\",2,3,\"Loc_DoSo\",\"Ztempless\",\"Charge in instead\",\"Ztemplea\",\"Run away\",\"Ztempler\"),",
-    "text_zh": "",
+    "text_zh": "The spell shows you a path to the ruin, where you can sneak from tree to tree and not be seen.",
     "text_en": "",
-    "type": 4,
-    "options": [
-      {
-        "text_zh": "...",
-        "action": "random"
-      }
-    ],
+    "type": 2,
+    "options": [],
     "logic": {
-      "type": "random",
-      "targets": [
-        "Ztemplemc",
-        "Ztemplems"
+      "type": "free_choice",
+      "count": 3,
+      "choices": [
+        {
+          "text": "Loc_DoSo",
+          "text_key": "Loc_DoSo",
+          "next_event": "Ztempless"
+        },
+        {
+          "text": "Charge in instead",
+          "text_key": null,
+          "next_event": "Ztemplea"
+        },
+        {
+          "text": "Run away",
+          "text_key": null,
+          "next_event": "Ztempler"
+        }
       ]
     }
   },
@@ -134373,36 +121494,6 @@ window.GAME_DATA_EVENTS = [
     "logic": {
       "type": "single_link",
       "next": "Ztempleafss"
-    }
-  },
-  {
-    "id": "Ztemplems",
-    "source_line": 8375,
-    "source_code": "'Ztemplems'=> array (\"The spell shows you a path to the ruin, where you can sneak from tree to tree and not be seen.\",2,3,\"Loc_DoSo\",\"Ztempless\",\"Charge in instead\",\"Ztemplea\",\"Run away\",\"Ztempler\"),",
-    "text_zh": "The spell shows you a path to the ruin, where you can sneak from tree to tree and not be seen.",
-    "text_en": "",
-    "type": 2,
-    "options": [],
-    "logic": {
-      "type": "free_choice",
-      "count": 3,
-      "choices": [
-        {
-          "text": "Loc_DoSo",
-          "text_key": "Loc_DoSo",
-          "next_event": "Ztempless"
-        },
-        {
-          "text": "Charge in instead",
-          "text_key": null,
-          "next_event": "Ztemplea"
-        },
-        {
-          "text": "Run away",
-          "text_key": null,
-          "next_event": "Ztempler"
-        }
-      ]
     }
   },
   {
@@ -134492,13 +121583,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You run until the bare trees and snow give way to thicker forest.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -134513,13 +121598,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "In the manner of dreams, you suddenly find yourself running along the streets of Karrakara. You realise you're close to your home.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -134556,13 +121635,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Hm. You are clearly unable to acheive this by yourself' he says. You wither under his gaze, like a plant under the desert sun.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -134577,13 +121650,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -134651,13 +121718,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You thrash and scream as Zareth tells you to lie still.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -134672,13 +121733,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You try to lie still as the knife cuts your flesh, and you feel Zareth's hand reaching in.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -134693,13 +121748,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You manage to lie still as the knife cuts your flesh, realising that moving will likely make it worse.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -134714,13 +121763,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Finally Zareth holds a hissing, monstrous thing in front of your eyes.<br><br>'There it is...I've removed the burden of your guilt.' He throws it in a bin and begins to sew up your wound.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -134781,13 +121824,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Zareth's eyes light up, and he cackles with glee. He looks at you with a new friendliness.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -134835,13 +121872,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You say goodbye to Owyth, and prepare to leave. He tells you that he has something for you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -134960,13 +121991,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He gives you his crown, returned to human-size by Zareth's arts.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -134981,13 +122006,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Years ago', he tells you,<br><br>'while wandering the empty foothills near Tok, I saw what seemed to be the bastard child of a hut and a giant's suit of armour. I found inside a metal box, festooned all over with unearthly-seeming jewels, which I have never been able to prise from it. Though all agreed it must be of great value, none have been able to tell me what it is - not even the owners, if owners there be, for though I combed the area many times, I never found the hut again. In gratitude for your efforts I present it, now returned to its normal size by Zareth's arts, to you.'",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -135002,13 +122021,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "He gives you half his money, returned to normal size by Zareth's arts - eight shells.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 8,
@@ -135075,13 +122088,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "remove",
@@ -135298,13 +122305,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Unable to face the walk back, you try and bluff your way onto a coach, pretending to be foreign royalty. But the coach driver isn't fooled, and after you get into a screaming argument you have to walk anyway.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Streetwise",
@@ -135319,13 +122320,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Charisma",
@@ -135340,13 +122335,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Luck",
@@ -135374,13 +122363,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Unable to face the walk back, you pay for a ride in a coach.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -4,
@@ -135513,13 +122496,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "A large and laughing red-suited old man, driving a flying sled pulled by reindeer, pulls up beside you.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -135591,13 +122568,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Here you go! Ho ho ho!' He hands you a bag of liquorice. You wolf it down. It's delicious, nourishing both body and soul.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -135612,13 +122583,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -135655,13 +122620,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "Oh look! I do!' he says with relief. You hold your hands out the window, and he pours a pile of shells into them.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": 10,
@@ -135716,13 +122675,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Ho ho ho! Here you go!' He reaches through the window of the hut and hands you a hand-written notebook, 'A Guide to Beating the System on Dead Eye Street'. You flip through it. It seems to describe the street of gamblers in Karrakara where, it's said, those who've gambled away their last shell can bet their lives - and those who've lost their lives can bet their souls.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -135757,13 +122710,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "'Ho ho ho! Here you go!' He reaches through the window of the hut and hands you a book. It's written in a language you've never seen before, and seems to be about magic of some kind.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "add",
@@ -135915,13 +122862,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -135974,13 +122915,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "It asks you whether you know how to control the hut. Seeing that the idea hadn't occured to you, the creature tells you that touching particular jewels will tell the hut to move in particular ways.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -136040,13 +122975,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You give the black pearl to the creature, who screws it into its lamp.",
     "text_en": "",
     "type": 7,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "item_op": "remove",
@@ -136106,13 +123035,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature eats several of your shells. It offers you a drink of fizzy acid, but you decline.",
     "text_en": "",
     "type": 10,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "money_val": -3,
@@ -136139,13 +123062,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The creature wrinkles its tentacles in a skeptical manner, but doesn't challenge you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -136292,13 +123209,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "The hut hits the ocean and cracks open like an egg. At this speed the water feels as hard as stone, and you lose consciousness.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -136333,13 +123244,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -136379,13 +123284,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You climb out of the open window and float free. You look down and see the whole world.",
     "text_en": "",
     "type": 8,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "keyword_op": "add",
@@ -136420,13 +123319,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You can see no difference between the real world, and the one conjured by Anhotep under the sea. You wonder whether Anhotep's world had any people, and if such people would know they were illusions. It occurs to you that, if not, you would be hard pressed to prove that you were real and not an illusion.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -136500,13 +123393,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "You scream and claw at the air as the world rushes towards you. You hit the ocean at great speed, losing consciousness.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Stamina",
@@ -136554,13 +123441,7 @@ window.GAME_DATA_EVENTS = [
     "text_zh": "For several days, you gradually float towards the ground. You notice that you seem not to need to eat, drink, sleep or defecate. It seems only natural to you that such things should not exist in the celestial realm. As you get closer to the ground you almost, but not entirely, lose the sense of perspective that you had upon seeing the world below you.",
     "text_en": "",
     "type": 9,
-    "options": [
-      {
-        "text_zh": "继续",
-        "text_key": "Loc_Continue",
-        "action": "effect"
-      }
-    ],
+    "options": [],
     "logic": {
       "type": "effect",
       "stat_attr": "Heroism",
@@ -137162,15 +124043,6 @@ window.GAME_DATA_EVENTS = [
     "source_line": 8583,
     "source_code": "'street2'=> array (\"Jean-Léon Gérôme\",\"public\"),",
     "text_zh": "Jean-Léon Gérôme",
-    "text_en": "",
-    "type": 0,
-    "options": []
-  },
-  {
-    "id": "mermaid",
-    "source_line": 8584,
-    "source_code": "'mermaid'=> array (\"John William Waterhouse\",\"public\"),",
-    "text_zh": "John William Waterhouse",
     "text_en": "",
     "type": 0,
     "options": []
@@ -137881,15 +124753,6 @@ window.GAME_DATA_EVENTS = [
     "id": "judge",
     "source_line": 8663,
     "source_code": "'judge'=> array (\"Howard Pyle\",\"public\"),",
-    "text_zh": "Howard Pyle",
-    "text_en": "",
-    "type": 0,
-    "options": []
-  },
-  {
-    "id": "mermaidsong",
-    "source_line": 8664,
-    "source_code": "'mermaidsong'=> array (\"Howard Pyle\",\"public\"),",
     "text_zh": "Howard Pyle",
     "text_en": "",
     "type": 0,

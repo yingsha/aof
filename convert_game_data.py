@@ -175,7 +175,7 @@ def process_event(evt):
                 "item_id": args[0],
                 "next": str(args[2])
             }
-            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+            # No options needed for effect events, handled by logic and auto-advance
 
     elif type_id == 8: # Gain/Lose Keyword
         # keyword_id, 0/1, next
@@ -186,7 +186,7 @@ def process_event(evt):
                 "keyword_id": args[0],
                 "next": str(args[2])
             }
-            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+            # No options needed for effect events, handled by logic and auto-advance
 
     elif type_id == 9: # Stat Change
         # attr, change, next
@@ -197,7 +197,7 @@ def process_event(evt):
                 "stat_val": args[1],
                 "next": str(args[2])
             }
-            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+            # No options needed for effect events, handled by logic and auto-advance
 
     elif type_id == 10: # Shells Change
         # amount, next
@@ -207,7 +207,7 @@ def process_event(evt):
                 "money_val": args[0],
                 "next": str(args[1])
             }
-            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+            # No options needed for effect events, handled by logic and auto-advance
 
     elif type_id == 11: # Shells Check
         # min, pass, fail
@@ -265,7 +265,7 @@ def process_event(evt):
                 "blessing": args[0],
                 "next": str(args[1])
             }
-            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+            # No options needed for effect events, handled by logic and auto-advance
 
     elif type_id == 15: # Blessing Check
         # blessing_name, pass, fail
@@ -361,7 +361,7 @@ def process_event(evt):
                 "type": "lose_companions",
                 "next": str(args[0])
             }
-            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+            # No options for lose companions, handled by logic and auto-advance
 
     elif type_id == 20: # Level Check
         # level, pass, fail
@@ -383,39 +383,18 @@ def process_event(evt):
                 "source_attr": args[1],
                 "next": str(args[2])
             }
-            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+            # No options for stat swap, handled by logic and auto-advance
 
     elif type_id == 22: # Shell Random Check (1-99)
         # slot 2 empty, pass, fail
         if len(args) >= 3:
             logic = {
-                "type": "shell_random_check",
+                "type": "random_money_check",
                 "pass": str(args[1]),
                 "fail": str(args[2])
             }
-            options.append({ "text_zh": "...", "action": "check" })
+            # No options for random money check
 
-    elif type_id == 23: # Random Profession
-        # next
-        if len(args) >= 1:
-            logic = {
-                "type": "random_prof",
-                "next": str(args[0])
-            }
-            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
-
-    elif type_id == 24: # Become Clown
-        # next
-        if len(args) >= 1:
-            logic = {
-                "type": "clown_prof",
-                "next": str(args[0])
-            }
-            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
-
-    elif type_id == 25: # Winning End
-        # behaves like 0
-        pass
 
     elif type_id == 19: # Not Implemented Message
         # No arguments, it's just a placeholder message.
@@ -449,19 +428,8 @@ def process_event(evt):
                 "attr2": args[1],
                 "next": str(args[2])
             }
-            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+            # No options for stat swap
 
-    elif type_id == 22: # Random Shell Check (1-99)
-        # slot 2 is empty
-        # slot 3 is destination if make it
-        # slot 4 is destination if don't
-        if len(args) >= 2:
-            logic = {
-                "type": "random_money_check",
-                "pass": str(args[0]), # args[0] is pass, args[1] is fail based on context
-                "fail": str(args[1])
-            }
-            options.append({ "text_zh": "...", "action": "check" })
 
     elif type_id == 23: # Random Profession Change
         # slot 2 is destination
@@ -470,7 +438,7 @@ def process_event(evt):
                 "type": "random_prof_change",
                 "next": str(args[0])
             }
-            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+            # No options for random prof change
 
     elif type_id == 24: # Change Profession to Clown (0)
         # slot 2 is destination
@@ -479,7 +447,7 @@ def process_event(evt):
                 "type": "set_prof_clown",
                 "next": str(args[0])
             }
-            options.append({ "text_zh": "继续", "text_key": "Loc_Continue", "action": "effect" })
+            # No options for set prof clown
 
     elif type_id == 25: # Winning End
         # Same as type 0, but implies a win state and shows attributes.
@@ -572,7 +540,7 @@ def main():
     # matches key => array( ... ),
     matches = re.findall(r"(['\"]?[\w\d]+['\"]?)\s*=>\s*array\s*\((.*?)\),", full_str)
     
-    events = []
+    events_dict = {}
     
     for key, content in matches:
         key = parse_php_value(key)
@@ -641,8 +609,10 @@ def main():
             "raw_args": clean_args[2:]
         }
         
-        events.append(process_event(event))
+        processed = process_event(event)
+        events_dict[processed['id']] = processed
         
+    events = list(events_dict.values())
     print(f"Extracted {len(events)} events.")
     
     # Save as JS file directly
